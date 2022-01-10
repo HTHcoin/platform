@@ -1,18 +1,18 @@
 # DAPI Client
 
-[![NPM Version](https://img.shields.io/npm/v/@dashevo/dapi-client)](https://www.npmjs.com/package/@dashevo/dapi-client)
-[![Build Status](https://github.com/dashevo/js-dapi-client/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/dashevo/js-dapi-client/actions/workflows/test_and_release.yml)
-[![Release Date](https://img.shields.io/github/release-date/dashevo/js-dapi-client)](https://github.com/dashevo/js-dapi-client/releases/latest)
+[![NPM Version](https://img.shields.io/npm/v/@hthcoin/dapi-client)](https://www.npmjs.com/package/@hthcoin/dapi-client)
+[![Build Status](https://github.com/MichaelHDesigns/js-dapi-client/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/MichaelHDesigns/js-dapi-client/actions/workflows/test_and_release.yml)
+[![Release Date](https://img.shields.io/github/release-date/hthcoin/js-dapi-client)](https://github.com/MichaelHDesigns/js-dapi-client/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
-Client library used to access Dash DAPI endpoints
+Client library used to access HTH DAPI endpoints
 
-This library enables HTTP-based interaction with the Dash blockchain and Dash
-Platform via the decentralized API ([DAPI](https://github.com/dashevo/dapi))
-hosted on Dash masternodes.
+This library enables HTTP-based interaction with the HTH blockchain and HTH
+Platform via the decentralized API ([DAPI](https://github.com/MichaelHDesigns/dapi))
+hosted on HTH masternodes.
 
  - `DAPI-Client` provides automatic server (masternode) discovery using either a default seed node or a user-supplied one
- - `DAPI-Client` maps to DAPI's [RPC](https://github.com/dashevo/platform/tree/master/packages/dapi/lib/rpcServer/commands) and [gRPC](https://github.com/dashevo/platform/tree/master/packages/dapi/lib/grpcServer/handlers) endpoints
+ - `DAPI-Client` maps to DAPI's [RPC](https://github.com/MichaelHDesigns/platform/tree/master/packages/dapi/lib/rpcServer/commands) and [gRPC](https://github.com/MichaelHDesigns/platform/tree/master/packages/dapi/lib/grpcServer/handlers) endpoints
 
 ## Table of Contents
 - [Install](#install)
@@ -24,7 +24,7 @@ hosted on Dash masternodes.
 ## Install
 
 ```sh
-npm install @dashevo/dapi-client
+npm install @hthcoin/dapi-client
 ```
 
 ## Usage
@@ -32,7 +32,7 @@ npm install @dashevo/dapi-client
 ### Basic
 
 ```javascript
-const DAPIClient = require('@dashevo/dapi-client');
+const DAPIClient = require('@hthcoin/dapi-client');
 const client = new DAPIClient();
 
 client.core.getStatus().then((coreStatus) => {
@@ -45,11 +45,11 @@ client.core.getStatus().then((coreStatus) => {
 Custom seed nodes are necessary for connecting the client to devnets since the client library is unaware of them otherwise.
 
 ```javascript
-const DAPIClient = require('@dashevo/dapi-client');
+const DAPIClient = require('@hthcoin/dapi-client');
 
 var client = new DAPIClient({
   seeds: [{
-     host: 'seed-1.evonet.networks.dash.org',
+     host: 'seed-1.evonet.networks.hth.org',
      httpPort: 3000,
      grpcPort: 3010,
   }],
@@ -60,14 +60,14 @@ client.core.getBestBlockHash().then((r) => {
 });
 ```
 
-**Note**: The seed node shown above (`seed-1.evonet.networks.dash.org`) is for the Dash Evonet testing network.
+**Note**: The seed node shown above (`seed-1.evonet.networks.hth.org`) is for the HTH Evonet testing network.
 
 ### Custom addresses
 
 Custom addresses may be directly specified in cases where it is beneficial to know exactly what node(s) are being accessed (e.g. debugging, local development, etc.).
 
 ```javascript
-const DAPIClient = require('@dashevo/dapi-client');
+const DAPIClient = require('@hthcoin/dapi-client');
 
 var client = new DAPIClient({
   dapiAddresses: [
@@ -86,7 +86,7 @@ client.core.getBestBlockHash().then((r) => {
 DAPI Client options can be passed directly to any command to override any predefined client options and modify the client's behavior for that specific call.
 
 ```javascript
-const DAPIClient = require('@dashevo/dapi-client');
+const DAPIClient = require('@hthcoin/dapi-client');
 
 // Set options to direct the request to a specific address and disable retries
 const options = {
@@ -101,13 +101,13 @@ client.core.getBestBlockHash(options).then((r) => {
 
 ## Documentation
 
-More extensive documentation available at https://dashevo.github.io/platform/DAPI-Client/.
+More extensive documentation available at https://hthcoin.github.io/platform/DAPI-Client/.
 
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/platform/issues/new/choose) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/MichaelHDesigns/platform/issues/new/choose) or submit PRs.
 
 ## License
 
-[MIT](LICENSE) &copy; Dash Core Group, Inc.
+[MIT](LICENSE) &copy; HTH Core Group, Inc.

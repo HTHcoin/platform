@@ -1,7 +1,7 @@
 {
-  "name": "@dashevo/wallet-lib",
+  "name": "@hthcoin/wallet-lib",
   "version": "7.22.0-dev.5",
-  "description": "Light wallet library for Dash",
+  "description": "Light wallet library for HTH",
   "main": "src/index.js",
   "unpkg": "dist/wallet-lib.min.js",
   "scripts": {
@@ -28,24 +28,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashevo/wallet-lib.git"
+    "url": "git+https://github.com/MichaelHDesigns/wallet-lib.git"
   },
   "keywords": [
     "cryptocurrency",
-    "dash",
+    "hth",
     "wallet"
   ],
-  "author": "Dash Core Team",
+  "author": "HTH Core Team",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/wallet-lib/issues"
+    "url": "https://github.com/MichaelHDesigns/wallet-lib/issues"
   },
-  "homepage": "https://github.com/dashevo/wallet-lib#readme",
+  "homepage": "https://github.com/MichaelHDesigns/wallet-lib#readme",
   "dependencies": {
-    "@dashevo/dapi-client": "workspace:~",
-    "@dashevo/dashcore-lib": "~0.19.28",
-    "@dashevo/dpp": "workspace:~",
-    "@dashevo/grpc-common": "workspace:~",
+    "@hthcoin/dapi-client": "workspace:~",
+    "@hthcoin/hthcore-lib": "~0.19.28",
+    "@hthcoin/dpp": "workspace:~",
+    "@hthcoin/grpc-common": "workspace:~",
     "cbor": "^8.0.0",
     "crypto-js": "^4.0.0",
     "lodash": "^4.17.19",

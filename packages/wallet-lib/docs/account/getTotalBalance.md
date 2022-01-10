@@ -5,6 +5,6 @@ Parameters:
 
 | parameters         | type      | required            | Description                                                                       |  
 |--------------------|-----------|---------------------| -------------------------------------------------------------------------------	  |
-| **displayDuffs**   | boolean   | no (default: true)  | When set at true return in Duffs (satoshis), if false, returns in Dash    |
+| **displayDuffs**   | boolean   | no (default: true)  | When set at true return in Duffs (satoshis), if false, returns in HTH    |
 
 Return : number

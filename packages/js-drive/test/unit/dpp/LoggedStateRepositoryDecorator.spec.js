@@ -1,8 +1,8 @@
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
-const createStateRepositoryMock = require('@dashevo/dpp/lib/test/mocks/createStateRepositoryMock');
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
-const getDocumentsFixture = require('@dashevo/dpp/lib/test/fixtures/getDocumentsFixture');
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
+const createStateRepositoryMock = require('@hthcoin/dpp/lib/test/mocks/createStateRepositoryMock');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
+const getDocumentsFixture = require('@hthcoin/dpp/lib/test/fixtures/getDocumentsFixture');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
 
 const LoggedStateRepositoryDecorator = require('../../../lib/dpp/LoggedStateRepositoryDecorator');
 const LoggerMock = require('../../../lib/test/mock/LoggerMock');

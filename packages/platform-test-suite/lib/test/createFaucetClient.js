@@ -1,4 +1,4 @@
-const Dash = require('dash');
+const HTH = require('hth');
 
 const getDAPISeeds = require('./getDAPISeeds');
 
@@ -31,7 +31,7 @@ function createFaucetClient() {
     };
   }
 
-  faucetClient = new Dash.Client({
+  faucetClient = new HTH.Client({
     ...clientOpts,
     wallet: walletOptions,
   });

@@ -1,4 +1,4 @@
-const SimplifiedMNListDiff = require('@dashevo/dashcore-lib/lib/deterministicmnlist/SimplifiedMNListDiff');
+const SimplifiedMNListDiff = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/SimplifiedMNListDiff');
 
 const NotEnoughBlocksForValidSMLError = require('./errors/NotEnoughBlocksForValidSMLError');
 

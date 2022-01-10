@@ -1,4 +1,4 @@
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const { expect } = require('chai');
 const Wallet = require('../Wallet');
 const fromHDPublicKey = require('./fromHDPublicKey');
@@ -29,9 +29,9 @@ describe('Wallet - HDPublicKey', function suite() {
     expect(mockOpts1.walletType).to.equal(WALLET_TYPES.HDPUBLIC);
     expect(mockOpts1.mnemonic).to.equal(null);
     expect(mockOpts1.HDPublicKey.toString()).to.equal(gatherTestnet.external.hdpubkey);
-    expect(new Dashcore.HDPublicKey(mockOpts1.HDPublicKey)).to.equal(mockOpts1.HDPublicKey);
+    expect(new Hthcore.HDPublicKey(mockOpts1.HDPublicKey)).to.equal(mockOpts1.HDPublicKey);
     expect(mockOpts1.keyChain.type).to.equal('HDPublicKey');
-    expect(mockOpts1.keyChain.HDPublicKey).to.deep.equal(Dashcore.HDPublicKey(gatherTestnet.external.hdpubkey));
+    expect(mockOpts1.keyChain.HDPublicKey).to.deep.equal(Hthcore.HDPublicKey(gatherTestnet.external.hdpubkey));
     expect(mockOpts1.keyChain.keys).to.deep.equal({});
   });
   it('should work from a HDPubKey', () => {
@@ -44,7 +44,7 @@ describe('Wallet - HDPublicKey', function suite() {
 
     expect(wallet1.plugins).to.be.deep.equal({});
     expect(wallet1.accounts).to.be.deep.equal([]);
-    expect(wallet1.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet1.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
     expect(wallet1.keyChain.type).to.be.deep.equal('HDPublicKey');
     expect(wallet1.passphrase).to.be.deep.equal(null);
     expect(wallet1.allowSensitiveOperations).to.be.deep.equal(false);

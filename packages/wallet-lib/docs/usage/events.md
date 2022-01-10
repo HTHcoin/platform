@@ -1,7 +1,7 @@
 ## Events 
 
 ```javascript
-const {EVENTS} = require('@dashevo/wallet-lib');
+const {EVENTS} = require('@hthcoin/wallet-lib');
 const {FETCHED_CONFIRMED_TRANSACTION} = EVENTS;
 const doSomethingConfirmedTransactionFetched = (tx) => {...}
 account.on(FETCHED_CONFIRMED_TRANSACTION, doSomethingConfirmedTransactionFetched);

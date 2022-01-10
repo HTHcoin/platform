@@ -10,7 +10,7 @@ describe('loadPackageDefinition', () => {
   });
 
   it('should successfuly load package definition', () => {
-    const definition = loadPackageDefinition(protoPath, 'org.dash.platform.example.v0');
+    const definition = loadPackageDefinition(protoPath, 'org.hth.platform.example.v0');
 
     expect(definition.Example).to.be.an.instanceOf(Function);
     expect(definition.Example).to.have.a.property('service');

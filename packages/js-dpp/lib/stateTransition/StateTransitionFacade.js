@@ -1,7 +1,7 @@
 const $RefParser = require('@apidevtools/json-schema-ref-parser');
 const jsonPatch = require('fast-json-patch');
 const jsonSchemaDiffValidator = require('json-schema-diff-validator');
-const { Signer: { verifyHashSignature } } = require('@dashevo/dashcore-lib');
+const { Signer: { verifyHashSignature } } = require('@hthcoin/hthcore-lib');
 
 const MissingOptionError = require('../errors/MissingOptionError');
 
@@ -86,7 +86,7 @@ const getPropertyDefinitionByPath = require('../dataContract/getPropertyDefiniti
 
 class StateTransitionFacade {
   /**
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    * @param {RE2} RE2
    */
   constructor(dpp, RE2) {

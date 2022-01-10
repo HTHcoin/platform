@@ -1,8 +1,8 @@
 {
-  "name": "@dashevo/platform-test-suite",
+  "name": "@hthcoin/platform-test-suite",
   "private": true,
   "version": "0.22.0-dev.5",
-  "description": "Dash Network end-to-end tests",
+  "description": "HTH Network end-to-end tests",
   "scripts": {
     "test": "mocha './test/**/*.spec.js'",
     "lint": "eslint .",
@@ -12,22 +12,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dashevo/platform-test-suite.git"
+    "url": "git+ssh://git@github.com/MichaelHDesigns/platform-test-suite.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/platform-test-suite/issues"
+    "url": "https://github.com/MichaelHDesigns/platform-test-suite/issues"
   },
-  "homepage": "https://github.com/dashevo/platform-test-suite#readme",
+  "homepage": "https://github.com/MichaelHDesigns/platform-test-suite#readme",
   "dependencies": {
-    "@dashevo/dapi-client": "workspace:~",
-    "@dashevo/dashcore-lib": "~0.19.28",
-    "@dashevo/dpns-contract": "workspace:~",
-    "@dashevo/dpp": "workspace:~",
-    "@dashevo/feature-flags-contract": "workspace:~",
-    "@dashevo/grpc-common": "workspace:~",
-    "@dashevo/merk": "github:dashevo/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f",
-    "@dashevo/wallet-lib": "workspace:~",
+    "@hthcoin/dapi-client": "workspace:~",
+    "@hthcoin/hthcore-lib": "~0.19.28",
+    "@hthcoin/dpns-contract": "workspace:~",
+    "@hthcoin/dpp": "workspace:~",
+    "@hthcoin/feature-flags-contract": "workspace:~",
+    "@hthcoin/grpc-common": "workspace:~",
+    "@hthcoin/merk": "github:hthcoin/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f",
+    "@hthcoin/wallet-lib": "workspace:~",
     "assert-browserify": "^2.0.0",
     "blake3": "^2.1.4",
     "browserify-zlib": "^0.2.0",
@@ -35,7 +35,7 @@
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
     "crypto-browserify": "^3.12.0",
-    "dash": "workspace:~",
+    "hth": "workspace:~",
     "dirty-chai": "^2.0.1",
     "dotenv-safe": "^8.2.0",
     "github-api": "^3.3.0",

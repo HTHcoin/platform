@@ -19,7 +19,7 @@ export async function create(this: Platform, typeLocator: string, identity: any,
 
     const appNames = this.client.getApps().getNames();
 
-    //We can either provide of type `dashpay.profile` or if only one schema provided, of type `profile`.
+    //We can either provide of type `hthcoin.profile` or if only one schema provided, of type `profile`.
     const [appName, fieldType] = (typeLocator.includes('.')) ? typeLocator.split('.') : [appNames[0], typeLocator];
 
     const { contractId } = this.client.getApps().get(appName);

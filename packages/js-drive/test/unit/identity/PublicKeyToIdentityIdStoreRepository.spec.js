@@ -1,5 +1,5 @@
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
-const IdentityPublicKey = require('@dashevo/dpp/lib/identity/IdentityPublicKey');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
+const IdentityPublicKey = require('@hthcoin/dpp/lib/identity/IdentityPublicKey');
 
 const cbor = require('cbor');
 const StoreMock = require('../../../lib/test/mock/StoreMock');

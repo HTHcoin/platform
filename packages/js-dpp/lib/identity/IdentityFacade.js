@@ -14,7 +14,7 @@ const validateProtocolVersionFactory = require('../version/validateProtocolVersi
  */
 class IdentityFacade {
   /**
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    */
   constructor(dpp) {
     const validatePublicKeys = validatePublicKeysFactory(

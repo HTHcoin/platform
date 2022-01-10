@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { PrivateKey } = require('@dashevo/dashcore-lib');
+const { PrivateKey } = require('@hthcoin/hthcore-lib');
 const fromAddress = require('./fromAddress');
 const cR4t6eFixture = require('../../../../fixtures/cR4t6e_pk');
 const { WALLET_TYPES } = require('../../../CONSTANTS');

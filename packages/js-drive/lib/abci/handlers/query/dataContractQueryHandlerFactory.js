@@ -4,14 +4,14 @@ const {
       ResponseQuery,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const {
   v0: {
     GetDataContractResponse,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const NotFoundAbciError = require('../../errors/NotFoundAbciError');
 

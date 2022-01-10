@@ -4,9 +4,9 @@ const {
       ResponseQuery,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
 const verifyChainLockQueryHandlerFactory = require('../../../../../lib/abci/handlers/query/verifyChainLockQueryHandlerFactory');
 
 const LoggerMock = require('../../../../../lib/test/mock/LoggerMock');

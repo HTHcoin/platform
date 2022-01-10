@@ -349,7 +349,7 @@ class DataContract {
  */
 
 DataContract.DEFAULTS = {
-  SCHEMA: 'https://schema.dash.org/dpp-0-4-0/meta/data-contract',
+  SCHEMA: 'https://schema.hth.org/dpp-0-4-0/meta/data-contract',
 };
 
 module.exports = DataContract;

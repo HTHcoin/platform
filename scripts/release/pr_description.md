@@ -4,7 +4,7 @@
 ## Issue being fixed or feature implemented
 <!--- Why is this change required? What problem does it solve? -->
 <!--- If it fixes an open issue, please link to the issue here. -->
-Release new Dash Platform version
+Release new HTH Platform version
 
 ## What was done?
 <!--- Describe your changes in detail -->

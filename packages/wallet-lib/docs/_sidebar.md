@@ -90,8 +90,8 @@
         - [`categorizeTransactions()`](utils/categorizeTransactions.md)
         - [`classifyAddresses()`](utils/classifyAddresses.md)
         - [`coinSelection()`](utils/coinSelection.md)
-        - [`dashToDuffs()`](utils/dashToDuffs.md)
-        - [`duffsToDash()`](utils/duffsToDash.md)
+        - [`hthToDuffs()`](utils/hthToDuffs.md)
+        - [`duffsToHth()`](utils/duffsToHth.md)
         - [`extendTransactionsWithMetadata()`](utils/extendTransactionsWithMetadata.md)
         - [`filterTransactions()`](utils/filterTransactions.md)
         - [`getBytesOf()`](utils/getBytesOf.md)
@@ -116,4 +116,4 @@
 - Develop
     - [Logging](develop/logging.md)
     - [Persistence](develop/persistence.md)
-- [License](https://github.com/dashevo/wallet-lib/blob/master/LICENSE)
+- [License](https://github.com/MichaelHDesigns/wallet-lib/blob/master/LICENSE)

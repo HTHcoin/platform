@@ -4,7 +4,7 @@ const chaiAsPromised = require('chai-as-promised');
 const {
     HDPrivateKey,
     MerkleBlock,
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 
 const TransactionSyncStreamWorker = require('../../../src/plugins/Workers/TransactionSyncStreamWorker/TransactionSyncStreamWorker');
 

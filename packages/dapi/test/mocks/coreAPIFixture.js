@@ -78,7 +78,7 @@ module.exports = {
         blockHash: 'b5d2cd463831d63b7b3b05f0c0bfefee7ce5f9b4e9ef448755e049d0c6d9106a',
         totalTransactions: 1,
       },
-      // TODO: after dashcore-lib specialtx
+      // TODO: after hthcore-lib specialtx
       quorumCommitmentTransaction: {
         quorumHash: 'd63bb5d2cd4638317b3b05f0c0bfee049d0c6d9106afee7ce5f9b4e9ef448755',
         prop1: '',

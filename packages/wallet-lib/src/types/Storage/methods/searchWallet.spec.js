@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const searchWallet = require('./searchWallet');
 
 describe('Storage - searchWallet', function suite() {
@@ -10,7 +10,7 @@ describe('Storage - searchWallet', function suite() {
         wallets: {
           '123ae': {
             accounts: {},
-            network: Dashcore.Networks.testnet,
+            network: Hthcore.Networks.testnet,
             mnemonic: null,
             type: null,
             blockHeight: 0,

@@ -1,4 +1,4 @@
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 const { expect } = require('chai');
 const { WALLET_TYPES } = require('../CONSTANTS');
 const filterTransactions = require('./filterTransactions');

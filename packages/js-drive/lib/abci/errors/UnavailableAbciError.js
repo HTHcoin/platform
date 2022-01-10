@@ -1,4 +1,4 @@
-const grpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
+const grpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
 
 const AbstractAbciError = require('./AbstractAbciError');
 

@@ -1,9 +1,9 @@
-const Dash = require('dash');
+const HTH = require('hth');
 
 const getDAPISeeds = require('./getDAPISeeds');
 
 function createClientWithoutWallet() {
-  return new Dash.Client({
+  return new HTH.Client({
     seeds: getDAPISeeds(),
     network: process.env.NETWORK,
     apps: {

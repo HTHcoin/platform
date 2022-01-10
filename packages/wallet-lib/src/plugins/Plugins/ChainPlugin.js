@@ -1,7 +1,7 @@
 const logger = require('../../logger');
 const { StandardPlugin } = require('..');
 const EVENTS = require('../../EVENTS');
-const { dashToDuffs } = require('../../utils');
+const { hthToDuffs } = require('../../utils');
 
 const defaultOpts = {
   firstExecutionRequired: true,
@@ -78,7 +78,7 @@ class ChainPlugin extends StandardPlugin {
     this.storage.store.chains[network.toString()].blockHeight = blocks;
 
     if (relay) {
-      this.storage.store.chains[network.toString()].fees.minRelay = dashToDuffs(relay);
+      this.storage.store.chains[network.toString()].fees.minRelay = hthToDuffs(relay);
     }
 
     const bestBlock = await this.transport.getBlockHeaderByHeight(blocks);

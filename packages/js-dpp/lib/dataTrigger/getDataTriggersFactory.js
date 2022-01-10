@@ -1,4 +1,4 @@
-const featureFlagTypes = require('@dashevo/feature-flags-contract/lib/featureFlagTypes');
+const featureFlagTypes = require('@hthcoin/feature-flags-contract/lib/featureFlagTypes');
 
 const Identifier = require('../identifier/Identifier');
 
@@ -8,7 +8,7 @@ const DataTrigger = require('./DataTrigger');
 
 const rejectDataTrigger = require('./rejectDataTrigger');
 const createDomainDataTrigger = require('./dpnsTriggers/createDomainDataTrigger');
-const createContactRequestDataTrigger = require('./dashpayDataTriggers/createContactRequestDataTrigger');
+const createContactRequestDataTrigger = require('./hthcoinDataTriggers/createContactRequestDataTrigger');
 const createFeatureFlagDataTrigger = require('./featureFlagsDataTriggers/createFeatureFlagDataTrigger');
 const createMasternodeRewardSharesDataTrigger = require('./rewardShareDataTriggers/createMasternodeRewardSharesDataTrigger');
 
@@ -28,9 +28,9 @@ function getDataTriggersFactory() {
     dpnsTopLevelIdentityId = Identifier.from(process.env.DPNS_TOP_LEVEL_IDENTITY);
   }
 
-  let dashPayDataContractId = Buffer.alloc(0);
-  if (process.env.DASHPAY_CONTRACT_ID) {
-    dashPayDataContractId = Identifier.from(process.env.DASHPAY_CONTRACT_ID);
+  let HthCoinDataContractId = Buffer.alloc(0);
+  if (process.env.HTHPAY_CONTRACT_ID) {
+    HthCoinDataContractId = Identifier.from(process.env.HTHPAY_CONTRACT_ID);
   }
 
   let featureFlagsDataContractId = Buffer.alloc(0);
@@ -85,19 +85,19 @@ function getDataTriggersFactory() {
       rejectDataTrigger,
     ),
     new DataTrigger(
-      dashPayDataContractId,
+      HthCoinDataContractId,
       'contactRequest',
       AbstractDocumentTransition.ACTIONS.CREATE,
       createContactRequestDataTrigger,
     ),
     new DataTrigger(
-      dashPayDataContractId,
+      HthCoinDataContractId,
       'contactRequest',
       AbstractDocumentTransition.ACTIONS.REPLACE,
       rejectDataTrigger,
     ),
     new DataTrigger(
-      dashPayDataContractId,
+      HthCoinDataContractId,
       'contactRequest',
       AbstractDocumentTransition.ACTIONS.DELETE,
       rejectDataTrigger,

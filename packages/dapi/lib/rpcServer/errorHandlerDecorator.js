@@ -4,15 +4,15 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 const RPCError = require('./RPCError');
 const ArgumentsValidationError = require('../errors/ArgumentsValidationError');
-const DashCoreRpcError = require('../errors/DashCoreRpcError');
+const HthCoreRpcError = require('../errors/HthCoreRpcError');
 
 function isOperationalError(error) {
   return (
     (error instanceof ArgumentsValidationError)
-    || (error instanceof DashCoreRpcError)
+    || (error instanceof HthCoreRpcError)
     || (error instanceof InvalidArgumentGrpcError)
   );
 }

@@ -1,4 +1,4 @@
-const { Networks, HDPrivateKey, HDPublicKey } = require('@dashevo/dashcore-lib');
+const { Networks, HDPrivateKey, HDPublicKey } = require('@hthcoin/hthcore-lib');
 const { has } = require('lodash');
 
 // eslint-disable-next-line no-underscore-dangle

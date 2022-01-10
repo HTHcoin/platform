@@ -1,4 +1,4 @@
-const { isUnsignedInteger } = require('@dashevo/dashcore-lib').util.js;
+const { isUnsignedInteger } = require('@hthcoin/hthcore-lib').util.js;
 
 /**
  * @param host
@@ -38,12 +38,12 @@ function validatePort(port, parameterName) {
  */
 function validateConfig(config) {
   const validationResults = [];
-  validationResults.push(validateHost(config.dashcore.p2p.host, 'DASHCORE_P2P_HOST'));
-  validationResults.push(validatePort(config.dashcore.p2p.port, 'DASHCORE_P2P_PORT'));
-  validationResults.push(validateHost(config.dashcore.rpc.host, 'DASHCORE_RPC_HOST'));
-  validationResults.push(validatePort(config.dashcore.rpc.port, 'DASHCORE_RPC_PORT'));
-  validationResults.push(validateHost(config.dashcore.zmq.host, 'DASHCORE_ZMQ_HOST'));
-  validationResults.push(validatePort(config.dashcore.zmq.port, 'DASHCORE_ZMQ_PORT'));
+  validationResults.push(validateHost(config.hthcore.p2p.host, 'HTHCORE_P2P_HOST'));
+  validationResults.push(validatePort(config.hthcore.p2p.port, 'HTHCORE_P2P_PORT'));
+  validationResults.push(validateHost(config.hthcore.rpc.host, 'HTHCORE_RPC_HOST'));
+  validationResults.push(validatePort(config.hthcore.rpc.port, 'HTHCORE_RPC_PORT'));
+  validationResults.push(validateHost(config.hthcore.zmq.host, 'HTHCORE_ZMQ_HOST'));
+  validationResults.push(validatePort(config.hthcore.zmq.port, 'HTHCORE_ZMQ_PORT'));
   validationResults.push(validateHost(config.tendermintCore.host, 'TENDERMINT_RPC_HOST'));
   validationResults.push(validatePort(config.tendermintCore.port, 'TENDERMINT_RPC_PORT'));
   validationResults.push(validatePort(config.rpcServer.port.toString(), 'API_JSON_RPC_PORT'));

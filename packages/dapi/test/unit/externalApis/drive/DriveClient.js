@@ -5,10 +5,10 @@ const cbor = require('cbor');
 const chaiAsPromised = require('chai-as-promised');
 const dirtyChai = require('dirty-chai');
 
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
-const InvalidArgumentGrpcError = require('@dashevo/grpc-common/lib/server/error/InvalidArgumentGrpcError');
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
+const InvalidArgumentGrpcError = require('@hthcoin/grpc-common/lib/server/error/InvalidArgumentGrpcError');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
 const DriveClient = require('../../../../lib/externalApis/drive/DriveClient');
 
 const RPCError = require('../../../../lib/rpcServer/RPCError');

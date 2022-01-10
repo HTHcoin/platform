@@ -4,16 +4,16 @@ const {
     ConsensusParamsBlock,
     ConsensusParamsEvidence,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 const {
   server: {
     error: {
       InternalGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
-const FailedPreconditionGrpcError = require('@dashevo/grpc-common/lib/server/error/FailedPreconditionGrpcError');
-const InvalidArgumentGrpcError = require('@dashevo/grpc-common/lib/server/error/InvalidArgumentGrpcError');
+} = require('@hthcoin/grpc-common');
+const FailedPreconditionGrpcError = require('@hthcoin/grpc-common/lib/server/error/FailedPreconditionGrpcError');
+const InvalidArgumentGrpcError = require('@hthcoin/grpc-common/lib/server/error/InvalidArgumentGrpcError');
 const getConsensusParamsHandlerFactory = require('../../../../../lib/grpcServer/handlers/platform/getConsensusParamsHandlerFactory');
 const GrpcCallMock = require('../../../../../lib/test/mock/GrpcCallMock');
 const RPCError = require('../../../../../lib/rpcServer/RPCError');

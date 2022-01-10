@@ -4,7 +4,7 @@ const {
   PrivateKey,
   Script,
   Opcode,
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 
 const InstantAssetLockProof = require('../../identity/stateTransition/assetLockProof/instant/InstantAssetLockProof');
 

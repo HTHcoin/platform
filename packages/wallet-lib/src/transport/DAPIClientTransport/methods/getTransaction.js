@@ -1,5 +1,5 @@
-const { Transaction } = require('@dashevo/dashcore-lib');
-const NotFoundError = require('@dashevo/dapi-client/lib/transport/GrpcTransport/errors/NotFoundError');
+const { Transaction } = require('@hthcoin/hthcore-lib');
+const NotFoundError = require('@hthcoin/dapi-client/lib/transport/GrpcTransport/errors/NotFoundError');
 const { is } = require('../../../utils');
 const logger = require('../../../logger');
 

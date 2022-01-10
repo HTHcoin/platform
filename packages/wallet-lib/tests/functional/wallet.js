@@ -91,7 +91,7 @@ describe('Wallet-lib - functional', function suite() {
       expect(account.state.isReady).to.be.deep.equal(true);
     });
 
-    it('populate balance with dash', async () => {
+    it('populate balance with hth', async () => {
       const balanceBeforeTopUp = account.getTotalBalance();
       const amountToTopUp = 20000;
 

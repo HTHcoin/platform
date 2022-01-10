@@ -1,4 +1,4 @@
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 const InstantAssetLockProof = require('./instant/InstantAssetLockProof');
 const ChainAssetLockProof = require('./chain/ChainAssetLockProof');
 const AssetLockTransactionIsNotFoundError = require('../../errors/AssetLockTransactionIsNotFoundError');

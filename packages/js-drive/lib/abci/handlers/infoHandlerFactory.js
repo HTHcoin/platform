@@ -4,7 +4,7 @@ const {
       ResponseInfo,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const Long = require('long');
 

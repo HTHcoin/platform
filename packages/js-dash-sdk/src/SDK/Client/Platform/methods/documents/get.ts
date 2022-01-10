@@ -1,5 +1,5 @@
-import Identifier from '@dashevo/dpp/lib/Identifier';
-import Metadata from "@dashevo/dpp/lib/Metadata";
+import Identifier from '@hthcoin/dpp/lib/Identifier';
+import Metadata from "@hthcoin/dpp/lib/Metadata";
 
 import {Platform} from "../../Platform";
 
@@ -98,7 +98,7 @@ export async function get(this: Platform, typeLocator: string, opts: fetchOpts):
 
     await this.initialize();
 
-    // locator is of `dashpay.profile` with dashpay the app and profile the field.
+    // locator is of `hthcoin.profile` with hthcoin the app and profile the field.
     const [appName, fieldType] = typeLocator.split('.');
     // FIXME: we may later want a hashmap of schemas and contract IDs
 

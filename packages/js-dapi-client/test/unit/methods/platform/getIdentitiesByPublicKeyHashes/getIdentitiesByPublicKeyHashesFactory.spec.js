@@ -7,11 +7,11 @@ const {
     Proof: ProofResponse,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const cbor = require('cbor');
 
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
 const getMetadataFixture = require('../../../../../lib/test/fixtures/getMetadataFixture');
 const getProofFixture = require('../../../../../lib/test/fixtures/getProofFixture');
 

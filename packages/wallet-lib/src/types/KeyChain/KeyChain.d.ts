@@ -1,6 +1,6 @@
 import {PrivateKey, Network,} from "../types";
-import {HDPrivateKey, HDPublicKey} from "@dashevo/dashcore-lib";
-import {Transaction} from "@dashevo/dashcore-lib/typings/transaction/Transaction";
+import {HDPrivateKey, HDPublicKey} from "@hthcoin/hthcore-lib";
+import {Transaction} from "@hthcoin/hthcore-lib/typings/transaction/Transaction";
 
 export declare namespace KeyChain {
     interface IKeyChainOptions {

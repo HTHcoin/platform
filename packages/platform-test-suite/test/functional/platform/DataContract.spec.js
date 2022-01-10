@@ -1,12 +1,12 @@
 const getDataContractFixture = require(
-  '@dashevo/dpp/lib/test/fixtures/getDataContractFixture',
+  '@hthcoin/dpp/lib/test/fixtures/getDataContractFixture',
 );
 
-const IdentityNotFoundError = require('@dashevo/dpp/lib/errors/consensus/signature/IdentityNotFoundError');
-const { StateTransitionBroadcastError } = require('dash/build/src/errors/StateTransitionBroadcastError');
+const IdentityNotFoundError = require('@hthcoin/dpp/lib/errors/consensus/signature/IdentityNotFoundError');
+const { StateTransitionBroadcastError } = require('hth/build/src/errors/StateTransitionBroadcastError');
 
-const InvalidDataContractVersionError = require('@dashevo/dpp/lib/errors/consensus/basic/dataContract/InvalidDataContractVersionError');
-const IncompatibleDataContractSchemaError = require('@dashevo/dpp/lib/errors/consensus/basic/dataContract/IncompatibleDataContractSchemaError');
+const InvalidDataContractVersionError = require('@hthcoin/dpp/lib/errors/consensus/basic/dataContract/InvalidDataContractVersionError');
+const IncompatibleDataContractSchemaError = require('@hthcoin/dpp/lib/errors/consensus/basic/dataContract/IncompatibleDataContractSchemaError');
 
 const wait = require('../../../lib/wait');
 

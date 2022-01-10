@@ -10,14 +10,14 @@ const generateToAddress = require('./commands/generateToAddress');
 // Following commands are not implemented yet:
 // const getVersion = require('./commands/getVersion');
 
-const createCommands = (dashcoreAPI) => ({
-  getBestBlockHash: getBestBlockHash(dashcoreAPI),
-  getBlockHash: getBlockHash(dashcoreAPI),
-  getMnListDiff: getMnListDiff(dashcoreAPI),
+const createCommands = (hthcoreAPI) => ({
+  getBestBlockHash: getBestBlockHash(hthcoreAPI),
+  getBlockHash: getBlockHash(hthcoreAPI),
+  getMnListDiff: getMnListDiff(hthcoreAPI),
 });
 
-const createRegtestCommands = (dashcoreAPI) => ({
-  generateToAddress: generateToAddress(dashcoreAPI),
+const createRegtestCommands = (hthcoreAPI) => ({
+  generateToAddress: generateToAddress(hthcoreAPI),
 });
 
 /**
@@ -25,26 +25,26 @@ const createRegtestCommands = (dashcoreAPI) => ({
  *  @param options
   * @param {number} options.port - port to listen for incoming RPC connections
   * @param {string} options.networkType
-  * @param {object} options.dashcoreAPI
+  * @param {object} options.hthcoreAPI
   * @param {AbstractDriveAdapter} options.driveAPI - Drive api adapter
   * @param {object} options.tendermintRpcClient
-  * @param {DashPlatformProtocol} options.dpp
+  * @param {HthPlatformProtocol} options.dpp
   * @param {object} options.log
  */
 const start = ({
   port,
   networkType,
-  dashcoreAPI,
+  hthcoreAPI,
   log,
 }) => {
   const commands = createCommands(
-    dashcoreAPI,
+    hthcoreAPI,
   );
 
   const areRegtestCommandsEnabled = isRegtest(networkType) || isDevnet(networkType);
 
   const allCommands = areRegtestCommandsEnabled
-    ? Object.assign(commands, createRegtestCommands(dashcoreAPI))
+    ? Object.assign(commands, createRegtestCommands(hthcoreAPI))
     : commands;
 
   /*

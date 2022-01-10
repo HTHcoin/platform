@@ -4,7 +4,7 @@ const {
       ResponseQuery,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const cbor = require('cbor');
 
@@ -14,9 +14,9 @@ const {
     ResponseMetadata,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const Identifier = require('@dashevo/dpp/lib/identifier/Identifier');
+const Identifier = require('@hthcoin/dpp/lib/identifier/Identifier');
 const InvalidArgumentAbciError = require('../../errors/InvalidArgumentAbciError');
 
 /**

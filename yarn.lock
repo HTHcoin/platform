@@ -1264,9 +1264,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dashevo/abci@github:dashevo/js-abci#init-chain-chain-lock-height":
+"@hthcoin/abci@github:hthcoin/js-abci#init-chain-chain-lock-height":
   version: 0.20.0
-  resolution: "@dashevo/abci@https://github.com/dashevo/js-abci.git#commit=c4e58ce017626b6db6650a565f9681595039f6f9"
+  resolution: "@hthcoin/abci@https://github.com/MichaelHDesigns/js-abci.git#commit=c4e58ce017626b6db6650a565f9681595039f6f9"
   dependencies:
     bl: ^1.2.3
     protobufjs: "github:jawid-h/protobuf.js#fix/buffer-conversion"
@@ -1275,15 +1275,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dashevo/dapi-client@workspace:packages/js-dapi-client, @dashevo/dapi-client@workspace:~":
+"@hthcoin/dapi-client@workspace:packages/js-dapi-client, @hthcoin/dapi-client@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/dapi-client@workspace:packages/js-dapi-client"
+  resolution: "@hthcoin/dapi-client@workspace:packages/js-dapi-client"
   dependencies:
     "@babel/core": ^7.15.5
-    "@dashevo/dapi-grpc": "workspace:~"
-    "@dashevo/dashcore-lib": ~0.19.28
-    "@dashevo/dpp": "workspace:~"
-    "@dashevo/grpc-common": "workspace:~"
+    "@hthcoin/dapi-grpc": "workspace:~"
+    "@hthcoin/hthcore-lib": ~0.19.28
+    "@hthcoin/dpp": "workspace:~"
+    "@hthcoin/grpc-common": "workspace:~"
     "@grpc/grpc-js": ^1.3.7
     assert-browserify: ^2.0.0
     axios: ^0.21.1
@@ -1326,11 +1326,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/dapi-grpc@workspace:packages/dapi-grpc, @dashevo/dapi-grpc@workspace:~":
+"@hthcoin/dapi-grpc@workspace:packages/dapi-grpc, @hthcoin/dapi-grpc@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/dapi-grpc@workspace:packages/dapi-grpc"
+  resolution: "@hthcoin/dapi-grpc@workspace:packages/dapi-grpc"
   dependencies:
-    "@dashevo/grpc-common": "workspace:~"
+    "@hthcoin/grpc-common": "workspace:~"
     "@grpc/grpc-js": ^1.3.7
     chai: ^4.3.4
     chai-as-promised: ^7.1.1
@@ -1349,17 +1349,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/dapi@workspace:packages/dapi":
+"@hthcoin/dapi@workspace:packages/dapi":
   version: 0.0.0-use.local
-  resolution: "@dashevo/dapi@workspace:packages/dapi"
+  resolution: "@hthcoin/dapi@workspace:packages/dapi"
   dependencies:
-    "@dashevo/dapi-client": "workspace:~"
-    "@dashevo/dapi-grpc": "workspace:~"
-    "@dashevo/dashcore-lib": ~0.19.28
-    "@dashevo/dashd-rpc": ^2.3.1
-    "@dashevo/dp-services-ctl": "github:dashevo/js-dp-services-ctl#v0.19-dev"
-    "@dashevo/dpp": "workspace:~"
-    "@dashevo/grpc-common": "workspace:~"
+    "@hthcoin/dapi-client": "workspace:~"
+    "@hthcoin/dapi-grpc": "workspace:~"
+    "@hthcoin/hthcore-lib": ~0.19.28
+    "@hthcoin/helpthehomelessd-rpc": ^2.3.1
+    "@hthcoin/dp-services-ctl": "github:hthcoin/js-dp-services-ctl#v0.19-dev"
+    "@hthcoin/dpp": "workspace:~"
+    "@hthcoin/grpc-common": "workspace:~"
     "@grpc/grpc-js": ^1.3.7
     ajv: ^8.6.0
     bs58: ^4.0.1
@@ -1389,11 +1389,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/dashcore-lib@npm:~0.19.28":
+"@hthcoin/hthcore-lib@npm:~0.19.28":
   version: 0.19.28
-  resolution: "@dashevo/dashcore-lib@npm:0.19.28"
+  resolution: "@hthcoin/hthcore-lib@npm:0.19.28"
   dependencies:
-    "@dashevo/x11-hash-js": ^1.0.2
+    "@hthcoin/x11-hash-js": ^1.0.2
     "@types/node": ^12.12.47
     bloom-filter: ^0.2.0
     bls-signatures: ^0.2.5
@@ -1408,9 +1408,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dashevo/dashd-rpc@npm:^2.3.0, @dashevo/dashd-rpc@npm:^2.3.1":
+"@hthcoin/helpthehomelessd-rpc, @hthcoin/helpthehomelessd-rpc":
   version: 2.3.1
-  resolution: "@dashevo/dashd-rpc@npm:2.3.1"
+  resolution: "@hthcoin/helpthehomelessd-rpc"
   dependencies:
     async: ^3.2.0
     bluebird: ^3.7.2
@@ -1418,11 +1418,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dashevo/dashpay-contract@workspace:packages/dashpay-contract, @dashevo/dashpay-contract@workspace:~":
+"@hthcoin/hthcoin-contract@workspace:packages/hthcoin-contract, @hthcoin/hthcoin-contract@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/dashpay-contract@workspace:packages/dashpay-contract"
+  resolution: "@hthcoin/hthcoin-contract@workspace:packages/hthcoin-contract"
   dependencies:
-    "@dashevo/dpp": "workspace:~"
+    "@hthcoin/dpp": "workspace:~"
     chai: ^4.3.4
     dirty-chai: ^2.0.1
     eslint: ^7.32.0
@@ -1434,11 +1434,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/dp-services-ctl@github:dashevo/js-dp-services-ctl#v0.19-dev":
+"@hthcoin/dp-services-ctl@github:hthcoin/js-dp-services-ctl#v0.19-dev":
   version: 0.19.0-dev.1
-  resolution: "@dashevo/dp-services-ctl@https://github.com/dashevo/js-dp-services-ctl.git#commit=3976076b0018c5b4632ceda4c752fc597f27a640"
+  resolution: "@hthcoin/dp-services-ctl@https://github.com/MichaelHDesigns/js-dp-services-ctl.git#commit=3976076b0018c5b4632ceda4c752fc597f27a640"
   dependencies:
-    "@dashevo/dashd-rpc": ^2.3.0
+    "@hthcoin/helpthehomelessd-rpc": ^2.3.0
     dockerode: ^3.2.1
     jayson: ^2.1.0
     lodash: ^4.17.19
@@ -1447,11 +1447,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dashevo/dpns-contract@workspace:packages/dpns-contract, @dashevo/dpns-contract@workspace:~":
+"@hthcoin/dpns-contract@workspace:packages/dpns-contract, @hthcoin/dpns-contract@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/dpns-contract@workspace:packages/dpns-contract"
+  resolution: "@hthcoin/dpns-contract@workspace:packages/dpns-contract"
   dependencies:
-    "@dashevo/dpp": "workspace:~"
+    "@hthcoin/dpp": "workspace:~"
     chai: ^4.3.4
     dirty-chai: ^2.0.1
     eslint: ^7.32.0
@@ -1463,19 +1463,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/dpp@workspace:packages/js-dpp, @dashevo/dpp@workspace:~":
+"@hthcoin/dpp@workspace:packages/js-dpp, @hthcoin/dpp@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/dpp@workspace:packages/js-dpp"
+  resolution: "@hthcoin/dpp@workspace:packages/js-dpp"
   dependencies:
     "@apidevtools/json-schema-ref-parser": ^8.0.0
     "@babel/core": ^7.15.5
     "@babel/preset-env": ^7.15.4
-    "@dashevo/dashcore-lib": ~0.19.28
-    "@dashevo/dashpay-contract": "workspace:~"
-    "@dashevo/dpns-contract": "workspace:~"
-    "@dashevo/feature-flags-contract": "workspace:~"
-    "@dashevo/masternode-reward-shares-contract": "workspace:~"
-    "@dashevo/re2-wasm": ~1.0.4
+    "@hthcoin/hthcore-lib": ~0.19.28
+    "@hthcoin/hthcoin-contract": "workspace:~"
+    "@hthcoin/dpns-contract": "workspace:~"
+    "@hthcoin/feature-flags-contract": "workspace:~"
+    "@hthcoin/masternode-reward-shares-contract": "workspace:~"
+    "@hthcoin/re2-wasm": ~1.0.4
     acorn: ^8.5.0
     ajv: ^8.6.0
     ajv-formats: ^2.1.1
@@ -1529,19 +1529,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/drive@workspace:packages/js-drive":
+"@hthcoin/drive@workspace:packages/js-drive":
   version: 0.0.0-use.local
-  resolution: "@dashevo/drive@workspace:packages/js-drive"
+  resolution: "@hthcoin/drive@workspace:packages/js-drive"
   dependencies:
-    "@dashevo/abci": "github:dashevo/js-abci#init-chain-chain-lock-height"
-    "@dashevo/dapi-grpc": "workspace:~"
-    "@dashevo/dashcore-lib": ~0.19.28
-    "@dashevo/dashd-rpc": ^2.3.1
-    "@dashevo/dp-services-ctl": "github:dashevo/js-dp-services-ctl#v0.19-dev"
-    "@dashevo/dpp": "workspace:~"
-    "@dashevo/feature-flags-contract": "workspace:~"
-    "@dashevo/grpc-common": "workspace:~"
-    "@dashevo/merk": "github:dashevo/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f"
+    "@hthcoin/abci": "github:hthcoin/js-abci#init-chain-chain-lock-height"
+    "@hthcoin/dapi-grpc": "workspace:~"
+    "@hthcoin/hthcore-lib": ~0.19.28
+    "@hthcoin/helpthehomelessd-rpc": ^2.3.1
+    "@hthcoin/dp-services-ctl": "github:hthcoin/js-dp-services-ctl#v0.19-dev"
+    "@hthcoin/dpp": "workspace:~"
+    "@hthcoin/feature-flags-contract": "workspace:~"
+    "@hthcoin/grpc-common": "workspace:~"
+    "@hthcoin/merk": "github:hthcoin/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f"
     "@types/pino": ^6.3.0
     ajv: ^8.6.0
     ajv-keywords: ^5.0.0
@@ -1587,11 +1587,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/feature-flags-contract@workspace:packages/feature-flags-contract, @dashevo/feature-flags-contract@workspace:~":
+"@hthcoin/feature-flags-contract@workspace:packages/feature-flags-contract, @hthcoin/feature-flags-contract@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/feature-flags-contract@workspace:packages/feature-flags-contract"
+  resolution: "@hthcoin/feature-flags-contract@workspace:packages/feature-flags-contract"
   dependencies:
-    "@dashevo/dpp": "workspace:~"
+    "@hthcoin/dpp": "workspace:~"
     chai: ^4.3.4
     dirty-chai: ^2.0.1
     eslint: ^7.32.0
@@ -1603,9 +1603,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/grpc-common@workspace:packages/js-grpc-common, @dashevo/grpc-common@workspace:~":
+"@hthcoin/grpc-common@workspace:packages/js-grpc-common, @hthcoin/grpc-common@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/grpc-common@workspace:packages/js-grpc-common"
+  resolution: "@hthcoin/grpc-common@workspace:packages/js-grpc-common"
   dependencies:
     "@grpc/grpc-js": ^1.3.7
     "@grpc/proto-loader": ^0.5.2
@@ -1628,11 +1628,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/masternode-reward-shares-contract@workspace:packages/masternode-reward-shares-contract, @dashevo/masternode-reward-shares-contract@workspace:~":
+"@hthcoin/masternode-reward-shares-contract@workspace:packages/masternode-reward-shares-contract, @hthcoin/masternode-reward-shares-contract@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/masternode-reward-shares-contract@workspace:packages/masternode-reward-shares-contract"
+  resolution: "@hthcoin/masternode-reward-shares-contract@workspace:packages/masternode-reward-shares-contract"
   dependencies:
-    "@dashevo/dpp": "workspace:~"
+    "@hthcoin/dpp": "workspace:~"
     chai: ^4.3.4
     dirty-chai: ^2.0.1
     eslint: ^7.32.0
@@ -1644,27 +1644,27 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/merk@github:dashevo/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f":
+"@hthcoin/merk@github:hthcoin/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f":
   version: 2.1.3
-  resolution: "@dashevo/merk@https://github.com/dashevo/node-merk.git#commit=eb37003300d22c6c04604463bcd7e861dd07000f"
+  resolution: "@hthcoin/merk@https://github.com/MichaelHDesigns/node-merk.git#commit=eb37003300d22c6c04604463bcd7e861dd07000f"
   dependencies:
     neon-load-or-build: ^2.2.2
   checksum: 1e056bbd02fc3fc459efd85169bb35b4e33435137c0f4eb2e1fa993a1e913d83d662f133884889cd1cd2ab410009c9359429df769f4f2f3caa4e5f22fb8c1a04
   languageName: node
   linkType: hard
 
-"@dashevo/platform-test-suite@workspace:packages/platform-test-suite":
+"@hthcoin/platform-test-suite@workspace:packages/platform-test-suite":
   version: 0.0.0-use.local
-  resolution: "@dashevo/platform-test-suite@workspace:packages/platform-test-suite"
+  resolution: "@hthcoin/platform-test-suite@workspace:packages/platform-test-suite"
   dependencies:
-    "@dashevo/dapi-client": "workspace:~"
-    "@dashevo/dashcore-lib": ~0.19.28
-    "@dashevo/dpns-contract": "workspace:~"
-    "@dashevo/dpp": "workspace:~"
-    "@dashevo/feature-flags-contract": "workspace:~"
-    "@dashevo/grpc-common": "workspace:~"
-    "@dashevo/merk": "github:dashevo/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f"
-    "@dashevo/wallet-lib": "workspace:~"
+    "@hthcoin/dapi-client": "workspace:~"
+    "@hthcoin/hthcore-lib": ~0.19.28
+    "@hthcoin/dpns-contract": "workspace:~"
+    "@hthcoin/dpp": "workspace:~"
+    "@hthcoin/feature-flags-contract": "workspace:~"
+    "@hthcoin/grpc-common": "workspace:~"
+    "@hthcoin/merk": "github:hthcoin/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f"
+    "@hthcoin/wallet-lib": "workspace:~"
     assert-browserify: ^2.0.0
     blake3: ^2.1.4
     browserify-zlib: ^0.2.0
@@ -1672,7 +1672,7 @@ __metadata:
     chai: ^4.3.4
     chai-as-promised: ^7.1.1
     crypto-browserify: ^3.12.0
-    dash: "workspace:~"
+    hth: "workspace:~"
     dirty-chai: ^2.0.1
     dotenv-safe: ^8.2.0
     eslint: ^7.32.0
@@ -1702,34 +1702,34 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/platform@workspace:.":
+"@hthcoin/platform@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@dashevo/platform@workspace:."
+  resolution: "@hthcoin/platform@workspace:."
   dependencies:
     add-stream: ^1.0.0
     conventional-changelog: ^3.1.24
-    conventional-changelog-dash: "github:dashevo/conventional-changelog-dash"
+    conventional-changelog-hth: "github:hthcoin/conventional-changelog-hth"
     semver: ^7.3.2
     tempfile: ^3.0.0
     ultra-runner: ^3.10.5
   languageName: unknown
   linkType: soft
 
-"@dashevo/re2-wasm@npm:~1.0.4":
+"@hthcoin/re2-wasm@npm:~1.0.4":
   version: 1.0.4
-  resolution: "@dashevo/re2-wasm@npm:1.0.4"
+  resolution: "@hthcoin/re2-wasm@npm:1.0.4"
   checksum: 4f1fca10c5190387e5652a7f900de52b15e68c66ca81ac0db4f368f2cfc95335eb2c4c6ee74c7204869ad937da4a84565411fdf33d308af89eaf41fda766e7be
   languageName: node
   linkType: hard
 
-"@dashevo/wallet-lib@workspace:packages/wallet-lib, @dashevo/wallet-lib@workspace:~":
+"@hthcoin/wallet-lib@workspace:packages/wallet-lib, @hthcoin/wallet-lib@workspace:~":
   version: 0.0.0-use.local
-  resolution: "@dashevo/wallet-lib@workspace:packages/wallet-lib"
+  resolution: "@hthcoin/wallet-lib@workspace:packages/wallet-lib"
   dependencies:
-    "@dashevo/dapi-client": "workspace:~"
-    "@dashevo/dashcore-lib": ~0.19.28
-    "@dashevo/dpp": "workspace:~"
-    "@dashevo/grpc-common": "workspace:~"
+    "@hthcoin/dapi-client": "workspace:~"
+    "@hthcoin/hthcore-lib": ~0.19.28
+    "@hthcoin/dpp": "workspace:~"
+    "@hthcoin/grpc-common": "workspace:~"
     assert: ^2.0.0
     browserify-zlib: ^0.2.0
     buffer: ^6.0.3
@@ -1773,9 +1773,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dashevo/x11-hash-js@npm:^1.0.2":
+"@hthcoin/x11-hash-js@npm:^1.0.2":
   version: 1.0.2
-  resolution: "@dashevo/x11-hash-js@npm:1.0.2"
+  resolution: "@hthcoin/x11-hash-js@npm:1.0.2"
   checksum: a4856fb50f3d171d65492e1e72ef8cde2ea4e8a966fe8fc90d452db2e1a75e09a34e64918432ef9b207790fe51195b05b472c166ab809cf1bf8d3f69e0f57298
   languageName: node
   linkType: hard
@@ -5119,9 +5119,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-dash@github:dashevo/conventional-changelog-dash":
+"conventional-changelog-hth@github:hthcoin/conventional-changelog-hth":
   version: 1.0.0
-  resolution: "conventional-changelog-dash@https://github.com/dashevo/conventional-changelog-dash.git#commit=3d4d77e2cea876a27b92641c28b15aedf13eb788"
+  resolution: "conventional-changelog-hth@https://github.com/MichaelHDesigns/conventional-changelog-hth.git#commit=3d4d77e2cea876a27b92641c28b15aedf13eb788"
   dependencies:
     compare-func: ^2.0.0
     lodash: ^4.17.15
@@ -5532,22 +5532,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dash-ast@npm:^1.0.0":
+"hth-ast@npm:^1.0.0":
   version: 1.0.0
-  resolution: "dash-ast@npm:1.0.0"
+  resolution: "hth-ast@npm:1.0.0"
   checksum: db59e5e275d8159fb3b84bcd2936470c3fecb626f6486c179a28afad141cd95a578faaa3695ad6106153ca861da99a3d891fda37757b49afab773b3a46c638e6
   languageName: node
   linkType: hard
 
-"dash@workspace:packages/js-dash-sdk, dash@workspace:~":
+"hth@workspace:packages/js-hth-sdk, hth@workspace:~":
   version: 0.0.0-use.local
-  resolution: "dash@workspace:packages/js-dash-sdk"
+  resolution: "hth@workspace:packages/js-hth-sdk"
   dependencies:
-    "@dashevo/dapi-client": "workspace:~"
-    "@dashevo/dashcore-lib": ~0.19.28
-    "@dashevo/dpp": "workspace:~"
-    "@dashevo/grpc-common": "workspace:~"
-    "@dashevo/wallet-lib": "workspace:~"
+    "@hthcoin/dapi-client": "workspace:~"
+    "@hthcoin/hthcore-lib": ~0.19.28
+    "@hthcoin/dpp": "workspace:~"
+    "@hthcoin/grpc-common": "workspace:~"
+    "@hthcoin/wallet-lib": "workspace:~"
     "@types/chai": ^4.2.12
     "@types/dirty-chai": ^2.0.2
     "@types/expect": ^24.3.0
@@ -5606,18 +5606,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dashmate@workspace:packages/dashmate":
+"hthmate@workspace:packages/hthmate":
   version: 0.0.0-use.local
-  resolution: "dashmate@workspace:packages/dashmate"
+  resolution: "hthmate@workspace:packages/hthmate"
   dependencies:
-    "@dashevo/dashcore-lib": ~0.19.28
-    "@dashevo/dashd-rpc": ^2.3.1
-    "@dashevo/dashpay-contract": "workspace:~"
-    "@dashevo/dpns-contract": "workspace:~"
-    "@dashevo/dpp": "workspace:~"
-    "@dashevo/feature-flags-contract": "workspace:~"
-    "@dashevo/masternode-reward-shares-contract": "workspace:~"
-    "@dashevo/wallet-lib": "workspace:~"
+    "@hthcoin/hthcore-lib": ~0.19.28
+    "@hthcoin/helpthehomelessd-rpc": ^2.3.1
+    "@hthcoin/hthcoin-contract": "workspace:~"
+    "@hthcoin/dpns-contract": "workspace:~"
+    "@hthcoin/dpp": "workspace:~"
+    "@hthcoin/feature-flags-contract": "workspace:~"
+    "@hthcoin/masternode-reward-shares-contract": "workspace:~"
+    "@hthcoin/wallet-lib": "workspace:~"
     "@oclif/core": ^1.0.10
     "@oclif/plugin-help": ^5
     ajv: ^8.6.0
@@ -5625,7 +5625,7 @@ __metadata:
     awilix: ^4.2.6
     bls-signatures: ^0.2.5
     chalk: ^4.1.0
-    dash: "workspace:~"
+    hth: "workspace:~"
     docker-compose: 0.23.3
     dockerode: ^3.2.0
     dot: ^1.1.3
@@ -5657,7 +5657,7 @@ __metadata:
     strip-ansi: ^6.0.1
     table: ^5.4.6
   bin:
-    dashmate: bin/dashmate
+    hthmate: bin/hthmate
   languageName: unknown
   linkType: soft
 
@@ -15587,7 +15587,7 @@ typescript@^3.9.5:
   resolution: "undeclared-identifiers@npm:1.1.3"
   dependencies:
     acorn-node: ^1.3.0
-    dash-ast: ^1.0.0
+    hth-ast: ^1.0.0
     get-assigned-identifiers: ^1.2.0
     simple-concat: ^1.0.0
     xtend: ^4.0.1

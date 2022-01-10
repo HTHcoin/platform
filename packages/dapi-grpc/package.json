@@ -1,5 +1,5 @@
 {
-  "name": "@dashevo/dapi-grpc",
+  "name": "@hthcoin/dapi-grpc",
   "version": "0.22.0-dev.5",
   "description": "DAPI GRPC definition file and generated clients",
   "browser": "browser.js",
@@ -14,26 +14,26 @@
   "contributors": [
     {
       "name": "Ivan Shumkov",
-      "email": "shumkov@dash.org",
+      "email": "shumkov@hth.org",
       "url": "https://github.com/shumkov"
     },
     {
       "name": "Anton Suprunchuk",
-      "email": "anton.suprunchuk@dash.org",
+      "email": "anton.suprunchuk@hth.org",
       "url": "https://github.com/antouhou"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashevo/dapi-grpc.git"
+    "url": "git+https://github.com/MichaelHDesigns/dapi-grpc.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/dapi-grpc/issues"
+    "url": "https://github.com/MichaelHDesigns/dapi-grpc/issues"
   },
-  "homepage": "https://github.com/dashevo/dapi-grpc#readme",
+  "homepage": "https://github.com/MichaelHDesigns/dapi-grpc#readme",
   "dependencies": {
-    "@dashevo/grpc-common": "workspace:~",
+    "@hthcoin/grpc-common": "workspace:~",
     "@grpc/grpc-js": "^1.3.7",
     "google-protobuf": "^3.12.2",
     "grpc-web": "1.2.1",

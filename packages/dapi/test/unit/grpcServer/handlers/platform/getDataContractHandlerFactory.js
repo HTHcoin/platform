@@ -4,7 +4,7 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -12,11 +12,11 @@ const {
     Proof,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 /* eslint-disable import/no-extraneous-dependencies */
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
 
 const GrpcCallMock = require('../../../../../lib/test/mock/GrpcCallMock');
 

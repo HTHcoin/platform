@@ -1,6 +1,6 @@
 const cbor = require('cbor');
 
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
 const queryHandlerFactory = require('../../../../lib/abci/handlers/queryHandlerFactory');
 const LoggerMock = require('../../../../lib/test/mock/LoggerMock');
 const InvalidArgumentAbciError = require('../../../../lib/abci/errors/InvalidArgumentAbciError');

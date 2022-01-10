@@ -8,11 +8,11 @@ const {
       CoreChainLock,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const Long = require('long');
 
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
 
 const endBlockHandlerFactory = require('../../../../lib/abci/handlers/endBlockHandlerFactory');
 
@@ -29,8 +29,8 @@ describe('endBlockHandlerFactory', () => {
   let blockExecutionContextMock;
   let dpnsContractId;
   let dpnsContractBlockHeight;
-  let dashpayContractId;
-  let dashpayContractBlockHeight;
+  let hthcoinContractId;
+  let hthcoinContractBlockHeight;
   let latestCoreChainLockMock;
   let loggerMock;
   let createValidatorSetUpdateMock;
@@ -76,8 +76,8 @@ describe('endBlockHandlerFactory', () => {
     dpnsContractId = generateRandomIdentifier();
     dpnsContractBlockHeight = 2;
 
-    dashpayContractId = generateRandomIdentifier();
-    dashpayContractBlockHeight = 2;
+    hthcoinContractId = generateRandomIdentifier();
+    hthcoinContractBlockHeight = 2;
 
     validatorSetMock = {
       rotate: this.sinon.stub(),
@@ -94,8 +94,8 @@ describe('endBlockHandlerFactory', () => {
       blockExecutionContextMock,
       dpnsContractBlockHeight,
       dpnsContractId,
-      dashpayContractBlockHeight,
-      dashpayContractId,
+      hthcoinContractBlockHeight,
+      hthcoinContractId,
       latestCoreChainLockMock,
       validatorSetMock,
       createValidatorSetUpdateMock,
@@ -208,13 +208,13 @@ describe('endBlockHandlerFactory', () => {
     }
   });
 
-  it('should return a response if DashPay contract is present at specified height', async () => {
+  it('should return a response if HthCoin contract is present at specified height', async () => {
     endBlockHandler = endBlockHandlerFactory(
       blockExecutionContextMock,
       undefined,
       undefined,
-      dashpayContractBlockHeight,
-      dashpayContractId,
+      hthcoinContractBlockHeight,
+      hthcoinContractId,
       latestCoreChainLockMock,
       validatorSetMock,
       createValidatorSetUpdateMock,
@@ -234,17 +234,17 @@ describe('endBlockHandlerFactory', () => {
     expect(response.toJSON()).to.be.empty();
 
     expect(blockExecutionContextMock.hasDataContract).to.have.been.calledOnceWithExactly(
-      dashpayContractId,
+      hthcoinContractId,
     );
   });
 
-  it('should throw and error if DashPay contract is not present at specified height', async () => {
+  it('should throw and error if HthCoin contract is not present at specified height', async () => {
     endBlockHandler = endBlockHandlerFactory(
       blockExecutionContextMock,
       undefined,
       undefined,
-      dashpayContractBlockHeight,
-      dashpayContractId,
+      hthcoinContractBlockHeight,
+      hthcoinContractId,
       latestCoreChainLockMock,
       validatorSetMock,
       createValidatorSetUpdateMock,
@@ -265,11 +265,11 @@ describe('endBlockHandlerFactory', () => {
       expect.fail('Error was not thrown');
     } catch (e) {
       expect(e).to.be.an.instanceOf(NoSystemContractFoundError);
-      expect(e.getContractId()).to.equal(dashpayContractId);
-      expect(e.getHeight()).to.equal(dashpayContractBlockHeight);
+      expect(e.getContractId()).to.equal(hthcoinContractId);
+      expect(e.getHeight()).to.equal(hthcoinContractBlockHeight);
 
       expect(blockExecutionContextMock.hasDataContract).to.have.been.calledOnceWithExactly(
-        dashpayContractId,
+        hthcoinContractId,
       );
 
       expect(latestCoreChainLockMock.getChainLock).to.have.not.been.called();

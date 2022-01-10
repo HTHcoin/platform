@@ -2,7 +2,7 @@ const {
   v0: {
     BroadcastTransactionResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const {
   server: {
@@ -12,9 +12,9 @@ const {
       FailedPreconditionGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 
 /**
  * @param {CoreRpcClient} coreRPCClient

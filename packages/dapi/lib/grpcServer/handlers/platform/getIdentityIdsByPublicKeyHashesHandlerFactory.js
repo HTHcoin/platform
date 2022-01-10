@@ -4,13 +4,13 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
     GetIdentityIdsByPublicKeyHashesResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 /**
  *

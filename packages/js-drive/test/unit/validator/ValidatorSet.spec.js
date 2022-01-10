@@ -1,8 +1,8 @@
 const Long = require('long');
 
-const QuorumEntry = require('@dashevo/dashcore-lib/lib/deterministicmnlist/QuorumEntry');
+const QuorumEntry = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/QuorumEntry');
 
-const SimplifiedMNListEntry = require('@dashevo/dashcore-lib/lib/deterministicmnlist/SimplifiedMNListEntry');
+const SimplifiedMNListEntry = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/SimplifiedMNListEntry');
 const ValidatorSet = require('../../../lib/validator/ValidatorSet');
 const getSmlFixture = require('../../../lib/test/fixtures/getSmlFixture');
 const ValidatorSetIsNotInitializedError = require('../../../lib/validator/errors/ValidatorSetIsNotInitializedError');

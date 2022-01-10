@@ -1,6 +1,6 @@
 const {
   crypto, Transaction, Message,
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 
 /**
  * Allow to sign any transaction or a transition object from a valid privateKeys list

@@ -4,7 +4,7 @@ const {
       ResponseQuery,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const cbor = require('cbor');
 

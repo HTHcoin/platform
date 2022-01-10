@@ -13,10 +13,10 @@ const {
       GrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
-const AlreadyExistsGrpcError = require('@dashevo/grpc-common/lib/server/error/AlreadyExistsGrpcError');
-const createConsensusError = require('@dashevo/dpp/lib/errors/consensus/createConsensusError');
+} = require('@hthcoin/grpc-common');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
+const AlreadyExistsGrpcError = require('@hthcoin/grpc-common/lib/server/error/AlreadyExistsGrpcError');
+const createConsensusError = require('@hthcoin/dpp/lib/errors/consensus/createConsensusError');
 
 /**
  * @param {Object} data

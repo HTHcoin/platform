@@ -108,6 +108,6 @@ Identifier.from = function from(value, encoding = undefined) {
 
 Object.setPrototypeOf(Identifier.prototype, Buffer.prototype);
 
-Identifier.MEDIA_TYPE = 'application/x.dash.dpp.identifier';
+Identifier.MEDIA_TYPE = 'application/x.hth.dpp.identifier';
 
 module.exports = Identifier;

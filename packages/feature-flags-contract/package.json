@@ -1,7 +1,7 @@
 {
-  "name": "@dashevo/feature-flags-contract",
+  "name": "@hthcoin/feature-flags-contract",
   "version": "0.22.0-dev.5",
-  "description": "Data Contract to store Dash Platform feature flags",
+  "description": "Data Contract to store HTH Platform feature flags",
   "scripts": {
     "build": "",
     "lint": "eslint .",
@@ -16,23 +16,23 @@
     },
     {
       "name": "Djavid Gabibiyan",
-      "email": "djavid@dash.org",
+      "email": "djavid@hth.org",
       "url": "https://github.com/jawid-h"
     },
     {
       "name": "Anton Suprunchuk",
-      "email": "anton.suprunchuk@dash.org",
+      "email": "anton.suprunchuk@hth.org",
       "url": "https://github.com/antouhou"
     },
     {
       "name": "Konstantin Shuplenkov",
-      "email": "konstantin.shuplenkov@dash.org",
+      "email": "konstantin.shuplenkov@hth.org",
       "url": "https://github.com/shuplenkov"
     }
   ],
   "license": "MIT",
   "devDependencies": {
-    "@dashevo/dpp": "workspace:~",
+    "@hthcoin/dpp": "workspace:~",
     "chai": "^4.3.4",
     "dirty-chai": "^2.0.1",
     "eslint": "^7.32.0",

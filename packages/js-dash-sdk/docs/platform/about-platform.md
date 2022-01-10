@@ -1,8 +1,8 @@
-### About Dash Platform
+### About HTH Platform
 
-The Dash Platform provide a technology stack on top of the Dash Network allowing the creation of feature-rich decentralized application. 
+The HTH Platform provide a technology stack on top of the HTH Network allowing the creation of feature-rich decentralized application. 
 
-You will learn more on the [Dash Platform Documentation - What is Dash Platform ?](https://dashplatform.readme.io/docs/introduction-what-is-dash-platform).
+You will learn more on the [HTH Platform Documentation - What is HTH Platform ?](https://hthplatform.readme.io/docs/introduction-what-is-hth-platform).
 
 ### Platform components
 

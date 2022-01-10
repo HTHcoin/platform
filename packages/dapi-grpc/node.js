@@ -9,7 +9,7 @@ const getPlatformDefinition = require('./lib/getPlatformDefinition');
 
 const {
   org: {
-    dash: {
+    hth: {
       platform: {
         dapi: {
           v0: pbjsCoreMessages,
@@ -21,7 +21,7 @@ const {
 
 const {
   org: {
-    dash: {
+    hth: {
       platform: {
         dapi: {
           v0: pbjsPlatformMessages,

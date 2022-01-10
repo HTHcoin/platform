@@ -12,7 +12,7 @@ Returns : Identities instance.
 Examples (assuming a Wallet instance created) : 
 
 ```js
-const { Identities, Wallet } = require('@dashevo/wallet-lib');
+const { Identities, Wallet } = require('@hthcoin/wallet-lib');
 const wallet = new Wallet();
 const identities = new Identities(wallet);
 identities.getIdentityHDKeyByIndex(0, 0);

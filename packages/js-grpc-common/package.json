@@ -1,5 +1,5 @@
 {
-  "name": "@dashevo/grpc-common",
+  "name": "@hthcoin/grpc-common",
   "version": "0.22.0-dev.5",
   "description": "Common GRPC library",
   "main": "index.js",

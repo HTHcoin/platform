@@ -1,6 +1,6 @@
-const Identifier = require('@dashevo/dpp/lib/identifier/Identifier');
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const hash = require('@dashevo/dpp/lib/util/hash');
+const Identifier = require('@hthcoin/dpp/lib/identifier/Identifier');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
+const hash = require('@hthcoin/dpp/lib/util/hash');
 
 const createClientWithFundedWallet = require('../../lib/test/createClientWithFundedWallet');
 const wait = require('../../lib/wait');

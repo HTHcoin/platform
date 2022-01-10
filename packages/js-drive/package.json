@@ -1,8 +1,8 @@
 {
-  "name": "@dashevo/drive",
+  "name": "@hthcoin/drive",
   "private": true,
   "version": "0.22.0-dev.5",
-  "description": "Replicated state machine for Dash Platform",
+  "description": "Replicated state machine for HTH Platform",
   "engines": {
     "node": ">=12"
   },
@@ -14,17 +14,17 @@
     },
     {
       "name": "Djavid Gabibiyan",
-      "email": "djavid@dash.org",
+      "email": "djavid@hth.org",
       "url": "https://github.com/jawid-h"
     },
     {
       "name": "Anton Suprunchuk",
-      "email": "anton.suprunchuk@dash.org",
+      "email": "anton.suprunchuk@hth.org",
       "url": "https://github.com/antouhou"
     },
     {
       "name": "Konstantin Shuplenkov",
-      "email": "konstantin.shuplenkov@dash.org",
+      "email": "konstantin.shuplenkov@hth.org",
       "url": "https://github.com/shuplenkov"
     }
   ],
@@ -38,15 +38,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dashevo/js-drive.git"
+    "url": "git+https://github.com/MichaelHDesigns/js-drive.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dashevo/js-drive/issues"
+    "url": "https://github.com/MichaelHDesigns/js-drive/issues"
   },
-  "homepage": "https://github.com/dashevo/js-drive",
+  "homepage": "https://github.com/MichaelHDesigns/js-drive",
   "devDependencies": {
-    "@dashevo/dp-services-ctl": "github:dashevo/js-dp-services-ctl#v0.19-dev",
+    "@hthcoin/dp-services-ctl": "github:hthcoin/js-dp-services-ctl#v0.19-dev",
     "@types/pino": "^6.3.0",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
@@ -63,14 +63,14 @@
     "sinon-chai": "^3.7.0"
   },
   "dependencies": {
-    "@dashevo/abci": "github:dashevo/js-abci#init-chain-chain-lock-height",
-    "@dashevo/dapi-grpc": "workspace:~",
-    "@dashevo/dashcore-lib": "~0.19.28",
-    "@dashevo/dashd-rpc": "^2.3.1",
-    "@dashevo/dpp": "workspace:~",
-    "@dashevo/feature-flags-contract": "workspace:~",
-    "@dashevo/grpc-common": "workspace:~",
-    "@dashevo/merk": "github:dashevo/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f",
+    "@hthcoin/abci": "github:hthcoin/js-abci#init-chain-chain-lock-height",
+    "@hthcoin/dapi-grpc": "workspace:~",
+    "@hthcoin/hthcore-lib": "~0.19.28",
+    "@hthcoin/helpthehomelessd-rpc",
+    "@hthcoin/dpp": "workspace:~",
+    "@hthcoin/feature-flags-contract": "workspace:~",
+    "@hthcoin/grpc-common": "workspace:~",
+    "@hthcoin/merk": "github:hthcoin/node-merk#eb37003300d22c6c04604463bcd7e861dd07000f",
     "ajv": "^8.6.0",
     "ajv-keywords": "^5.0.0",
     "awilix": "^4.2.6",

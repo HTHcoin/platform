@@ -5,7 +5,7 @@ const {
       DeadlineExceededGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -15,18 +15,18 @@ const {
     ResponseMetadata,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const cbor = require('cbor');
 const TransactionWaitPeriodExceededError = require('../../../errors/TransactionWaitPeriodExceededError');
-const TransactionErrorResult = require('../../../externalApis/tenderdash/waitForTransactionToBeProvable/transactionResult/TransactionErrorResult');
+const TransactionErrorResult = require('../../../externalApis/tenderhth/waitForTransactionToBeProvable/transactionResult/TransactionErrorResult');
 
 /**
  *
  * @param {fetchProofForStateTransition} fetchProofForStateTransition
  * @param {waitForTransactionToBeProvable} waitForTransactionToBeProvable
  * @param {BlockchainListener} blockchainListener
- * @param {DashPlatformProtocol} dpp
+ * @param {HthhPlatformProtocol} dpp
  * @param {createGrpcErrorFromDriveResponse} createGrpcErrorFromDriveResponse
  * @param {number} stateTransitionWaitTimeout
  * @return {waitForStateTransitionResultHandler}

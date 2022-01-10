@@ -1,5 +1,5 @@
 import { Platform } from "../../Platform";
-import Identifier from "@dashevo/dpp/lib/Identifier";
+import Identifier from "@hthcoin/dpp/lib/Identifier";
 
 /**
  * @param record - the exact name of the record to resolve
@@ -9,7 +9,7 @@ import Identifier from "@dashevo/dpp/lib/Identifier";
 export async function resolveByRecord(this: Platform, record: string, value: any): Promise<any> {
     await this.initialize();
 
-    if (record === 'dashUniqueIdentityId' || record === 'dashAliasIdentityId') {
+    if (record === 'hthUniqueIdentityId' || record === 'hthAliasIdentityId') {
         value = Identifier.from(value);
     }
 

@@ -1,4 +1,4 @@
-const Dash = require('dash');
+const HTH = require('hth');
 
 const clientOpts = {
   network: 'testnet',
@@ -7,9 +7,9 @@ const clientOpts = {
   },
 };
 
-const client = new Dash.Client(clientOpts);
+const client = new HTH.Client(clientOpts);
 
-const message = new Dash.Core.Message('hello, world');
+const message = new HTH.Core.Message('hello, world');
 
 const signAndVerify = async function () {
   const {account, wallet} = client;

@@ -11,7 +11,7 @@ const WorkerFailedOnExecute = require('./WorkerFailedOnExecute');
 const InvalidAddress = require('./InvalidAddress');
 const InvalidAddressObject = require('./InvalidAddressObject');
 const InvalidOutput = require('./InvalidOutput');
-const InvalidDashcoreTransaction = require('./InvalidDashcoreTransaction');
+const InvalidHthcoreTransaction = require('./InvalidHthcoreTransaction');
 const InvalidRawTransaction = require('./InvalidRawTransaction');
 const InvalidStrategy = require('./InvalidStrategy');
 const InvalidStorageAdapter = require('./InvalidStorageAdapter');
@@ -42,7 +42,7 @@ module.exports = {
   InvalidAddressObject,
   InvalidOutput,
   InvalidStrategy,
-  InvalidDashcoreTransaction,
+  InvalidHthcoreTransaction,
   InvalidRawTransaction,
   InvalidStorageAdapter,
   InvalidTransactionObject,

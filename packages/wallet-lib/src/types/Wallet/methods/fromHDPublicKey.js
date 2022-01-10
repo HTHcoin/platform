@@ -1,9 +1,9 @@
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const { is } = require('../../../utils');
 const KeyChain = require('../../KeyChain/KeyChain');
 const { WALLET_TYPES } = require('../../../CONSTANTS');
 
-const normalizeHDPubKey = (key) => (is.string(key) ? Dashcore.HDPublicKey(key) : key);
+const normalizeHDPubKey = (key) => (is.string(key) ? Hthcore.HDPublicKey(key) : key);
 /**
  * Will set a wallet to work with a on readonly mode from a HDPublicKey
  * @param HDPublicKey

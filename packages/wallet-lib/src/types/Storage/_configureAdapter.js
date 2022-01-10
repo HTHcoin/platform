@@ -11,11 +11,11 @@ module.exports = async function configureAdapter(argAdapter) {
     adapter = new argAdapter();
     if (adapter.config) {
       try {
-        await adapter.config({ name: 'dashevo-wallet-lib' });
+        await adapter.config({ name: 'hthcoin-wallet-lib' });
       } catch (e) {
         throw new Error(`Tried to config the adapter. Failed with reason ${e.message}`);
       }
-    } else if (adapter.createInstance) await adapter.createInstance({ name: 'dashevo-wallet-lib' });
+    } else if (adapter.createInstance) await adapter.createInstance({ name: 'hthcoin-wallet-lib' });
   } else if (argAdapterContructorName === 'Object') {
     if (argAdapter.createInstance) throw new Error('Adapter instance not created');
     adapter = argAdapter;

@@ -7,7 +7,7 @@ In order to use this library in Node, you will need to add it to your project as
 Having [NodeJS](https://nodejs.org/) installed, just type in your terminal :
 
 ```sh
-npm install @dashevo/dapi-client
+npm install @hthcoin/dapi-client
 ```
 
 ## CDN Standalone
@@ -15,15 +15,15 @@ npm install @dashevo/dapi-client
 For browser usage, you can also directly rely on unpkg :
 
 ```
-<script src="https://unpkg.com/@dashevo/dapi-client"></script>
+<script src="https://unpkg.com/@hthcoin/dapi-client"></script>
 ```
 
-You can see an [example usage here](https://github.com/dashevo/js-dapi-client/blob/master/examples/web/web.usage.html) 
+You can see an [example usage here](https://github.com/MichaelHDesigns/js-dapi-client/blob/master/examples/web/web.usage.html) 
 
 ## Initialization
 
 ```js
-const DAPIClient = require('@dashevo/dapi-client');
+const DAPIClient = require('@hthcoin/dapi-client');
 const client = new DAPIClient();
 
 (async () => {

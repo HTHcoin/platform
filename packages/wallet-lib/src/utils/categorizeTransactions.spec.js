@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {Transaction} = require('@dashevo/dashcore-lib');
+const {Transaction} = require('@hthcoin/hthcore-lib');
 const {each} = require('lodash');
 const {WALLET_TYPES} = require('../CONSTANTS');
 

@@ -1,0 +1,51 @@
+const path = require('path');
+const os = require('os');
+
+const networks = {
+  NETWORK_LOCAL: 'local',
+  NETWORK_DEVNET: 'devnet',
+  NETWORK_TESTNET: 'testnet',
+  NETWORK_MAINNET: 'mainnet',
+};
+
+const presets = {
+  PRESET_LOCAL: 'local',
+  PRESET_TESTNET: 'testnet',
+  PRESET_MAINNET: 'mainnet',
+};
+
+const nodeTypes = {
+  NODE_TYPE_MASTERNODE: 'masternode',
+  NODE_TYPE_FULLNODE: 'fullnode',
+};
+
+const quorumTypes = {
+  LLMQ_TYPE_TEST: 'llmq_test',
+};
+
+const MASTERNODE_HTH_AMOUNT = 1000;
+
+const HOME_DIR_PATH = process.env.HTHMATE_HOME_DIR
+  ? process.env.HTHMATE_HOME_DIR
+  : path.resolve(os.homedir(), '.hthmate');
+const CONFIG_FILE_PATH = path.join(HOME_DIR_PATH, 'config.json');
+
+const OUTPUT_FORMATS = {
+  JSON: 'json',
+  PLAIN: 'plain',
+};
+
+module.exports = {
+  ...networks,
+  ...presets,
+  ...nodeTypes,
+  ...quorumTypes,
+  NETWORKS: Object.values(networks),
+  PRESETS: Object.values(presets),
+  NODE_TYPES: Object.values(nodeTypes),
+  QUORUM_TYPES: Object.values(quorumTypes),
+  MASTERNODE_HTH_AMOUNT,
+  HOME_DIR_PATH,
+  CONFIG_FILE_PATH,
+  OUTPUT_FORMATS,
+};

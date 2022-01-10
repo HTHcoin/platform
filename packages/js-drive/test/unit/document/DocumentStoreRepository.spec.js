@@ -1,5 +1,5 @@
-const getDocumentsFixture = require('@dashevo/dpp/lib/test/fixtures/getDocumentsFixture');
-const createDPPMock = require('@dashevo/dpp/lib/test/mocks/createDPPMock');
+const getDocumentsFixture = require('@hthcoin/dpp/lib/test/fixtures/getDocumentsFixture');
+const createDPPMock = require('@hthcoin/dpp/lib/test/mocks/createDPPMock');
 
 const StoreMock = require('../../../lib/test/mock/StoreMock');
 

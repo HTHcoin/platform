@@ -1,4 +1,4 @@
-const { PublicKey } = require('@dashevo/dashcore-lib');
+const { PublicKey } = require('@hthcoin/hthcore-lib');
 const EVENTS = require('../../../EVENTS');
 const { WALLET_TYPES } = require('../../../CONSTANTS');
 const { is } = require('../../../utils');

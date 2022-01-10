@@ -2,7 +2,7 @@ const {
   MerkleBlock,
   Transaction,
   util: { buffer: BufferUtils },
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 
 const MAX_HEADERS_PER_REQUEST = 2000;
 

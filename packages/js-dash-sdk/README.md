@@ -1,13 +1,13 @@
-# Dash SDK
+# HTH SDK
 
-[![NPM Version](https://img.shields.io/npm/v/dash)](https://www.npmjs.org/package/dash)
-[![Build Status](https://github.com/dashevo/js-dash-sdk/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/dashevo/js-dash-sdk/actions/workflows/test_and_release.yml)
-[![Release Date](https://img.shields.io/github/release-date/dashevo/js-dash-sdk)](https://github.com/dashevo/js-dash-sdk/releases/latest)
+[![NPM Version](https://img.shields.io/npm/v/hth)](https://www.npmjs.org/package/hth)
+[![Build Status](https://github.com/MichaelHDesigns/js-hth-sdk/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/MichaelHDesigns/js-hth-sdk/actions/workflows/test_and_release.yml)
+[![Release Date](https://img.shields.io/github/release-date/hthcoin/js-hth-sdk)](https://github.com/MichaelHDesigns/js-hth-sdk/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
-Dash library for JavaScript/TypeScript ecosystem (Wallet, DAPI, Primitives, BLS, ...)
+HTH library for JavaScript/TypeScript ecosystem (Wallet, DAPI, Primitives, BLS, ...)
 
-Dash library allows you to connect to DAPI and receive or broadcast payments on the Dash Network, manage identifies, register data contracts, retrieve or submit documents on the Dash Platform, all within a single library.
+HTH library allows you to connect to DAPI and receive or broadcast payments on the HTH Network, manage identifies, register data contracts, retrieve or submit documents on the HTH Platform, all within a single library.
 
 ## Table of Contents
 - [Install](#install)
@@ -23,10 +23,10 @@ Dash library allows you to connect to DAPI and receive or broadcast payments on 
 
 In order to use this library, you will need to add it to your project as a dependency.
 
-Having [NodeJS](https://nodejs.org/) installed, just type : `npm install dash` in your terminal.
+Having [NodeJS](https://nodejs.org/) installed, just type : `npm install hth` in your terminal.
 
 ```sh
-npm install dash
+npm install hth
 ```
 
 
@@ -35,22 +35,22 @@ npm install dash
 For browser usage, you can also directly rely on unpkg : 
 
 ```
-<script src="https://unpkg.com/dash"></script>
+<script src="https://unpkg.com/hth"></script>
 ```
 
 ## Usage
 
 ```js
-const Dash = require("dash");
+const HTH = require("hth");
 
-const client = new Dash.Client({
+const client = new HTH.Client({
   network: "testnet",
   wallet: {
     mnemonic: "arena light cheap control apple buffalo indicate rare motor valid accident isolate",
   },
 });
 
-// Accessing an account allow you to transact with the Dash Network
+// Accessing an account allow you to transact with the HTH Network
 client.getWalletAccount().then(async (account) => {
   console.log("Funding address", account.getUnusedAddress().address);
 
@@ -58,7 +58,7 @@ client.getWalletAccount().then(async (account) => {
   console.log("Confirmed Balance", balance);
 
   if(balance > 0){
-    // Creating an identity is the basis of all interactions with the Dash Platform
+    // Creating an identity is the basis of all interactions with the HTH Platform
     const identity = await client.platform.identities.register()
     
     // Prepare a new document containing a simple hello world sent to a hypothetical tutorial contract
@@ -76,22 +76,22 @@ client.getWalletAccount().then(async (account) => {
 
 ## Dependencies 
 
-The Dash SDK works using multiple dependencies that might interest you:
-- [Wallet-Lib](https://github.com/dashevo/platform/tree/master/packages/wallet-lib) - Wallet management for handling, signing and broadcasting transactions (BIP-44 HD).
-- [Dashcore-Lib](https://github.com/dashevo/dashcore-lib) - Provides the main L1 blockchain primitives (Block, Transaction,...).
-- [DAPI-Client](https://github.com/dashevo/platform/tree/master/packages/js-dapi-client) - Client library for accessing DAPI endpoints.
-- [DPP](https://github.com/dashevo/platform/tree/master/packages/js-dpp) - Implementation (JS) of Dash Platform Protocol.
+The HTH SDK works using multiple dependencies that might interest you:
+- [Wallet-Lib](https://github.com/MichaelHDesigns/platform/tree/master/packages/wallet-lib) - Wallet management for handling, signing and broadcasting transactions (BIP-44 HD).
+- [Hthcore-Lib](https://github.com/MichaelHDesigns/hthcore-lib) - Provides the main L1 blockchain primitives (Block, Transaction,...).
+- [DAPI-Client](https://github.com/MichaelHDesigns/platform/tree/master/packages/js-dapi-client) - Client library for accessing DAPI endpoints.
+- [DPP](https://github.com/MichaelHDesigns/platform/tree/master/packages/js-dpp) - Implementation (JS) of HTH Platform Protocol.
 
-Some features might be more extensive in those libs, as Dash SDK only wraps around them to provide a single interface that is easy to use (and thus has less features).
+Some features might be more extensive in those libs, as HTH SDK only wraps around them to provide a single interface that is easy to use (and thus has less features).
 
 ## Documentation
 
-More extensive documentation available at https://dashevo.github.io/platform/SDK/.
+More extensive documentation available at https://hthcoin.github.io/platform/SDK/.
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/platform/issues/new/choose) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/MichaelHDesigns/platform/issues/new/choose) or submit PRs.
 
 ## License
 
-[MIT](/LICENSE) © Dash Core Group, Inc.
+[MIT](/LICENSE) © HTH Core Group, Inc.

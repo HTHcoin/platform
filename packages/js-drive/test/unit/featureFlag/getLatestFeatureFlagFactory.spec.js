@@ -1,5 +1,5 @@
-const Identifier = require('@dashevo/dpp/lib/Identifier');
-const getDocumentsFixture = require('@dashevo/dpp/lib/test/fixtures/getDocumentsFixture');
+const Identifier = require('@hthcoin/dpp/lib/Identifier');
+const getDocumentsFixture = require('@hthcoin/dpp/lib/test/fixtures/getDocumentsFixture');
 const { expect } = require('chai');
 
 const Long = require('long');

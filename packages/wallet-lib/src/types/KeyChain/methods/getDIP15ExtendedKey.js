@@ -1,5 +1,5 @@
 /**
- * Return the extended  key of the relationship between two dashpay contacts.
+ * Return the extended  key of the relationship between two hthcoin contacts.
  * @param userUniqueId - Current userID
  * @param contactUniqueId - Contact userID
  * @param index - the key index.

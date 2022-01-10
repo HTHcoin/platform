@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 const calculateTransactionFees = require('./calculateTransactionFees');
 
 const tx1 = '0300000001b51d5a6f5c7a680bce489e6f5a9b176ac85c49f10db4798867c7d1eb2036fbc3000000006a4730440220283fd42353767188532db4a4f1c3d0a9e96e313196ae1310af6d3006c7aa64ff022027fa50cf065c096f146e00516cb3e28a9bb387a6cf1103aae0592d5c882d25e5012102ba0588ffd3c838b715d7c79bcf1cff2ba69befd5ea52aa3474d66f094536cac0ffffffff0200131a4b000000001976a914838112cc6c85e074aa7f373e942c9f5240c3e13a88ac89959800000000001976a914f728c15b9a5fe4e6d7b6ed74b323e23f5c6e303f88ac00000000';

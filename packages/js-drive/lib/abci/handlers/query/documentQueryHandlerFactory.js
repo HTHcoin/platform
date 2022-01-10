@@ -4,7 +4,7 @@ const {
       ResponseQuery,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const {
   v0: {
@@ -12,7 +12,7 @@ const {
     ResponseMetadata,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const InvalidArgumentAbciError = require('../../errors/InvalidArgumentAbciError');
 const UnavailableAbciError = require('../../errors/UnavailableAbciError');

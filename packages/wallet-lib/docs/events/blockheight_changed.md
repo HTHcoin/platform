@@ -3,7 +3,7 @@
 
 Example: 
 ```js
-const {EVENTS} = require('@dashevo/wallet-lib');
+const {EVENTS} = require('@hthcoin/wallet-lib');
 
 account.events.on(EVENTS.BLOCKHEIGHT_CHANGED, ({payload: blockHeight})=>{
   console.log(`Blockheight changed to ${blockHeight}`);

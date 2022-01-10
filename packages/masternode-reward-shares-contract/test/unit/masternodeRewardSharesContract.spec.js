@@ -1,5 +1,5 @@
-const DashPlatformProtocol = require('@dashevo/dpp');
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
+const HthPlatformProtocol = require('@hthcoin/dpp');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
 
 const rewardSharingContractSchema = require('../../schema/masternode-reward-shares-documents.json');
 
@@ -12,7 +12,7 @@ describe('Masternode reward shares contract', () => {
   beforeEach(async function beforeEach() {
     const rewardSharingContractStub = this.sinon.stub();
 
-    dpp = new DashPlatformProtocol({
+    dpp = new HthPlatformProtocol({
       stateRepository: {
         rewardSharingDataContract: rewardSharingContractStub,
       },

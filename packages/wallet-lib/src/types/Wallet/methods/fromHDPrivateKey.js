@@ -1,4 +1,4 @@
-const { HDPrivateKey } = require('@dashevo/dashcore-lib');
+const { HDPrivateKey } = require('@hthcoin/hthcore-lib');
 const {
   is,
 } = require('../../../utils');

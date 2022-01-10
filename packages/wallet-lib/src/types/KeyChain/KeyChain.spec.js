@@ -1,4 +1,4 @@
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const { expect } = require('chai');
 const KeyChain = require('./KeyChain');
 const { mnemonicToHDPrivateKey } = require('../../utils/mnemonic');
@@ -32,7 +32,7 @@ describe('Keychain', function suite() {
   it('should generate key for full path', () => {
     const path = 'm/44\'/1\'/0\'/0/0';
     const pk2 = keychain.getKeyForPath(path);
-    const address = new Dashcore.Address(pk2.publicKey.toAddress()).toString();
+    const address = new Hthcore.Address(pk2.publicKey.toAddress()).toString();
     expect(address).to.equal('yNfUebksUc5HoSfg8gv98ruC3jUNJUM8pT');
   });
   it('should get hardened feature path', () => {
@@ -73,7 +73,7 @@ describe('Keychain', function suite() {
     expect(pk2.toString()).to.equal(hardenedHDKey.toString());
     expect(hardenedHDKey.toString()).to.deep.equal('tprv8dtrJNytYHRiZY585hmHGbguS6VjGpK49puSB7oXZjLHcQfrAzQkF4ZCxM2DkEbyY85J4EYcZ8EjT5ZCU8ozB727TDdodbfXet5GkGau2RQ');
     const derivedPk = hardenedHDKey.deriveChild(0, true).deriveChild(0).deriveChild(0);
-    const address = new Dashcore.Address(derivedPk.publicKey.toAddress()).toString();
+    const address = new Hthcore.Address(derivedPk.publicKey.toAddress()).toString();
     expect(address).to.equal('yNfUebksUc5HoSfg8gv98ruC3jUNJUM8pT');
   });
   it('should get hardened DIP9FeatureHDKey', function () {
@@ -104,7 +104,7 @@ describe('Keychain - clone', function suite() {
 describe('Keychain - single privateKey', function suite() {
   this.timeout(10000);
   it('should correctly errors out when not a HDPublicKey (privateKey)', () => {
-    const privateKey = Dashcore.PrivateKey().toString();
+    const privateKey = Hthcore.PrivateKey().toString();
     const network = 'livenet';
     const pkKeyChain = new KeyChain({ privateKey, network });
     expect(pkKeyChain.network).to.equal(network);
@@ -118,7 +118,7 @@ describe('Keychain - single privateKey', function suite() {
     expect(() => pkKeyChain.generateKeyForChild()).to.throw(expectedException2);
   });
   it('should get private key', () => {
-    const privateKey = Dashcore.PrivateKey().toString();
+    const privateKey = Hthcore.PrivateKey().toString();
     const pkKeyChain = new KeyChain({ privateKey, network: 'livenet' });
     expect(pkKeyChain.getPrivateKey().toString()).to.equal(privateKey);
   });

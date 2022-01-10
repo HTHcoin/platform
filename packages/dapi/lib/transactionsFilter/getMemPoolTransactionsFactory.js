@@ -1,4 +1,4 @@
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 
 /**
  * @param {CoreRpcClient} coreAPI

@@ -1,11 +1,11 @@
 module.exports = {
   testnet: {
     seeds: [
-      'seed-1.testnet.networks.dash.org',
-      'seed-2.testnet.networks.dash.org',
-      'seed-3.testnet.networks.dash.org',
-      'seed-4.testnet.networks.dash.org',
-      'seed-5.testnet.networks.dash.org',
+      'seed-1.testnet.networks.hth.org',
+      'seed-2.testnet.networks.hth.org',
+      'seed-3.testnet.networks.hth.org',
+      'seed-4.testnet.networks.hth.org',
+      'seed-5.testnet.networks.hth.org',
     ],
     network: 'testnet',
     // Since we don't have PoSe atm, 3rd party masternodes sometimes provide wrong data
@@ -166,11 +166,11 @@ module.exports = {
   },
   evonet: {
     seeds: [
-      'seed-1.evonet.networks.dash.org',
-      'seed-2.evonet.networks.dash.org',
-      'seed-3.evonet.networks.dash.org',
-      'seed-4.evonet.networks.dash.org',
-      'seed-5.evonet.networks.dash.org',
+      'seed-1.evonet.networks.hth.org',
+      'seed-2.evonet.networks.hth.org',
+      'seed-3.evonet.networks.hth.org',
+      'seed-4.evonet.networks.hth.org',
+      'seed-5.evonet.networks.hth.org',
     ],
     network: 'evonet',
   },

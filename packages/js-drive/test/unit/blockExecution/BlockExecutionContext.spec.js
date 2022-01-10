@@ -7,9 +7,9 @@ const {
       Header,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
 const BlockExecutionContext = require('../../../lib/blockExecution/BlockExecutionContext');
 const getBlockExecutionContextObjectFixture = require('../../../lib/test/fixtures/getBlockExecutionContextObjectFixture');
 

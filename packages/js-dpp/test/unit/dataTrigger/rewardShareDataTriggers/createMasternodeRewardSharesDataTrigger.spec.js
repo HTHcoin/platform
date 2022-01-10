@@ -1,4 +1,4 @@
-const SimplifiedMNListEntry = require('@dashevo/dashcore-lib/lib/deterministicmnlist/SimplifiedMNListEntry');
+const SimplifiedMNListEntry = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/SimplifiedMNListEntry');
 const getIdentityFixture = require('../../../../lib/test/fixtures/getIdentityFixture');
 const createStateRepositoryMock = require('../../../../lib/test/mocks/createStateRepositoryMock');
 const getMasternodeRewardShareDocumentsFixture = require('../../../../lib/test/fixtures/getMasternodeRewardShareDocumentsFixture');

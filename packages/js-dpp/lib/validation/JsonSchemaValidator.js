@@ -98,10 +98,10 @@ class JsonSchemaValidator {
 
 JsonSchemaValidator.SCHEMAS = {
   META: {
-    DATA_CONTRACT: 'https://schema.dash.org/dpp-0-4-0/meta/data-contract',
+    DATA_CONTRACT: 'https://schema.hth.org/dpp-0-4-0/meta/data-contract',
   },
   BASE: {
-    DP_OBJECT: 'https://schema.dash.org/dpp-0-4-0/base/document',
+    DP_OBJECT: 'https://schema.hth.org/dpp-0-4-0/base/document',
   },
 };
 

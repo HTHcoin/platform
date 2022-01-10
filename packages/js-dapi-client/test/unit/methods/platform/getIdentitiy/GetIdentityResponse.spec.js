@@ -1,4 +1,4 @@
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
 const {
   v0: {
     GetIdentityResponse,
@@ -6,7 +6,7 @@ const {
     Proof: ProofResponse,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const GetIdentityResponseClass = require('../../../../../lib/methods/platform/getIdentity/GetIdentityResponse');
 const getMetadataFixture = require('../../../../../lib/test/fixtures/getMetadataFixture');

@@ -1,12 +1,12 @@
 const { expect } = require('chai');
 
-const Identifier = require('@dashevo/dpp/lib/Identifier');
+const Identifier = require('@hthcoin/dpp/lib/Identifier');
 
 const {
   Networks,
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 
-const Dash = require(typeof process === 'undefined' ? '../../src/index.ts' : '../../');
+const HTH = require(typeof process === 'undefined' ? '../../src/index.ts' : '../../');
 
 describe('SDK', function suite() {
   this.timeout(700000);
@@ -31,7 +31,7 @@ describe('SDK', function suite() {
       }
     };
 
-    clientInstance = new Dash.Client(clientOpts);
+    clientInstance = new HTH.Client(clientOpts);
   });
 
   it('should init a Client', async () => {
@@ -62,10 +62,10 @@ describe('SDK', function suite() {
 
   it('should sign and verify a message', async function () {
     const idKey = account.identities.getIdentityHDKeyByIndex(0, 0);
-    // This transforms from a Wallet-Lib.PrivateKey to a Dashcore-lib.PrivateKey.
+    // This transforms from a Wallet-Lib.PrivateKey to a hthcore-lib.PrivateKey.
     // It will quickly be annoying to perform this, and we therefore need to find a better solution for that.
-    const privateKey = Dash.Core.PrivateKey(idKey.privateKey);
-    const message = Dash.Core.Message('hello, world');
+    const privateKey = HTH.Core.PrivateKey(idKey.privateKey);
+    const message = HTH.Core.Message('hello, world');
     const signed = message.sign(privateKey);
     const verify = message.verify(idKey.privateKey.toAddress().toString(), signed.toString());
     expect(verify).to.equal(true);

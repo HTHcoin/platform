@@ -4,7 +4,7 @@ const {
       ResponseInitChain,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 /**
  * Init Chain ABCI handler

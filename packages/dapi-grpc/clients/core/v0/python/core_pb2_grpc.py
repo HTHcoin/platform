@@ -15,37 +15,37 @@ class CoreStub(object):
       channel: A grpc.Channel.
     """
     self.getStatus = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Core/getStatus',
+        '/org.hth.platform.dapi.v0.Core/getStatus',
         request_serializer=core__pb2.GetStatusRequest.SerializeToString,
         response_deserializer=core__pb2.GetStatusResponse.FromString,
         )
     self.getBlock = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Core/getBlock',
+        '/org.hth.platform.dapi.v0.Core/getBlock',
         request_serializer=core__pb2.GetBlockRequest.SerializeToString,
         response_deserializer=core__pb2.GetBlockResponse.FromString,
         )
     self.broadcastTransaction = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Core/broadcastTransaction',
+        '/org.hth.platform.dapi.v0.Core/broadcastTransaction',
         request_serializer=core__pb2.BroadcastTransactionRequest.SerializeToString,
         response_deserializer=core__pb2.BroadcastTransactionResponse.FromString,
         )
     self.getTransaction = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Core/getTransaction',
+        '/org.hth.platform.dapi.v0.Core/getTransaction',
         request_serializer=core__pb2.GetTransactionRequest.SerializeToString,
         response_deserializer=core__pb2.GetTransactionResponse.FromString,
         )
     self.getEstimatedTransactionFee = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Core/getEstimatedTransactionFee',
+        '/org.hth.platform.dapi.v0.Core/getEstimatedTransactionFee',
         request_serializer=core__pb2.GetEstimatedTransactionFeeRequest.SerializeToString,
         response_deserializer=core__pb2.GetEstimatedTransactionFeeResponse.FromString,
         )
     self.subscribeToBlockHeadersWithChainLocks = channel.unary_stream(
-        '/org.dash.platform.dapi.v0.Core/subscribeToBlockHeadersWithChainLocks',
+        '/org.hth.platform.dapi.v0.Core/subscribeToBlockHeadersWithChainLocks',
         request_serializer=core__pb2.BlockHeadersWithChainLocksRequest.SerializeToString,
         response_deserializer=core__pb2.BlockHeadersWithChainLocksResponse.FromString,
         )
     self.subscribeToTransactionsWithProofs = channel.unary_stream(
-        '/org.dash.platform.dapi.v0.Core/subscribeToTransactionsWithProofs',
+        '/org.hth.platform.dapi.v0.Core/subscribeToTransactionsWithProofs',
         request_serializer=core__pb2.TransactionsWithProofsRequest.SerializeToString,
         response_deserializer=core__pb2.TransactionsWithProofsResponse.FromString,
         )
@@ -144,5 +144,5 @@ def add_CoreServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'org.dash.platform.dapi.v0.Core', rpc_method_handlers)
+      'org.hth.platform.dapi.v0.Core', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))

@@ -1,4 +1,4 @@
-const { startMongoDb, startDashCore } = require('@dashevo/dp-services-ctl');
+const { startMongoDb, startHthCore } = require('@hthcoin/dp-services-ctl');
 
 const createTestDIContainer = require('../../../lib/test/createTestDIContainer');
 
@@ -6,9 +6,9 @@ describe('waitForCoreSyncFactory', function main() {
   this.timeout(90000);
 
   let mongoDB;
-  let firstDashCore;
-  let secondDashCore;
-  let thirdDashCore;
+  let firstHthCore;
+  let secondHthCore;
+  let thirdHthCore;
   let container;
   let waitForCoreSync;
 
@@ -18,16 +18,16 @@ describe('waitForCoreSyncFactory', function main() {
 
   after(async () => {
     await mongoDB.remove();
-    if (firstDashCore) {
-      await firstDashCore.remove();
+    if (firstHthCore) {
+      await firstHthCore.remove();
     }
 
-    if (secondDashCore) {
-      await secondDashCore.remove();
+    if (secondHthCore) {
+      await secondHthCore.remove();
     }
 
-    if (thirdDashCore) {
-      await thirdDashCore.remove();
+    if (thirdHthCore) {
+      await thirdHthCore.remove();
     }
   });
 
@@ -37,20 +37,20 @@ describe('waitForCoreSyncFactory', function main() {
     }
   });
 
-  it('should wait until Dash Core in regtest mode with peers is synced', async () => {
-    firstDashCore = await startDashCore();
-    const { result: randomAddress } = await firstDashCore.getApi().getNewAddress();
-    await firstDashCore.getApi().generateToAddress(1000, randomAddress);
+  it('should wait until HTH Core in regtest mode with peers is synced', async () => {
+    firstHthCore = await startHthCore();
+    const { result: randomAddress } = await firstHthCore.getApi().getNewAddress();
+    await firstHthCore.getApi().generateToAddress(1000, randomAddress);
 
-    secondDashCore = await startDashCore();
-    await secondDashCore.connect(firstDashCore);
+    secondHthCore = await startHthCore();
+    await secondHthCore.connect(firstHthCore);
 
-    container = await createTestDIContainer(mongoDB, secondDashCore);
+    container = await createTestDIContainer(mongoDB, secondHthCore);
     waitForCoreSync = container.resolve('waitForCoreSync');
 
     await waitForCoreSync(() => {});
 
-    const secondApi = secondDashCore.getApi();
+    const secondApi = secondHthCore.getApi();
 
     const {
       result: {

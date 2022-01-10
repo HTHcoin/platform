@@ -1,6 +1,6 @@
 const {
   MerkleBlock,
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 
 const getHeightFromMerkleBlockBuffer = async (client, merkleBlockBuffer) => {
   // FIXME: MerkleBlock do not accept hex.

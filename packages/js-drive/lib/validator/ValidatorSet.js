@@ -9,7 +9,7 @@ class ValidatorSet {
    * @param {fetchQuorumMembers} fetchQuorumMembers
    * @param {number} validatorSetLLMQType
    * @param {RpcClient} coreRpcClient
-   * @param {number} tenderdashP2pPort
+   * @param {number} tenderhthP2pPort
    */
   constructor(
     simplifiedMasternodeList,
@@ -17,14 +17,14 @@ class ValidatorSet {
     fetchQuorumMembers,
     validatorSetLLMQType,
     coreRpcClient,
-    tenderdashP2pPort,
+    tenderhthP2pPort,
   ) {
     this.simplifiedMasternodeList = simplifiedMasternodeList;
     this.getRandomQuorum = getRandomQuorum;
     this.fetchQuorumMembers = fetchQuorumMembers;
     this.validatorSetLLMQType = validatorSetLLMQType;
     this.coreRpcClient = coreRpcClient;
-    this.tenderdashP2pPort = tenderdashP2pPort;
+    this.tenderhthP2pPort = tenderhthP2pPort;
 
     this.quorum = null;
     this.validators = [];
@@ -148,7 +148,7 @@ class ValidatorSet {
         const masternode = validMasternodesList
           .find((mnEntry) => mnEntry.proRegTxHash === member.proTxHash);
 
-        const networkInfo = new ValidatorNetworkInfo(masternode.getIp(), this.tenderdashP2pPort);
+        const networkInfo = new ValidatorNetworkInfo(masternode.getIp(), this.tenderhthP2pPort);
 
         return Validator.createFromQuorumMember(member, networkInfo, isThisNodeMember);
       }));

@@ -15,42 +15,42 @@ class PlatformStub(object):
       channel: A grpc.Channel.
     """
     self.broadcastStateTransition = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Platform/broadcastStateTransition',
+        '/org.hth.platform.dapi.v0.Platform/broadcastStateTransition',
         request_serializer=platform__pb2.BroadcastStateTransitionRequest.SerializeToString,
         response_deserializer=platform__pb2.BroadcastStateTransitionResponse.FromString,
         )
     self.getIdentity = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Platform/getIdentity',
+        '/org.hth.platform.dapi.v0.Platform/getIdentity',
         request_serializer=platform__pb2.GetIdentityRequest.SerializeToString,
         response_deserializer=platform__pb2.GetIdentityResponse.FromString,
         )
     self.getDataContract = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Platform/getDataContract',
+        '/org.hth.platform.dapi.v0.Platform/getDataContract',
         request_serializer=platform__pb2.GetDataContractRequest.SerializeToString,
         response_deserializer=platform__pb2.GetDataContractResponse.FromString,
         )
     self.getDocuments = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Platform/getDocuments',
+        '/org.hth.platform.dapi.v0.Platform/getDocuments',
         request_serializer=platform__pb2.GetDocumentsRequest.SerializeToString,
         response_deserializer=platform__pb2.GetDocumentsResponse.FromString,
         )
     self.getIdentitiesByPublicKeyHashes = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Platform/getIdentitiesByPublicKeyHashes',
+        '/org.hth.platform.dapi.v0.Platform/getIdentitiesByPublicKeyHashes',
         request_serializer=platform__pb2.GetIdentitiesByPublicKeyHashesRequest.SerializeToString,
         response_deserializer=platform__pb2.GetIdentitiesByPublicKeyHashesResponse.FromString,
         )
     self.getIdentityIdsByPublicKeyHashes = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Platform/getIdentityIdsByPublicKeyHashes',
+        '/org.hth.platform.dapi.v0.Platform/getIdentityIdsByPublicKeyHashes',
         request_serializer=platform__pb2.GetIdentityIdsByPublicKeyHashesRequest.SerializeToString,
         response_deserializer=platform__pb2.GetIdentityIdsByPublicKeyHashesResponse.FromString,
         )
     self.waitForStateTransitionResult = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Platform/waitForStateTransitionResult',
+        '/org.hth.platform.dapi.v0.Platform/waitForStateTransitionResult',
         request_serializer=platform__pb2.WaitForStateTransitionResultRequest.SerializeToString,
         response_deserializer=platform__pb2.WaitForStateTransitionResultResponse.FromString,
         )
     self.getConsensusParams = channel.unary_unary(
-        '/org.dash.platform.dapi.v0.Platform/getConsensusParams',
+        '/org.hth.platform.dapi.v0.Platform/getConsensusParams',
         request_serializer=platform__pb2.GetConsensusParamsRequest.SerializeToString,
         response_deserializer=platform__pb2.GetConsensusParamsResponse.FromString,
         )
@@ -161,5 +161,5 @@ def add_PlatformServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'org.dash.platform.dapi.v0.Platform', rpc_method_handlers)
+      'org.hth.platform.dapi.v0.Platform', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))

@@ -12,7 +12,7 @@ module.exports = {
   info: {
     title: 'DAPI',
     version: '0.2.2',
-    description: 'Dash Decentralized API (DAPI)',
+    description: 'HTH Decentralized API (DAPI)',
   },
   servers: [
     {
@@ -20,7 +20,7 @@ module.exports = {
       description: 'User-defined network',
       variables: {
         url: {
-          default: 'http://dapi.dash.org',
+          default: 'http://dapi.hth.org',
         },
         port: {
           default: '3000',

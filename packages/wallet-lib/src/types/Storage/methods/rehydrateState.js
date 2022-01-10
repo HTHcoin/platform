@@ -1,5 +1,5 @@
 const { merge } = require('lodash');
-const { InstantLock, Transaction, BlockHeader } = require('@dashevo/dashcore-lib');
+const { InstantLock, Transaction, BlockHeader } = require('@hthcoin/hthcore-lib');
 const { hasMethod } = require('../../../utils');
 
 const mergeHelper = (initial = {}, additional = {}) => merge(initial, additional);

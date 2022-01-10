@@ -4,20 +4,20 @@ const {
       ResponseDeliverTx,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
-const DashPlatformProtocol = require('@dashevo/dpp');
+const HthPlatformProtocol = require('@hthcoin/dpp');
 
-const ValidationResult = require('@dashevo/dpp/lib/validation/ValidationResult');
+const ValidationResult = require('@hthcoin/dpp/lib/validation/ValidationResult');
 
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
 
-const createDPPMock = require('@dashevo/dpp/lib/test/mocks/createDPPMock');
-const createStateRepositoryMock = require('@dashevo/dpp/lib/test/mocks/createStateRepositoryMock');
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
-const getDocumentFixture = require('@dashevo/dpp/lib/test/fixtures/getDocumentsFixture');
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
-const SomeConsensusError = require('@dashevo/dpp/lib/test/mocks/SomeConsensusError');
+const createDPPMock = require('@hthcoin/dpp/lib/test/mocks/createDPPMock');
+const createStateRepositoryMock = require('@hthcoin/dpp/lib/test/mocks/createStateRepositoryMock');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
+const getDocumentFixture = require('@hthcoin/dpp/lib/test/fixtures/getDocumentsFixture');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
+const SomeConsensusError = require('@hthcoin/dpp/lib/test/mocks/SomeConsensusError');
 const BlockExecutionContextMock = require('../../../../lib/test/mock/BlockExecutionContextMock');
 
 const deliverTxHandlerFactory = require('../../../../lib/abci/handlers/deliverTxHandlerFactory');
@@ -45,7 +45,7 @@ describe('deliverTxHandlerFactory', () => {
     const dataContractFixture = getDataContractFixture();
     const documentFixture = getDocumentFixture();
 
-    dpp = new DashPlatformProtocol();
+    dpp = new HthPlatformProtocol();
     await dpp.initialize();
 
     documentsBatchTransitionFixture = dpp.document.createStateTransition({

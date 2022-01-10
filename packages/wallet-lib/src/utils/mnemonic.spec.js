@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { Networks } = require('@dashevo/dashcore-lib')
+const { Networks } = require('@hthcoin/hthcore-lib')
 const {
   generateNewMnemonic,
   seedToHDPrivateKey,

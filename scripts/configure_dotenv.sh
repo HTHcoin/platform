@@ -11,7 +11,7 @@ LOGS_PATH="$PROJECT_ROOT_PATH/logs"
 CONFIG=local
 DAPI_PATH="${PACKAGES_PATH}"/dapi
 DRIVE_PATH="${PACKAGES_PATH}"/js-drive
-SDK_PATH="${PACKAGES_PATH}"/js-dash-sdk
+SDK_PATH="${PACKAGES_PATH}"/js-hth-sdk
 WALLET_LIB_PATH="${PACKAGES_PATH}"/wallet-lib
 
 touch "${LOGS_PATH}"/mint.log
@@ -22,7 +22,7 @@ cp "${DAPI_PATH}"/.env.example "${DAPI_PATH}"/.env
 # JS-SDK:
 FAUCET_ADDRESS=$(grep -m 1 "Address:" "${LOGS_PATH}"/mint.log | awk '{printf $3}')
 FAUCET_PRIVATE_KEY=$(grep -m 1 "Private key:" "${LOGS_PATH}"/mint.log | awk '{printf $4}')
-DPNS_CONTRACT_ID=$(yarn dashmate config get --config="${CONFIG}_1" platform.dpns.contract.id)
+DPNS_CONTRACT_ID=$(yarn hthmate config get --config="${CONFIG}_1" platform.dpns.contract.id)
 
 SDK_ENV_FILE_PATH=${SDK_PATH}/.env
 rm -f "${SDK_ENV_FILE_PATH}"

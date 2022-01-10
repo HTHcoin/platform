@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 
 
 describe('Account - getNetwork', () => {

@@ -4,7 +4,7 @@ A Wallet is actually a holders of multiple Account that hold the keys needed to 
 So the first thing will be on accessing your account : 
 
 ```js
-const client = new Dash.Client({
+const client = new HTH.Client({
   wallet: {
     mnemonic: "maximum blast eight orchard waste wood gospel siren parent deer athlete impact",
   },

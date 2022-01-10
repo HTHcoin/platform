@@ -3,13 +3,13 @@ import getResponseMetadataFixture from '../../../../../test/fixtures/getResponse
 import get from "./get";
 import identitiesFixtures from "../../../../../../tests/fixtures/identities.json";
 import contractsFixtures from "../../../../../../tests/fixtures/contracts.json";
-import DataContractFactory from "@dashevo/dpp/lib/dataContract/DataContractFactory";
-import ValidationResult from "@dashevo/dpp/lib/validation/ValidationResult";
-import Identifier from "@dashevo/dpp/lib/Identifier";
+import DataContractFactory from "@hthcoin/dpp/lib/dataContract/DataContractFactory";
+import ValidationResult from "@hthcoin/dpp/lib/validation/ValidationResult";
+import Identifier from "@hthcoin/dpp/lib/Identifier";
 import 'mocha';
 import { ClientApps } from "../../../ClientApps";
-const GetDataContractResponse = require("@dashevo/dapi-client/lib/methods/platform/getDataContract/GetDataContractResponse");
-const NotFoundError = require('@dashevo/dapi-client/lib/transport/GrpcTransport/errors/NotFoundError');
+const GetDataContractResponse = require("@hthcoin/dapi-client/lib/methods/platform/getDataContract/GetDataContractResponse");
+const NotFoundError = require('@hthcoin/dapi-client/lib/transport/GrpcTransport/errors/NotFoundError');
 
 const factory = new DataContractFactory(
     undefined,

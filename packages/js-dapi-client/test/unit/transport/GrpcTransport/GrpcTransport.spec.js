@@ -1,6 +1,6 @@
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
 
-const GrpcError = require('@dashevo/grpc-common/lib/server/error/GrpcError');
+const GrpcError = require('@hthcoin/grpc-common/lib/server/error/GrpcError');
 const GrpcTransport = require('../../../../lib/transport/GrpcTransport/GrpcTransport');
 const DAPIAddress = require('../../../../lib/dapiAddressProvider/DAPIAddress');
 

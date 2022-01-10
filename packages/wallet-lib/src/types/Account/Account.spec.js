@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const knifeMnemonic = require('../../../fixtures/knifeeasily');
 const fluidMnemonic = require('../../../fixtures/fluidDepth');
 const cR4t6ePrivateKey = require('../../../fixtures/cR4t6e_pk');
@@ -7,7 +7,7 @@ const { WALLET_TYPES } = require('../../CONSTANTS');
 const { Account, EVENTS } = require('../../index');
 const EventEmitter = require('events');
 const inMem = require('../../adapters/InMem');
-const blockHeader = new Dashcore.BlockHeader.fromObject({
+const blockHeader = new Htcore.BlockHeader.fromObject({
   hash: '00000ac3a0c9df709260e41290d6902e5a4a073099f11fe8c1ce80aadc4bb331',
   version: 2,
   prevHash: '00000ce430de949c85a145b02e33ebbaed3772dc8f3d668f66edc6852c24d002',
@@ -42,7 +42,7 @@ describe('Account - class', function suite() {
       this.walletId = '1234567891';
       this.walletType =  WALLET_TYPES.HDWALLET;
       this.accounts = [];
-      this.network = Dashcore.Networks.testnet;
+      this.network = Hthcore.Networks.testnet;
       this.storage = mockStorage;
     })());
   });

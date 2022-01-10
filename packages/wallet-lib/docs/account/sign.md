@@ -1,6 +1,6 @@
 **Usage**: `account.sign(transaction, privateKeys, sigType)`    
 **Description**: Allow to sign a transaction with private keys   
-**Notes**: A Signable Object is of type : Transaction or Message (exported by DashJS).   
+**Notes**: A Signable Object is of type : Transaction or Message (exported by HthJS).   
 
 Parameters: 
 
@@ -22,7 +22,7 @@ const signedTx = account.sign(tx); // Will find the privateKey from keychain for
 
 ### Signing a message 
 ```js
-const {Message} = require('dash');
+const {Message} = require('hth');
 const message = new Message('hello, world');
 
 const idPrivateKey = account.getIdentityHDKeyByIndex(0, 0).privateKey;

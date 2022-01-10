@@ -2,7 +2,7 @@
     - [Quick start](getting-started/quickstart.md)
     - [Quick introduction to core concepts](getting-started/core-concepts.md)
     - [Working with multiple apps](getting-started/multiple-apps.md)
-    - [Dash Platform Applications](getting-started/dash-platform-applications.md)
+    - [HTH Platform Applications](getting-started/hth-platform-applications.md)
     - [About Schemas](getting-started/about-schemas.md)
     - [With TypeScript](getting-started/with-typescript.md)
 
@@ -18,17 +18,17 @@
     - [Sign and verify messages](/examples/sign-and-verify-messages.md)
 
 - Tutorial
-    - [Register an identity](https://dashplatform.readme.io/docs/tutorial-register-an-identity)
-    - [Register a Name for an Identity](https://dashplatform.readme.io/docs/tutorial-register-a-name-for-an-identity)
+    - [Register an identity](https://hthplatform.readme.io/docs/tutorial-register-an-identity)
+    - [Register a Name for an Identity](https://hthplatform.readme.io/docs/tutorial-register-a-name-for-an-identity)
 
 - Snippets
-    - [Create and fund wallet](https://github.com/dashevo/DashJS/tree/master/examples/node/create-and-fund-wallet.js)
-    - [Register identity](https://github.com/dashevo/DashJS/tree/master/examples/node/register-identity.js)
-    - [Register name](https://github.com/dashevo/DashJS/tree/master/examples/node/register-name.js)
-    - [Retrieve Contract](https://github.com/dashevo/DashJS/tree/master/examples/node/retrieve-contract.js)
-    - [Retrieve Documents](https://github.com/dashevo/DashJS/tree/master/examples/node/retrieve-documents.js)
-    - [Retrieve Identity](https://github.com/dashevo/DashJS/tree/master/examples/node/retrieve-identity.js)
-    - [Retrieve Name](https://github.com/dashevo/DashJS/tree/master/examples/node/retrieve-name.js)
+    - [Create and fund wallet](https://github.com/MichaelHDesigns/HthJS/tree/master/examples/node/create-and-fund-wallet.js)
+    - [Register identity](https://github.com/MichaelHDesigns/HthJS/tree/master/examples/node/register-identity.js)
+    - [Register name](https://github.com/MichaelHDesigns/HthJS/tree/master/examples/node/register-name.js)
+    - [Retrieve Contract](https://github.com/MichaelHDesigns/HthJS/tree/master/examples/node/retrieve-contract.js)
+    - [Retrieve Documents](https://github.com/MichaelHDesigns/HthJS/tree/master/examples/node/retrieve-documents.js)
+    - [Retrieve Identity](https://github.com/MichaelHDesigns/HthJS/tree/master/examples/node/retrieve-identity.js)
+    - [Retrieve Name](https://github.com/MichaelHDesigns/HthJS/tree/master/examples/node/retrieve-name.js)
 
 - Usage
     - [DAPI](usage/dapi.md)
@@ -59,6 +59,6 @@
     - [Wallet](wallet/about-wallet-lib.md)
         - [Accounts](wallet/accounts.md)
         - [Signing, Encrypt and Decrypt](wallet/signing-encrypt.md)
-    - [Dashcore Primitives](usage/dashcorelib-primitives.md)
+    - [Hthcore Primitives](usage/hthcorelib-primitives.md)
 
 - [License](LICENSE)

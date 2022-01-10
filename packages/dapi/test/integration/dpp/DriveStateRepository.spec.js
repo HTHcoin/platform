@@ -4,16 +4,16 @@ const sinon = require('sinon');
 const chaiAsPromised = require('chai-as-promised');
 const dirtyChai = require('dirty-chai');
 
-const DashPlatformProtocol = require('@dashevo/dpp');
+const HthPlatformProtocol = require('@hthcoin/dpp');
 
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
 
 const {
   v0: {
     GetDataContractResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const DriveStateRepository = require('../../../lib/dpp/DriveStateRepository');
 
@@ -32,7 +32,7 @@ describe('DriveStateRepository', () => {
   beforeEach(async function before() {
     dataContractFixture = getDataContractFixture();
 
-    dpp = new DashPlatformProtocol();
+    dpp = new HthPlatformProtocol();
     await dpp.initialize();
     sinon.spy(dpp.dataContract, 'createFromBuffer');
 

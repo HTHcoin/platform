@@ -5,7 +5,7 @@ Returns : {Transaction}
 
 Example: 
 ```js
-const {EVENTS} = require('@dashevo/wallet-lib');
+const {EVENTS} = require('@hthcoin/wallet-lib');
 const onNewConfirmedTx = (tx)=>{
   console.log('Confirmed tx', tx);
 }

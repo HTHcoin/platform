@@ -1,9 +1,9 @@
 # DAPI
 
-[![Build Status](https://github.com/dashevo/dapi/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/dashevo/dapi/actions/workflows/test_and_release.yml)
+[![Build Status](https://github.com/MichaelHDesigns/dapi/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/MichaelHDesigns/dapi/actions/workflows/test_and_release.yml)
 [![API stability](https://img.shields.io/badge/stability-stable-green.svg)](https://nodejs.org/api/documentation.html#documentation_stability_index)
 
-A decentralized API for the Dash network
+A decentralized API for the HTH network
 
 ## Table of Contents
 - [Install](#install)
@@ -25,10 +25,10 @@ npm install
 
 DAPI targets the latest LTS release of Node.js. Currently, this is Node v10.13.
 
-DAPI requires the latest version of [dashcore](https://github.com/dashevo/dash-evo-branches/tree/evo) with Evolution features (special branch repo).
+DAPI requires the latest version of [hthcore](https://github.com/MichaelHDesigns/hth-evo-branches/tree/evo) with Evolution features (special branch repo).
 
-1. **Install core.** You can use the docker image (`dashcore:evo`) or clone code from [the repository](https://github.com/dashevo/dash-evo-branches/tree/evo), switch to the `evo` branch, and build it by yourself. Note: you need to build image with ZMQ and wallet support. You can follow the build instructions located [here](https://github.com/dashevo/dash-evo-branches/tree/evo/doc)
-2. **Configure core.** DAPI needs dashcore's ZMQ interface to be exposed and all indexes enabled. You can find the example config for dashcore [here](doc/dependencies_configs/dash.conf). To start dashcore process with this config, copy it somewhere to your system, and then run `./src/dashd -conf=/path/to/your/config`.
+1. **Install core.** You can use the docker image (`hthcore:evo`) or clone code from [the repository](https://github.com/MichaelHDesigns/hth-evo-branches/tree/evo), switch to the `evo` branch, and build it by yourself. Note: you need to build image with ZMQ and wallet support. You can follow the build instructions located [here](https://github.com/MichaelHDesigns/hth-evo-branches/tree/evo/doc)
+2. **Configure core.** DAPI needs hthcore's ZMQ interface to be exposed and all indexes enabled. You can find the example config for hthcore [here](doc/dependencies_configs/hth.conf). To start hthcore process with this config, copy it somewhere to your system, and then run `./src/helpthehomelessd -conf=/path/to/your/config`.
 
 ## Usage
 
@@ -62,8 +62,8 @@ Implementation of these commands can be viewed [here](lib/rpcServer/commands).
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/platform/issues/new/choose) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/MichaelHDesigns/platform/issues/new/choose) or submit PRs.
 
 ## License
 
-[MIT](LICENSE) &copy; Dash Core Group, Inc.
+[MIT](LICENSE) &copy; HTH Core Group, Inc.

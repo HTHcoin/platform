@@ -1,5 +1,5 @@
 const sample = require('lodash.sample');
-const networks = require('@dashevo/dashcore-lib/lib/networks');
+const networks = require('@hthcoin/hthcore-lib/lib/networks');
 
 class ListDAPIAddressProvider {
   /**

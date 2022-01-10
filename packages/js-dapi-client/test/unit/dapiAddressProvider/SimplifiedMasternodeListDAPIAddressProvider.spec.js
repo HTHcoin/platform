@@ -1,4 +1,4 @@
-const SimplifiedMNListEntry = require('@dashevo/dashcore-lib/lib/deterministicmnlist/SimplifiedMNListEntry');
+const SimplifiedMNListEntry = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/SimplifiedMNListEntry');
 
 const getMNListDiffsFixture = require('../../../lib/test/fixtures/getMNListDiffsFixture');
 const DAPIAddress = require('../../../lib/dapiAddressProvider/DAPIAddress');

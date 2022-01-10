@@ -1,5 +1,5 @@
-const IdentifierError = require('@dashevo/dpp/lib/identifier/errors/IdentifierError');
-const Identifier = require('@dashevo/dpp/lib/identifier/Identifier');
+const IdentifierError = require('@hthcoin/dpp/lib/identifier/errors/IdentifierError');
+const Identifier = require('@hthcoin/dpp/lib/identifier/Identifier');
 
 const InvalidQueryError = require('./errors/InvalidQueryError');
 const InvalidDocumentTypeError = require('./query/errors/InvalidDocumentTypeError');

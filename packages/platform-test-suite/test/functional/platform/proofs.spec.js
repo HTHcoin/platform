@@ -1,10 +1,10 @@
-const Identifier = require('@dashevo/dpp/lib/Identifier');
+const Identifier = require('@hthcoin/dpp/lib/Identifier');
 const { MerkleProof, MerkleTree } = require('js-merkle');
-const { executeProof, verifyProof } = require('@dashevo/merk');
-const { PrivateKey } = require('@dashevo/dashcore-lib');
+const { executeProof, verifyProof } = require('@hthcoin/merk');
+const { PrivateKey } = require('@hthcoin/hthcore-lib');
 
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
-const cbor = require('@dashevo/dpp/lib/util/serializer');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
+const cbor = require('@hthcoin/dpp/lib/util/serializer');
 const hashFunction = require('../../../lib/proofHashFunction');
 const testProofStructure = require('../../../lib/test/testProofStructure');
 const parseStoreTreeProof = require('../../../lib/parseStoreTreeProof');
@@ -13,37 +13,37 @@ const createClientWithFundedWallet = require('../../../lib/test/createClientWith
 describe('Platform', () => {
   describe('Proofs', () => {
     let blake3;
-    let dashClient;
+    let hthClient;
     let contractId;
 
     before(async () => {
       await hashFunction.init();
       blake3 = hashFunction.hashFunction;
 
-      dashClient = await createClientWithFundedWallet();
+      hthClient = await createClientWithFundedWallet();
 
-      await dashClient.platform.initialize();
+      await hthClient.platform.initialize();
 
       contractId = Identifier.from(process.env.DPNS_CONTRACT_ID);
     });
 
     after(() => {
-      dashClient.disconnect();
+      hthClient.disconnect();
     });
 
     describe('Store Tree Proofs', () => {
       describe('Data Contract', () => {
         it('should be able to get and verify proof that data contract exists with getIdentity', async () => {
-          const dataContractResponseWithProof = await dashClient.getDAPIClient()
+          const dataContractResponseWithProof = await hthClient.getDAPIClient()
             .platform.getDataContract(
               contractId, { prove: true },
             );
 
-          const dataContractResponse = await dashClient.getDAPIClient().platform.getDataContract(
+          const dataContractResponse = await hthClient.getDAPIClient().platform.getDataContract(
             contractId,
           );
 
-          const dataContract = await dashClient.platform.dpp
+          const dataContract = await hthClient.platform.dpp
             .dataContract.createFromBuffer(dataContractResponse.getDataContract());
 
           const fullProof = dataContractResponseWithProof.getProof();
@@ -56,7 +56,7 @@ describe('Platform', () => {
 
           expect(parsedStoreTreeProof.values.length).to.be.equal(1);
 
-          const restoredDataContract = await dashClient.platform.dpp
+          const restoredDataContract = await hthClient.platform.dpp
             .dataContract.createFromBuffer(parsedStoreTreeProof.values[0]);
 
           expect(restoredDataContract.toObject()).to.be.deep.equal(dataContract.toObject());
@@ -75,7 +75,7 @@ describe('Platform', () => {
           const recoveredDataContractBuffer = verificationResult[0];
           expect(recoveredDataContractBuffer).to.be.an.instanceof(Uint8Array);
 
-          const recoveredDataContract = await dashClient.platform.dpp
+          const recoveredDataContract = await hthClient.platform.dpp
             .dataContract.createFromBuffer(recoveredDataContractBuffer);
 
           expect(recoveredDataContract.toObject()).to.be.deep.equal(dataContract.toObject());
@@ -86,7 +86,7 @@ describe('Platform', () => {
 
           const dataContractId = generateRandomIdentifier();
 
-          const dataContractWithProof = await dashClient.getDAPIClient().platform.getDataContract(
+          const dataContractWithProof = await hthClient.getDAPIClient().platform.getDataContract(
             dataContractId, { prove: true },
           );
 
@@ -122,9 +122,9 @@ describe('Platform', () => {
           let identity8PublicKeyHash;
 
           before(async () => {
-            identityAtKey5 = await dashClient.platform.identities.register(5);
-            identityAtKey6 = await dashClient.platform.identities.register(6);
-            identityAtKey8 = await dashClient.platform.identities.register(8);
+            identityAtKey5 = await hthClient.platform.identities.register(5);
+            identityAtKey6 = await hthClient.platform.identities.register(6);
+            identityAtKey8 = await hthClient.platform.identities.register(8);
 
             // await waitForBalanceToChange(walletAccount);
 
@@ -138,7 +138,7 @@ describe('Platform', () => {
           it('should be able to get and verify proof that identity exists with getIdentity', async () => {
             identity = identityAtKey5;
 
-            const identityProof = await dashClient.getDAPIClient().platform.getIdentity(
+            const identityProof = await hthClient.getDAPIClient().platform.getIdentity(
               identity.getId(), { prove: true },
             );
 
@@ -150,7 +150,7 @@ describe('Platform', () => {
 
             const parsedStoreTreeProof = parseStoreTreeProof(identitiesProofBuffer);
 
-            const parsedIdentity = dashClient.platform.dpp
+            const parsedIdentity = hthClient.platform.dpp
               .identity.createFromBuffer(parsedStoreTreeProof.values[0]);
             expect(identity.getId()).to.be.deep.equal(parsedIdentity.getId());
 
@@ -168,7 +168,7 @@ describe('Platform', () => {
             const recoveredIdentityBuffer = verificationResult[0];
             expect(recoveredIdentityBuffer).to.be.an.instanceof(Uint8Array);
 
-            const recoveredIdentity = dashClient.platform.dpp
+            const recoveredIdentity = hthClient.platform.dpp
               .identity.createFromBuffer(recoveredIdentityBuffer);
 
             // Deep equal won't work in this case, because identity returned by the register
@@ -183,7 +183,7 @@ describe('Platform', () => {
             // The same as above, but for an identity id that doesn't exist
             const fakeIdentityId = generateRandomIdentifier();
 
-            const identityProof = await dashClient.getDAPIClient().platform.getIdentity(
+            const identityProof = await hthClient.getDAPIClient().platform.getIdentity(
               fakeIdentityId, { prove: true },
             );
 
@@ -198,7 +198,7 @@ describe('Platform', () => {
 
             const identitiesFromProof = parsedStoreTreeProof.values;
 
-            const valueIds = identitiesFromProof.map((identityValue) => dashClient.platform.dpp
+            const valueIds = identitiesFromProof.map((identityValue) => hthClient.platform.dpp
               .identity.createFromBuffer(identityValue).getId().toString('hex'));
 
             // The proof will contain left and right values to the empty place
@@ -229,7 +229,7 @@ describe('Platform', () => {
 
             /* Requesting identities by public key hashes and verifying the structure */
 
-            const identityProof = await dashClient.getDAPIClient().platform
+            const identityProof = await hthClient.getDAPIClient().platform
               .getIdentitiesByPublicKeyHashes(
                 publicKeyHashes, { prove: true },
               );
@@ -249,7 +249,7 @@ describe('Platform', () => {
             // Existing identities should be in the identitiesProof, as it also serves
             // as an inclusion proof
             const restoredIdentities = parsedIdentitiesStoreTreeProof.values.map(
-              (identityBuffer) => dashClient.platform.dpp.identity.createFromBuffer(
+              (identityBuffer) => hthClient.platform.dpp.identity.createFromBuffer(
                 identityBuffer,
               ),
             );
@@ -316,10 +316,10 @@ describe('Platform', () => {
             expect(firstRecoveredIdentityBuffer).to.be.an.instanceof(Uint8Array);
             expect(secondRecoveredIdentityBuffer).to.be.an.instanceof(Uint8Array);
 
-            const firstRecoveredIdentity = dashClient.platform.dpp
+            const firstRecoveredIdentity = hthClient.platform.dpp
               .identity.createFromBuffer(firstRecoveredIdentityBuffer);
 
-            const secondRecoveredIdentity = dashClient.platform.dpp
+            const secondRecoveredIdentity = hthClient.platform.dpp
               .identity.createFromBuffer(secondRecoveredIdentityBuffer);
 
             // Deep equal won't work in this case, because identity returned by the register
@@ -356,7 +356,7 @@ describe('Platform', () => {
 
             /* Requesting identities by public key hashes and verifying the structure */
 
-            const identityProof = await dashClient.getDAPIClient().platform
+            const identityProof = await hthClient.getDAPIClient().platform
               .getIdentityIdsByPublicKeyHashes(
                 publicKeyHashes, { prove: true },
               );
@@ -423,9 +423,9 @@ describe('Platform', () => {
         // the original root tree from it. Then we can get the root from that tree and use it
         // as a reference root when verifying the root tree proof.
 
-        const dapiClient = await dashClient.getDAPIClient();
+        const dapiClient = await hthClient.getDAPIClient();
         const identityId = Identifier.from(process.env.DPNS_TOP_LEVEL_IDENTITY_ID);
-        const identity = await dashClient.platform.identities.get(identityId);
+        const identity = await hthClient.platform.identities.get(identityId);
 
         const [
           identityResponse,

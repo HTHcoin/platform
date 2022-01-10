@@ -3,7 +3,7 @@ const {
     PlatformPromiseClient,
     GetDataContractRequest,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const GetDataContractResponse = require('./GetDataContractResponse');
 const InvalidResponseError = require('../response/errors/InvalidResponseError');

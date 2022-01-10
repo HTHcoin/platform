@@ -1,9 +1,9 @@
 # Feature Flags Contract
 
-[![Build Status](https://github.com/dashevo/feature-flags-contract/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/dashevo/feature-flags-contract/actions/workflows/test_and_release.yml)
-[![NPM version](https://img.shields.io/npm/v/@dashevo/feature-flags-contract.svg?style=flat-square)](https://npmjs.org/package/@dashevo/feature-flags-contract)
+[![Build Status](https://github.com/MichaelHDesigns/feature-flags-contract/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/MichaelHDesigns/feature-flags-contract/actions/workflows/test_and_release.yml)
+[![NPM version](https://img.shields.io/npm/v/@hthcoin/feature-flags-contract.svg?style=flat-square)](https://npmjs.org/package/@hthcoin/feature-flags-contract)
 
-Data Contract to store Dash Platform feature flags
+Data Contract to store HTH Platform feature flags
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Data Contract to store Dash Platform feature flags
 ## Install
 
 ```sh
-npm install @dashevo/dpns-contract
+npm install @hthcoin/dpns-contract
 ```
 
 ## Usage
@@ -26,8 +26,8 @@ npm install @dashevo/dpns-contract
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/platform/issues/new/choose) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/MichaelHDesigns/platform/issues/new/choose) or submit PRs.
 
 ## License
 
-[MIT](LICENSE) &copy; Dash Core Group, Inc.
+[MIT](LICENSE) &copy; HTH Core Group, Inc.

@@ -8,8 +8,8 @@ const classifyAddresses = require('./classifyAddresses');
 const feeCalculation = require('./feeCalculation');
 const coinSelection = require('./coinSelection');
 const fundWallet = require('./fundWallet');
-const dashToDuffs = require('./dashToDuffs');
-const duffsToDash = require('./duffsToDash');
+const hthToDuffs = require('./hthToDuffs');
+const duffsToHth = require('./duffsToHth');
 const getBytesOf = require('./getBytesOf');
 const hasMethod = require('./hasMethod');
 const hasProp = require('./hasProp');
@@ -38,8 +38,8 @@ module.exports = {
   feeCalculation,
   coinSelection,
   doubleSha256,
-  dashToDuffs,
-  duffsToDash,
+  hthToDuffs,
+  duffsToHth,
   fundWallet,
   getBytesOf,
   hasMethod,

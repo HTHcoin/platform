@@ -1,4 +1,4 @@
-const featureFlagDocuments = require('@dashevo/feature-flags-contract/schema/feature-flags-documents.json');
+const featureFlagDocuments = require('@hthcoin/feature-flags-contract/schema/feature-flags-documents.json');
 const DataContractFactory = require('../../dataContract/DataContractFactory');
 const createDPPMock = require('../mocks/createDPPMock');
 

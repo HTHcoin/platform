@@ -1,4 +1,4 @@
-const { HDPrivateKey, PrivateKey } = require('@dashevo/dashcore-lib');
+const { HDPrivateKey, PrivateKey } = require('@hthcoin/hthcore-lib');
 /**
  * Get a key from the cache or generate if none
  * @param path

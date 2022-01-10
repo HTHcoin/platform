@@ -3,7 +3,7 @@ const {
     Proof,
     ResponseMetadata,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 /**
  * @param {BlockExecutionContext} blockExecutionContext

@@ -1,5 +1,5 @@
-const BufferWriter = require('@dashevo/dashcore-lib/lib/encoding/bufferwriter');
-const Hash = require('@dashevo/dashcore-lib/lib/crypto/hash');
+const BufferWriter = require('@hthcoin/hthcore-lib/lib/encoding/bufferwriter');
+const Hash = require('@hthcoin/hthcore-lib/lib/crypto/hash');
 const QuorumsNotFoundError = require('./errors/QuorumsNotFoundError');
 
 /**

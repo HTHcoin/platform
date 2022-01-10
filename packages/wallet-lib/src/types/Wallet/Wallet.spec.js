@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const knifeMnemonic = require('../../../fixtures/knifeeasily');
 const gatherSailMnemonic = require('../../../fixtures/gathersail');
 const fluidMnemonic = require('../../../fixtures/fluidDepth');
@@ -19,7 +19,7 @@ describe('Wallet - class', function suite() {
   it('should create a wallet without parameters', () => {
     const wallet1 = new Wallet(mocks);
     expect(wallet1.walletType).to.be.equal(WALLET_TYPES.HDWALLET);
-    expect(Dashcore.Mnemonic(wallet1.mnemonic).toString()).to.be.equal(wallet1.mnemonic);
+    expect(Hthcore.Mnemonic(wallet1.mnemonic).toString()).to.be.equal(wallet1.mnemonic);
 
     expect(wallet1.plugins).to.be.deep.equal({});
     expect(wallet1.accounts).to.be.deep.equal([]);
@@ -28,13 +28,13 @@ describe('Wallet - class', function suite() {
     expect(wallet1.allowSensitiveOperations).to.be.deep.equal(false);
     expect(wallet1.injectDefaultPlugins).to.be.deep.equal(true);
     expect(wallet1.walletId).to.length(10);
-    expect(wallet1.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet1.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
 
     const wallet2 = new Wallet(mocks);
     expect(wallet2.walletType).to.be.equal(WALLET_TYPES.HDWALLET);
-    expect(Dashcore.Mnemonic(wallet2.mnemonic).toString()).to.be.equal(wallet2.mnemonic);
+    expect(Hthcore.Mnemonic(wallet2.mnemonic).toString()).to.be.equal(wallet2.mnemonic);
     expect(wallet2.mnemonic).to.be.not.equal(wallet1.mnemonic);
-    expect(wallet2.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet2.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
     wallet1.storage.on('CONFIGURED', () => {
       wallet1.disconnect();
     });
@@ -45,11 +45,11 @@ describe('Wallet - class', function suite() {
   it('should create a wallet with mnemonic', () => {
     const wallet1 = new Wallet({ mnemonic: knifeMnemonic.mnemonic, ...mocks });
     expect(wallet1.walletType).to.be.equal(WALLET_TYPES.HDWALLET);
-    expect(Dashcore.Mnemonic(wallet1.mnemonic).toString()).to.be.equal(wallet1.mnemonic);
+    expect(Hthcore.Mnemonic(wallet1.mnemonic).toString()).to.be.equal(wallet1.mnemonic);
 
     expect(wallet1.plugins).to.be.deep.equal({});
     expect(wallet1.accounts).to.be.deep.equal([]);
-    expect(wallet1.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet1.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
     expect(wallet1.keyChain.type).to.be.deep.equal('HDPrivateKey');
     expect(wallet1.passphrase).to.be.deep.equal(null);
     expect(wallet1.allowSensitiveOperations).to.be.deep.equal(false);
@@ -59,8 +59,8 @@ describe('Wallet - class', function suite() {
     const opts2 = { mnemonic: knifeMnemonic.mnemonic, network: 'livenet', ...mocks };
     const wallet2 = new Wallet(opts2);
     expect(wallet2.walletType).to.be.equal(WALLET_TYPES.HDWALLET);
-    expect(wallet2.network).to.be.deep.equal(Dashcore.Networks.mainnet.toString());
-    expect(Dashcore.Mnemonic(wallet2.mnemonic).toString()).to.be.equal(wallet2.mnemonic);
+    expect(wallet2.network).to.be.deep.equal(Hthcore.Networks.mainnet.toString());
+    expect(Hthcore.Mnemonic(wallet2.mnemonic).toString()).to.be.equal(wallet2.mnemonic);
     expect(wallet2.walletId).to.be.equal(knifeMnemonic.walletIdMainnet);
     wallet1.storage.on('CONFIGURED', () => {
       wallet1.disconnect();
@@ -76,7 +76,7 @@ describe('Wallet - class', function suite() {
 
     expect(wallet1.plugins).to.be.deep.equal({});
     expect(wallet1.accounts).to.be.deep.equal([]);
-    expect(wallet1.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet1.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
     expect(wallet1.keyChain.type).to.be.deep.equal('HDPrivateKey');
     expect(wallet1.passphrase).to.be.deep.equal(null);
     expect(wallet1.allowSensitiveOperations).to.be.deep.equal(false);
@@ -94,7 +94,7 @@ describe('Wallet - class', function suite() {
 
     expect(wallet1.plugins).to.be.deep.equal({});
     expect(wallet1.accounts).to.be.deep.equal([]);
-    expect(wallet1.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet1.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
     expect(wallet1.keyChain.type).to.be.deep.equal('HDPublicKey');
     expect(wallet1.passphrase).to.be.deep.equal(null);
     expect(wallet1.allowSensitiveOperations).to.be.deep.equal(false);
@@ -111,7 +111,7 @@ describe('Wallet - class', function suite() {
 
     expect(wallet1.plugins).to.be.deep.equal({});
     expect(wallet1.accounts).to.be.deep.equal([]);
-    expect(wallet1.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet1.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
     expect(wallet1.keyChain.type).to.be.deep.equal('privateKey');
     expect(wallet1.passphrase).to.be.deep.equal(null);
     expect(wallet1.allowSensitiveOperations).to.be.deep.equal(false);
@@ -123,7 +123,7 @@ describe('Wallet - class', function suite() {
     });
   });
   it('should create a wallet with PublicKey', () => {
-    const publicKey = new Dashcore.PrivateKey(cR4t6ePrivateKey.privateKey).toPublicKey();
+    const publicKey = new Hthcore.PrivateKey(cR4t6ePrivateKey.privateKey).toPublicKey();
     expect(publicKey.toString()).to.equal('03353b4deb77923b026278d116e2007d6f97a058e42d35f1fd39efd5314705f844');
     const wallet1 = new Wallet({ publicKey: publicKey.toString(), network: 'testnet', ...mocks });
     expect(wallet1.walletType).to.be.equal(WALLET_TYPES.PUBLICKEY);
@@ -131,7 +131,7 @@ describe('Wallet - class', function suite() {
 
     expect(wallet1.plugins).to.be.deep.equal({});
     expect(wallet1.accounts).to.be.deep.equal([]);
-    expect(wallet1.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet1.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
     expect(wallet1.keyChain.type).to.be.deep.equal('publicKey');
     expect(wallet1.passphrase).to.be.deep.equal(null);
     expect(wallet1.allowSensitiveOperations).to.be.deep.equal(false);
@@ -148,7 +148,7 @@ describe('Wallet - class', function suite() {
 
     expect(wallet2.plugins).to.be.deep.equal({});
     expect(wallet2.accounts).to.be.deep.equal([]);
-    expect(wallet2.network).to.be.deep.equal(Dashcore.Networks.testnet.toString());
+    expect(wallet2.network).to.be.deep.equal(Hthcore.Networks.testnet.toString());
     expect(wallet2.keyChain.type).to.be.deep.equal('publicKey');
     expect(wallet2.passphrase).to.be.deep.equal(null);
     expect(wallet2.allowSensitiveOperations).to.be.deep.equal(false);
@@ -205,7 +205,7 @@ describe('Wallet - Get/Create Account',  function suite() {
     });
   });
   it('should encrypt wallet with a passphrase', () => {
-    const network = Dashcore.Networks.testnet.toString();
+    const network = Hthcore.Networks.testnet.toString();
     const passphrase = 'Evolution';
     const config = {
       mnemonic: fluidMnemonic.mnemonic,
@@ -221,7 +221,7 @@ describe('Wallet - Get/Create Account',  function suite() {
     });
   });
   it('should be able to create an account at a specific index', (done) => {
-    const network = Dashcore.Networks.testnet.toString();
+    const network = Hthcore.Networks.testnet.toString();
     const passphrase = 'Evolution';
     const config = {
       mnemonic: fluidMnemonic.mnemonic,

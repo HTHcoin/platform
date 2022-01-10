@@ -3,7 +3,7 @@ const {
     PlatformPromiseClient,
     WaitForStateTransitionResultRequest,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const WaitForStateTransitionResultResponse = require('./WaitForStateTransitionResultResponse');
 const InvalidResponseError = require('../response/errors/InvalidResponseError');

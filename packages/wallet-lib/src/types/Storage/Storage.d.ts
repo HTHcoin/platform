@@ -6,9 +6,9 @@ import {
     TransactionInfo, TransactionMetaData, TransactionsWithMetaData,
     WalletObj, WalletType
 } from "../types";
-import { BlockHeader } from "@dashevo/dashcore-lib";
+import { BlockHeader } from "@hthcoin/hthcore-lib";
 import { Account } from "../..";
-import { Transaction } from "@dashevo/dashcore-lib/typings/transaction/Transaction";
+import { Transaction } from "@hthcoin/hthcore-lib/typings/transaction/Transaction";
 
 
 export declare namespace Storage {

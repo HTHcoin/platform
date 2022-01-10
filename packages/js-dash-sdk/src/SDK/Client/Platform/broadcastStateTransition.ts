@@ -4,12 +4,12 @@ import { StateTransitionBroadcastError } from "../../../errors/StateTransitionBr
 import { IStateTransitionResult } from "./IStateTransitionResult";
 import { IPlatformStateProof } from "./IPlatformStateProof";
 
-const ResponseError = require('@dashevo/dapi-client/lib/transport/errors/response/ResponseError');
-const InvalidRequestDPPError = require('@dashevo/dapi-client/lib/transport/errors/response/InvalidRequestDPPError');
+const ResponseError = require('@hthcoin/dapi-client/lib/transport/errors/response/ResponseError');
+const InvalidRequestDPPError = require('@hthcoin/dapi-client/lib/transport/errors/response/InvalidRequestDPPError');
 
-const createGrpcTransportError = require('@dashevo/dapi-client/lib/transport/GrpcTransport/createGrpcTransportError');
+const createGrpcTransportError = require('@hthcoin/dapi-client/lib/transport/GrpcTransport/createGrpcTransportError');
 
-const GrpcError = require('@dashevo/grpc-common/lib/server/error/GrpcError');
+const GrpcError = require('@hthcoin/grpc-common/lib/server/error/GrpcError');
 
 /**
  * @param {Platform} platform

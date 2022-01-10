@@ -3,11 +3,11 @@ const {
     BroadcastStateTransitionRequest,
     PlatformPromiseClient,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const DashPlatformProtocol = require('@dashevo/dpp');
+const HthPlatformProtocol = require('@hthcoin/dpp');
 
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
 
 const broadcastStateTransitionFactory = require('../../../../../lib/methods/platform/broadcastStateTransition/broadcastStateTransitionFactory');
 const BroadcastStateTransitionResponse = require('../../../../../lib/methods/platform/broadcastStateTransition/BroadcastStateTransitionResponse');
@@ -27,7 +27,7 @@ describe('broadcastStateTransitionFactory', () => {
     };
 
     const dataContractFixture = getDataContractFixture();
-    const dpp = new DashPlatformProtocol();
+    const dpp = new HthPlatformProtocol();
     await dpp.initialize();
 
     stateTransitionFixture = dpp.dataContract.createDataContractCreateTransition(

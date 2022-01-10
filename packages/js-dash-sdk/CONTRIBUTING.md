@@ -1,4 +1,4 @@
-Contributing to Dash SDK
+Contributing to HTH SDK
 ======================
 
 First off, thanks for taking the time to contribute!
@@ -18,7 +18,7 @@ The following is a set of guidelines for contributing. These are mostly guidelin
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).   
-By participating, you are expected to uphold this code. Please report unacceptable behavior to [alex@dash.org](mailto:alex@dash.org).
+By participating, you are expected to uphold this code. Please report unacceptable behavior to [alex@hth.org](mailto:alex@hth.org).
 
 ## Styleguides
 
@@ -55,7 +55,7 @@ Don't hesitate to use commit messages to explain more about the changes.
 
 #### Issues
 
-* Demonstrating the issue by creating a JSFiddle (you can inherit Dash SDK from unpkg) is definitely welcome. 
+* Demonstrating the issue by creating a JSFiddle (you can inherit HTH SDK from unpkg) is definitely welcome. 
 * **Use a clear and descriptive title** for the issue to identify the suggestion.
 * **Provide a comprehensive description of the suggested enhancement** in as much detail as possible. (a template is automatically generated for you when creating an issue / pr)
 * (If applicable) **Provide specific examples to demonstrate the steps**.

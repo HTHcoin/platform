@@ -12,7 +12,7 @@ Parameters:
 This example will describe how to resolve names by the identity id, but other records field will works too.  
 ```js
 const identityId = '3ge4yjGinQDhxh2aVpyLTQaoka45BkijkoybfAkDepoN';
-const document = await client.platform.names.resolveByRecord('dashIdentity',identityId);
+const document = await client.platform.names.resolveByRecord('hthIdentity',identityId);
 ```
 
 Returns : array of Document.

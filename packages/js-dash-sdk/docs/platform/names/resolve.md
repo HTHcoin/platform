@@ -7,6 +7,6 @@ Parameters:
 |---------------------------|-----------|----------------| ----------------------------------------------------------------------------- |
 | **name**                  | String    | yes            | An alphanumeric (2-63) value used for human-identification (can contains `-`) |
 
-**Example**: `await client.platform.names.resolve('alice.dash')`
+**Example**: `await client.platform.names.resolve('alice.hth')`
 
 Returns : Document (or `null` if do not exist).

@@ -2,9 +2,9 @@ import { expect } from 'chai';
 import { Platform } from "./index";
 import 'mocha';
 import Client from '../Client';
-import { latestVersion as latestProtocolVersion } from "@dashevo/dpp/lib/version/protocolVersion";
+import { latestVersion as latestProtocolVersion } from "@hthcoin/dpp/lib/version/protocolVersion";
 
-describe('Dash - Platform', () => {
+describe('HTH - Platform', () => {
 
   it('should provide expected class', function () {
     expect(Platform.name).to.be.equal('Platform')

@@ -8,8 +8,8 @@ const webConfig =  {
   output: {
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'Dash',
-    filename: 'dash.min.js',
+    library: 'HTH',
+    filename: 'hth.min.js',
     // fixes ReferenceError: window is not defined
     globalObject: "(typeof self !== 'undefined' ? self : this)"
   },

@@ -1,10 +1,10 @@
-const InvalidStateTransitionError = require('@dashevo/dpp/lib/stateTransition/errors/InvalidStateTransitionError');
+const InvalidStateTransitionError = require('@hthcoin/dpp/lib/stateTransition/errors/InvalidStateTransitionError');
 const InvalidArgumentAbciError = require('../../errors/InvalidArgumentAbciError');
 
 const DPPValidationAbciError = require('../../errors/DPPValidationAbciError');
 
 /**
- * @param {DashPlatformProtocol} dpp
+ * @param {HthPlatformProtocol} dpp
  * @param {Object} noopLogger
  * @return {unserializeStateTransition}
  */

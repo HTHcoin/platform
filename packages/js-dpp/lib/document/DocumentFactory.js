@@ -18,7 +18,7 @@ const InvalidDocumentTypeError = require('../errors/InvalidDocumentTypeError');
 
 class DocumentFactory {
   /**
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    * @param {validateDocument} validateDocument
    * @param {fetchAndValidateDataContract} fetchAndValidateDataContract
    * @param {decodeProtocolEntity} decodeProtocolEntity

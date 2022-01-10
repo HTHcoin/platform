@@ -4,13 +4,13 @@ const {
       ResponseDeliverTx,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const crypto = require('crypto');
 
-const stateTransitionTypes = require('@dashevo/dpp/lib/stateTransition/stateTransitionTypes');
+const stateTransitionTypes = require('@hthcoin/dpp/lib/stateTransition/stateTransitionTypes');
 const AbstractDocumentTransition = require(
-  '@dashevo/dpp/lib/document/stateTransition/DocumentsBatchTransition/documentTransition/AbstractDocumentTransition',
+  '@hthcoin/dpp/lib/document/stateTransition/DocumentsBatchTransition/documentTransition/AbstractDocumentTransition',
 );
 
 const DPPValidationAbciError = require('../errors/DPPValidationAbciError');
@@ -28,7 +28,7 @@ const DATA_CONTRACT_ACTION_DESCRIPTIONS = {
 
 /**
  * @param {unserializeStateTransition} transactionalUnserializeStateTransition
- * @param {DashPlatformProtocol} transactionalDpp
+ * @param {HthPlatformProtocol} transactionalDpp
  * @param {BlockExecutionContext} blockExecutionContext
  * @param {BaseLogger} logger
  *

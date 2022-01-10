@@ -2,7 +2,7 @@ const {
   PublicKey,
   PrivateKey,
   crypto: { Hash },
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 
 const AbstractStateTransition = require('./AbstractStateTransition');
 

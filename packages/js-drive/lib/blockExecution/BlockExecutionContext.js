@@ -1,4 +1,4 @@
-const DataContract = require('@dashevo/dpp/lib/dataContract/DataContract');
+const DataContract = require('@hthcoin/dpp/lib/dataContract/DataContract');
 
 const {
   tendermint: {
@@ -9,7 +9,7 @@ const {
       Header,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const Long = require('long');
 

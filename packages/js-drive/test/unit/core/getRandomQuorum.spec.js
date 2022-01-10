@@ -1,4 +1,4 @@
-const { QuorumEntry } = require('@dashevo/dashcore-lib');
+const { QuorumEntry } = require('@hthcoin/hthcore-lib');
 const { expect } = require('chai');
 const getRandomQuorum = require('../../../lib/core/getRandomQuorum');
 

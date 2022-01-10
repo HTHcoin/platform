@@ -4,7 +4,7 @@ const {
     GetStatusResponse,
     CorePromiseClient,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 /**
  * @param {GrpcTransport} grpcTransport

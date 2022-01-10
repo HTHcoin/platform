@@ -17,16 +17,16 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='core.proto',
-  package='org.dash.platform.dapi.v0',
+  package='org.hth.platform.dapi.v0',
   syntax='proto3',
-  serialized_pb=_b('\n\ncore.proto\x12\x19org.dash.platform.dapi.v0\"\x12\n\x10GetStatusRequest\"\x8e\n\n\x11GetStatusResponse\x12\x45\n\x07version\x18\x01 \x01(\x0b\x32\x34.org.dash.platform.dapi.v0.GetStatusResponse.Version\x12?\n\x04time\x18\x02 \x01(\x0b\x32\x31.org.dash.platform.dapi.v0.GetStatusResponse.Time\x12\x43\n\x06status\x18\x03 \x01(\x0e\x32\x33.org.dash.platform.dapi.v0.GetStatusResponse.Status\x12\x15\n\rsync_progress\x18\x04 \x01(\x01\x12\x41\n\x05\x63hain\x18\x05 \x01(\x0b\x32\x32.org.dash.platform.dapi.v0.GetStatusResponse.Chain\x12K\n\nmasternode\x18\x06 \x01(\x0b\x32\x37.org.dash.platform.dapi.v0.GetStatusResponse.Masternode\x12\x45\n\x07network\x18\x07 \x01(\x0b\x32\x34.org.dash.platform.dapi.v0.GetStatusResponse.Network\x1a<\n\x07Version\x12\x10\n\x08protocol\x18\x01 \x01(\r\x12\x10\n\x08software\x18\x02 \x01(\r\x12\r\n\x05\x61gent\x18\x03 \x01(\t\x1a\x33\n\x04Time\x12\x0b\n\x03now\x18\x01 \x01(\r\x12\x0e\n\x06offset\x18\x02 \x01(\x05\x12\x0e\n\x06median\x18\x03 \x01(\r\x1a\xad\x01\n\x05\x43hain\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x15\n\rheaders_count\x18\x02 \x01(\r\x12\x14\n\x0c\x62locks_count\x18\x03 \x01(\r\x12\x17\n\x0f\x62\x65st_block_hash\x18\x04 \x01(\x0c\x12\x12\n\ndifficulty\x18\x05 \x01(\x01\x12\x12\n\nchain_work\x18\x06 \x01(\x0c\x12\x11\n\tis_synced\x18\x07 \x01(\x08\x12\x15\n\rsync_progress\x18\x08 \x01(\x01\x1a\xc4\x02\n\nMasternode\x12N\n\x06status\x18\x01 \x01(\x0e\x32>.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status\x12\x13\n\x0bpro_tx_hash\x18\x02 \x01(\x0c\x12\x14\n\x0cpose_penalty\x18\x03 \x01(\r\x12\x11\n\tis_synced\x18\x04 \x01(\x08\x12\x15\n\rsync_progress\x18\x05 \x01(\x01\"\x90\x01\n\x06Status\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x15\n\x11WAITING_FOR_PROTX\x10\x01\x12\x0f\n\x0bPOSE_BANNED\x10\x02\x12\x0b\n\x07REMOVED\x10\x03\x12\x18\n\x14OPERATOR_KEY_CHANGED\x10\x04\x12\x14\n\x10PROTX_IP_CHANGED\x10\x05\x12\t\n\x05READY\x10\x06\x12\t\n\x05\x45RROR\x10\x07\x1a\x30\n\nNetworkFee\x12\r\n\x05relay\x18\x01 \x01(\x01\x12\x13\n\x0bincremental\x18\x02 \x01(\x01\x1a\x64\n\x07Network\x12\x13\n\x0bpeers_count\x18\x01 \x01(\r\x12\x44\n\x03\x66\x65\x65\x18\x02 \x01(\x0b\x32\x37.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee\"<\n\x06Status\x12\x0f\n\x0bNOT_STARTED\x10\x00\x12\x0b\n\x07SYNCING\x10\x01\x12\t\n\x05READY\x10\x02\x12\t\n\x05\x45RROR\x10\x03\"<\n\x0fGetBlockRequest\x12\x10\n\x06height\x18\x01 \x01(\rH\x00\x12\x0e\n\x04hash\x18\x02 \x01(\tH\x00\x42\x07\n\x05\x62lock\"!\n\x10GetBlockResponse\x12\r\n\x05\x62lock\x18\x01 \x01(\x0c\"b\n\x1b\x42roadcastTransactionRequest\x12\x13\n\x0btransaction\x18\x01 \x01(\x0c\x12\x17\n\x0f\x61llow_high_fees\x18\x02 \x01(\x08\x12\x15\n\rbypass_limits\x18\x03 \x01(\x08\"6\n\x1c\x42roadcastTransactionResponse\x12\x16\n\x0etransaction_id\x18\x01 \x01(\t\"#\n\x15GetTransactionRequest\x12\n\n\x02id\x18\x01 \x01(\t\"\x9c\x01\n\x16GetTransactionResponse\x12\x13\n\x0btransaction\x18\x01 \x01(\x0c\x12\x12\n\nblock_hash\x18\x02 \x01(\x0c\x12\x0e\n\x06height\x18\x03 \x01(\r\x12\x15\n\rconfirmations\x18\x04 \x01(\r\x12\x19\n\x11is_instant_locked\x18\x05 \x01(\x08\x12\x17\n\x0fis_chain_locked\x18\x06 \x01(\x08\"x\n!BlockHeadersWithChainLocksRequest\x12\x19\n\x0f\x66rom_block_hash\x18\x01 \x01(\x0cH\x00\x12\x1b\n\x11\x66rom_block_height\x18\x02 \x01(\rH\x00\x12\r\n\x05\x63ount\x18\x03 \x01(\rB\x0c\n\nfrom_block\"\xd3\x01\n\"BlockHeadersWithChainLocksResponse\x12@\n\rblock_headers\x18\x01 \x01(\x0b\x32\'.org.dash.platform.dapi.v0.BlockHeadersH\x00\x12^\n\x1d\x63hain_lock_signature_messages\x18\x02 \x01(\x0b\x32\x35.org.dash.platform.dapi.v0.ChainLockSignatureMessagesH\x00\x42\x0b\n\tresponses\"\x1f\n\x0c\x42lockHeaders\x12\x0f\n\x07headers\x18\x01 \x03(\x0c\".\n\x1a\x43hainLockSignatureMessages\x12\x10\n\x08messages\x18\x01 \x03(\x0c\"3\n!GetEstimatedTransactionFeeRequest\x12\x0e\n\x06\x62locks\x18\x01 \x01(\r\"1\n\"GetEstimatedTransactionFeeResponse\x12\x0b\n\x03\x66\x65\x65\x18\x01 \x01(\x01\"\xd3\x01\n\x1dTransactionsWithProofsRequest\x12<\n\x0c\x62loom_filter\x18\x01 \x01(\x0b\x32&.org.dash.platform.dapi.v0.BloomFilter\x12\x19\n\x0f\x66rom_block_hash\x18\x02 \x01(\x0cH\x00\x12\x1b\n\x11\x66rom_block_height\x18\x03 \x01(\rH\x00\x12\r\n\x05\x63ount\x18\x04 \x01(\r\x12\x1f\n\x17send_transaction_hashes\x18\x05 \x01(\x08\x42\x0c\n\nfrom_block\"U\n\x0b\x42loomFilter\x12\x0e\n\x06v_data\x18\x01 \x01(\x0c\x12\x14\n\x0cn_hash_funcs\x18\x02 \x01(\r\x12\x0f\n\x07n_tweak\x18\x03 \x01(\r\x12\x0f\n\x07n_flags\x18\x04 \x01(\r\"\xeb\x01\n\x1eTransactionsWithProofsResponse\x12\x46\n\x10raw_transactions\x18\x01 \x01(\x0b\x32*.org.dash.platform.dapi.v0.RawTransactionsH\x00\x12X\n\x1ainstant_send_lock_messages\x18\x02 \x01(\x0b\x32\x32.org.dash.platform.dapi.v0.InstantSendLockMessagesH\x00\x12\x1a\n\x10raw_merkle_block\x18\x03 \x01(\x0cH\x00\x42\x0b\n\tresponses\"\'\n\x0fRawTransactions\x12\x14\n\x0ctransactions\x18\x01 \x03(\x0c\"+\n\x17InstantSendLockMessages\x12\x10\n\x08messages\x18\x01 \x03(\x0c\x32\xb6\x07\n\x04\x43ore\x12\x66\n\tgetStatus\x12+.org.dash.platform.dapi.v0.GetStatusRequest\x1a,.org.dash.platform.dapi.v0.GetStatusResponse\x12\x63\n\x08getBlock\x12*.org.dash.platform.dapi.v0.GetBlockRequest\x1a+.org.dash.platform.dapi.v0.GetBlockResponse\x12\x87\x01\n\x14\x62roadcastTransaction\x12\x36.org.dash.platform.dapi.v0.BroadcastTransactionRequest\x1a\x37.org.dash.platform.dapi.v0.BroadcastTransactionResponse\x12u\n\x0egetTransaction\x12\x30.org.dash.platform.dapi.v0.GetTransactionRequest\x1a\x31.org.dash.platform.dapi.v0.GetTransactionResponse\x12\x99\x01\n\x1agetEstimatedTransactionFee\x12<.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest\x1a=.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse\x12\xa6\x01\n%subscribeToBlockHeadersWithChainLocks\x12<.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest\x1a=.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse0\x01\x12\x9a\x01\n!subscribeToTransactionsWithProofs\x12\x38.org.dash.platform.dapi.v0.TransactionsWithProofsRequest\x1a\x39.org.dash.platform.dapi.v0.TransactionsWithProofsResponse0\x01\x62\x06proto3')
+  serialized_pb=_b('\n\ncore.proto\x12\x19org.hth.platform.dapi.v0\"\x12\n\x10GetStatusRequest\"\x8e\n\n\x11GetStatusResponse\x12\x45\n\x07version\x18\x01 \x01(\x0b\x32\x34.org.hth.platform.dapi.v0.GetStatusResponse.Version\x12?\n\x04time\x18\x02 \x01(\x0b\x32\x31.org.hth.platform.dapi.v0.GetStatusResponse.Time\x12\x43\n\x06status\x18\x03 \x01(\x0e\x32\x33.org.hth.platform.dapi.v0.GetStatusResponse.Status\x12\x15\n\rsync_progress\x18\x04 \x01(\x01\x12\x41\n\x05\x63hain\x18\x05 \x01(\x0b\x32\x32.org.hth.platform.dapi.v0.GetStatusResponse.Chain\x12K\n\nmasternode\x18\x06 \x01(\x0b\x32\x37.org.hth.platform.dapi.v0.GetStatusResponse.Masternode\x12\x45\n\x07network\x18\x07 \x01(\x0b\x32\x34.org.hth.platform.dapi.v0.GetStatusResponse.Network\x1a<\n\x07Version\x12\x10\n\x08protocol\x18\x01 \x01(\r\x12\x10\n\x08software\x18\x02 \x01(\r\x12\r\n\x05\x61gent\x18\x03 \x01(\t\x1a\x33\n\x04Time\x12\x0b\n\x03now\x18\x01 \x01(\r\x12\x0e\n\x06offset\x18\x02 \x01(\x05\x12\x0e\n\x06median\x18\x03 \x01(\r\x1a\xad\x01\n\x05\x43hain\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x15\n\rheaders_count\x18\x02 \x01(\r\x12\x14\n\x0c\x62locks_count\x18\x03 \x01(\r\x12\x17\n\x0f\x62\x65st_block_hash\x18\x04 \x01(\x0c\x12\x12\n\ndifficulty\x18\x05 \x01(\x01\x12\x12\n\nchain_work\x18\x06 \x01(\x0c\x12\x11\n\tis_synced\x18\x07 \x01(\x08\x12\x15\n\rsync_progress\x18\x08 \x01(\x01\x1a\xc4\x02\n\nMasternode\x12N\n\x06status\x18\x01 \x01(\x0e\x32>.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status\x12\x13\n\x0bpro_tx_hash\x18\x02 \x01(\x0c\x12\x14\n\x0cpose_penalty\x18\x03 \x01(\r\x12\x11\n\tis_synced\x18\x04 \x01(\x08\x12\x15\n\rsync_progress\x18\x05 \x01(\x01\"\x90\x01\n\x06Status\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x15\n\x11WAITING_FOR_PROTX\x10\x01\x12\x0f\n\x0bPOSE_BANNED\x10\x02\x12\x0b\n\x07REMOVED\x10\x03\x12\x18\n\x14OPERATOR_KEY_CHANGED\x10\x04\x12\x14\n\x10PROTX_IP_CHANGED\x10\x05\x12\t\n\x05READY\x10\x06\x12\t\n\x05\x45RROR\x10\x07\x1a\x30\n\nNetworkFee\x12\r\n\x05relay\x18\x01 \x01(\x01\x12\x13\n\x0bincremental\x18\x02 \x01(\x01\x1a\x64\n\x07Network\x12\x13\n\x0bpeers_count\x18\x01 \x01(\r\x12\x44\n\x03\x66\x65\x65\x18\x02 \x01(\x0b\x32\x37.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee\"<\n\x06Status\x12\x0f\n\x0bNOT_STARTED\x10\x00\x12\x0b\n\x07SYNCING\x10\x01\x12\t\n\x05READY\x10\x02\x12\t\n\x05\x45RROR\x10\x03\"<\n\x0fGetBlockRequest\x12\x10\n\x06height\x18\x01 \x01(\rH\x00\x12\x0e\n\x04hash\x18\x02 \x01(\tH\x00\x42\x07\n\x05\x62lock\"!\n\x10GetBlockResponse\x12\r\n\x05\x62lock\x18\x01 \x01(\x0c\"b\n\x1b\x42roadcastTransactionRequest\x12\x13\n\x0btransaction\x18\x01 \x01(\x0c\x12\x17\n\x0f\x61llow_high_fees\x18\x02 \x01(\x08\x12\x15\n\rbypass_limits\x18\x03 \x01(\x08\"6\n\x1c\x42roadcastTransactionResponse\x12\x16\n\x0etransaction_id\x18\x01 \x01(\t\"#\n\x15GetTransactionRequest\x12\n\n\x02id\x18\x01 \x01(\t\"\x9c\x01\n\x16GetTransactionResponse\x12\x13\n\x0btransaction\x18\x01 \x01(\x0c\x12\x12\n\nblock_hash\x18\x02 \x01(\x0c\x12\x0e\n\x06height\x18\x03 \x01(\r\x12\x15\n\rconfirmations\x18\x04 \x01(\r\x12\x19\n\x11is_instant_locked\x18\x05 \x01(\x08\x12\x17\n\x0fis_chain_locked\x18\x06 \x01(\x08\"x\n!BlockHeadersWithChainLocksRequest\x12\x19\n\x0f\x66rom_block_hash\x18\x01 \x01(\x0cH\x00\x12\x1b\n\x11\x66rom_block_height\x18\x02 \x01(\rH\x00\x12\r\n\x05\x63ount\x18\x03 \x01(\rB\x0c\n\nfrom_block\"\xd3\x01\n\"BlockHeadersWithChainLocksResponse\x12@\n\rblock_headers\x18\x01 \x01(\x0b\x32\'.org.hth.platform.dapi.v0.BlockHeadersH\x00\x12^\n\x1d\x63hain_lock_signature_messages\x18\x02 \x01(\x0b\x32\x35.org.hth.platform.dapi.v0.ChainLockSignatureMessagesH\x00\x42\x0b\n\tresponses\"\x1f\n\x0c\x42lockHeaders\x12\x0f\n\x07headers\x18\x01 \x03(\x0c\".\n\x1a\x43hainLockSignatureMessages\x12\x10\n\x08messages\x18\x01 \x03(\x0c\"3\n!GetEstimatedTransactionFeeRequest\x12\x0e\n\x06\x62locks\x18\x01 \x01(\r\"1\n\"GetEstimatedTransactionFeeResponse\x12\x0b\n\x03\x66\x65\x65\x18\x01 \x01(\x01\"\xd3\x01\n\x1dTransactionsWithProofsRequest\x12<\n\x0c\x62loom_filter\x18\x01 \x01(\x0b\x32&.org.hth.platform.dapi.v0.BloomFilter\x12\x19\n\x0f\x66rom_block_hash\x18\x02 \x01(\x0cH\x00\x12\x1b\n\x11\x66rom_block_height\x18\x03 \x01(\rH\x00\x12\r\n\x05\x63ount\x18\x04 \x01(\r\x12\x1f\n\x17send_transaction_hashes\x18\x05 \x01(\x08\x42\x0c\n\nfrom_block\"U\n\x0b\x42loomFilter\x12\x0e\n\x06v_data\x18\x01 \x01(\x0c\x12\x14\n\x0cn_hash_funcs\x18\x02 \x01(\r\x12\x0f\n\x07n_tweak\x18\x03 \x01(\r\x12\x0f\n\x07n_flags\x18\x04 \x01(\r\"\xeb\x01\n\x1eTransactionsWithProofsResponse\x12\x46\n\x10raw_transactions\x18\x01 \x01(\x0b\x32*.org.hth.platform.dapi.v0.RawTransactionsH\x00\x12X\n\x1ainstant_send_lock_messages\x18\x02 \x01(\x0b\x32\x32.org.hth.platform.dapi.v0.InstantSendLockMessagesH\x00\x12\x1a\n\x10raw_merkle_block\x18\x03 \x01(\x0cH\x00\x42\x0b\n\tresponses\"\'\n\x0fRawTransactions\x12\x14\n\x0ctransactions\x18\x01 \x03(\x0c\"+\n\x17InstantSendLockMessages\x12\x10\n\x08messages\x18\x01 \x03(\x0c\x32\xb6\x07\n\x04\x43ore\x12\x66\n\tgetStatus\x12+.org.hth.platform.dapi.v0.GetStatusRequest\x1a,.org.hth.platform.dapi.v0.GetStatusResponse\x12\x63\n\x08getBlock\x12*.org.hth.platform.dapi.v0.GetBlockRequest\x1a+.org.hth.platform.dapi.v0.GetBlockResponse\x12\x87\x01\n\x14\x62roadcastTransaction\x12\x36.org.hth.platform.dapi.v0.BroadcastTransactionRequest\x1a\x37.org.hth.platform.dapi.v0.BroadcastTransactionResponse\x12u\n\x0egetTransaction\x12\x30.org.hth.platform.dapi.v0.GetTransactionRequest\x1a\x31.org.hth.platform.dapi.v0.GetTransactionResponse\x12\x99\x01\n\x1agetEstimatedTransactionFee\x12<.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest\x1a=.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse\x12\xa6\x01\n%subscribeToBlockHeadersWithChainLocks\x12<.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest\x1a=.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse0\x01\x12\x9a\x01\n!subscribeToTransactionsWithProofs\x12\x38.org.hth.platform.dapi.v0.TransactionsWithProofsRequest\x1a\x39.org.hth.platform.dapi.v0.TransactionsWithProofsResponse0\x01\x62\x06proto3')
 )
 
 
 
 _GETSTATUSRESPONSE_MASTERNODE_STATUS = _descriptor.EnumDescriptor(
   name='Status',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -72,7 +72,7 @@ _sym_db.RegisterEnumDescriptor(_GETSTATUSRESPONSE_MASTERNODE_STATUS)
 
 _GETSTATUSRESPONSE_STATUS = _descriptor.EnumDescriptor(
   name='Status',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse.Status',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse.Status',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -103,7 +103,7 @@ _sym_db.RegisterEnumDescriptor(_GETSTATUSRESPONSE_STATUS)
 
 _GETSTATUSREQUEST = _descriptor.Descriptor(
   name='GetStatusRequest',
-  full_name='org.dash.platform.dapi.v0.GetStatusRequest',
+  full_name='org.hth.platform.dapi.v0.GetStatusRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
@@ -127,27 +127,27 @@ _GETSTATUSREQUEST = _descriptor.Descriptor(
 
 _GETSTATUSRESPONSE_VERSION = _descriptor.Descriptor(
   name='Version',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse.Version',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse.Version',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='protocol', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Version.protocol', index=0,
+      name='protocol', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Version.protocol', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='software', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Version.software', index=1,
+      name='software', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Version.software', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='agent', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Version.agent', index=2,
+      name='agent', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Version.agent', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -171,27 +171,27 @@ _GETSTATUSRESPONSE_VERSION = _descriptor.Descriptor(
 
 _GETSTATUSRESPONSE_TIME = _descriptor.Descriptor(
   name='Time',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse.Time',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse.Time',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='now', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Time.now', index=0,
+      name='now', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Time.now', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='offset', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Time.offset', index=1,
+      name='offset', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Time.offset', index=1,
       number=2, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='median', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Time.median', index=2,
+      name='median', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Time.median', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -215,62 +215,62 @@ _GETSTATUSRESPONSE_TIME = _descriptor.Descriptor(
 
 _GETSTATUSRESPONSE_CHAIN = _descriptor.Descriptor(
   name='Chain',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='name', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain.name', index=0,
+      name='name', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain.name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='headers_count', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain.headers_count', index=1,
+      name='headers_count', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain.headers_count', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='blocks_count', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain.blocks_count', index=2,
+      name='blocks_count', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain.blocks_count', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='best_block_hash', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain.best_block_hash', index=3,
+      name='best_block_hash', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain.best_block_hash', index=3,
       number=4, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='difficulty', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain.difficulty', index=4,
+      name='difficulty', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain.difficulty', index=4,
       number=5, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='chain_work', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain.chain_work', index=5,
+      name='chain_work', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain.chain_work', index=5,
       number=6, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='is_synced', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain.is_synced', index=6,
+      name='is_synced', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain.is_synced', index=6,
       number=7, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sync_progress', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Chain.sync_progress', index=7,
+      name='sync_progress', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Chain.sync_progress', index=7,
       number=8, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -294,41 +294,41 @@ _GETSTATUSRESPONSE_CHAIN = _descriptor.Descriptor(
 
 _GETSTATUSRESPONSE_MASTERNODE = _descriptor.Descriptor(
   name='Masternode',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse.Masternode',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse.Masternode',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='status', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Masternode.status', index=0,
+      name='status', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Masternode.status', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pro_tx_hash', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Masternode.pro_tx_hash', index=1,
+      name='pro_tx_hash', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Masternode.pro_tx_hash', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='pose_penalty', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Masternode.pose_penalty', index=2,
+      name='pose_penalty', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Masternode.pose_penalty', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='is_synced', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Masternode.is_synced', index=3,
+      name='is_synced', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Masternode.is_synced', index=3,
       number=4, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sync_progress', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Masternode.sync_progress', index=4,
+      name='sync_progress', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Masternode.sync_progress', index=4,
       number=5, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -353,20 +353,20 @@ _GETSTATUSRESPONSE_MASTERNODE = _descriptor.Descriptor(
 
 _GETSTATUSRESPONSE_NETWORKFEE = _descriptor.Descriptor(
   name='NetworkFee',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='relay', full_name='org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.relay', index=0,
+      name='relay', full_name='org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.relay', index=0,
       number=1, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='incremental', full_name='org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.incremental', index=1,
+      name='incremental', full_name='org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.incremental', index=1,
       number=2, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -390,20 +390,20 @@ _GETSTATUSRESPONSE_NETWORKFEE = _descriptor.Descriptor(
 
 _GETSTATUSRESPONSE_NETWORK = _descriptor.Descriptor(
   name='Network',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse.Network',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse.Network',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='peers_count', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Network.peers_count', index=0,
+      name='peers_count', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Network.peers_count', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='fee', full_name='org.dash.platform.dapi.v0.GetStatusResponse.Network.fee', index=1,
+      name='fee', full_name='org.hth.platform.dapi.v0.GetStatusResponse.Network.fee', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -427,55 +427,55 @@ _GETSTATUSRESPONSE_NETWORK = _descriptor.Descriptor(
 
 _GETSTATUSRESPONSE = _descriptor.Descriptor(
   name='GetStatusResponse',
-  full_name='org.dash.platform.dapi.v0.GetStatusResponse',
+  full_name='org.hth.platform.dapi.v0.GetStatusResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='version', full_name='org.dash.platform.dapi.v0.GetStatusResponse.version', index=0,
+      name='version', full_name='org.hth.platform.dapi.v0.GetStatusResponse.version', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='time', full_name='org.dash.platform.dapi.v0.GetStatusResponse.time', index=1,
+      name='time', full_name='org.hth.platform.dapi.v0.GetStatusResponse.time', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='status', full_name='org.dash.platform.dapi.v0.GetStatusResponse.status', index=2,
+      name='status', full_name='org.hth.platform.dapi.v0.GetStatusResponse.status', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sync_progress', full_name='org.dash.platform.dapi.v0.GetStatusResponse.sync_progress', index=3,
+      name='sync_progress', full_name='org.hth.platform.dapi.v0.GetStatusResponse.sync_progress', index=3,
       number=4, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='chain', full_name='org.dash.platform.dapi.v0.GetStatusResponse.chain', index=4,
+      name='chain', full_name='org.hth.platform.dapi.v0.GetStatusResponse.chain', index=4,
       number=5, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='masternode', full_name='org.dash.platform.dapi.v0.GetStatusResponse.masternode', index=5,
+      name='masternode', full_name='org.hth.platform.dapi.v0.GetStatusResponse.masternode', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='network', full_name='org.dash.platform.dapi.v0.GetStatusResponse.network', index=6,
+      name='network', full_name='org.hth.platform.dapi.v0.GetStatusResponse.network', index=6,
       number=7, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -501,20 +501,20 @@ _GETSTATUSRESPONSE = _descriptor.Descriptor(
 
 _GETBLOCKREQUEST = _descriptor.Descriptor(
   name='GetBlockRequest',
-  full_name='org.dash.platform.dapi.v0.GetBlockRequest',
+  full_name='org.hth.platform.dapi.v0.GetBlockRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='height', full_name='org.dash.platform.dapi.v0.GetBlockRequest.height', index=0,
+      name='height', full_name='org.hth.platform.dapi.v0.GetBlockRequest.height', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='hash', full_name='org.dash.platform.dapi.v0.GetBlockRequest.hash', index=1,
+      name='hash', full_name='org.hth.platform.dapi.v0.GetBlockRequest.hash', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -532,7 +532,7 @@ _GETBLOCKREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='block', full_name='org.dash.platform.dapi.v0.GetBlockRequest.block',
+      name='block', full_name='org.hth.platform.dapi.v0.GetBlockRequest.block',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=1358,
@@ -542,13 +542,13 @@ _GETBLOCKREQUEST = _descriptor.Descriptor(
 
 _GETBLOCKRESPONSE = _descriptor.Descriptor(
   name='GetBlockResponse',
-  full_name='org.dash.platform.dapi.v0.GetBlockResponse',
+  full_name='org.hth.platform.dapi.v0.GetBlockResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='block', full_name='org.dash.platform.dapi.v0.GetBlockResponse.block', index=0,
+      name='block', full_name='org.hth.platform.dapi.v0.GetBlockResponse.block', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -573,27 +573,27 @@ _GETBLOCKRESPONSE = _descriptor.Descriptor(
 
 _BROADCASTTRANSACTIONREQUEST = _descriptor.Descriptor(
   name='BroadcastTransactionRequest',
-  full_name='org.dash.platform.dapi.v0.BroadcastTransactionRequest',
+  full_name='org.hth.platform.dapi.v0.BroadcastTransactionRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='transaction', full_name='org.dash.platform.dapi.v0.BroadcastTransactionRequest.transaction', index=0,
+      name='transaction', full_name='org.hth.platform.dapi.v0.BroadcastTransactionRequest.transaction', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='allow_high_fees', full_name='org.dash.platform.dapi.v0.BroadcastTransactionRequest.allow_high_fees', index=1,
+      name='allow_high_fees', full_name='org.hth.platform.dapi.v0.BroadcastTransactionRequest.allow_high_fees', index=1,
       number=2, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='bypass_limits', full_name='org.dash.platform.dapi.v0.BroadcastTransactionRequest.bypass_limits', index=2,
+      name='bypass_limits', full_name='org.hth.platform.dapi.v0.BroadcastTransactionRequest.bypass_limits', index=2,
       number=3, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -618,13 +618,13 @@ _BROADCASTTRANSACTIONREQUEST = _descriptor.Descriptor(
 
 _BROADCASTTRANSACTIONRESPONSE = _descriptor.Descriptor(
   name='BroadcastTransactionResponse',
-  full_name='org.dash.platform.dapi.v0.BroadcastTransactionResponse',
+  full_name='org.hth.platform.dapi.v0.BroadcastTransactionResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='transaction_id', full_name='org.dash.platform.dapi.v0.BroadcastTransactionResponse.transaction_id', index=0,
+      name='transaction_id', full_name='org.hth.platform.dapi.v0.BroadcastTransactionResponse.transaction_id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -649,13 +649,13 @@ _BROADCASTTRANSACTIONRESPONSE = _descriptor.Descriptor(
 
 _GETTRANSACTIONREQUEST = _descriptor.Descriptor(
   name='GetTransactionRequest',
-  full_name='org.dash.platform.dapi.v0.GetTransactionRequest',
+  full_name='org.hth.platform.dapi.v0.GetTransactionRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='id', full_name='org.dash.platform.dapi.v0.GetTransactionRequest.id', index=0,
+      name='id', full_name='org.hth.platform.dapi.v0.GetTransactionRequest.id', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -680,48 +680,48 @@ _GETTRANSACTIONREQUEST = _descriptor.Descriptor(
 
 _GETTRANSACTIONRESPONSE = _descriptor.Descriptor(
   name='GetTransactionResponse',
-  full_name='org.dash.platform.dapi.v0.GetTransactionResponse',
+  full_name='org.hth.platform.dapi.v0.GetTransactionResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='transaction', full_name='org.dash.platform.dapi.v0.GetTransactionResponse.transaction', index=0,
+      name='transaction', full_name='org.hth.platform.dapi.v0.GetTransactionResponse.transaction', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='block_hash', full_name='org.dash.platform.dapi.v0.GetTransactionResponse.block_hash', index=1,
+      name='block_hash', full_name='org.hth.platform.dapi.v0.GetTransactionResponse.block_hash', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='height', full_name='org.dash.platform.dapi.v0.GetTransactionResponse.height', index=2,
+      name='height', full_name='org.hth.platform.dapi.v0.GetTransactionResponse.height', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='confirmations', full_name='org.dash.platform.dapi.v0.GetTransactionResponse.confirmations', index=3,
+      name='confirmations', full_name='org.hth.platform.dapi.v0.GetTransactionResponse.confirmations', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='is_instant_locked', full_name='org.dash.platform.dapi.v0.GetTransactionResponse.is_instant_locked', index=4,
+      name='is_instant_locked', full_name='org.hth.platform.dapi.v0.GetTransactionResponse.is_instant_locked', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='is_chain_locked', full_name='org.dash.platform.dapi.v0.GetTransactionResponse.is_chain_locked', index=5,
+      name='is_chain_locked', full_name='org.hth.platform.dapi.v0.GetTransactionResponse.is_chain_locked', index=5,
       number=6, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -746,27 +746,27 @@ _GETTRANSACTIONRESPONSE = _descriptor.Descriptor(
 
 _BLOCKHEADERSWITHCHAINLOCKSREQUEST = _descriptor.Descriptor(
   name='BlockHeadersWithChainLocksRequest',
-  full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest',
+  full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='from_block_hash', full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.from_block_hash', index=0,
+      name='from_block_hash', full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.from_block_hash', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='from_block_height', full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.from_block_height', index=1,
+      name='from_block_height', full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.from_block_height', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='count', full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.count', index=2,
+      name='count', full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.count', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -784,7 +784,7 @@ _BLOCKHEADERSWITHCHAINLOCKSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='from_block', full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.from_block',
+      name='from_block', full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.from_block',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=1807,
@@ -794,20 +794,20 @@ _BLOCKHEADERSWITHCHAINLOCKSREQUEST = _descriptor.Descriptor(
 
 _BLOCKHEADERSWITHCHAINLOCKSRESPONSE = _descriptor.Descriptor(
   name='BlockHeadersWithChainLocksResponse',
-  full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse',
+  full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='block_headers', full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.block_headers', index=0,
+      name='block_headers', full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.block_headers', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='chain_lock_signature_messages', full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.chain_lock_signature_messages', index=1,
+      name='chain_lock_signature_messages', full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.chain_lock_signature_messages', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -825,7 +825,7 @@ _BLOCKHEADERSWITHCHAINLOCKSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='responses', full_name='org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.responses',
+      name='responses', full_name='org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.responses',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=1930,
@@ -835,13 +835,13 @@ _BLOCKHEADERSWITHCHAINLOCKSRESPONSE = _descriptor.Descriptor(
 
 _BLOCKHEADERS = _descriptor.Descriptor(
   name='BlockHeaders',
-  full_name='org.dash.platform.dapi.v0.BlockHeaders',
+  full_name='org.hth.platform.dapi.v0.BlockHeaders',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='headers', full_name='org.dash.platform.dapi.v0.BlockHeaders.headers', index=0,
+      name='headers', full_name='org.hth.platform.dapi.v0.BlockHeaders.headers', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -866,13 +866,13 @@ _BLOCKHEADERS = _descriptor.Descriptor(
 
 _CHAINLOCKSIGNATUREMESSAGES = _descriptor.Descriptor(
   name='ChainLockSignatureMessages',
-  full_name='org.dash.platform.dapi.v0.ChainLockSignatureMessages',
+  full_name='org.hth.platform.dapi.v0.ChainLockSignatureMessages',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='messages', full_name='org.dash.platform.dapi.v0.ChainLockSignatureMessages.messages', index=0,
+      name='messages', full_name='org.hth.platform.dapi.v0.ChainLockSignatureMessages.messages', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -897,13 +897,13 @@ _CHAINLOCKSIGNATUREMESSAGES = _descriptor.Descriptor(
 
 _GETESTIMATEDTRANSACTIONFEEREQUEST = _descriptor.Descriptor(
   name='GetEstimatedTransactionFeeRequest',
-  full_name='org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest',
+  full_name='org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='blocks', full_name='org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.blocks', index=0,
+      name='blocks', full_name='org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.blocks', index=0,
       number=1, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -928,13 +928,13 @@ _GETESTIMATEDTRANSACTIONFEEREQUEST = _descriptor.Descriptor(
 
 _GETESTIMATEDTRANSACTIONFEERESPONSE = _descriptor.Descriptor(
   name='GetEstimatedTransactionFeeResponse',
-  full_name='org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse',
+  full_name='org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='fee', full_name='org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.fee', index=0,
+      name='fee', full_name='org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.fee', index=0,
       number=1, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -959,41 +959,41 @@ _GETESTIMATEDTRANSACTIONFEERESPONSE = _descriptor.Descriptor(
 
 _TRANSACTIONSWITHPROOFSREQUEST = _descriptor.Descriptor(
   name='TransactionsWithProofsRequest',
-  full_name='org.dash.platform.dapi.v0.TransactionsWithProofsRequest',
+  full_name='org.hth.platform.dapi.v0.TransactionsWithProofsRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='bloom_filter', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsRequest.bloom_filter', index=0,
+      name='bloom_filter', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsRequest.bloom_filter', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='from_block_hash', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsRequest.from_block_hash', index=1,
+      name='from_block_hash', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsRequest.from_block_hash', index=1,
       number=2, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='from_block_height', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsRequest.from_block_height', index=2,
+      name='from_block_height', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsRequest.from_block_height', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='count', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsRequest.count', index=3,
+      name='count', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsRequest.count', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='send_transaction_hashes', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsRequest.send_transaction_hashes', index=4,
+      name='send_transaction_hashes', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsRequest.send_transaction_hashes', index=4,
       number=5, type=8, cpp_type=7, label=1,
       has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
@@ -1011,7 +1011,7 @@ _TRANSACTIONSWITHPROOFSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='from_block', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsRequest.from_block',
+      name='from_block', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsRequest.from_block',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=2329,
@@ -1021,34 +1021,34 @@ _TRANSACTIONSWITHPROOFSREQUEST = _descriptor.Descriptor(
 
 _BLOOMFILTER = _descriptor.Descriptor(
   name='BloomFilter',
-  full_name='org.dash.platform.dapi.v0.BloomFilter',
+  full_name='org.hth.platform.dapi.v0.BloomFilter',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='v_data', full_name='org.dash.platform.dapi.v0.BloomFilter.v_data', index=0,
+      name='v_data', full_name='org.hth.platform.dapi.v0.BloomFilter.v_data', index=0,
       number=1, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='n_hash_funcs', full_name='org.dash.platform.dapi.v0.BloomFilter.n_hash_funcs', index=1,
+      name='n_hash_funcs', full_name='org.hth.platform.dapi.v0.BloomFilter.n_hash_funcs', index=1,
       number=2, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='n_tweak', full_name='org.dash.platform.dapi.v0.BloomFilter.n_tweak', index=2,
+      name='n_tweak', full_name='org.hth.platform.dapi.v0.BloomFilter.n_tweak', index=2,
       number=3, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='n_flags', full_name='org.dash.platform.dapi.v0.BloomFilter.n_flags', index=3,
+      name='n_flags', full_name='org.hth.platform.dapi.v0.BloomFilter.n_flags', index=3,
       number=4, type=13, cpp_type=3, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -1073,27 +1073,27 @@ _BLOOMFILTER = _descriptor.Descriptor(
 
 _TRANSACTIONSWITHPROOFSRESPONSE = _descriptor.Descriptor(
   name='TransactionsWithProofsResponse',
-  full_name='org.dash.platform.dapi.v0.TransactionsWithProofsResponse',
+  full_name='org.hth.platform.dapi.v0.TransactionsWithProofsResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='raw_transactions', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsResponse.raw_transactions', index=0,
+      name='raw_transactions', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsResponse.raw_transactions', index=0,
       number=1, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='instant_send_lock_messages', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsResponse.instant_send_lock_messages', index=1,
+      name='instant_send_lock_messages', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsResponse.instant_send_lock_messages', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='raw_merkle_block', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsResponse.raw_merkle_block', index=2,
+      name='raw_merkle_block', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsResponse.raw_merkle_block', index=2,
       number=3, type=12, cpp_type=9, label=1,
       has_default_value=False, default_value=_b(""),
       message_type=None, enum_type=None, containing_type=None,
@@ -1111,7 +1111,7 @@ _TRANSACTIONSWITHPROOFSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
     _descriptor.OneofDescriptor(
-      name='responses', full_name='org.dash.platform.dapi.v0.TransactionsWithProofsResponse.responses',
+      name='responses', full_name='org.hth.platform.dapi.v0.TransactionsWithProofsResponse.responses',
       index=0, containing_type=None, fields=[]),
   ],
   serialized_start=2630,
@@ -1121,13 +1121,13 @@ _TRANSACTIONSWITHPROOFSRESPONSE = _descriptor.Descriptor(
 
 _RAWTRANSACTIONS = _descriptor.Descriptor(
   name='RawTransactions',
-  full_name='org.dash.platform.dapi.v0.RawTransactions',
+  full_name='org.hth.platform.dapi.v0.RawTransactions',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='transactions', full_name='org.dash.platform.dapi.v0.RawTransactions.transactions', index=0,
+      name='transactions', full_name='org.hth.platform.dapi.v0.RawTransactions.transactions', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -1152,13 +1152,13 @@ _RAWTRANSACTIONS = _descriptor.Descriptor(
 
 _INSTANTSENDLOCKMESSAGES = _descriptor.Descriptor(
   name='InstantSendLockMessages',
-  full_name='org.dash.platform.dapi.v0.InstantSendLockMessages',
+  full_name='org.hth.platform.dapi.v0.InstantSendLockMessages',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='messages', full_name='org.dash.platform.dapi.v0.InstantSendLockMessages.messages', index=0,
+      name='messages', full_name='org.hth.platform.dapi.v0.InstantSendLockMessages.messages', index=0,
       number=1, type=12, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -1258,7 +1258,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 GetStatusRequest = _reflection.GeneratedProtocolMessageType('GetStatusRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETSTATUSREQUEST,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetStatusRequest)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetStatusRequest)
   ))
 _sym_db.RegisterMessage(GetStatusRequest)
 
@@ -1267,47 +1267,47 @@ GetStatusResponse = _reflection.GeneratedProtocolMessageType('GetStatusResponse'
   Version = _reflection.GeneratedProtocolMessageType('Version', (_message.Message,), dict(
     DESCRIPTOR = _GETSTATUSRESPONSE_VERSION,
     __module__ = 'core_pb2'
-    # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetStatusResponse.Version)
+    # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetStatusResponse.Version)
     ))
   ,
 
   Time = _reflection.GeneratedProtocolMessageType('Time', (_message.Message,), dict(
     DESCRIPTOR = _GETSTATUSRESPONSE_TIME,
     __module__ = 'core_pb2'
-    # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetStatusResponse.Time)
+    # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetStatusResponse.Time)
     ))
   ,
 
   Chain = _reflection.GeneratedProtocolMessageType('Chain', (_message.Message,), dict(
     DESCRIPTOR = _GETSTATUSRESPONSE_CHAIN,
     __module__ = 'core_pb2'
-    # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetStatusResponse.Chain)
+    # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetStatusResponse.Chain)
     ))
   ,
 
   Masternode = _reflection.GeneratedProtocolMessageType('Masternode', (_message.Message,), dict(
     DESCRIPTOR = _GETSTATUSRESPONSE_MASTERNODE,
     __module__ = 'core_pb2'
-    # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetStatusResponse.Masternode)
+    # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetStatusResponse.Masternode)
     ))
   ,
 
   NetworkFee = _reflection.GeneratedProtocolMessageType('NetworkFee', (_message.Message,), dict(
     DESCRIPTOR = _GETSTATUSRESPONSE_NETWORKFEE,
     __module__ = 'core_pb2'
-    # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee)
+    # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee)
     ))
   ,
 
   Network = _reflection.GeneratedProtocolMessageType('Network', (_message.Message,), dict(
     DESCRIPTOR = _GETSTATUSRESPONSE_NETWORK,
     __module__ = 'core_pb2'
-    # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetStatusResponse.Network)
+    # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetStatusResponse.Network)
     ))
   ,
   DESCRIPTOR = _GETSTATUSRESPONSE,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetStatusResponse)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetStatusResponse)
   ))
 _sym_db.RegisterMessage(GetStatusResponse)
 _sym_db.RegisterMessage(GetStatusResponse.Version)
@@ -1320,119 +1320,119 @@ _sym_db.RegisterMessage(GetStatusResponse.Network)
 GetBlockRequest = _reflection.GeneratedProtocolMessageType('GetBlockRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETBLOCKREQUEST,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetBlockRequest)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetBlockRequest)
   ))
 _sym_db.RegisterMessage(GetBlockRequest)
 
 GetBlockResponse = _reflection.GeneratedProtocolMessageType('GetBlockResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETBLOCKRESPONSE,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetBlockResponse)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetBlockResponse)
   ))
 _sym_db.RegisterMessage(GetBlockResponse)
 
 BroadcastTransactionRequest = _reflection.GeneratedProtocolMessageType('BroadcastTransactionRequest', (_message.Message,), dict(
   DESCRIPTOR = _BROADCASTTRANSACTIONREQUEST,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.BroadcastTransactionRequest)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.BroadcastTransactionRequest)
   ))
 _sym_db.RegisterMessage(BroadcastTransactionRequest)
 
 BroadcastTransactionResponse = _reflection.GeneratedProtocolMessageType('BroadcastTransactionResponse', (_message.Message,), dict(
   DESCRIPTOR = _BROADCASTTRANSACTIONRESPONSE,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.BroadcastTransactionResponse)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.BroadcastTransactionResponse)
   ))
 _sym_db.RegisterMessage(BroadcastTransactionResponse)
 
 GetTransactionRequest = _reflection.GeneratedProtocolMessageType('GetTransactionRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETTRANSACTIONREQUEST,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetTransactionRequest)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetTransactionRequest)
   ))
 _sym_db.RegisterMessage(GetTransactionRequest)
 
 GetTransactionResponse = _reflection.GeneratedProtocolMessageType('GetTransactionResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETTRANSACTIONRESPONSE,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetTransactionResponse)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetTransactionResponse)
   ))
 _sym_db.RegisterMessage(GetTransactionResponse)
 
 BlockHeadersWithChainLocksRequest = _reflection.GeneratedProtocolMessageType('BlockHeadersWithChainLocksRequest', (_message.Message,), dict(
   DESCRIPTOR = _BLOCKHEADERSWITHCHAINLOCKSREQUEST,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest)
   ))
 _sym_db.RegisterMessage(BlockHeadersWithChainLocksRequest)
 
 BlockHeadersWithChainLocksResponse = _reflection.GeneratedProtocolMessageType('BlockHeadersWithChainLocksResponse', (_message.Message,), dict(
   DESCRIPTOR = _BLOCKHEADERSWITHCHAINLOCKSRESPONSE,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse)
   ))
 _sym_db.RegisterMessage(BlockHeadersWithChainLocksResponse)
 
 BlockHeaders = _reflection.GeneratedProtocolMessageType('BlockHeaders', (_message.Message,), dict(
   DESCRIPTOR = _BLOCKHEADERS,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.BlockHeaders)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.BlockHeaders)
   ))
 _sym_db.RegisterMessage(BlockHeaders)
 
 ChainLockSignatureMessages = _reflection.GeneratedProtocolMessageType('ChainLockSignatureMessages', (_message.Message,), dict(
   DESCRIPTOR = _CHAINLOCKSIGNATUREMESSAGES,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.ChainLockSignatureMessages)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.ChainLockSignatureMessages)
   ))
 _sym_db.RegisterMessage(ChainLockSignatureMessages)
 
 GetEstimatedTransactionFeeRequest = _reflection.GeneratedProtocolMessageType('GetEstimatedTransactionFeeRequest', (_message.Message,), dict(
   DESCRIPTOR = _GETESTIMATEDTRANSACTIONFEEREQUEST,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest)
   ))
 _sym_db.RegisterMessage(GetEstimatedTransactionFeeRequest)
 
 GetEstimatedTransactionFeeResponse = _reflection.GeneratedProtocolMessageType('GetEstimatedTransactionFeeResponse', (_message.Message,), dict(
   DESCRIPTOR = _GETESTIMATEDTRANSACTIONFEERESPONSE,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse)
   ))
 _sym_db.RegisterMessage(GetEstimatedTransactionFeeResponse)
 
 TransactionsWithProofsRequest = _reflection.GeneratedProtocolMessageType('TransactionsWithProofsRequest', (_message.Message,), dict(
   DESCRIPTOR = _TRANSACTIONSWITHPROOFSREQUEST,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.TransactionsWithProofsRequest)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.TransactionsWithProofsRequest)
   ))
 _sym_db.RegisterMessage(TransactionsWithProofsRequest)
 
 BloomFilter = _reflection.GeneratedProtocolMessageType('BloomFilter', (_message.Message,), dict(
   DESCRIPTOR = _BLOOMFILTER,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.BloomFilter)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.BloomFilter)
   ))
 _sym_db.RegisterMessage(BloomFilter)
 
 TransactionsWithProofsResponse = _reflection.GeneratedProtocolMessageType('TransactionsWithProofsResponse', (_message.Message,), dict(
   DESCRIPTOR = _TRANSACTIONSWITHPROOFSRESPONSE,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.TransactionsWithProofsResponse)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.TransactionsWithProofsResponse)
   ))
 _sym_db.RegisterMessage(TransactionsWithProofsResponse)
 
 RawTransactions = _reflection.GeneratedProtocolMessageType('RawTransactions', (_message.Message,), dict(
   DESCRIPTOR = _RAWTRANSACTIONS,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.RawTransactions)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.RawTransactions)
   ))
 _sym_db.RegisterMessage(RawTransactions)
 
 InstantSendLockMessages = _reflection.GeneratedProtocolMessageType('InstantSendLockMessages', (_message.Message,), dict(
   DESCRIPTOR = _INSTANTSENDLOCKMESSAGES,
   __module__ = 'core_pb2'
-  # @@protoc_insertion_point(class_scope:org.dash.platform.dapi.v0.InstantSendLockMessages)
+  # @@protoc_insertion_point(class_scope:org.hth.platform.dapi.v0.InstantSendLockMessages)
   ))
 _sym_db.RegisterMessage(InstantSendLockMessages)
 
@@ -1440,7 +1440,7 @@ _sym_db.RegisterMessage(InstantSendLockMessages)
 
 _CORE = _descriptor.ServiceDescriptor(
   name='Core',
-  full_name='org.dash.platform.dapi.v0.Core',
+  full_name='org.hth.platform.dapi.v0.Core',
   file=DESCRIPTOR,
   index=0,
   options=None,
@@ -1449,7 +1449,7 @@ _CORE = _descriptor.ServiceDescriptor(
   methods=[
   _descriptor.MethodDescriptor(
     name='getStatus',
-    full_name='org.dash.platform.dapi.v0.Core.getStatus',
+    full_name='org.hth.platform.dapi.v0.Core.getStatus',
     index=0,
     containing_service=None,
     input_type=_GETSTATUSREQUEST,
@@ -1458,7 +1458,7 @@ _CORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='getBlock',
-    full_name='org.dash.platform.dapi.v0.Core.getBlock',
+    full_name='org.hth.platform.dapi.v0.Core.getBlock',
     index=1,
     containing_service=None,
     input_type=_GETBLOCKREQUEST,
@@ -1467,7 +1467,7 @@ _CORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='broadcastTransaction',
-    full_name='org.dash.platform.dapi.v0.Core.broadcastTransaction',
+    full_name='org.hth.platform.dapi.v0.Core.broadcastTransaction',
     index=2,
     containing_service=None,
     input_type=_BROADCASTTRANSACTIONREQUEST,
@@ -1476,7 +1476,7 @@ _CORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='getTransaction',
-    full_name='org.dash.platform.dapi.v0.Core.getTransaction',
+    full_name='org.hth.platform.dapi.v0.Core.getTransaction',
     index=3,
     containing_service=None,
     input_type=_GETTRANSACTIONREQUEST,
@@ -1485,7 +1485,7 @@ _CORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='getEstimatedTransactionFee',
-    full_name='org.dash.platform.dapi.v0.Core.getEstimatedTransactionFee',
+    full_name='org.hth.platform.dapi.v0.Core.getEstimatedTransactionFee',
     index=4,
     containing_service=None,
     input_type=_GETESTIMATEDTRANSACTIONFEEREQUEST,
@@ -1494,7 +1494,7 @@ _CORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='subscribeToBlockHeadersWithChainLocks',
-    full_name='org.dash.platform.dapi.v0.Core.subscribeToBlockHeadersWithChainLocks',
+    full_name='org.hth.platform.dapi.v0.Core.subscribeToBlockHeadersWithChainLocks',
     index=5,
     containing_service=None,
     input_type=_BLOCKHEADERSWITHCHAINLOCKSREQUEST,
@@ -1503,7 +1503,7 @@ _CORE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='subscribeToTransactionsWithProofs',
-    full_name='org.dash.platform.dapi.v0.Core.subscribeToTransactionsWithProofs',
+    full_name='org.hth.platform.dapi.v0.Core.subscribeToTransactionsWithProofs',
     index=6,
     containing_service=None,
     input_type=_TRANSACTIONSWITHPROOFSREQUEST,
@@ -1536,37 +1536,37 @@ try:
         channel: A grpc.Channel.
       """
       self.getStatus = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Core/getStatus',
+          '/org.hth.platform.dapi.v0.Core/getStatus',
           request_serializer=GetStatusRequest.SerializeToString,
           response_deserializer=GetStatusResponse.FromString,
           )
       self.getBlock = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Core/getBlock',
+          '/org.hth.platform.dapi.v0.Core/getBlock',
           request_serializer=GetBlockRequest.SerializeToString,
           response_deserializer=GetBlockResponse.FromString,
           )
       self.broadcastTransaction = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Core/broadcastTransaction',
+          '/org.hth.platform.dapi.v0.Core/broadcastTransaction',
           request_serializer=BroadcastTransactionRequest.SerializeToString,
           response_deserializer=BroadcastTransactionResponse.FromString,
           )
       self.getTransaction = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Core/getTransaction',
+          '/org.hth.platform.dapi.v0.Core/getTransaction',
           request_serializer=GetTransactionRequest.SerializeToString,
           response_deserializer=GetTransactionResponse.FromString,
           )
       self.getEstimatedTransactionFee = channel.unary_unary(
-          '/org.dash.platform.dapi.v0.Core/getEstimatedTransactionFee',
+          '/org.hth.platform.dapi.v0.Core/getEstimatedTransactionFee',
           request_serializer=GetEstimatedTransactionFeeRequest.SerializeToString,
           response_deserializer=GetEstimatedTransactionFeeResponse.FromString,
           )
       self.subscribeToBlockHeadersWithChainLocks = channel.unary_stream(
-          '/org.dash.platform.dapi.v0.Core/subscribeToBlockHeadersWithChainLocks',
+          '/org.hth.platform.dapi.v0.Core/subscribeToBlockHeadersWithChainLocks',
           request_serializer=BlockHeadersWithChainLocksRequest.SerializeToString,
           response_deserializer=BlockHeadersWithChainLocksResponse.FromString,
           )
       self.subscribeToTransactionsWithProofs = channel.unary_stream(
-          '/org.dash.platform.dapi.v0.Core/subscribeToTransactionsWithProofs',
+          '/org.hth.platform.dapi.v0.Core/subscribeToTransactionsWithProofs',
           request_serializer=TransactionsWithProofsRequest.SerializeToString,
           response_deserializer=TransactionsWithProofsResponse.FromString,
           )
@@ -1665,7 +1665,7 @@ try:
         ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-        'org.dash.platform.dapi.v0.Core', rpc_method_handlers)
+        'org.hth.platform.dapi.v0.Core', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -1757,31 +1757,31 @@ try:
     file not marked beta) for all further purposes. This function was
     generated only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0"""
     request_deserializers = {
-      ('org.dash.platform.dapi.v0.Core', 'broadcastTransaction'): BroadcastTransactionRequest.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'getBlock'): GetBlockRequest.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): GetEstimatedTransactionFeeRequest.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'getStatus'): GetStatusRequest.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'getTransaction'): GetTransactionRequest.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): BlockHeadersWithChainLocksRequest.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): TransactionsWithProofsRequest.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'broadcastTransaction'): BroadcastTransactionRequest.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'getBlock'): GetBlockRequest.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): GetEstimatedTransactionFeeRequest.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'getStatus'): GetStatusRequest.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'getTransaction'): GetTransactionRequest.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): BlockHeadersWithChainLocksRequest.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): TransactionsWithProofsRequest.FromString,
     }
     response_serializers = {
-      ('org.dash.platform.dapi.v0.Core', 'broadcastTransaction'): BroadcastTransactionResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'getBlock'): GetBlockResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): GetEstimatedTransactionFeeResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'getStatus'): GetStatusResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'getTransaction'): GetTransactionResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): BlockHeadersWithChainLocksResponse.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): TransactionsWithProofsResponse.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'broadcastTransaction'): BroadcastTransactionResponse.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'getBlock'): GetBlockResponse.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): GetEstimatedTransactionFeeResponse.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'getStatus'): GetStatusResponse.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'getTransaction'): GetTransactionResponse.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): BlockHeadersWithChainLocksResponse.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): TransactionsWithProofsResponse.SerializeToString,
     }
     method_implementations = {
-      ('org.dash.platform.dapi.v0.Core', 'broadcastTransaction'): face_utilities.unary_unary_inline(servicer.broadcastTransaction),
-      ('org.dash.platform.dapi.v0.Core', 'getBlock'): face_utilities.unary_unary_inline(servicer.getBlock),
-      ('org.dash.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): face_utilities.unary_unary_inline(servicer.getEstimatedTransactionFee),
-      ('org.dash.platform.dapi.v0.Core', 'getStatus'): face_utilities.unary_unary_inline(servicer.getStatus),
-      ('org.dash.platform.dapi.v0.Core', 'getTransaction'): face_utilities.unary_unary_inline(servicer.getTransaction),
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): face_utilities.unary_stream_inline(servicer.subscribeToBlockHeadersWithChainLocks),
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): face_utilities.unary_stream_inline(servicer.subscribeToTransactionsWithProofs),
+      ('org.hth.platform.dapi.v0.Core', 'broadcastTransaction'): face_utilities.unary_unary_inline(servicer.broadcastTransaction),
+      ('org.hth.platform.dapi.v0.Core', 'getBlock'): face_utilities.unary_unary_inline(servicer.getBlock),
+      ('org.hth.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): face_utilities.unary_unary_inline(servicer.getEstimatedTransactionFee),
+      ('org.hth.platform.dapi.v0.Core', 'getStatus'): face_utilities.unary_unary_inline(servicer.getStatus),
+      ('org.hth.platform.dapi.v0.Core', 'getTransaction'): face_utilities.unary_unary_inline(servicer.getTransaction),
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): face_utilities.unary_stream_inline(servicer.subscribeToBlockHeadersWithChainLocks),
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): face_utilities.unary_stream_inline(servicer.subscribeToTransactionsWithProofs),
     }
     server_options = beta_implementations.server_options(request_deserializers=request_deserializers, response_serializers=response_serializers, thread_pool=pool, thread_pool_size=pool_size, default_timeout=default_timeout, maximum_timeout=maximum_timeout)
     return beta_implementations.server(method_implementations, options=server_options)
@@ -1794,22 +1794,22 @@ try:
     file not marked beta) for all further purposes. This function was
     generated only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0"""
     request_serializers = {
-      ('org.dash.platform.dapi.v0.Core', 'broadcastTransaction'): BroadcastTransactionRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'getBlock'): GetBlockRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): GetEstimatedTransactionFeeRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'getStatus'): GetStatusRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'getTransaction'): GetTransactionRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): BlockHeadersWithChainLocksRequest.SerializeToString,
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): TransactionsWithProofsRequest.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'broadcastTransaction'): BroadcastTransactionRequest.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'getBlock'): GetBlockRequest.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): GetEstimatedTransactionFeeRequest.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'getStatus'): GetStatusRequest.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'getTransaction'): GetTransactionRequest.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): BlockHeadersWithChainLocksRequest.SerializeToString,
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): TransactionsWithProofsRequest.SerializeToString,
     }
     response_deserializers = {
-      ('org.dash.platform.dapi.v0.Core', 'broadcastTransaction'): BroadcastTransactionResponse.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'getBlock'): GetBlockResponse.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): GetEstimatedTransactionFeeResponse.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'getStatus'): GetStatusResponse.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'getTransaction'): GetTransactionResponse.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): BlockHeadersWithChainLocksResponse.FromString,
-      ('org.dash.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): TransactionsWithProofsResponse.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'broadcastTransaction'): BroadcastTransactionResponse.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'getBlock'): GetBlockResponse.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'getEstimatedTransactionFee'): GetEstimatedTransactionFeeResponse.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'getStatus'): GetStatusResponse.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'getTransaction'): GetTransactionResponse.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToBlockHeadersWithChainLocks'): BlockHeadersWithChainLocksResponse.FromString,
+      ('org.hth.platform.dapi.v0.Core', 'subscribeToTransactionsWithProofs'): TransactionsWithProofsResponse.FromString,
     }
     cardinalities = {
       'broadcastTransaction': cardinality.Cardinality.UNARY_UNARY,
@@ -1821,7 +1821,7 @@ try:
       'subscribeToTransactionsWithProofs': cardinality.Cardinality.UNARY_STREAM,
     }
     stub_options = beta_implementations.stub_options(host=host, metadata_transformer=metadata_transformer, request_serializers=request_serializers, response_deserializers=response_deserializers, thread_pool=pool, thread_pool_size=pool_size)
-    return beta_implementations.dynamic_stub(channel, 'org.dash.platform.dapi.v0.Core', cardinalities, options=stub_options)
+    return beta_implementations.dynamic_stub(channel, 'org.hth.platform.dapi.v0.Core', cardinalities, options=stub_options)
 except ImportError:
   pass
 # @@protoc_insertion_point(module_scope)

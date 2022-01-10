@@ -1,4 +1,4 @@
-const SimplifiedMNListStore = require('@dashevo/dashcore-lib/lib/deterministicmnlist/SimplifiedMNListStore');
+const SimplifiedMNListStore = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/SimplifiedMNListStore');
 
 class SimplifiedMasternodeList {
   constructor(options) {

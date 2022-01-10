@@ -1,7 +1,7 @@
 import {Platform} from "../../Platform";
-import Identifier from "@dashevo/dpp/lib/Identifier";
+import Identifier from "@hthcoin/dpp/lib/Identifier";
 
-const { hash } = require('@dashevo/dpp/lib/util/hash');
+const { hash } = require('@hthcoin/dpp/lib/util/hash');
 const crypto = require('crypto');
 
 /**
@@ -10,8 +10,8 @@ const crypto = require('crypto');
  * @param {Platform} this - bound instance class
  * @param {string} name - name
  * @param {Object} records - records object having only one of the following items
- * @param {string} [records.dashUniqueIdentityId]
- * @param {string} [records.dashAliasIdentityId]
+ * @param {string} [records.hthUniqueIdentityId]
+ * @param {string} [records.hthAliasIdentityId]
  * @param identity - identity
  *
  * @returns registered domain document
@@ -19,8 +19,8 @@ const crypto = require('crypto');
 export async function register(this: Platform,
                                name: string,
                                records: {
-                                   dashUniqueIdentityId?: Identifier|string,
-                                   dashAliasIdentityId?: Identifier|string,
+                                   hthUniqueIdentityId?: Identifier|string,
+                                   hthAliasIdentityId?: Identifier|string,
                                },
                                identity: {
                                    getId(): Identifier;
@@ -29,12 +29,12 @@ export async function register(this: Platform,
 ): Promise<any> {
   await this.initialize();
 
-  if (records.dashUniqueIdentityId) {
-        records.dashUniqueIdentityId = Identifier.from(records.dashUniqueIdentityId);
+  if (records.hthUniqueIdentityId) {
+        records.hthUniqueIdentityId = Identifier.from(records.hthUniqueIdentityId);
     }
 
-    if (records.dashAliasIdentityId) {
-        records.dashAliasIdentityId = Identifier.from(records.dashAliasIdentityId);
+    if (records.hthAliasIdentityId) {
+        records.hthAliasIdentityId = Identifier.from(records.hthAliasIdentityId);
     }
 
     const nameLabels = name.split('.');

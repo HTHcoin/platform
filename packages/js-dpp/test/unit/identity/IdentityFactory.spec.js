@@ -1,4 +1,4 @@
-const { PublicKey } = require('@dashevo/dashcore-lib');
+const { PublicKey } = require('@hthcoin/hthcore-lib');
 const Identity = require('../../../lib/identity/Identity');
 const IdentityCreateTransition = require('../../../lib/identity/stateTransition/IdentityCreateTransition/IdentityCreateTransition');
 const IdentityTopUpTransition = require('../../../lib/identity/stateTransition/IdentityTopUpTransition/IdentityTopUpTransition');

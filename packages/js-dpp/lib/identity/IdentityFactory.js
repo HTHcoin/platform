@@ -11,7 +11,7 @@ const AbstractConsensusError = require('../errors/consensus/AbstractConsensusErr
 
 class IdentityFactory {
   /**
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    * @param {validateIdentity} validateIdentity
    * @param {decodeProtocolEntity} decodeProtocolEntity
    */

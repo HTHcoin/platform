@@ -1,11 +1,11 @@
-const Dash = require('dash');
+const HTH = require('hth');
 const clientOpts = {
   network: 'testnet',
   wallet: {
     mnemonic: 'your mnemonic here',
   },
 };
-const client = new Dash.Client(clientOpts);
+const client = new HTH.Client(clientOpts);
 
 const createIdentity = async function () {
   await client.isReady();

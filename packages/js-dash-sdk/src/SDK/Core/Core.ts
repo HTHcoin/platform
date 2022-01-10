@@ -1,2 +1,2 @@
-import * as Core from '@dashevo/dashcore-lib';
+import * as Core from '@hthcoin/hthcore-lib';
 export { Core };

@@ -1,9 +1,9 @@
 # Reward sharing Contract
 
-[![Build Status](https://github.com/dashevo/dpns-contract/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/dashevo/dpns-contract/actions/workflows/test_and_release.yml)
-[![NPM version](https://img.shields.io/npm/v/@dashevo/dpns-contract.svg?style=flat-square)](https://npmjs.org/package/@dashevo/masternode-reward-shares-contract)
+[![Build Status](https://github.com/MichaelHDesigns/dpns-contract/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/MichaelHDesigns/dpns-contract/actions/workflows/test_and_release.yml)
+[![NPM version](https://img.shields.io/npm/v/@hthcoin/dpns-contract.svg?style=flat-square)](https://npmjs.org/package/@hthcoin/masternode-reward-shares-contract)
 
-JSON Contracts for Dash Platform Name Service
+JSON Contracts for HTH Platform Name Service
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ JSON Contracts for Dash Platform Name Service
 ## Install
 
 ```sh
-npm install @dashevo/dpns-contract
+npm install @hthcoin/dpns-contract
 ```
 
 ## Usage
@@ -26,8 +26,8 @@ npm install @dashevo/dpns-contract
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/masternode-reward-shares-contract/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/MichaelHDesigns/masternode-reward-shares-contract/issues/new) or submit PRs.
 
 ## License
 
-[MIT](LICENSE) &copy; Dash Core Group, Inc.
+[MIT](LICENSE) &copy; HTH Core Group, Inc.

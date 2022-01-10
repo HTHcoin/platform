@@ -1,4 +1,4 @@
-const InvalidArgumentGrpcError = require('@dashevo/grpc-common/lib/server/error/InvalidArgumentGrpcError');
+const InvalidArgumentGrpcError = require('@hthcoin/grpc-common/lib/server/error/InvalidArgumentGrpcError');
 
 const {
   server: {
@@ -6,7 +6,7 @@ const {
       InternalGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -14,9 +14,9 @@ const {
     ConsensusParamsBlock,
     ConsensusParamsEvidence,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const FailedPreconditionGrpcError = require('@dashevo/grpc-common/lib/server/error/FailedPreconditionGrpcError');
+const FailedPreconditionGrpcError = require('@hthcoin/grpc-common/lib/server/error/FailedPreconditionGrpcError');
 const RPCError = require('../../../rpcServer/RPCError');
 
 /**

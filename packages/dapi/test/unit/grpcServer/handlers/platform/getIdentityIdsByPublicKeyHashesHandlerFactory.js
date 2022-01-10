@@ -4,7 +4,7 @@ const {
       InvalidArgumentGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -12,9 +12,9 @@ const {
     Proof,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
 
 const getIdentityIdsByPublicKeyHashesHandlerFactory = require(
   '../../../../../lib/grpcServer/handlers/platform/getIdentityIdsByPublicKeyHashesHandlerFactory',

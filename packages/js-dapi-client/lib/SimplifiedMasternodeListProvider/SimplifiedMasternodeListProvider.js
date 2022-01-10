@@ -1,5 +1,5 @@
-const SimplifiedMNList = require('@dashevo/dashcore-lib/lib/deterministicmnlist/SimplifiedMNList');
-const SimplifiedMNListDiff = require('@dashevo/dashcore-lib/lib/deterministicmnlist/SimplifiedMNListDiff');
+const SimplifiedMNList = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/SimplifiedMNList');
+const SimplifiedMNListDiff = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/SimplifiedMNListDiff');
 
 class SimplifiedMasternodeListProvider {
   /**

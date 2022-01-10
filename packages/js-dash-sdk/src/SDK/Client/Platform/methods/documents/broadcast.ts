@@ -1,6 +1,6 @@
 import { Platform } from "../../Platform";
 import broadcastStateTransition from '../../broadcastStateTransition';
-import Document from '@dashevo/dpp/lib/document/Document';
+import Document from '@hthcoin/dpp/lib/document/Document';
 import { signStateTransition } from "../../signStateTransition";
 
 /**

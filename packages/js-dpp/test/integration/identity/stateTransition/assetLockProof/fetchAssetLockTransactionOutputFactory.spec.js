@@ -1,4 +1,4 @@
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 
 const fetchAssetLockTransactionOutputFactory = require('../../../../../lib/identity/stateTransition/assetLockProof/fetchAssetLockTransactionOutputFactory');
 const getChainAssetLockFixture = require('../../../../../lib/test/fixtures/getChainAssetLockProofFixture');

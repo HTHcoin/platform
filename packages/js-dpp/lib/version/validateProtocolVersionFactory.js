@@ -6,7 +6,7 @@ const IncompatibleProtocolVersionError = require('../errors/consensus/basic/Inco
 const { latestVersion } = require('./protocolVersion');
 
 /**
- * @param {DashPlatformProtocol} dpp
+ * @param {HthPlatformProtocol} dpp
  * @param versionCompatibilityMap
  * @returns {validateProtocolVersion}
  */

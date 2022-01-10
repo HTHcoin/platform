@@ -15,38 +15,38 @@ var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
 
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.BlockHeaders', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.FromBlockCase', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.ResponsesCase', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.BloomFilter', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetBlockRequest', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetBlockRequest.BlockCase', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetBlockResponse', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusRequest', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse.Network', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse.Status', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse.Time', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetStatusResponse.Version', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetTransactionRequest', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.GetTransactionResponse', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.InstantSendLockMessages', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.RawTransactions', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.FromBlockCase', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse', null, global);
-goog.exportSymbol('proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.BlockHeaders', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.FromBlockCase', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.ResponsesCase', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.BloomFilter', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetBlockRequest', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetBlockRequest.BlockCase', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetBlockResponse', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusRequest', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse.Network', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse.Status', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse.Time', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetStatusResponse.Version', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetTransactionRequest', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.GetTransactionResponse', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.InstantSendLockMessages', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.RawTransactions', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.FromBlockCase', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse', null, global);
+goog.exportSymbol('proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase', null, global);
 /**
  * Generated by JsPbCodeGenerator.
  * @param {Array=} opt_data Optional initial data array, typically from a
@@ -57,16 +57,16 @@ goog.exportSymbol('proto.org.dash.platform.dapi.v0.TransactionsWithProofsRespons
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetStatusRequest = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetStatusRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetStatusRequest, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetStatusRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetStatusRequest.displayName = 'proto.org.dash.platform.dapi.v0.GetStatusRequest';
+  proto.org.hth.platform.dapi.v0.GetStatusRequest.displayName = 'proto.org.hth.platform.dapi.v0.GetStatusRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -78,16 +78,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetStatusResponse, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetStatusResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.displayName = 'proto.org.dash.platform.dapi.v0.GetStatusResponse';
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.displayName = 'proto.org.hth.platform.dapi.v0.GetStatusResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -99,16 +99,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetStatusResponse.Version, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetStatusResponse.Version, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.displayName = 'proto.org.dash.platform.dapi.v0.GetStatusResponse.Version';
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.displayName = 'proto.org.hth.platform.dapi.v0.GetStatusResponse.Version';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -120,16 +120,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetStatusResponse.Time, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetStatusResponse.Time, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.displayName = 'proto.org.dash.platform.dapi.v0.GetStatusResponse.Time';
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.displayName = 'proto.org.hth.platform.dapi.v0.GetStatusResponse.Time';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -141,16 +141,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.displayName = 'proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain';
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.displayName = 'proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -162,16 +162,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.displayName = 'proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode';
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.displayName = 'proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -183,16 +183,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.displayName = 'proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee';
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.displayName = 'proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -204,16 +204,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetStatusResponse.Network, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetStatusResponse.Network, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.displayName = 'proto.org.dash.platform.dapi.v0.GetStatusResponse.Network';
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.displayName = 'proto.org.hth.platform.dapi.v0.GetStatusResponse.Network';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -225,16 +225,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.dash.platform.dapi.v0.GetBlockRequest.oneofGroups_);
+proto.org.hth.platform.dapi.v0.GetBlockRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.hth.platform.dapi.v0.GetBlockRequest.oneofGroups_);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetBlockRequest, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetBlockRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetBlockRequest.displayName = 'proto.org.dash.platform.dapi.v0.GetBlockRequest';
+  proto.org.hth.platform.dapi.v0.GetBlockRequest.displayName = 'proto.org.hth.platform.dapi.v0.GetBlockRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -246,16 +246,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetBlockResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetBlockResponse, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetBlockResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetBlockResponse.displayName = 'proto.org.dash.platform.dapi.v0.GetBlockResponse';
+  proto.org.hth.platform.dapi.v0.GetBlockResponse.displayName = 'proto.org.hth.platform.dapi.v0.GetBlockResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -267,16 +267,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest = function(opt_data) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.displayName = 'proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest';
+  proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.displayName = 'proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -288,16 +288,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse = function(opt_data) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.displayName = 'proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse';
+  proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.displayName = 'proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -309,16 +309,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetTransactionRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetTransactionRequest, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetTransactionRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetTransactionRequest.displayName = 'proto.org.dash.platform.dapi.v0.GetTransactionRequest';
+  proto.org.hth.platform.dapi.v0.GetTransactionRequest.displayName = 'proto.org.hth.platform.dapi.v0.GetTransactionRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -330,16 +330,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetTransactionResponse, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetTransactionResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetTransactionResponse.displayName = 'proto.org.dash.platform.dapi.v0.GetTransactionResponse';
+  proto.org.hth.platform.dapi.v0.GetTransactionResponse.displayName = 'proto.org.hth.platform.dapi.v0.GetTransactionResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -351,16 +351,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.displayName = 'proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest';
+  proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.displayName = 'proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -372,16 +372,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.displayName = 'proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse';
+  proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.displayName = 'proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -393,16 +393,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.org.dash.platform.dapi.v0.BlockHeaders.repeatedFields_, null);
+proto.org.hth.platform.dapi.v0.BlockHeaders = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.org.hth.platform.dapi.v0.BlockHeaders.repeatedFields_, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.BlockHeaders, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.BlockHeaders, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.BlockHeaders.displayName = 'proto.org.dash.platform.dapi.v0.BlockHeaders';
+  proto.org.hth.platform.dapi.v0.BlockHeaders.displayName = 'proto.org.hth.platform.dapi.v0.BlockHeaders';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -414,16 +414,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.repeatedFields_, null);
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.repeatedFields_, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.displayName = 'proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages';
+  proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.displayName = 'proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -435,16 +435,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.displayName = 'proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest';
+  proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.displayName = 'proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -456,16 +456,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse = function(opt_data) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.displayName = 'proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse';
+  proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.displayName = 'proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -477,16 +477,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.displayName = 'proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest';
+  proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.displayName = 'proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -498,16 +498,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.BloomFilter = function(opt_data) {
+proto.org.hth.platform.dapi.v0.BloomFilter = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.BloomFilter, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.BloomFilter, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.BloomFilter.displayName = 'proto.org.dash.platform.dapi.v0.BloomFilter';
+  proto.org.hth.platform.dapi.v0.BloomFilter.displayName = 'proto.org.hth.platform.dapi.v0.BloomFilter';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -519,16 +519,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.displayName = 'proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse';
+  proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.displayName = 'proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -540,16 +540,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.RawTransactions = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.org.dash.platform.dapi.v0.RawTransactions.repeatedFields_, null);
+proto.org.hth.platform.dapi.v0.RawTransactions = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.org.hth.platform.dapi.v0.RawTransactions.repeatedFields_, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.RawTransactions, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.RawTransactions, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.RawTransactions.displayName = 'proto.org.dash.platform.dapi.v0.RawTransactions';
+  proto.org.hth.platform.dapi.v0.RawTransactions.displayName = 'proto.org.hth.platform.dapi.v0.RawTransactions';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -561,16 +561,16 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, proto.org.dash.platform.dapi.v0.InstantSendLockMessages.repeatedFields_, null);
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.org.hth.platform.dapi.v0.InstantSendLockMessages.repeatedFields_, null);
 };
-goog.inherits(proto.org.dash.platform.dapi.v0.InstantSendLockMessages, jspb.Message);
+goog.inherits(proto.org.hth.platform.dapi.v0.InstantSendLockMessages, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   /**
    * @public
    * @override
    */
-  proto.org.dash.platform.dapi.v0.InstantSendLockMessages.displayName = 'proto.org.dash.platform.dapi.v0.InstantSendLockMessages';
+  proto.org.hth.platform.dapi.v0.InstantSendLockMessages.displayName = 'proto.org.hth.platform.dapi.v0.InstantSendLockMessages';
 }
 
 
@@ -588,8 +588,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetStatusRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetStatusRequest.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetStatusRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetStatusRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -598,11 +598,11 @@ proto.org.dash.platform.dapi.v0.GetStatusRequest.prototype.toObject = function(o
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusRequest} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusRequest.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetStatusRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -618,23 +618,23 @@ proto.org.dash.platform.dapi.v0.GetStatusRequest.toObject = function(includeInst
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusRequest}
  */
-proto.org.dash.platform.dapi.v0.GetStatusRequest.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetStatusRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetStatusRequest;
-  return proto.org.dash.platform.dapi.v0.GetStatusRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetStatusRequest;
+  return proto.org.hth.platform.dapi.v0.GetStatusRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusRequest} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusRequest}
  */
-proto.org.dash.platform.dapi.v0.GetStatusRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetStatusRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -654,9 +654,9 @@ proto.org.dash.platform.dapi.v0.GetStatusRequest.deserializeBinaryFromReader = f
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusRequest.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetStatusRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetStatusRequest.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetStatusRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -664,11 +664,11 @@ proto.org.dash.platform.dapi.v0.GetStatusRequest.prototype.serializeBinary = fun
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusRequest} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusRequest.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetStatusRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
@@ -689,8 +689,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -699,19 +699,19 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.toObject = function(
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-    version: (f = msg.getVersion()) && proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.toObject(includeInstance, f),
-    time: (f = msg.getTime()) && proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.toObject(includeInstance, f),
+    version: (f = msg.getVersion()) && proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.toObject(includeInstance, f),
+    time: (f = msg.getTime()) && proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.toObject(includeInstance, f),
     status: jspb.Message.getFieldWithDefault(msg, 3, 0),
     syncProgress: jspb.Message.getFloatingPointFieldWithDefault(msg, 4, 0.0),
-    chain: (f = msg.getChain()) && proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.toObject(includeInstance, f),
-    masternode: (f = msg.getMasternode()) && proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.toObject(includeInstance, f),
-    network: (f = msg.getNetwork()) && proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.toObject(includeInstance, f)
+    chain: (f = msg.getChain()) && proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.toObject(includeInstance, f),
+    masternode: (f = msg.getMasternode()) && proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.toObject(includeInstance, f),
+    network: (f = msg.getNetwork()) && proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -725,23 +725,23 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.toObject = function(includeIns
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetStatusResponse;
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetStatusResponse;
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -749,17 +749,17 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.deserializeBinaryFromReader = 
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Version;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Version;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.deserializeBinaryFromReader);
       msg.setVersion(value);
       break;
     case 2:
-      var value = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Time;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Time;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.deserializeBinaryFromReader);
       msg.setTime(value);
       break;
     case 3:
-      var value = /** @type {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Status} */ (reader.readEnum());
+      var value = /** @type {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Status} */ (reader.readEnum());
       msg.setStatus(value);
       break;
     case 4:
@@ -767,18 +767,18 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.deserializeBinaryFromReader = 
       msg.setSyncProgress(value);
       break;
     case 5:
-      var value = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinaryFromReader);
       msg.setChain(value);
       break;
     case 6:
-      var value = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinaryFromReader);
       msg.setMasternode(value);
       break;
     case 7:
-      var value = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Network;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Network;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.deserializeBinaryFromReader);
       msg.setNetwork(value);
       break;
     default:
@@ -794,9 +794,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.deserializeBinaryFromReader = 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -804,18 +804,18 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.serializeBinary = fu
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getVersion();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.serializeBinaryToWriter
     );
   }
   f = message.getTime();
@@ -823,7 +823,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter = func
     writer.writeMessage(
       2,
       f,
-      proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.serializeBinaryToWriter
     );
   }
   f = message.getStatus();
@@ -845,7 +845,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter = func
     writer.writeMessage(
       5,
       f,
-      proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.serializeBinaryToWriter
     );
   }
   f = message.getMasternode();
@@ -853,7 +853,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter = func
     writer.writeMessage(
       6,
       f,
-      proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.serializeBinaryToWriter
     );
   }
   f = message.getNetwork();
@@ -861,7 +861,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter = func
     writer.writeMessage(
       7,
       f,
-      proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.serializeBinaryToWriter
     );
   }
 };
@@ -870,7 +870,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.serializeBinaryToWriter = func
 /**
  * @enum {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Status = {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Status = {
   NOT_STARTED: 0,
   SYNCING: 1,
   READY: 2,
@@ -893,8 +893,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.toObject(opt_includeInstance, this);
 };
 
 
@@ -903,11 +903,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.toObject = f
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Version} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Version} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.toObject = function(includeInstance, msg) {
   var f, obj = {
     protocol: jspb.Message.getFieldWithDefault(msg, 1, 0),
     software: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -925,23 +925,23 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.toObject = function(in
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Version}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Version}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Version;
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Version;
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Version} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Version} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Version}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Version}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -973,9 +973,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.deserializeBinaryFromR
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -983,11 +983,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.serializeBin
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Version} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Version} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getProtocol();
   if (f !== 0) {
@@ -1017,16 +1017,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.serializeBinaryToWrite
  * optional uint32 protocol = 1;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.getProtocol = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.prototype.getProtocol = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Version} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Version} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.setProtocol = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.prototype.setProtocol = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -1035,16 +1035,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.setProtocol 
  * optional uint32 software = 2;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.getSoftware = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.prototype.getSoftware = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Version} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Version} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.setSoftware = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.prototype.setSoftware = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -1053,16 +1053,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.setSoftware 
  * optional string agent = 3;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.getAgent = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.prototype.getAgent = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Version} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Version} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Version.prototype.setAgent = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Version.prototype.setAgent = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
@@ -1083,8 +1083,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.toObject(opt_includeInstance, this);
 };
 
 
@@ -1093,11 +1093,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.toObject = func
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Time} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Time} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.toObject = function(includeInstance, msg) {
   var f, obj = {
     now: jspb.Message.getFieldWithDefault(msg, 1, 0),
     offset: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -1115,23 +1115,23 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.toObject = function(inclu
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Time}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Time}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Time;
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Time;
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Time} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Time} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Time}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Time}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1163,9 +1163,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.deserializeBinaryFromRead
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1173,11 +1173,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.serializeBinary
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Time} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Time} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getNow();
   if (f !== 0) {
@@ -1207,16 +1207,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.serializeBinaryToWriter =
  * optional uint32 now = 1;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.getNow = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.prototype.getNow = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Time} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Time} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.setNow = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.prototype.setNow = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -1225,16 +1225,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.setNow = functi
  * optional int32 offset = 2;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.getOffset = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.prototype.getOffset = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Time} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Time} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.setOffset = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.prototype.setOffset = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -1243,16 +1243,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.setOffset = fun
  * optional uint32 median = 3;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.getMedian = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.prototype.getMedian = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Time} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Time} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Time.prototype.setMedian = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Time.prototype.setMedian = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -1273,8 +1273,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.toObject(opt_includeInstance, this);
 };
 
 
@@ -1283,11 +1283,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.toObject = fun
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.toObject = function(includeInstance, msg) {
   var f, obj = {
     name: jspb.Message.getFieldWithDefault(msg, 1, ""),
     headersCount: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -1310,23 +1310,23 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.toObject = function(incl
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain;
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain;
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1378,9 +1378,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.deserializeBinaryFromRea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1388,11 +1388,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.serializeBinar
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
@@ -1457,16 +1457,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.serializeBinaryToWriter 
  * optional string name = 1;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getName = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setName = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -1475,16 +1475,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setName = func
  * optional uint32 headers_count = 2;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getHeadersCount = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getHeadersCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setHeadersCount = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.setHeadersCount = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -1493,16 +1493,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setHeadersCoun
  * optional uint32 blocks_count = 3;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBlocksCount = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBlocksCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setBlocksCount = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.setBlocksCount = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -1511,7 +1511,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setBlocksCount
  * optional bytes best_block_hash = 4;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHash = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHash = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
 };
 
@@ -1521,7 +1521,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHa
  * This is a type-conversion wrapper around `getBestBlockHash()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHash_asB64 = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHash_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getBestBlockHash()));
 };
@@ -1534,7 +1534,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHa
  * This is a type-conversion wrapper around `getBestBlockHash()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHash_asU8 = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHash_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getBestBlockHash()));
 };
@@ -1542,9 +1542,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getBestBlockHa
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setBestBlockHash = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.setBestBlockHash = function(value) {
   return jspb.Message.setProto3BytesField(this, 4, value);
 };
 
@@ -1553,16 +1553,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setBestBlockHa
  * optional double difficulty = 5;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getDifficulty = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getDifficulty = function() {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 5, 0.0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setDifficulty = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.setDifficulty = function(value) {
   return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
@@ -1571,7 +1571,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setDifficulty 
  * optional bytes chain_work = 6;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 6, ""));
 };
 
@@ -1581,7 +1581,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork =
  * This is a type-conversion wrapper around `getChainWork()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork_asB64 = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getChainWork()));
 };
@@ -1594,7 +1594,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork_a
  * This is a type-conversion wrapper around `getChainWork()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork_asU8 = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getChainWork()));
 };
@@ -1602,9 +1602,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getChainWork_a
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setChainWork = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.setChainWork = function(value) {
   return jspb.Message.setProto3BytesField(this, 6, value);
 };
 
@@ -1613,16 +1613,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setChainWork =
  * optional bool is_synced = 7;
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getIsSynced = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getIsSynced = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 7, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setIsSynced = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.setIsSynced = function(value) {
   return jspb.Message.setProto3BooleanField(this, 7, value);
 };
 
@@ -1631,16 +1631,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setIsSynced = 
  * optional double sync_progress = 8;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.getSyncProgress = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.getSyncProgress = function() {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 8, 0.0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain.prototype.setSyncProgress = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain.prototype.setSyncProgress = function(value) {
   return jspb.Message.setProto3FloatField(this, 8, value);
 };
 
@@ -1661,8 +1661,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.toObject(opt_includeInstance, this);
 };
 
 
@@ -1671,11 +1671,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.toObject 
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.toObject = function(includeInstance, msg) {
   var f, obj = {
     status: jspb.Message.getFieldWithDefault(msg, 1, 0),
     proTxHash: msg.getProTxHash_asB64(),
@@ -1695,23 +1695,23 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.toObject = function
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode;
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode;
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1719,7 +1719,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinaryFr
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status} */ (reader.readEnum());
+      var value = /** @type {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status} */ (reader.readEnum());
       msg.setStatus(value);
       break;
     case 2:
@@ -1751,9 +1751,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.deserializeBinaryFr
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -1761,11 +1761,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.serialize
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getStatus();
   if (f !== 0.0) {
@@ -1808,7 +1808,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.serializeBinaryToWr
 /**
  * @enum {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status = {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status = {
   UNKNOWN: 0,
   WAITING_FOR_PROTX: 1,
   POSE_BANNED: 2,
@@ -1821,18 +1821,18 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status = {
 
 /**
  * optional Status status = 1;
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getStatus = function() {
-  return /** @type {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getStatus = function() {
+  return /** @type {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} returns this
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status} value
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setStatus = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setStatus = function(value) {
   return jspb.Message.setProto3EnumField(this, 1, value);
 };
 
@@ -1841,7 +1841,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setStatus
  * optional bytes pro_tx_hash = 2;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxHash = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxHash = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
@@ -1851,7 +1851,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxH
  * This is a type-conversion wrapper around `getProTxHash()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxHash_asB64 = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxHash_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getProTxHash()));
 };
@@ -1864,7 +1864,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxH
  * This is a type-conversion wrapper around `getProTxHash()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxHash_asU8 = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxHash_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getProTxHash()));
 };
@@ -1872,9 +1872,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getProTxH
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setProTxHash = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setProTxHash = function(value) {
   return jspb.Message.setProto3BytesField(this, 2, value);
 };
 
@@ -1883,16 +1883,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setProTxH
  * optional uint32 pose_penalty = 3;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getPosePenalty = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getPosePenalty = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setPosePenalty = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setPosePenalty = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -1901,16 +1901,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setPosePe
  * optional bool is_synced = 4;
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getIsSynced = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getIsSynced = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 4, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setIsSynced = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setIsSynced = function(value) {
   return jspb.Message.setProto3BooleanField(this, 4, value);
 };
 
@@ -1919,16 +1919,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setIsSync
  * optional double sync_progress = 5;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getSyncProgress = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.getSyncProgress = function() {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 5, 0.0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setSyncProgress = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.prototype.setSyncProgress = function(value) {
   return jspb.Message.setProto3FloatField(this, 5, value);
 };
 
@@ -1949,8 +1949,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject(opt_includeInstance, this);
 };
 
 
@@ -1959,11 +1959,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.toObject 
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject = function(includeInstance, msg) {
   var f, obj = {
     relay: jspb.Message.getFloatingPointFieldWithDefault(msg, 1, 0.0),
     incremental: jspb.Message.getFloatingPointFieldWithDefault(msg, 2, 0.0)
@@ -1980,23 +1980,23 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject = function
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee;
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee;
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2024,9 +2024,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinaryFr
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2034,11 +2034,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.serialize
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getRelay();
   if (f !== 0.0) {
@@ -2061,16 +2061,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.serializeBinaryToWr
  * optional double relay = 1;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.getRelay = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.getRelay = function() {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 1, 0.0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.setRelay = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.setRelay = function(value) {
   return jspb.Message.setProto3FloatField(this, 1, value);
 };
 
@@ -2079,16 +2079,16 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.setRelay 
  * optional double incremental = 2;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.getIncremental = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.getIncremental = function() {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 2, 0.0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.setIncremental = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.prototype.setIncremental = function(value) {
   return jspb.Message.setProto3FloatField(this, 2, value);
 };
 
@@ -2109,8 +2109,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.toObject(opt_includeInstance, this);
 };
 
 
@@ -2119,14 +2119,14 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.toObject = f
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Network} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Network} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.toObject = function(includeInstance, msg) {
   var f, obj = {
     peersCount: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    fee: (f = msg.getFee()) && proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject(includeInstance, f)
+    fee: (f = msg.getFee()) && proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -2140,23 +2140,23 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.toObject = function(in
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Network}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Network}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetStatusResponse.Network;
-  return proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetStatusResponse.Network;
+  return proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Network} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Network} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Network}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Network}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2168,8 +2168,8 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.deserializeBinaryFromR
       msg.setPeersCount(value);
       break;
     case 2:
-      var value = new proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.deserializeBinaryFromReader);
       msg.setFee(value);
       break;
     default:
@@ -2185,9 +2185,9 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.deserializeBinaryFromR
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2195,11 +2195,11 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.serializeBin
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Network} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Network} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getPeersCount();
   if (f !== 0) {
@@ -2213,7 +2213,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.serializeBinaryToWrite
     writer.writeMessage(
       2,
       f,
-      proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.serializeBinaryToWriter
     );
   }
 };
@@ -2223,44 +2223,44 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.serializeBinaryToWrite
  * optional uint32 peers_count = 1;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.getPeersCount = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.prototype.getPeersCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Network} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Network} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.setPeersCount = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.prototype.setPeersCount = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
 
 /**
  * optional NetworkFee fee = 2;
- * @return {?proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee}
+ * @return {?proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.getFee = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee, 2));
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.prototype.getFee = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee, 2));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Network} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Network} returns this
 */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.setFee = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.prototype.setFee = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Network} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Network} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.clearFee = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.prototype.clearFee = function() {
   return this.setFee(undefined);
 };
 
@@ -2269,35 +2269,35 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.clearFee = f
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.Network.prototype.hasFee = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.Network.prototype.hasFee = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional Version version = 1;
- * @return {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Version}
+ * @return {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Version}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.getVersion = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.GetStatusResponse.Version} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.GetStatusResponse.Version, 1));
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.getVersion = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.GetStatusResponse.Version} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.GetStatusResponse.Version, 1));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Version|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Version|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.setVersion = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.setVersion = function(value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearVersion = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.clearVersion = function() {
   return this.setVersion(undefined);
 };
 
@@ -2306,35 +2306,35 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearVersion = funct
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.hasVersion = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.hasVersion = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional Time time = 2;
- * @return {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Time}
+ * @return {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Time}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.getTime = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.GetStatusResponse.Time} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.GetStatusResponse.Time, 2));
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.getTime = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.GetStatusResponse.Time} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.GetStatusResponse.Time, 2));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Time|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Time|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.setTime = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.setTime = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearTime = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.clearTime = function() {
   return this.setTime(undefined);
 };
 
@@ -2343,25 +2343,25 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearTime = function
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.hasTime = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.hasTime = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional Status status = 3;
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Status}
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Status}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.getStatus = function() {
-  return /** @type {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Status} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.getStatus = function() {
+  return /** @type {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Status} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
- * @param {!proto.org.dash.platform.dapi.v0.GetStatusResponse.Status} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @param {!proto.org.hth.platform.dapi.v0.GetStatusResponse.Status} value
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.setStatus = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.setStatus = function(value) {
   return jspb.Message.setProto3EnumField(this, 3, value);
 };
 
@@ -2370,44 +2370,44 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.setStatus = function
  * optional double sync_progress = 4;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.getSyncProgress = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.getSyncProgress = function() {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 4, 0.0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.setSyncProgress = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.setSyncProgress = function(value) {
   return jspb.Message.setProto3FloatField(this, 4, value);
 };
 
 
 /**
  * optional Chain chain = 5;
- * @return {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain}
+ * @return {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.getChain = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain, 5));
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.getChain = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain, 5));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Chain|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Chain|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.setChain = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.setChain = function(value) {
   return jspb.Message.setWrapperField(this, 5, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearChain = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.clearChain = function() {
   return this.setChain(undefined);
 };
 
@@ -2416,35 +2416,35 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearChain = functio
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.hasChain = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.hasChain = function() {
   return jspb.Message.getField(this, 5) != null;
 };
 
 
 /**
  * optional Masternode masternode = 6;
- * @return {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode}
+ * @return {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.getMasternode = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode, 6));
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.getMasternode = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode, 6));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Masternode|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Masternode|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.setMasternode = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.setMasternode = function(value) {
   return jspb.Message.setWrapperField(this, 6, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearMasternode = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.clearMasternode = function() {
   return this.setMasternode(undefined);
 };
 
@@ -2453,35 +2453,35 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearMasternode = fu
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.hasMasternode = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.hasMasternode = function() {
   return jspb.Message.getField(this, 6) != null;
 };
 
 
 /**
  * optional Network network = 7;
- * @return {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Network}
+ * @return {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Network}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.getNetwork = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.GetStatusResponse.Network} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.GetStatusResponse.Network, 7));
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.getNetwork = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.GetStatusResponse.Network} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.GetStatusResponse.Network, 7));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.GetStatusResponse.Network|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.GetStatusResponse.Network|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.setNetwork = function(value) {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.setNetwork = function(value) {
   return jspb.Message.setWrapperField(this, 7, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.GetStatusResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetStatusResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearNetwork = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.clearNetwork = function() {
   return this.setNetwork(undefined);
 };
 
@@ -2490,7 +2490,7 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.clearNetwork = funct
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.hasNetwork = function() {
+proto.org.hth.platform.dapi.v0.GetStatusResponse.prototype.hasNetwork = function() {
   return jspb.Message.getField(this, 7) != null;
 };
 
@@ -2504,22 +2504,22 @@ proto.org.dash.platform.dapi.v0.GetStatusResponse.prototype.hasNetwork = functio
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.oneofGroups_ = [[1,2]];
+proto.org.hth.platform.dapi.v0.GetBlockRequest.oneofGroups_ = [[1,2]];
 
 /**
  * @enum {number}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.BlockCase = {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.BlockCase = {
   BLOCK_NOT_SET: 0,
   HEIGHT: 1,
   HASH: 2
 };
 
 /**
- * @return {proto.org.dash.platform.dapi.v0.GetBlockRequest.BlockCase}
+ * @return {proto.org.hth.platform.dapi.v0.GetBlockRequest.BlockCase}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.getBlockCase = function() {
-  return /** @type {proto.org.dash.platform.dapi.v0.GetBlockRequest.BlockCase} */(jspb.Message.computeOneofCase(this, proto.org.dash.platform.dapi.v0.GetBlockRequest.oneofGroups_[0]));
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.getBlockCase = function() {
+  return /** @type {proto.org.hth.platform.dapi.v0.GetBlockRequest.BlockCase} */(jspb.Message.computeOneofCase(this, proto.org.hth.platform.dapi.v0.GetBlockRequest.oneofGroups_[0]));
 };
 
 
@@ -2537,8 +2537,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetBlockRequest.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetBlockRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -2547,11 +2547,11 @@ proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.toObject = function(op
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetBlockRequest} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetBlockRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     height: jspb.Message.getFieldWithDefault(msg, 1, 0),
     hash: jspb.Message.getFieldWithDefault(msg, 2, "")
@@ -2568,23 +2568,23 @@ proto.org.dash.platform.dapi.v0.GetBlockRequest.toObject = function(includeInsta
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockRequest}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetBlockRequest;
-  return proto.org.dash.platform.dapi.v0.GetBlockRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetBlockRequest;
+  return proto.org.hth.platform.dapi.v0.GetBlockRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetBlockRequest} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetBlockRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockRequest}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2612,9 +2612,9 @@ proto.org.dash.platform.dapi.v0.GetBlockRequest.deserializeBinaryFromReader = fu
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetBlockRequest.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetBlockRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2622,11 +2622,11 @@ proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.serializeBinary = func
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetBlockRequest} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetBlockRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = /** @type {number} */ (jspb.Message.getField(message, 1));
   if (f != null) {
@@ -2649,26 +2649,26 @@ proto.org.dash.platform.dapi.v0.GetBlockRequest.serializeBinaryToWriter = functi
  * optional uint32 height = 1;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.getHeight = function() {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.getHeight = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.setHeight = function(value) {
-  return jspb.Message.setOneofField(this, 1, proto.org.dash.platform.dapi.v0.GetBlockRequest.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.setHeight = function(value) {
+  return jspb.Message.setOneofField(this, 1, proto.org.hth.platform.dapi.v0.GetBlockRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.clearHeight = function() {
-  return jspb.Message.setOneofField(this, 1, proto.org.dash.platform.dapi.v0.GetBlockRequest.oneofGroups_[0], undefined);
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.clearHeight = function() {
+  return jspb.Message.setOneofField(this, 1, proto.org.hth.platform.dapi.v0.GetBlockRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -2676,7 +2676,7 @@ proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.clearHeight = function
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.hasHeight = function() {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.hasHeight = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -2685,26 +2685,26 @@ proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.hasHeight = function()
  * optional string hash = 2;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.getHash = function() {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.getHash = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.setHash = function(value) {
-  return jspb.Message.setOneofField(this, 2, proto.org.dash.platform.dapi.v0.GetBlockRequest.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.setHash = function(value) {
+  return jspb.Message.setOneofField(this, 2, proto.org.hth.platform.dapi.v0.GetBlockRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.clearHash = function() {
-  return jspb.Message.setOneofField(this, 2, proto.org.dash.platform.dapi.v0.GetBlockRequest.oneofGroups_[0], undefined);
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.clearHash = function() {
+  return jspb.Message.setOneofField(this, 2, proto.org.hth.platform.dapi.v0.GetBlockRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -2712,7 +2712,7 @@ proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.clearHash = function()
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetBlockRequest.prototype.hasHash = function() {
+proto.org.hth.platform.dapi.v0.GetBlockRequest.prototype.hasHash = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -2733,8 +2733,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetBlockResponse.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetBlockResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetBlockResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -2743,11 +2743,11 @@ proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.toObject = function(o
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetBlockResponse} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetBlockResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     block: msg.getBlock_asB64()
   };
@@ -2763,23 +2763,23 @@ proto.org.dash.platform.dapi.v0.GetBlockResponse.toObject = function(includeInst
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockResponse}
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetBlockResponse;
-  return proto.org.dash.platform.dapi.v0.GetBlockResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetBlockResponse;
+  return proto.org.hth.platform.dapi.v0.GetBlockResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetBlockResponse} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetBlockResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockResponse}
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2803,9 +2803,9 @@ proto.org.dash.platform.dapi.v0.GetBlockResponse.deserializeBinaryFromReader = f
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetBlockResponse.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetBlockResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2813,11 +2813,11 @@ proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.serializeBinary = fun
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetBlockResponse} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetBlockResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBlock_asU8();
   if (f.length > 0) {
@@ -2833,7 +2833,7 @@ proto.org.dash.platform.dapi.v0.GetBlockResponse.serializeBinaryToWriter = funct
  * optional bytes block = 1;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.getBlock = function() {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.prototype.getBlock = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -2843,7 +2843,7 @@ proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.getBlock = function()
  * This is a type-conversion wrapper around `getBlock()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.getBlock_asB64 = function() {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.prototype.getBlock_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getBlock()));
 };
@@ -2856,7 +2856,7 @@ proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.getBlock_asB64 = func
  * This is a type-conversion wrapper around `getBlock()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.getBlock_asU8 = function() {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.prototype.getBlock_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getBlock()));
 };
@@ -2864,9 +2864,9 @@ proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.getBlock_asU8 = funct
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.GetBlockResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetBlockResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetBlockResponse.prototype.setBlock = function(value) {
+proto.org.hth.platform.dapi.v0.GetBlockResponse.prototype.setBlock = function(value) {
   return jspb.Message.setProto3BytesField(this, 1, value);
 };
 
@@ -2887,8 +2887,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -2897,11 +2897,11 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.toObject =
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     transaction: msg.getTransaction_asB64(),
     allowHighFees: jspb.Message.getBooleanFieldWithDefault(msg, 2, false),
@@ -2919,23 +2919,23 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.toObject = function(
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest;
-  return proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest;
+  return proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2967,9 +2967,9 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.deserializeBinaryFro
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -2977,11 +2977,11 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.serializeB
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest} message
+ * @param {!proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getTransaction_asU8();
   if (f.length > 0) {
@@ -3011,7 +3011,7 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.serializeBinaryToWri
  * optional bytes transaction = 1;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransaction = function() {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransaction = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -3021,7 +3021,7 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransac
  * This is a type-conversion wrapper around `getTransaction()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransaction_asB64 = function() {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransaction_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getTransaction()));
 };
@@ -3034,7 +3034,7 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransac
  * This is a type-conversion wrapper around `getTransaction()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransaction_asU8 = function() {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransaction_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getTransaction()));
 };
@@ -3042,9 +3042,9 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.getTransac
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.setTransaction = function(value) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.setTransaction = function(value) {
   return jspb.Message.setProto3BytesField(this, 1, value);
 };
 
@@ -3053,16 +3053,16 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.setTransac
  * optional bool allow_high_fees = 2;
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.getAllowHighFees = function() {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.getAllowHighFees = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 2, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.setAllowHighFees = function(value) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.setAllowHighFees = function(value) {
   return jspb.Message.setProto3BooleanField(this, 2, value);
 };
 
@@ -3071,16 +3071,16 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.setAllowHi
  * optional bool bypass_limits = 3;
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.getBypassLimits = function() {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.getBypassLimits = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionRequest.prototype.setBypassLimits = function(value) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionRequest.prototype.setBypassLimits = function(value) {
   return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
@@ -3101,8 +3101,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -3111,11 +3111,11 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.prototype.toObject 
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     transactionId: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
@@ -3131,23 +3131,23 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.toObject = function
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse;
-  return proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse;
+  return proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3171,9 +3171,9 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.deserializeBinaryFr
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3181,11 +3181,11 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.prototype.serialize
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse} message
+ * @param {!proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getTransactionId();
   if (f.length > 0) {
@@ -3201,16 +3201,16 @@ proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.serializeBinaryToWr
  * optional string transaction_id = 1;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.prototype.getTransactionId = function() {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.prototype.getTransactionId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.BroadcastTransactionResponse.prototype.setTransactionId = function(value) {
+proto.org.hth.platform.dapi.v0.BroadcastTransactionResponse.prototype.setTransactionId = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -3231,8 +3231,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetTransactionRequest.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetTransactionRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetTransactionRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3241,11 +3241,11 @@ proto.org.dash.platform.dapi.v0.GetTransactionRequest.prototype.toObject = funct
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetTransactionRequest} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetTransactionRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetTransactionRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
@@ -3261,23 +3261,23 @@ proto.org.dash.platform.dapi.v0.GetTransactionRequest.toObject = function(includ
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionRequest}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetTransactionRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetTransactionRequest;
-  return proto.org.dash.platform.dapi.v0.GetTransactionRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetTransactionRequest;
+  return proto.org.hth.platform.dapi.v0.GetTransactionRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetTransactionRequest} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetTransactionRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionRequest}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetTransactionRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3301,9 +3301,9 @@ proto.org.dash.platform.dapi.v0.GetTransactionRequest.deserializeBinaryFromReade
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetTransactionRequest.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetTransactionRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3311,11 +3311,11 @@ proto.org.dash.platform.dapi.v0.GetTransactionRequest.prototype.serializeBinary 
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetTransactionRequest} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetTransactionRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetTransactionRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f.length > 0) {
@@ -3331,16 +3331,16 @@ proto.org.dash.platform.dapi.v0.GetTransactionRequest.serializeBinaryToWriter = 
  * optional string id = 1;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest.prototype.getId = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionRequest.prototype.getId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
 /**
  * @param {string} value
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.GetTransactionRequest.prototype.setId = function(value) {
+proto.org.hth.platform.dapi.v0.GetTransactionRequest.prototype.setId = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
@@ -3361,8 +3361,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetTransactionResponse.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetTransactionResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -3371,11 +3371,11 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.toObject = func
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     transaction: msg.getTransaction_asB64(),
     blockHash: msg.getBlockHash_asB64(),
@@ -3396,23 +3396,23 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.toObject = function(inclu
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionResponse}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetTransactionResponse;
-  return proto.org.dash.platform.dapi.v0.GetTransactionResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetTransactionResponse;
+  return proto.org.hth.platform.dapi.v0.GetTransactionResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionResponse}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3456,9 +3456,9 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.deserializeBinaryFromRead
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetTransactionResponse.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetTransactionResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3466,11 +3466,11 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.serializeBinary
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getTransaction_asU8();
   if (f.length > 0) {
@@ -3521,7 +3521,7 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.serializeBinaryToWriter =
  * optional bytes transaction = 1;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -3531,7 +3531,7 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction 
  * This is a type-conversion wrapper around `getTransaction()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction_asB64 = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getTransaction()));
 };
@@ -3544,7 +3544,7 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction_
  * This is a type-conversion wrapper around `getTransaction()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction_asU8 = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getTransaction()));
 };
@@ -3552,9 +3552,9 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getTransaction_
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setTransaction = function(value) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.setTransaction = function(value) {
   return jspb.Message.setProto3BytesField(this, 1, value);
 };
 
@@ -3563,7 +3563,7 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setTransaction 
  * optional bytes block_hash = 2;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
@@ -3573,7 +3573,7 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash = 
  * This is a type-conversion wrapper around `getBlockHash()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash_asB64 = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getBlockHash()));
 };
@@ -3586,7 +3586,7 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash_as
  * This is a type-conversion wrapper around `getBlockHash()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash_asU8 = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getBlockHash()));
 };
@@ -3594,9 +3594,9 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getBlockHash_as
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setBlockHash = function(value) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.setBlockHash = function(value) {
   return jspb.Message.setProto3BytesField(this, 2, value);
 };
 
@@ -3605,16 +3605,16 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setBlockHash = 
  * optional uint32 height = 3;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getHeight = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getHeight = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setHeight = function(value) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.setHeight = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -3623,16 +3623,16 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setHeight = fun
  * optional uint32 confirmations = 4;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getConfirmations = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getConfirmations = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setConfirmations = function(value) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.setConfirmations = function(value) {
   return jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -3641,16 +3641,16 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setConfirmation
  * optional bool is_instant_locked = 5;
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getIsInstantLocked = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getIsInstantLocked = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setIsInstantLocked = function(value) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.setIsInstantLocked = function(value) {
   return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
@@ -3659,16 +3659,16 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setIsInstantLoc
  * optional bool is_chain_locked = 6;
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.getIsChainLocked = function() {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.getIsChainLocked = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 6, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.org.dash.platform.dapi.v0.GetTransactionResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetTransactionResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setIsChainLocked = function(value) {
+proto.org.hth.platform.dapi.v0.GetTransactionResponse.prototype.setIsChainLocked = function(value) {
   return jspb.Message.setProto3BooleanField(this, 6, value);
 };
 
@@ -3682,22 +3682,22 @@ proto.org.dash.platform.dapi.v0.GetTransactionResponse.prototype.setIsChainLocke
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_ = [[1,2]];
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_ = [[1,2]];
 
 /**
  * @enum {number}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.FromBlockCase = {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.FromBlockCase = {
   FROM_BLOCK_NOT_SET: 0,
   FROM_BLOCK_HASH: 1,
   FROM_BLOCK_HEIGHT: 2
 };
 
 /**
- * @return {proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.FromBlockCase}
+ * @return {proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.FromBlockCase}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockCase = function() {
-  return /** @type {proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.FromBlockCase} */(jspb.Message.computeOneofCase(this, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0]));
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockCase = function() {
+  return /** @type {proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.FromBlockCase} */(jspb.Message.computeOneofCase(this, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0]));
 };
 
 
@@ -3715,8 +3715,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -3725,11 +3725,11 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.toOb
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     fromBlockHash: msg.getFromBlockHash_asB64(),
     fromBlockHeight: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -3747,23 +3747,23 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.toObject = fun
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest;
-  return proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest;
+  return proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3795,9 +3795,9 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.deserializeBin
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -3805,11 +3805,11 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.seri
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} message
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = /** @type {!(string|Uint8Array)} */ (jspb.Message.getField(message, 1));
   if (f != null) {
@@ -3839,7 +3839,7 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.serializeBinar
  * optional bytes from_block_hash = 1;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockHash = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockHash = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -3849,7 +3849,7 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getF
  * This is a type-conversion wrapper around `getFromBlockHash()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockHash_asB64 = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockHash_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getFromBlockHash()));
 };
@@ -3862,7 +3862,7 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getF
  * This is a type-conversion wrapper around `getFromBlockHash()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockHash_asU8 = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockHash_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getFromBlockHash()));
 };
@@ -3870,19 +3870,19 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getF
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.setFromBlockHash = function(value) {
-  return jspb.Message.setOneofField(this, 1, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.setFromBlockHash = function(value) {
+  return jspb.Message.setOneofField(this, 1, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.clearFromBlockHash = function() {
-  return jspb.Message.setOneofField(this, 1, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0], undefined);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.clearFromBlockHash = function() {
+  return jspb.Message.setOneofField(this, 1, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -3890,7 +3890,7 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.clea
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.hasFromBlockHash = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.hasFromBlockHash = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -3899,26 +3899,26 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.hasF
  * optional uint32 from_block_height = 2;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockHeight = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getFromBlockHeight = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.setFromBlockHeight = function(value) {
-  return jspb.Message.setOneofField(this, 2, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.setFromBlockHeight = function(value) {
+  return jspb.Message.setOneofField(this, 2, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.clearFromBlockHeight = function() {
-  return jspb.Message.setOneofField(this, 2, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0], undefined);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.clearFromBlockHeight = function() {
+  return jspb.Message.setOneofField(this, 2, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -3926,7 +3926,7 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.clea
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.hasFromBlockHeight = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.hasFromBlockHeight = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -3935,16 +3935,16 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.hasF
  * optional uint32 count = 3;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getCount = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.getCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.setCount = function(value) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.setCount = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -3958,22 +3958,22 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.prototype.setC
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_ = [[1,2]];
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_ = [[1,2]];
 
 /**
  * @enum {number}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.ResponsesCase = {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.ResponsesCase = {
   RESPONSES_NOT_SET: 0,
   BLOCK_HEADERS: 1,
   CHAIN_LOCK_SIGNATURE_MESSAGES: 2
 };
 
 /**
- * @return {proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.ResponsesCase}
+ * @return {proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.ResponsesCase}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.getResponsesCase = function() {
-  return /** @type {proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.ResponsesCase} */(jspb.Message.computeOneofCase(this, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_[0]));
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.getResponsesCase = function() {
+  return /** @type {proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.ResponsesCase} */(jspb.Message.computeOneofCase(this, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_[0]));
 };
 
 
@@ -3991,8 +3991,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4001,14 +4001,14 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.toO
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-    blockHeaders: (f = msg.getBlockHeaders()) && proto.org.dash.platform.dapi.v0.BlockHeaders.toObject(includeInstance, f),
-    chainLockSignatureMessages: (f = msg.getChainLockSignatureMessages()) && proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.toObject(includeInstance, f)
+    blockHeaders: (f = msg.getBlockHeaders()) && proto.org.hth.platform.dapi.v0.BlockHeaders.toObject(includeInstance, f),
+    chainLockSignatureMessages: (f = msg.getChainLockSignatureMessages()) && proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -4022,23 +4022,23 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.toObject = fu
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse;
-  return proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse;
+  return proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4046,13 +4046,13 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.deserializeBi
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.org.dash.platform.dapi.v0.BlockHeaders;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.BlockHeaders.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.BlockHeaders;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.BlockHeaders.deserializeBinaryFromReader);
       msg.setBlockHeaders(value);
       break;
     case 2:
-      var value = new proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinaryFromReader);
       msg.setChainLockSignatureMessages(value);
       break;
     default:
@@ -4068,9 +4068,9 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.deserializeBi
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4078,18 +4078,18 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.ser
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} message
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBlockHeaders();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.org.dash.platform.dapi.v0.BlockHeaders.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.BlockHeaders.serializeBinaryToWriter
     );
   }
   f = message.getChainLockSignatureMessages();
@@ -4097,7 +4097,7 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.serializeBina
     writer.writeMessage(
       2,
       f,
-      proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.serializeBinaryToWriter
     );
   }
 };
@@ -4105,28 +4105,28 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.serializeBina
 
 /**
  * optional BlockHeaders block_headers = 1;
- * @return {?proto.org.dash.platform.dapi.v0.BlockHeaders}
+ * @return {?proto.org.hth.platform.dapi.v0.BlockHeaders}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.getBlockHeaders = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.BlockHeaders} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.BlockHeaders, 1));
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.getBlockHeaders = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.BlockHeaders} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.BlockHeaders, 1));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.BlockHeaders|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.BlockHeaders|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.setBlockHeaders = function(value) {
-  return jspb.Message.setOneofWrapperField(this, 1, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.setBlockHeaders = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 1, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.clearBlockHeaders = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.clearBlockHeaders = function() {
   return this.setBlockHeaders(undefined);
 };
 
@@ -4135,35 +4135,35 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.cle
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.hasBlockHeaders = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.hasBlockHeaders = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional ChainLockSignatureMessages chain_lock_signature_messages = 2;
- * @return {?proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages}
+ * @return {?proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.getChainLockSignatureMessages = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages, 2));
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.getChainLockSignatureMessages = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages, 2));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.setChainLockSignatureMessages = function(value) {
-  return jspb.Message.setOneofWrapperField(this, 2, proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.setChainLockSignatureMessages = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 2, proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.clearChainLockSignatureMessages = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.clearChainLockSignatureMessages = function() {
   return this.setChainLockSignatureMessages(undefined);
 };
 
@@ -4172,7 +4172,7 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.cle
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.hasChainLockSignatureMessages = function() {
+proto.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.hasChainLockSignatureMessages = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -4183,7 +4183,7 @@ proto.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.prototype.has
  * @private {!Array<number>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.repeatedFields_ = [1];
+proto.org.hth.platform.dapi.v0.BlockHeaders.repeatedFields_ = [1];
 
 
 
@@ -4200,8 +4200,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.BlockHeaders.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.BlockHeaders.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.BlockHeaders.toObject(opt_includeInstance, this);
 };
 
 
@@ -4210,11 +4210,11 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.toObject = function(opt_i
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeaders} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeaders} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.BlockHeaders.toObject = function(includeInstance, msg) {
   var f, obj = {
     headersList: msg.getHeadersList_asB64()
   };
@@ -4230,23 +4230,23 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.toObject = function(includeInstance
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeaders}
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeaders}
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.BlockHeaders.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.BlockHeaders;
-  return proto.org.dash.platform.dapi.v0.BlockHeaders.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.BlockHeaders;
+  return proto.org.hth.platform.dapi.v0.BlockHeaders.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeaders} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeaders} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeaders}
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeaders}
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.BlockHeaders.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4270,9 +4270,9 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.deserializeBinaryFromReader = funct
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.BlockHeaders.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.BlockHeaders.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.BlockHeaders.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4280,11 +4280,11 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.serializeBinary = functio
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.BlockHeaders} message
+ * @param {!proto.org.hth.platform.dapi.v0.BlockHeaders} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.BlockHeaders.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getHeadersList_asU8();
   if (f.length > 0) {
@@ -4300,7 +4300,7 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.serializeBinaryToWriter = function(
  * repeated bytes headers = 1;
  * @return {!Array<string>}
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.getHeadersList = function() {
+proto.org.hth.platform.dapi.v0.BlockHeaders.prototype.getHeadersList = function() {
   return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 1));
 };
 
@@ -4310,7 +4310,7 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.getHeadersList = function
  * This is a type-conversion wrapper around `getHeadersList()`
  * @return {!Array<string>}
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.getHeadersList_asB64 = function() {
+proto.org.hth.platform.dapi.v0.BlockHeaders.prototype.getHeadersList_asB64 = function() {
   return /** @type {!Array<string>} */ (jspb.Message.bytesListAsB64(
       this.getHeadersList()));
 };
@@ -4323,7 +4323,7 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.getHeadersList_asB64 = fu
  * This is a type-conversion wrapper around `getHeadersList()`
  * @return {!Array<!Uint8Array>}
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.getHeadersList_asU8 = function() {
+proto.org.hth.platform.dapi.v0.BlockHeaders.prototype.getHeadersList_asU8 = function() {
   return /** @type {!Array<!Uint8Array>} */ (jspb.Message.bytesListAsU8(
       this.getHeadersList()));
 };
@@ -4331,9 +4331,9 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.getHeadersList_asU8 = fun
 
 /**
  * @param {!(Array<!Uint8Array>|Array<string>)} value
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeaders} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeaders} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.setHeadersList = function(value) {
+proto.org.hth.platform.dapi.v0.BlockHeaders.prototype.setHeadersList = function(value) {
   return jspb.Message.setField(this, 1, value || []);
 };
 
@@ -4341,18 +4341,18 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.setHeadersList = function
 /**
  * @param {!(string|Uint8Array)} value
  * @param {number=} opt_index
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeaders} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeaders} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.addHeaders = function(value, opt_index) {
+proto.org.hth.platform.dapi.v0.BlockHeaders.prototype.addHeaders = function(value, opt_index) {
   return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
- * @return {!proto.org.dash.platform.dapi.v0.BlockHeaders} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BlockHeaders} returns this
  */
-proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.clearHeadersList = function() {
+proto.org.hth.platform.dapi.v0.BlockHeaders.prototype.clearHeadersList = function() {
   return this.setHeadersList([]);
 };
 
@@ -4363,7 +4363,7 @@ proto.org.dash.platform.dapi.v0.BlockHeaders.prototype.clearHeadersList = functi
  * @private {!Array<number>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.repeatedFields_ = [1];
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.repeatedFields_ = [1];
 
 
 
@@ -4380,8 +4380,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.toObject(opt_includeInstance, this);
 };
 
 
@@ -4390,11 +4390,11 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.toObject = 
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.toObject = function(includeInstance, msg) {
   var f, obj = {
     messagesList: msg.getMessagesList_asB64()
   };
@@ -4410,23 +4410,23 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.toObject = function(i
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages}
+ * @return {!proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages}
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages;
-  return proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages;
+  return proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages}
+ * @return {!proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages}
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4450,9 +4450,9 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.deserializeBinaryFrom
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4460,11 +4460,11 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.serializeBi
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages} message
+ * @param {!proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getMessagesList_asU8();
   if (f.length > 0) {
@@ -4480,7 +4480,7 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.serializeBinaryToWrit
  * repeated bytes messages = 1;
  * @return {!Array<string>}
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessagesList = function() {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessagesList = function() {
   return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 1));
 };
 
@@ -4490,7 +4490,7 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessages
  * This is a type-conversion wrapper around `getMessagesList()`
  * @return {!Array<string>}
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessagesList_asB64 = function() {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessagesList_asB64 = function() {
   return /** @type {!Array<string>} */ (jspb.Message.bytesListAsB64(
       this.getMessagesList()));
 };
@@ -4503,7 +4503,7 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessages
  * This is a type-conversion wrapper around `getMessagesList()`
  * @return {!Array<!Uint8Array>}
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessagesList_asU8 = function() {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessagesList_asU8 = function() {
   return /** @type {!Array<!Uint8Array>} */ (jspb.Message.bytesListAsU8(
       this.getMessagesList()));
 };
@@ -4511,9 +4511,9 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.getMessages
 
 /**
  * @param {!(Array<!Uint8Array>|Array<string>)} value
- * @return {!proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages} returns this
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.setMessagesList = function(value) {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.prototype.setMessagesList = function(value) {
   return jspb.Message.setField(this, 1, value || []);
 };
 
@@ -4521,18 +4521,18 @@ proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.setMessages
 /**
  * @param {!(string|Uint8Array)} value
  * @param {number=} opt_index
- * @return {!proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages} returns this
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.addMessages = function(value, opt_index) {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.prototype.addMessages = function(value, opt_index) {
   return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
- * @return {!proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages} returns this
  */
-proto.org.dash.platform.dapi.v0.ChainLockSignatureMessages.prototype.clearMessagesList = function() {
+proto.org.hth.platform.dapi.v0.ChainLockSignatureMessages.prototype.clearMessagesList = function() {
   return this.setMessagesList([]);
 };
 
@@ -4553,8 +4553,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -4563,11 +4563,11 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.toOb
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
     blocks: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
@@ -4583,23 +4583,23 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.toObject = fun
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest;
-  return proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest;
+  return proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4623,9 +4623,9 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.deserializeBin
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4633,11 +4633,11 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.seri
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBlocks();
   if (f !== 0) {
@@ -4653,16 +4653,16 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.serializeBinar
  * optional uint32 blocks = 1;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.getBlocks = function() {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.getBlocks = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.setBlocks = function(value) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.prototype.setBlocks = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
@@ -4683,8 +4683,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -4693,11 +4693,11 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.toO
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
     fee: jspb.Message.getFloatingPointFieldWithDefault(msg, 1, 0.0)
   };
@@ -4713,23 +4713,23 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.toObject = fu
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse;
-  return proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse;
+  return proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4753,9 +4753,9 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.deserializeBi
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4763,11 +4763,11 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.ser
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} message
+ * @param {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getFee();
   if (f !== 0.0) {
@@ -4783,16 +4783,16 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.serializeBina
  * optional double fee = 1;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.getFee = function() {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.getFee = function() {
   return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 1, 0.0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.setFee = function(value) {
+proto.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.setFee = function(value) {
   return jspb.Message.setProto3FloatField(this, 1, value);
 };
 
@@ -4806,22 +4806,22 @@ proto.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.prototype.set
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_ = [[2,3]];
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_ = [[2,3]];
 
 /**
  * @enum {number}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.FromBlockCase = {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.FromBlockCase = {
   FROM_BLOCK_NOT_SET: 0,
   FROM_BLOCK_HASH: 2,
   FROM_BLOCK_HEIGHT: 3
 };
 
 /**
- * @return {proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.FromBlockCase}
+ * @return {proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.FromBlockCase}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockCase = function() {
-  return /** @type {proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.FromBlockCase} */(jspb.Message.computeOneofCase(this, proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0]));
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockCase = function() {
+  return /** @type {proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.FromBlockCase} */(jspb.Message.computeOneofCase(this, proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0]));
 };
 
 
@@ -4839,8 +4839,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.toObject(opt_includeInstance, this);
 };
 
 
@@ -4849,13 +4849,13 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.toObject
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.toObject = function(includeInstance, msg) {
   var f, obj = {
-    bloomFilter: (f = msg.getBloomFilter()) && proto.org.dash.platform.dapi.v0.BloomFilter.toObject(includeInstance, f),
+    bloomFilter: (f = msg.getBloomFilter()) && proto.org.hth.platform.dapi.v0.BloomFilter.toObject(includeInstance, f),
     fromBlockHash: msg.getFromBlockHash_asB64(),
     fromBlockHeight: jspb.Message.getFieldWithDefault(msg, 3, 0),
     count: jspb.Message.getFieldWithDefault(msg, 4, 0),
@@ -4873,23 +4873,23 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.toObject = functio
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest;
-  return proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest;
+  return proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest}
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4897,8 +4897,8 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.deserializeBinaryF
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.org.dash.platform.dapi.v0.BloomFilter;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.BloomFilter.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.BloomFilter;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.BloomFilter.deserializeBinaryFromReader);
       msg.setBloomFilter(value);
       break;
     case 2:
@@ -4930,9 +4930,9 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.deserializeBinaryF
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -4940,18 +4940,18 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.serializ
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} message
+ * @param {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getBloomFilter();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.org.dash.platform.dapi.v0.BloomFilter.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.BloomFilter.serializeBinaryToWriter
     );
   }
   f = /** @type {!(string|Uint8Array)} */ (jspb.Message.getField(message, 2));
@@ -4987,28 +4987,28 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.serializeBinaryToW
 
 /**
  * optional BloomFilter bloom_filter = 1;
- * @return {?proto.org.dash.platform.dapi.v0.BloomFilter}
+ * @return {?proto.org.hth.platform.dapi.v0.BloomFilter}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getBloomFilter = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.BloomFilter} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.BloomFilter, 1));
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getBloomFilter = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.BloomFilter} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.BloomFilter, 1));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.BloomFilter|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.BloomFilter|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} returns this
 */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setBloomFilter = function(value) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setBloomFilter = function(value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearBloomFilter = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearBloomFilter = function() {
   return this.setBloomFilter(undefined);
 };
 
@@ -5017,7 +5017,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearBlo
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasBloomFilter = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasBloomFilter = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -5026,7 +5026,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasBloom
  * optional bytes from_block_hash = 2;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockHash = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockHash = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
@@ -5036,7 +5036,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromB
  * This is a type-conversion wrapper around `getFromBlockHash()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockHash_asB64 = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockHash_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getFromBlockHash()));
 };
@@ -5049,7 +5049,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromB
  * This is a type-conversion wrapper around `getFromBlockHash()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockHash_asU8 = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockHash_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getFromBlockHash()));
 };
@@ -5057,19 +5057,19 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromB
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setFromBlockHash = function(value) {
-  return jspb.Message.setOneofField(this, 2, proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setFromBlockHash = function(value) {
+  return jspb.Message.setOneofField(this, 2, proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearFromBlockHash = function() {
-  return jspb.Message.setOneofField(this, 2, proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0], undefined);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearFromBlockHash = function() {
+  return jspb.Message.setOneofField(this, 2, proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -5077,7 +5077,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearFro
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasFromBlockHash = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasFromBlockHash = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -5086,26 +5086,26 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasFromB
  * optional uint32 from_block_height = 3;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockHeight = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getFromBlockHeight = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setFromBlockHeight = function(value) {
-  return jspb.Message.setOneofField(this, 3, proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setFromBlockHeight = function(value) {
+  return jspb.Message.setOneofField(this, 3, proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearFromBlockHeight = function() {
-  return jspb.Message.setOneofField(this, 3, proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0], undefined);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearFromBlockHeight = function() {
+  return jspb.Message.setOneofField(this, 3, proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.oneofGroups_[0], undefined);
 };
 
 
@@ -5113,7 +5113,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.clearFro
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasFromBlockHeight = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasFromBlockHeight = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -5122,16 +5122,16 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.hasFromB
  * optional uint32 count = 4;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getCount = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setCount = function(value) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setCount = function(value) {
   return jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -5140,16 +5140,16 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setCount
  * optional bool send_transaction_hashes = 5;
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getSendTransactionHashes = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.getSendTransactionHashes = function() {
   return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 5, false));
 };
 
 
 /**
  * @param {boolean} value
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setSendTransactionHashes = function(value) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsRequest.prototype.setSendTransactionHashes = function(value) {
   return jspb.Message.setProto3BooleanField(this, 5, value);
 };
 
@@ -5170,8 +5170,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.BloomFilter.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.BloomFilter.toObject(opt_includeInstance, this);
 };
 
 
@@ -5180,11 +5180,11 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.toObject = function(opt_in
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.BloomFilter} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.BloomFilter} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.BloomFilter.toObject = function(includeInstance, msg) {
   var f, obj = {
     vData: msg.getVData_asB64(),
     nHashFuncs: jspb.Message.getFieldWithDefault(msg, 2, 0),
@@ -5203,23 +5203,23 @@ proto.org.dash.platform.dapi.v0.BloomFilter.toObject = function(includeInstance,
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.BloomFilter}
+ * @return {!proto.org.hth.platform.dapi.v0.BloomFilter}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.BloomFilter.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.BloomFilter;
-  return proto.org.dash.platform.dapi.v0.BloomFilter.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.BloomFilter;
+  return proto.org.hth.platform.dapi.v0.BloomFilter.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.BloomFilter} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.BloomFilter} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.BloomFilter}
+ * @return {!proto.org.hth.platform.dapi.v0.BloomFilter}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.BloomFilter.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5255,9 +5255,9 @@ proto.org.dash.platform.dapi.v0.BloomFilter.deserializeBinaryFromReader = functi
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.BloomFilter.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.BloomFilter.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5265,11 +5265,11 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.serializeBinary = function
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.BloomFilter} message
+ * @param {!proto.org.hth.platform.dapi.v0.BloomFilter} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.BloomFilter.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getVData_asU8();
   if (f.length > 0) {
@@ -5306,7 +5306,7 @@ proto.org.dash.platform.dapi.v0.BloomFilter.serializeBinaryToWriter = function(m
  * optional bytes v_data = 1;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getVData = function() {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.getVData = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
@@ -5316,7 +5316,7 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getVData = function() {
  * This is a type-conversion wrapper around `getVData()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getVData_asB64 = function() {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.getVData_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getVData()));
 };
@@ -5329,7 +5329,7 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getVData_asB64 = function(
  * This is a type-conversion wrapper around `getVData()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getVData_asU8 = function() {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.getVData_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getVData()));
 };
@@ -5337,9 +5337,9 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getVData_asU8 = function()
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.BloomFilter} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BloomFilter} returns this
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.setVData = function(value) {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.setVData = function(value) {
   return jspb.Message.setProto3BytesField(this, 1, value);
 };
 
@@ -5348,16 +5348,16 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.setVData = function(value)
  * optional uint32 n_hash_funcs = 2;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getNHashFuncs = function() {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.getNHashFuncs = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.BloomFilter} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BloomFilter} returns this
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.setNHashFuncs = function(value) {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.setNHashFuncs = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
@@ -5366,16 +5366,16 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.setNHashFuncs = function(v
  * optional uint32 n_tweak = 3;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getNTweak = function() {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.getNTweak = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.BloomFilter} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BloomFilter} returns this
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.setNTweak = function(value) {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.setNTweak = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
 
@@ -5384,16 +5384,16 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.setNTweak = function(value
  * optional uint32 n_flags = 4;
  * @return {number}
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.getNFlags = function() {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.getNFlags = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
 
 
 /**
  * @param {number} value
- * @return {!proto.org.dash.platform.dapi.v0.BloomFilter} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.BloomFilter} returns this
  */
-proto.org.dash.platform.dapi.v0.BloomFilter.prototype.setNFlags = function(value) {
+proto.org.hth.platform.dapi.v0.BloomFilter.prototype.setNFlags = function(value) {
   return jspb.Message.setProto3IntField(this, 4, value);
 };
 
@@ -5407,12 +5407,12 @@ proto.org.dash.platform.dapi.v0.BloomFilter.prototype.setNFlags = function(value
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_ = [[1,2,3]];
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_ = [[1,2,3]];
 
 /**
  * @enum {number}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase = {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase = {
   RESPONSES_NOT_SET: 0,
   RAW_TRANSACTIONS: 1,
   INSTANT_SEND_LOCK_MESSAGES: 2,
@@ -5420,10 +5420,10 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase = {
 };
 
 /**
- * @return {proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase}
+ * @return {proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getResponsesCase = function() {
-  return /** @type {proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase} */(jspb.Message.computeOneofCase(this, proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0]));
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getResponsesCase = function() {
+  return /** @type {proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.ResponsesCase} */(jspb.Message.computeOneofCase(this, proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0]));
 };
 
 
@@ -5441,8 +5441,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.toObject(opt_includeInstance, this);
 };
 
 
@@ -5451,14 +5451,14 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.toObjec
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.toObject = function(includeInstance, msg) {
   var f, obj = {
-    rawTransactions: (f = msg.getRawTransactions()) && proto.org.dash.platform.dapi.v0.RawTransactions.toObject(includeInstance, f),
-    instantSendLockMessages: (f = msg.getInstantSendLockMessages()) && proto.org.dash.platform.dapi.v0.InstantSendLockMessages.toObject(includeInstance, f),
+    rawTransactions: (f = msg.getRawTransactions()) && proto.org.hth.platform.dapi.v0.RawTransactions.toObject(includeInstance, f),
+    instantSendLockMessages: (f = msg.getInstantSendLockMessages()) && proto.org.hth.platform.dapi.v0.InstantSendLockMessages.toObject(includeInstance, f),
     rawMerkleBlock: msg.getRawMerkleBlock_asB64()
   };
 
@@ -5473,23 +5473,23 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.toObject = functi
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse;
-  return proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse;
+  return proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse}
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5497,13 +5497,13 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.deserializeBinary
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.org.dash.platform.dapi.v0.RawTransactions;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.RawTransactions.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.RawTransactions;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.RawTransactions.deserializeBinaryFromReader);
       msg.setRawTransactions(value);
       break;
     case 2:
-      var value = new proto.org.dash.platform.dapi.v0.InstantSendLockMessages;
-      reader.readMessage(value,proto.org.dash.platform.dapi.v0.InstantSendLockMessages.deserializeBinaryFromReader);
+      var value = new proto.org.hth.platform.dapi.v0.InstantSendLockMessages;
+      reader.readMessage(value,proto.org.hth.platform.dapi.v0.InstantSendLockMessages.deserializeBinaryFromReader);
       msg.setInstantSendLockMessages(value);
       break;
     case 3:
@@ -5523,9 +5523,9 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.deserializeBinary
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5533,18 +5533,18 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.seriali
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} message
+ * @param {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getRawTransactions();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.org.dash.platform.dapi.v0.RawTransactions.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.RawTransactions.serializeBinaryToWriter
     );
   }
   f = message.getInstantSendLockMessages();
@@ -5552,7 +5552,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.serializeBinaryTo
     writer.writeMessage(
       2,
       f,
-      proto.org.dash.platform.dapi.v0.InstantSendLockMessages.serializeBinaryToWriter
+      proto.org.hth.platform.dapi.v0.InstantSendLockMessages.serializeBinaryToWriter
     );
   }
   f = /** @type {!(string|Uint8Array)} */ (jspb.Message.getField(message, 3));
@@ -5567,28 +5567,28 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.serializeBinaryTo
 
 /**
  * optional RawTransactions raw_transactions = 1;
- * @return {?proto.org.dash.platform.dapi.v0.RawTransactions}
+ * @return {?proto.org.hth.platform.dapi.v0.RawTransactions}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawTransactions = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.RawTransactions} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.RawTransactions, 1));
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawTransactions = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.RawTransactions} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.RawTransactions, 1));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.RawTransactions|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.RawTransactions|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.setRawTransactions = function(value) {
-  return jspb.Message.setOneofWrapperField(this, 1, proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.setRawTransactions = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 1, proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearRawTransactions = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearRawTransactions = function() {
   return this.setRawTransactions(undefined);
 };
 
@@ -5597,35 +5597,35 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearRa
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.hasRawTransactions = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.hasRawTransactions = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional InstantSendLockMessages instant_send_lock_messages = 2;
- * @return {?proto.org.dash.platform.dapi.v0.InstantSendLockMessages}
+ * @return {?proto.org.hth.platform.dapi.v0.InstantSendLockMessages}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getInstantSendLockMessages = function() {
-  return /** @type{?proto.org.dash.platform.dapi.v0.InstantSendLockMessages} */ (
-    jspb.Message.getWrapperField(this, proto.org.dash.platform.dapi.v0.InstantSendLockMessages, 2));
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getInstantSendLockMessages = function() {
+  return /** @type{?proto.org.hth.platform.dapi.v0.InstantSendLockMessages} */ (
+    jspb.Message.getWrapperField(this, proto.org.hth.platform.dapi.v0.InstantSendLockMessages, 2));
 };
 
 
 /**
- * @param {?proto.org.dash.platform.dapi.v0.InstantSendLockMessages|undefined} value
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} returns this
+ * @param {?proto.org.hth.platform.dapi.v0.InstantSendLockMessages|undefined} value
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} returns this
 */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.setInstantSendLockMessages = function(value) {
-  return jspb.Message.setOneofWrapperField(this, 2, proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.setInstantSendLockMessages = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 2, proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the message field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearInstantSendLockMessages = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearInstantSendLockMessages = function() {
   return this.setInstantSendLockMessages(undefined);
 };
 
@@ -5634,7 +5634,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearIn
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.hasInstantSendLockMessages = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.hasInstantSendLockMessages = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -5643,7 +5643,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.hasInst
  * optional bytes raw_merkle_block = 3;
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawMerkleBlock = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawMerkleBlock = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
@@ -5653,7 +5653,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawM
  * This is a type-conversion wrapper around `getRawMerkleBlock()`
  * @return {string}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawMerkleBlock_asB64 = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawMerkleBlock_asB64 = function() {
   return /** @type {string} */ (jspb.Message.bytesAsB64(
       this.getRawMerkleBlock()));
 };
@@ -5666,7 +5666,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawM
  * This is a type-conversion wrapper around `getRawMerkleBlock()`
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawMerkleBlock_asU8 = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawMerkleBlock_asU8 = function() {
   return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
       this.getRawMerkleBlock()));
 };
@@ -5674,19 +5674,19 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.getRawM
 
 /**
  * @param {!(string|Uint8Array)} value
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.setRawMerkleBlock = function(value) {
-  return jspb.Message.setOneofField(this, 3, proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0], value);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.setRawMerkleBlock = function(value) {
+  return jspb.Message.setOneofField(this, 3, proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0], value);
 };
 
 
 /**
  * Clears the field making it undefined.
- * @return {!proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse} returns this
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearRawMerkleBlock = function() {
-  return jspb.Message.setOneofField(this, 3, proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0], undefined);
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearRawMerkleBlock = function() {
+  return jspb.Message.setOneofField(this, 3, proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.oneofGroups_[0], undefined);
 };
 
 
@@ -5694,7 +5694,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.clearRa
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.hasRawMerkleBlock = function() {
+proto.org.hth.platform.dapi.v0.TransactionsWithProofsResponse.prototype.hasRawMerkleBlock = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -5705,7 +5705,7 @@ proto.org.dash.platform.dapi.v0.TransactionsWithProofsResponse.prototype.hasRawM
  * @private {!Array<number>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.repeatedFields_ = [1];
+proto.org.hth.platform.dapi.v0.RawTransactions.repeatedFields_ = [1];
 
 
 
@@ -5722,8 +5722,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.RawTransactions.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.RawTransactions.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.RawTransactions.toObject(opt_includeInstance, this);
 };
 
 
@@ -5732,11 +5732,11 @@ proto.org.dash.platform.dapi.v0.RawTransactions.prototype.toObject = function(op
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.RawTransactions} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.RawTransactions} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.RawTransactions.toObject = function(includeInstance, msg) {
   var f, obj = {
     transactionsList: msg.getTransactionsList_asB64()
   };
@@ -5752,23 +5752,23 @@ proto.org.dash.platform.dapi.v0.RawTransactions.toObject = function(includeInsta
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.RawTransactions}
+ * @return {!proto.org.hth.platform.dapi.v0.RawTransactions}
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.RawTransactions.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.RawTransactions;
-  return proto.org.dash.platform.dapi.v0.RawTransactions.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.RawTransactions;
+  return proto.org.hth.platform.dapi.v0.RawTransactions.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.RawTransactions} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.RawTransactions} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.RawTransactions}
+ * @return {!proto.org.hth.platform.dapi.v0.RawTransactions}
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.RawTransactions.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5792,9 +5792,9 @@ proto.org.dash.platform.dapi.v0.RawTransactions.deserializeBinaryFromReader = fu
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.RawTransactions.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.RawTransactions.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.RawTransactions.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5802,11 +5802,11 @@ proto.org.dash.platform.dapi.v0.RawTransactions.prototype.serializeBinary = func
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.RawTransactions} message
+ * @param {!proto.org.hth.platform.dapi.v0.RawTransactions} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.RawTransactions.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getTransactionsList_asU8();
   if (f.length > 0) {
@@ -5822,7 +5822,7 @@ proto.org.dash.platform.dapi.v0.RawTransactions.serializeBinaryToWriter = functi
  * repeated bytes transactions = 1;
  * @return {!Array<string>}
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.prototype.getTransactionsList = function() {
+proto.org.hth.platform.dapi.v0.RawTransactions.prototype.getTransactionsList = function() {
   return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 1));
 };
 
@@ -5832,7 +5832,7 @@ proto.org.dash.platform.dapi.v0.RawTransactions.prototype.getTransactionsList = 
  * This is a type-conversion wrapper around `getTransactionsList()`
  * @return {!Array<string>}
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.prototype.getTransactionsList_asB64 = function() {
+proto.org.hth.platform.dapi.v0.RawTransactions.prototype.getTransactionsList_asB64 = function() {
   return /** @type {!Array<string>} */ (jspb.Message.bytesListAsB64(
       this.getTransactionsList()));
 };
@@ -5845,7 +5845,7 @@ proto.org.dash.platform.dapi.v0.RawTransactions.prototype.getTransactionsList_as
  * This is a type-conversion wrapper around `getTransactionsList()`
  * @return {!Array<!Uint8Array>}
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.prototype.getTransactionsList_asU8 = function() {
+proto.org.hth.platform.dapi.v0.RawTransactions.prototype.getTransactionsList_asU8 = function() {
   return /** @type {!Array<!Uint8Array>} */ (jspb.Message.bytesListAsU8(
       this.getTransactionsList()));
 };
@@ -5853,9 +5853,9 @@ proto.org.dash.platform.dapi.v0.RawTransactions.prototype.getTransactionsList_as
 
 /**
  * @param {!(Array<!Uint8Array>|Array<string>)} value
- * @return {!proto.org.dash.platform.dapi.v0.RawTransactions} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.RawTransactions} returns this
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.prototype.setTransactionsList = function(value) {
+proto.org.hth.platform.dapi.v0.RawTransactions.prototype.setTransactionsList = function(value) {
   return jspb.Message.setField(this, 1, value || []);
 };
 
@@ -5863,18 +5863,18 @@ proto.org.dash.platform.dapi.v0.RawTransactions.prototype.setTransactionsList = 
 /**
  * @param {!(string|Uint8Array)} value
  * @param {number=} opt_index
- * @return {!proto.org.dash.platform.dapi.v0.RawTransactions} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.RawTransactions} returns this
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.prototype.addTransactions = function(value, opt_index) {
+proto.org.hth.platform.dapi.v0.RawTransactions.prototype.addTransactions = function(value, opt_index) {
   return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
- * @return {!proto.org.dash.platform.dapi.v0.RawTransactions} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.RawTransactions} returns this
  */
-proto.org.dash.platform.dapi.v0.RawTransactions.prototype.clearTransactionsList = function() {
+proto.org.hth.platform.dapi.v0.RawTransactions.prototype.clearTransactionsList = function() {
   return this.setTransactionsList([]);
 };
 
@@ -5885,7 +5885,7 @@ proto.org.dash.platform.dapi.v0.RawTransactions.prototype.clearTransactionsList 
  * @private {!Array<number>}
  * @const
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.repeatedFields_ = [1];
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.repeatedFields_ = [1];
 
 
 
@@ -5902,8 +5902,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.toObject = function(opt_includeInstance) {
-  return proto.org.dash.platform.dapi.v0.InstantSendLockMessages.toObject(opt_includeInstance, this);
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.prototype.toObject = function(opt_includeInstance) {
+  return proto.org.hth.platform.dapi.v0.InstantSendLockMessages.toObject(opt_includeInstance, this);
 };
 
 
@@ -5912,11 +5912,11 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.toObject = fun
  * @param {boolean|undefined} includeInstance Deprecated. Whether to include
  *     the JSPB instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.org.dash.platform.dapi.v0.InstantSendLockMessages} msg The msg instance to transform.
+ * @param {!proto.org.hth.platform.dapi.v0.InstantSendLockMessages} msg The msg instance to transform.
  * @return {!Object}
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.toObject = function(includeInstance, msg) {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.toObject = function(includeInstance, msg) {
   var f, obj = {
     messagesList: msg.getMessagesList_asB64()
   };
@@ -5932,23 +5932,23 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.toObject = function(incl
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.org.dash.platform.dapi.v0.InstantSendLockMessages}
+ * @return {!proto.org.hth.platform.dapi.v0.InstantSendLockMessages}
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.deserializeBinary = function(bytes) {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.org.dash.platform.dapi.v0.InstantSendLockMessages;
-  return proto.org.dash.platform.dapi.v0.InstantSendLockMessages.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.org.hth.platform.dapi.v0.InstantSendLockMessages;
+  return proto.org.hth.platform.dapi.v0.InstantSendLockMessages.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.org.dash.platform.dapi.v0.InstantSendLockMessages} msg The message object to deserialize into.
+ * @param {!proto.org.hth.platform.dapi.v0.InstantSendLockMessages} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.org.dash.platform.dapi.v0.InstantSendLockMessages}
+ * @return {!proto.org.hth.platform.dapi.v0.InstantSendLockMessages}
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.deserializeBinaryFromReader = function(msg, reader) {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5972,9 +5972,9 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.deserializeBinaryFromRea
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.serializeBinary = function() {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
-  proto.org.dash.platform.dapi.v0.InstantSendLockMessages.serializeBinaryToWriter(this, writer);
+  proto.org.hth.platform.dapi.v0.InstantSendLockMessages.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
 
@@ -5982,11 +5982,11 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.serializeBinar
 /**
  * Serializes the given message to binary data (in protobuf wire
  * format), writing to the given BinaryWriter.
- * @param {!proto.org.dash.platform.dapi.v0.InstantSendLockMessages} message
+ * @param {!proto.org.hth.platform.dapi.v0.InstantSendLockMessages} message
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.serializeBinaryToWriter = function(message, writer) {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getMessagesList_asU8();
   if (f.length > 0) {
@@ -6002,7 +6002,7 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.serializeBinaryToWriter 
  * repeated bytes messages = 1;
  * @return {!Array<string>}
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesList = function() {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesList = function() {
   return /** @type {!Array<string>} */ (jspb.Message.getRepeatedField(this, 1));
 };
 
@@ -6012,7 +6012,7 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesLis
  * This is a type-conversion wrapper around `getMessagesList()`
  * @return {!Array<string>}
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesList_asB64 = function() {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesList_asB64 = function() {
   return /** @type {!Array<string>} */ (jspb.Message.bytesListAsB64(
       this.getMessagesList()));
 };
@@ -6025,7 +6025,7 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesLis
  * This is a type-conversion wrapper around `getMessagesList()`
  * @return {!Array<!Uint8Array>}
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesList_asU8 = function() {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesList_asU8 = function() {
   return /** @type {!Array<!Uint8Array>} */ (jspb.Message.bytesListAsU8(
       this.getMessagesList()));
 };
@@ -6033,9 +6033,9 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.getMessagesLis
 
 /**
  * @param {!(Array<!Uint8Array>|Array<string>)} value
- * @return {!proto.org.dash.platform.dapi.v0.InstantSendLockMessages} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.InstantSendLockMessages} returns this
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.setMessagesList = function(value) {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.prototype.setMessagesList = function(value) {
   return jspb.Message.setField(this, 1, value || []);
 };
 
@@ -6043,20 +6043,20 @@ proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.setMessagesLis
 /**
  * @param {!(string|Uint8Array)} value
  * @param {number=} opt_index
- * @return {!proto.org.dash.platform.dapi.v0.InstantSendLockMessages} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.InstantSendLockMessages} returns this
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.addMessages = function(value, opt_index) {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.prototype.addMessages = function(value, opt_index) {
   return jspb.Message.addToRepeatedField(this, 1, value, opt_index);
 };
 
 
 /**
  * Clears the list making it empty but non-null.
- * @return {!proto.org.dash.platform.dapi.v0.InstantSendLockMessages} returns this
+ * @return {!proto.org.hth.platform.dapi.v0.InstantSendLockMessages} returns this
  */
-proto.org.dash.platform.dapi.v0.InstantSendLockMessages.prototype.clearMessagesList = function() {
+proto.org.hth.platform.dapi.v0.InstantSendLockMessages.prototype.clearMessagesList = function() {
   return this.setMessagesList([]);
 };
 
 
-goog.object.extend(exports, proto.org.dash.platform.dapi.v0);
+goog.object.extend(exports, proto.org.hth.platform.dapi.v0);

@@ -11,7 +11,7 @@ const DataContractUpdateTransition = require('./stateTransition/DataContractUpda
 
 class DataContractFactory {
   /**
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    * @param {validateDataContract} validateDataContract
    * @param {decodeProtocolEntity} decodeProtocolEntity
    */

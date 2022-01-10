@@ -1,5 +1,5 @@
 const {expect} = require('chai');
-const {Transaction, Address, Script} = require('@dashevo/dashcore-lib');
+const {Transaction, Address, Script} = require('@hthcoin/hthcore-lib');
 const coinSelection = require('./coinSelection');
 const {utxosList} = require('../../fixtures/crackspice');
 const STRATEGIES = require('./coinSelections/strategies');
@@ -7,23 +7,23 @@ const TransactionEstimator = require('./coinSelections/TransactionEstimator')
 
 const utxosListAsUnspentOutput = utxosList.map((utxo)=> Transaction.UnspentOutput(utxo));
 const outputs = {
-  ONE_DASH: {
+  ONE_HTH: {
     satoshis: 100000000,
     address: new Address('ybefxSHaEbDATvq5gVCxjV375NWus3ttV7'),
   },
-  HUNDRED_DASH: {
+  HUNDRED_HTH: {
     satoshis: 10000000000,
     address: new Address('ybefxSHaEbDATvq5gVCxjV375NWus3ttV7'),
   },
-  TWENTY_FIVE_DASH: {
+  TWENTY_FIVE_HTH: {
     satoshis: 2500000000,
     address: new Address('ybefxSHaEbDATvq5gVCxjV375NWus3ttV7'),
   },
-  FOURTY_FIVE_DASH: {
+  FOURTY_FIVE_HTH: {
     satoshis: 4500000000,
     address: new Address('ybefxSHaEbDATvq5gVCxjV375NWus3ttV7'),
   },
-  MILLION_DASH: {
+  MILLION_HTH: {
     satoshis: 100000000000000,
     address: new Address('ybefxSHaEbDATvq5gVCxjV375NWus3ttV7'),
   },
@@ -61,7 +61,7 @@ describe('Utils - coinSelection', function suite() {
     expect(() => coinSelection(utxosListAsUnspentOutput, [{toto: true}])).to.throw('data parameter supplied is not a string.');
   });
   it('should alert if the total satoshis is not enough', () => {
-    expect(() => coinSelection(utxosListAsUnspentOutput, [outputs.HUNDRED_DASH])).to.throw('Unsufficient utxos (7099960000) to cover the output : 10000000000. Diff : -2900040000');
+    expect(() => coinSelection(utxosListAsUnspentOutput, [outputs.HUNDRED_HTH])).to.throw('Unsufficient utxos (7099960000) to cover the output : 10000000000. Diff : -2900040000');
   });
   it('should work with normal utxo format', () => {
     const output = new Transaction.UnspentOutput({
@@ -86,8 +86,8 @@ describe('Utils - coinSelection', function suite() {
 
     expect(result).to.deep.equal(expectedResult);
   });
-  it('should get a coinSelection for 1 dash', () => {
-    const result = coinSelection(utxosListAsUnspentOutput, [outputs.ONE_DASH], false, 'normal', STRATEGIES.simpleDescendingAccumulator);
+  it('should get a coinSelection for 1 hth', () => {
+    const result = coinSelection(utxosListAsUnspentOutput, [outputs.ONE_HTH], false, 'normal', STRATEGIES.simpleDescendingAccumulator);
     const expectedResult = {
       utxos: [new Transaction.UnspentOutput({
         address: new Address('yQeCpWLJNGP4Aiojmz5ZC5gbYXREsnLnaX'),
@@ -104,7 +104,7 @@ describe('Utils - coinSelection', function suite() {
     expect(result).to.deep.equal(expectedResult);
   });
   it('should handle a case when using more than 25 utxos', () => {
-    const result = coinSelection(utxosListAsUnspentOutput, [outputs.TWENTY_FIVE_DASH], false, 'normal', STRATEGIES.simpleDescendingAccumulator);
+    const result = coinSelection(utxosListAsUnspentOutput, [outputs.TWENTY_FIVE_HTH], false, 'normal', STRATEGIES.simpleDescendingAccumulator);
     const expectedResult = {
       utxos: [
           new Transaction.UnspentOutput({
@@ -190,7 +190,7 @@ describe('Utils - coinSelection', function suite() {
     expect(result).to.deep.equal(expectedResult);
   });
   it('should handle a case when using more than 45 utxos', () => {
-    const result = coinSelection(utxosListAsUnspentOutput, [outputs.FOURTY_FIVE_DASH], false, 'normal', STRATEGIES.simpleDescendingAccumulator);
+    const result = coinSelection(utxosListAsUnspentOutput, [outputs.FOURTY_FIVE_HTH], false, 'normal', STRATEGIES.simpleDescendingAccumulator);
     const expectedResult = {
       utxos: [
           new Transaction.UnspentOutput({
@@ -351,7 +351,7 @@ describe('Utils - coinSelection', function suite() {
     }
     const result = coinSelection(
         utxosListAsUnspentOutput,
-        [outputs.FOURTY_FIVE_DASH],
+        [outputs.FOURTY_FIVE_HTH],
         false,
         'normal',
         externalStrategy);
@@ -359,7 +359,7 @@ describe('Utils - coinSelection', function suite() {
     expect(result).to.exist;
     expect(result.feeCategory).to.equal('normal');
     expect(result.utxosValue).to.gte(4500000000);
-    expect(result.outputs).to.deep.equal([outputs.FOURTY_FIVE_DASH]);
+    expect(result.outputs).to.deep.equal([outputs.FOURTY_FIVE_HTH]);
     expect(result.utxos.length).to.gte(0);
   });
   // Note : Removed, kept in case of fallback needed
@@ -369,6 +369,6 @@ describe('Utils - coinSelection', function suite() {
   //   for (let i = 0; i <= 45; i++) {
   //     utxos.push(utxosList[15]);
   //   }
-  // expect(() => coinSelection(utxos, [outputs.FOURTY_FIVE_DASH])).to.throw('Did not found any utxo, missing implementation of this case');
+  // expect(() => coinSelection(utxos, [outputs.FOURTY_FIVE_HTH])).to.throw('Did not found any utxo, missing implementation of this case');
   // });
 });

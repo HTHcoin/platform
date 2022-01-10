@@ -7,7 +7,7 @@ const sinonChai = require('sinon-chai');
 const dirtyChai = require('dirty-chai');
 const chaiAsPromised = require('chai-as-promised');
 
-const DashCoreOptions = require('@dashevo/dp-services-ctl/lib/services/dashCore/DashCoreOptions');
+const HthCoreOptions = require('@hthcoin/dp-services-ctl/lib/services/hthCore/HthCoreOptions');
 
 use(sinonChai);
 use(chaiAsPromised);
@@ -43,7 +43,7 @@ if (process.env.SERVICE_IMAGE_DAPI) {
 }
 
 if (process.env.SERVICE_IMAGE_CORE) {
-  DashCoreOptions.setDefaultCustomOptions({
+  HthCoreOptions.setDefaultCustomOptions({
     container: {
       image: process.env.SERVICE_IMAGE_CORE,
     },

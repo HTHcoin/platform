@@ -4,9 +4,9 @@ Initialize the SDK Client with your [generated mnemonic](../examples/generate-a-
 By default, the SDK Client will work on Evonet, the only network having DAPI at the time of writing.
 
 ```js
-const Dash = require("dash");
+const HTH = require("hth");
 const mnemonic = ''// your mnemonic here.
-const client = new Dash.Client({
+const client = new HTH.Client({
   mnemonic,
 });
 ```
@@ -59,7 +59,7 @@ When a new unconfirmed transaction is received, you can receive notice of it, to
   });
 ```
 
-The return element can be used in coordination with a `new Dash.Core.Transaction()`
+The return element can be used in coordination with a `new HTH.Core.Transaction()`
 
 ## Get an address 
 

@@ -1,5 +1,5 @@
 const cbor = require('cbor');
-const Identifier = require('@dashevo/dpp/lib/Identifier');
+const Identifier = require('@hthcoin/dpp/lib/Identifier');
 
 const {
   v0: {
@@ -10,9 +10,9 @@ const {
     Proof: ProofResponse,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const getDocumentsFixture = require('@dashevo/dpp/lib/test/fixtures/getDocumentsFixture');
+const getDocumentsFixture = require('@hthcoin/dpp/lib/test/fixtures/getDocumentsFixture');
 
 const getDocumentsFactory = require('../../../../../lib/methods/platform/getDocuments/getDocumentsFactory');
 const getMetadataFixture = require('../../../../../lib/test/fixtures/getMetadataFixture');

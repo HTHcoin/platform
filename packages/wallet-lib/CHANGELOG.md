@@ -1,32 +1,32 @@
-# [7.21.0](https://github.com/dashevo/wallet-lib/compare/v7.21.0...v7.21.0) (2021-10-21)
+# [7.21.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.21.0...v7.21.0) (2021-10-21)
 
 
 ### Features
 
-* provide plugin dependencies sorting ([#281](https://github.com/dashevo/wallet-lib/issues/281))
-* **Keychain:** `getHardenedDIP15AccountKey`, `getDIP15ExtendedPrivateKey` ([#282](https://github.com/dashevo/wallet-lib/issues/282))
-* overridable coinbase maturity value ([#322](https://github.com/dashevo/wallet-lib/issues/322))
-* retry policy of unconfirmed transaction from stream ([#304](https://github.com/dashevo/wallet-lib/issues/304)), closes [#303](https://github.com/dashevo/wallet-lib/issues/303)
-* implement transaction metadata handling ([#291](https://github.com/dashevo/wallet-lib/issues/291), [#303](https://github.com/dashevo/wallet-lib/issues/303))
-* transaction history ([#295](https://github.com/dashevo/wallet-lib/issues/295)), closes [#303](https://github.com/dashevo/wallet-lib/issues/303)
-* **TransactionSyncWorker:** improve stream response handling ([#323](https://github.com/dashevo/wallet-lib/issues/323), [#339](https://github.com/dashevo/wallet-lib/issues/339), [#338](https://github.com/dashevo/wallet-lib/issues/338), [#336](https://github.com/dashevo/wallet-lib/issues/336))
-* prevent broadcast and throw error on transaction below min relay fee ([#305](https://github.com/dashevo/wallet-lib/issues/305))
-* provide watch-only mode for public key and address based wallet ([#290](https://github.com/dashevo/wallet-lib/issues/290))
+* provide plugin dependencies sorting ([#281](https://github.com/MichaelHDesigns/wallet-lib/issues/281))
+* **Keychain:** `getHardenedDIP15AccountKey`, `getDIP15ExtendedPrivateKey` ([#282](https://github.com/MichaelHDesigns/wallet-lib/issues/282))
+* overridable coinbase maturity value ([#322](https://github.com/MichaelHDesigns/wallet-lib/issues/322))
+* retry policy of unconfirmed transaction from stream ([#304](https://github.com/MichaelHDesigns/wallet-lib/issues/304)), closes [#303](https://github.com/MichaelHDesigns/wallet-lib/issues/303)
+* implement transaction metadata handling ([#291](https://github.com/MichaelHDesigns/wallet-lib/issues/291), [#303](https://github.com/MichaelHDesigns/wallet-lib/issues/303))
+* transaction history ([#295](https://github.com/MichaelHDesigns/wallet-lib/issues/295)), closes [#303](https://github.com/MichaelHDesigns/wallet-lib/issues/303)
+* **TransactionSyncWorker:** improve stream response handling ([#323](https://github.com/MichaelHDesigns/wallet-lib/issues/323), [#339](https://github.com/MichaelHDesigns/wallet-lib/issues/339), [#338](https://github.com/MichaelHDesigns/wallet-lib/issues/338), [#336](https://github.com/MichaelHDesigns/wallet-lib/issues/336))
+* prevent broadcast and throw error on transaction below min relay fee ([#305](https://github.com/MichaelHDesigns/wallet-lib/issues/305))
+* provide watch-only mode for public key and address based wallet ([#290](https://github.com/MichaelHDesigns/wallet-lib/issues/290))
 
 
 ### Bug Fixes
 
-* logger doesn't work in the browser ([#330](https://github.com/dashevo/wallet-lib/issues/330))
-* typings fix for `waitForInstantLock` ([#289](https://github.com/dashevo/wallet-lib/issues/289))
-* correct logging of identity fetched ([#310](https://github.com/dashevo/wallet-lib/issues/310))
-* correctly announced when a plugin is initialized ([#321](https://github.com/dashevo/wallet-lib/issues/321))
-* `stream.cancel` were causing double-free and segfault ([#328](https://github.com/dashevo/wallet-lib/issues/328), [#329](https://github.com/dashevo/wallet-lib/issues/329))
-* grpc-web doesn't throw cancel error ([#332](https://github.com/dashevo/wallet-lib/issues/332))
+* logger doesn't work in the browser ([#330](https://github.com/MichaelHDesigns/wallet-lib/issues/330))
+* typings fix for `waitForInstantLock` ([#289](https://github.com/MichaelHDesigns/wallet-lib/issues/289))
+* correct logging of identity fetched ([#310](https://github.com/MichaelHDesigns/wallet-lib/issues/310))
+* correctly announced when a plugin is initialized ([#321](https://github.com/MichaelHDesigns/wallet-lib/issues/321))
+* `stream.cancel` were causing double-free and segfault ([#328](https://github.com/MichaelHDesigns/wallet-lib/issues/328), [#329](https://github.com/MichaelHDesigns/wallet-lib/issues/329))
+* grpc-web doesn't throw cancel error ([#332](https://github.com/MichaelHDesigns/wallet-lib/issues/332))
 
 
 ### Refactoring
 
-* **Keychain**: proper naming for BIP44 and DIP9 get keys methods ([#288](https://github.com/dashevo/wallet-lib/issues/288)) 
+* **Keychain**: proper naming for BIP44 and DIP9 get keys methods ([#288](https://github.com/MichaelHDesigns/wallet-lib/issues/288)) 
 
 
 ### BREAKING CHANGES
@@ -36,50 +36,50 @@
 
 
 
-## [7.20.1](https://github.com/dashevo/wallet-lib/compare/v7.20.0...v7.20.1) (2021-07-28)
+## [7.20.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.20.0...v7.20.1) (2021-07-28)
 
 
 ### Bug Fixes
 
-* `InvalidResponse` error when connecting to older networks with newer client ([#284](https://github.com/dashevo/wallet-lib/issues/284))
+* `InvalidResponse` error when connecting to older networks with newer client ([#284](https://github.com/MichaelHDesigns/wallet-lib/issues/284))
 
 
 
-# [7.20.0](https://github.com/dashevo/wallet-lib/compare/v7.19.2...v7.20.0) (2021-07-09)
+# [7.20.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.19.2...v7.20.0) (2021-07-09)
 
 
 ### Features
 
-* add `waitForInstantLockTimeout` Wallet Option ([#270](https://github.com/dashevo/wallet-lib/issues/270))
+* add `waitForInstantLockTimeout` Wallet Option ([#270](https://github.com/MichaelHDesigns/wallet-lib/issues/270))
 
 
 ### Bug Fixes
 
-* `waitForInstantLock` timeouts stuck in event loop ([#272](https://github.com/dashevo/wallet-lib/issues/272))
+* `waitForInstantLock` timeouts stuck in event loop ([#272](https://github.com/MichaelHDesigns/wallet-lib/issues/272))
 
 
 
-## [7.19.2](https://github.com/dashevo/wallet-lib/compare/v7.19.1...v7.19.2) (2021-05-28)
+## [7.19.2](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.19.1...v7.19.2) (2021-05-28)
 
 
 ### Bugfixes
 
-* platform queries with binary fields not serialized properly ([#264](https://github.com/dashevo/wallet-lib/pull/264))
+* platform queries with binary fields not serialized properly ([#264](https://github.com/MichaelHDesigns/wallet-lib/pull/264))
 
-## [7.19.1](https://github.com/dashevo/wallet-lib/compare/v7.19.0...v7.19.1) (2021-05-20)
+## [7.19.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.19.0...v7.19.1) (2021-05-20)
 
 
 ### Chores
 
-* update dpp and dapi-client to 0.19.2 ([#258](https://github.com/dashevo/wallet-lib/pull/258))
+* update dpp and dapi-client to 0.19.2 ([#258](https://github.com/MichaelHDesigns/wallet-lib/pull/258))
 
 
-# [7.19.0](https://github.com/dashevo/wallet-lib/compare/v7.18.1...v7.19.0) (2021-05-03)
+# [7.19.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.18.1...v7.19.0) (2021-05-03)
 
 
 ### Features
 
-* update dpp with verifyInstantLock method ([#234](https://github.com/dashevo/wallet-lib/issues/234))
+* update dpp with verifyInstantLock method ([#234](https://github.com/MichaelHDesigns/wallet-lib/issues/234))
 
 
 ### BREAKING CHANGES
@@ -89,68 +89,68 @@
 
 
 
-## [7.18.1](https://github.com/dashevo/wallet-lib/compare/v7.18.0...v7.18.1) (2021-04-28)
+## [7.18.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.18.0...v7.18.1) (2021-04-28)
 
 
 ### Bug Fixes
 
-* transaction.isConbase is not a function ([#246](https://github.com/dashevo/wallet-lib/issues/246))
+* transaction.isConbase is not a function ([#246](https://github.com/MichaelHDesigns/wallet-lib/issues/246))
 
 
 
-# [7.18.0](https://github.com/dashevo/wallet-lib/compare/v7.17.2...v7.18.0) (2021-03-03)
+# [7.18.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.17.2...v7.18.0) (2021-03-03)
 
 
 ### Bug Fixes
 
-* UTXO being mixed up with multiple account in parallel ([#233](https://github.com/dashevo/wallet-lib/issues/233))
+* UTXO being mixed up with multiple account in parallel ([#233](https://github.com/MichaelHDesigns/wallet-lib/issues/233))
 
 
 ### Features
 
-* workers and plugins error handling using events ([#221](https://github.com/dashevo/wallet-lib/issues/221))
-* aligning identityIndex as defined in DIP13 as hardened ([#222](https://github.com/dashevo/wallet-lib/issues/222))
-* add `skipSynchronizationBeforeHeight` unsafe option ([#217](https://github.com/dashevo/wallet-lib/issues/217))
+* workers and plugins error handling using events ([#221](https://github.com/MichaelHDesigns/wallet-lib/issues/221))
+* aligning identityIndex as defined in DIP13 as hardened ([#222](https://github.com/MichaelHDesigns/wallet-lib/issues/222))
+* add `skipSynchronizationBeforeHeight` unsafe option ([#217](https://github.com/MichaelHDesigns/wallet-lib/issues/217))
 
 
 ### Refactoring
 
-* Identities class ([#227](https://github.com/dashevo/wallet-lib/issues/227))
+* Identities class ([#227](https://github.com/MichaelHDesigns/wallet-lib/issues/227))
 
 
 ### BREAKING CHANGES
 
 * to access identities from account use `account.identities` property
-* previous identity created with DashJS / Wallet-lib would not be resolvable anymore
+* previous identity created with HthJS / Wallet-lib would not be resolvable anymore
 
 
 
-## [7.17.2](https://github.com/dashevo/wallet-lib/compare/v7.17.1...v7.17.2) (2020-12-30)
-
-
-### Bug Fixes
-
-* broadcastStateTransition is timing out on testnet ([#214](https://github.com/dashevo/wallet-lib/issues/214))
-
-
-
-## [7.17.1](https://github.com/dashevo/wallet-lib/compare/v7.17.0...v7.17.1) (2020-12-30)
+## [7.17.2](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.17.1...v7.17.2) (2020-12-30)
 
 
 ### Bug Fixes
 
-* merkleRootQuorums from the diff doesn’t match calculated quorum root after diff is applied ([#212](https://github.com/dashevo/wallet-lib/issues/212))
+* broadcastStateTransition is timing out on testnet ([#214](https://github.com/MichaelHDesigns/wallet-lib/issues/214))
 
 
 
-# [7.17.0](https://github.com/dashevo/wallet-lib/compare/v7.16.1...v7.17.0) (2020-12-29)
+## [7.17.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.17.0...v7.17.1) (2020-12-30)
+
+
+### Bug Fixes
+
+* merkleRootQuorums from the diff doesn’t match calculated quorum root after diff is applied ([#212](https://github.com/MichaelHDesigns/wallet-lib/issues/212))
+
+
+
+# [7.17.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.16.1...v7.17.0) (2020-12-29)
 
 
 ### Features
 
-* connect to testnet by default ([#210](https://github.com/dashevo/wallet-lib/issues/210))
-* update `dpp`, `dapi-client`, `dashcore-lib` ([#202](https://github.com/dashevo/wallet-lib/issues/202))
-* handle instant locks ([#206](https://github.com/dashevo/wallet-lib/issues/206))
+* connect to testnet by default ([#210](https://github.com/MichaelHDesigns/wallet-lib/issues/210))
+* update `dpp`, `dapi-client`, `hthcore-lib` ([#202](https://github.com/MichaelHDesigns/wallet-lib/issues/202))
+* handle instant locks ([#206](https://github.com/MichaelHDesigns/wallet-lib/issues/206))
 
 
 ### BREAKING CHANGES
@@ -159,26 +159,26 @@
 
 
 
-## [7.16.1](https://github.com/dashevo/wallet-lib/compare/v7.16.0...v7.16.1) (2020-10-28)
+## [7.16.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.16.0...v7.16.1) (2020-10-28)
 
 
 ### Bug Fixes
 
-* buggy version of protobufjs is used ([#200](https://github.com/dashevo/wallet-lib/issues/200))
+* buggy version of protobufjs is used ([#200](https://github.com/MichaelHDesigns/wallet-lib/issues/200))
 
 
 
-# [7.16.0](https://github.com/dashevo/wallet-lib/compare/v7.15.1...v7.16.0) (2020-10-27)
+# [7.16.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.15.1...v7.16.0) (2020-10-27)
 
 
 ### Bug Fixes
 
-* transaction sign and OP_RETURN + import ([#188](https://github.com/dashevo/wallet-lib/issues/188))
+* transaction sign and OP_RETURN + import ([#188](https://github.com/MichaelHDesigns/wallet-lib/issues/188))
 
 
 ### Chore
 
-* update to DAPI Client 0.16 ([#196](https://github.com/dashevo/wallet-lib/issues/196), [#197](https://github.com/dashevo/wallet-lib/issues/197))
+* update to DAPI Client 0.16 ([#196](https://github.com/MichaelHDesigns/wallet-lib/issues/196), [#197](https://github.com/MichaelHDesigns/wallet-lib/issues/197))
 
 
 ### BREAKING CHANGES
@@ -187,25 +187,25 @@
 
 
 
-# [7.15.1](https://github.com/dashevo/wallet-lib/compare/v7.15.0...v7.15.1) (2020-09-11)
+# [7.15.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.15.0...v7.15.1) (2020-09-11)
 
 
 ### Bug Fixes
 
-* false positive merkle blocks shouldn't be imported into the storage ([#185](https://github.com/dashevo/wallet-lib/issues/185))
+* false positive merkle blocks shouldn't be imported into the storage ([#185](https://github.com/MichaelHDesigns/wallet-lib/issues/185))
 
-# [7.15.0](https://github.com/dashevo/wallet-lib/compare/v7.14.0...v7.15.0) (2020-09-04)
+# [7.15.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.14.0...v7.15.0) (2020-09-04)
 
 
 ### Bug Fixes
 
-* confirmation might come before broadcast ACK ([#183](https://github.com/dashevo/wallet-lib/issues/183))
-* outdated create transaction typing ([#180](https://github.com/dashevo/wallet-lib/issues/180))
+* confirmation might come before broadcast ACK ([#183](https://github.com/MichaelHDesigns/wallet-lib/issues/183))
+* outdated create transaction typing ([#180](https://github.com/MichaelHDesigns/wallet-lib/issues/180))
 
 
 ### Code Refactoring
 
-* switch from getUTXO to subscribeToTransactions ([#119](https://github.com/dashevo/wallet-lib/issues/119))
+* switch from getUTXO to subscribeToTransactions ([#119](https://github.com/MichaelHDesigns/wallet-lib/issues/119))
 
 
 ### BREAKING CHANGES
@@ -215,126 +215,126 @@
 
 
 
-# [7.14.0](https://github.com/dashevo/wallet-lib/compare/v7.13.4...v7.14.0) (2020-07-23)
+# [7.14.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.13.4...v7.14.0) (2020-07-23)
 
 
 ### Bug Fixes
 
-* merge conflict artefact issue ([#170](https://github.com/dashevo/wallet-lib/issues/170))
-* outdated network option values ([#167](https://github.com/dashevo/wallet-lib/issues/167))
+* merge conflict artefact issue ([#170](https://github.com/MichaelHDesigns/wallet-lib/issues/170))
+* outdated network option values ([#167](https://github.com/MichaelHDesigns/wallet-lib/issues/167))
 
 
 ### Features
 
-* run tests against mn-bootstrap instead of devnet ([#168](https://github.com/dashevo/wallet-lib/issues/168))
-* update to DAPI Client 0.14 and refactor transport layer ([#163](https://github.com/dashevo/wallet-lib/issues/163))
+* run tests against mn-bootstrap instead of devnet ([#168](https://github.com/MichaelHDesigns/wallet-lib/issues/168))
+* update to DAPI Client 0.14 and refactor transport layer ([#163](https://github.com/MichaelHDesigns/wallet-lib/issues/163))
 
 
 ### Documentation
 
-* readme standard updates ([#165](https://github.com/dashevo/wallet-lib/issues/165))
-* update documentation and definitions files ([#154](https://github.com/dashevo/wallet-lib/issues/154))
+* readme standard updates ([#165](https://github.com/MichaelHDesigns/wallet-lib/issues/165))
+* update documentation and definitions files ([#154](https://github.com/MichaelHDesigns/wallet-lib/issues/154))
 
 
 ### BREAKING CHANGES
 
-* `transporter` option is replaced with `transport` that accepts [DAPI Client options](https://github.com/dashevo/dapi-client/blob/1ec21652f1615ba95ea537c38632692f81deefa3/lib/DAPIClient.js#L42-L51) or a Transport instance.
+* `transporter` option is replaced with `transport` that accepts [DAPI Client options](https://github.com/MichaelHDesigns/dapi-client/blob/1ec21652f1615ba95ea537c38632692f81deefa3/lib/DAPIClient.js#L42-L51) or a Transport instance.
 
 
 
-## [7.13.4](https://github.com/dashevo/wallet-lib/compare/v7.13.3...v7.13.4) (2020-07-01)
-
-
-### Bug Fixes
-
-* simple transaction do not have any 4 inputs limitation ([#158](https://github.com/dashevo/wallet-lib/issues/158)) ([11d8d01](https://github.com/dashevo/wallet-lib/commit/11d8d011a15e9000dfd8dc4bd22c449334835767))
-* **account:** forward all storage events ([#159](https://github.com/dashevo/wallet-lib/issues/159)) ([e5c807e](https://github.com/dashevo/wallet-lib/commit/e5c807e1d0132d6fe0538e05f04e760ff0c0b1f3))
-
-
-### Features
-
-* update dashcore-lib and DAPI Client ([#161](https://github.com/dashevo/wallet-lib/issues/161)) ([81536d2](https://github.com/dashevo/wallet-lib/commit/81536d2235e335fed5fa53752b77260a4a7fa367))
-
-
-
-## [7.13.4](https://github.com/dashevo/wallet-lib/compare/v7.13.3...v7.13.4) (2020-07-01)
+## [7.13.4](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.13.3...v7.13.4) (2020-07-01)
 
 
 ### Bug Fixes
 
-* simple transaction do not have any 4 inputs limitation ([#158](https://github.com/dashevo/wallet-lib/issues/158))
-* **account:** forward all storage events ([#159](https://github.com/dashevo/wallet-lib/issues/159))
+* simple transaction do not have any 4 inputs limitation ([#158](https://github.com/MichaelHDesigns/wallet-lib/issues/158)) ([11d8d01](https://github.com/MichaelHDesigns/wallet-lib/commit/11d8d011a15e9000dfd8dc4bd22c449334835767))
+* **account:** forward all storage events ([#159](https://github.com/MichaelHDesigns/wallet-lib/issues/159)) ([e5c807e](https://github.com/MichaelHDesigns/wallet-lib/commit/e5c807e1d0132d6fe0538e05f04e760ff0c0b1f3))
 
 
 ### Features
 
-* update dashcore-lib and DAPI Client ([#161](https://github.com/dashevo/wallet-lib/issues/161))
+* update hthcore-lib and DAPI Client ([#161](https://github.com/MichaelHDesigns/wallet-lib/issues/161)) ([81536d2](https://github.com/MichaelHDesigns/wallet-lib/commit/81536d2235e335fed5fa53752b77260a4a7fa367))
 
 
 
-# [7.13.3](https://github.com/dashevo/wallet-lib/compare/v7.13.2...v7.13.3) (2020-06-16)
+## [7.13.4](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.13.3...v7.13.4) (2020-07-01)
+
+
+### Bug Fixes
+
+* simple transaction do not have any 4 inputs limitation ([#158](https://github.com/MichaelHDesigns/wallet-lib/issues/158))
+* **account:** forward all storage events ([#159](https://github.com/MichaelHDesigns/wallet-lib/issues/159))
+
+
+### Features
+
+* update hthcore-lib and DAPI Client ([#161](https://github.com/MichaelHDesigns/wallet-lib/issues/161))
+
+
+
+# [7.13.3](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.13.2...v7.13.3) (2020-06-16)
 
 - **Fixes:**
-    * fix!: createTransaction should be checking for 'recipient' instead of 'address' in 'txOpts.recipients' ([#152](https://github.com/dashevo/wallet-lib/pull/152))
-    * fix: transaction hash not present on address ([#151](https://github.com/dashevo/wallet-lib/pull/151))
+    * fix!: createTransaction should be checking for 'recipient' instead of 'address' in 'txOpts.recipients' ([#152](https://github.com/MichaelHDesigns/wallet-lib/pull/152))
+    * fix: transaction hash not present on address ([#151](https://github.com/MichaelHDesigns/wallet-lib/pull/151))
 
 - **Breaking changes:**
     * Previously, the documentation stated a usage on `createTransaction()` with multiples recipients as such: `recipients:[{recipient,satoshis}]`.
     However, the code where still referring and expecting recipients `recipients:[{address,satoshis}]`.
     This version fixes that inconsistency.
 
-# [7.13.2](https://github.com/dashevo/wallet-lib/compare/v7.13.1...v7.13.2) (2020-06-15)
+# [7.13.2](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.13.1...v7.13.2) (2020-06-15)
 
 - **Features:**
-    * feature: Worker will now have ability to return a value on onStart and onExecute ([#149](https://github.com/dashevo/wallet-lib/pull/149))
+    * feature: Worker will now have ability to return a value on onStart and onExecute ([#149](https://github.com/MichaelHDesigns/wallet-lib/pull/149))
 
 - **Fixes:**
-    * fix: comportement on new address with existing transaction in store ([#147](https://github.com/dashevo/wallet-lib/pull/147))
-    * fix: SyncUp plugin not awaiting long enough ([#149](https://github.com/dashevo/wallet-lib/pull/149))
+    * fix: comportement on new address with existing transaction in store ([#147](https://github.com/MichaelHDesigns/wallet-lib/pull/147))
+    * fix: SyncUp plugin not awaiting long enough ([#149](https://github.com/MichaelHDesigns/wallet-lib/pull/149))
 
-# [7.13.1](https://github.com/dashevo/wallet-lib/compare/v7.13.0...v7.13.1) (2020-06-15)
+# [7.13.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.13.0...v7.13.1) (2020-06-15)
 
 - **Fixes:**
-    * fix(Storage): identityIds being restate to empty array ([#143](https://github.com/dashevo/wallet-lib/pull/143))
+    * fix(Storage): identityIds being restate to empty array ([#143](https://github.com/MichaelHDesigns/wallet-lib/pull/143))
 
-# [7.13.0](https://github.com/dashevo/wallet-lib/compare/v7.1.4...v7.13.0) (2020-06-13)
+# [7.13.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.1.4...v7.13.0) (2020-06-13)
 
 - **Feat:**
-    * sync of identities associated with wallet ([#142](https://github.com/dashevo/wallet-lib/pull/142))
+    * sync of identities associated with wallet ([#142](https://github.com/MichaelHDesigns/wallet-lib/pull/142))
 
 - **Breaking changes:**
     * `Account#getIdentityHDKey` is removed in favor of `Account#getIdentityHDKeyByIndex(identityIndex, keyIndex)`
     * `debug` option temporary disabled
 
-# [7.1.4](https://github.com/dashevo/wallet-lib/compare/v7.1.3...v7.1.4) (2020-06-11)
+# [7.1.4](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.1.3...v7.1.4) (2020-06-11)
 
 - **Builds, Tests:**
     - test: create a new wallet in functional tests (#140)
     - build: simplify distributive and Travis CI builds (#139)
 
-# [7.1.3](https://github.com/dashevo/wallet-lib/compare/v7.1.2...v7.1.3) (2020-06-10)
+# [7.1.3](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.1.2...v7.1.3) (2020-06-10)
 
 - **Chore:**
-    - chore: Update dashcore-lib version (#138)
+    - chore: Update hthcore-lib version (#138)
 
-# [7.1.2](https://github.com/dashevo/wallet-lib/compare/v7.1.1...v7.1.2) (2020-06-10)
+# [7.1.2](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.1.1...v7.1.2) (2020-06-10)
 
 - **Feat:**
     - feat: TransactionOrderer (#136)
 
-# [7.1.1](https://github.com/dashevo/wallet-lib/compare/v7.1.0...v7.1.1) (2020-06-03)
+# [7.1.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.1.0...v7.1.1) (2020-06-03)
 
 - **Fixes:**
     - fix: broadcastTransaction not throwing an error when a transaction wasn't broadcasted (#133)
     - fix: internal UTXO on Output format and getUTXO returning UnspentOutput + refactor initial sync up (#135)
 
-# [7.1.0](https://github.com/dashevo/wallet-lib/compare/v7.0.0...v7.1.0) (2020-06-03)
+# [7.1.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v7.0.0...v7.1.0) (2020-06-03)
 
 - **Fixes:**
     - fix: unavailable previous transactions history (#131)
     - fix: transporter.resolve to extend passed options (#130)
 
-# [7.0.0](https://github.com/dashevo/wallet-lib/compare/v6.1.2...v7.0.0) (2020-06-01)
+# [7.0.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v6.1.2...v7.0.0) (2020-06-01)
 
 - **Impr:**
     - impr!: removed eventemitter2 (#128)
@@ -345,7 +345,7 @@
 - **Chore, Docs & Tests:**
     - tests: replace browser.js to wallet.js in karma.conf (#126)
 
-# [6.1.2](https://github.com/dashevo/wallet-lib/compare/v6.1.1...v6.1.2) (2020-05-22)
+# [6.1.2](https://github.com/MichaelHDesigns/wallet-lib/compare/v6.1.1...v6.1.2) (2020-05-22)
 
 - **Fixes:**
     - fix: update evonet seeds (#120)
@@ -354,12 +354,12 @@
     - tests: added karma and functional browser test (#121)
     - style: removed logger.error & improved error message (#118)
 
-# [6.1.1](https://github.com/dashevo/wallet-lib/compare/v6.1.0...v6.1.1) (2020-05-22)
+# [6.1.1](https://github.com/MichaelHDesigns/wallet-lib/compare/v6.1.0...v6.1.1) (2020-05-22)
 
 - **Fixes:**
     - fix: update evonet seeds (#120)
 
-# [6.1.0](https://github.com/dashevo/wallet-lib/compare/v6.0.0...v6.1.0) (2020-04-23)
+# [6.1.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v6.0.0...v6.1.0) (2020-04-23)
 
 - **Features:**
     - Feat(Transporter): added .getBestBlock / .getBestBlockHeader (#110 )
@@ -374,7 +374,7 @@
     - Doc: fixed link and duplicates (#113)
     - Tests: refactorate + fakenet (#115)
 
-# [6.0.0](https://github.com/dashevo/wallet-lib/compare/v5.0.3...v6.0.0) (2020-03-10)
+# [6.0.0](https://github.com/MichaelHDesigns/wallet-lib/compare/v5.0.3...v6.0.0) (2020-03-10)
 
 
 - **breaking:**
@@ -395,10 +395,10 @@
     - all events payload will now be returned under form {type, payload} (#102)
     - all events are now accessed via .on() instead of .events.on() (#102)
     - all events are to be emmited using .emit() instead of .events.emit() (#102)
-    - format of transactions internally has changed (returns a proper Dashcore Transaction object) (#102)
+    - format of transactions internally has changed (returns a proper Hthcore Transaction object) (#102)
     - internal reference to blockheight changed to blockHeight (#102)
-    - format of blocks internally has changed (returns a proper Dashcore Block object) (#102)
-    - format of utxo internally has changed (returns a proper Dashcore UTXO object) (#102)
+    - format of blocks internally has changed (returns a proper Hthcore Block object) (#102)
+    - format of utxo internally has changed (returns a proper Hthcore UTXO object) (#102)
 
 - **Feat**:
   - Wallet:
@@ -435,7 +435,7 @@
 6bd24a3)
   - FakeDevnet class (db46b05)
 
-# [5.0.3](https://github.com/dashevo/wallet-lib/compare/v5.0.2...v5.0.3) (2020-02-01)
+# [5.0.3](https://github.com/MichaelHDesigns/wallet-lib/compare/v5.0.2...v5.0.3) (2020-02-01)
 
 - **Feat**:
   - Account:

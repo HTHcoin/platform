@@ -4,7 +4,7 @@ const {
     GetTransactionResponse: ProtoGetTransactionResponse,
     CorePromiseClient,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const getTransactionFactory = require('../../../../../lib/methods/core/getTransaction/getTransactionFactory');
 const GetTransactionResponse = require('../../../../../lib/methods/core/getTransaction/GetTransactionResponse');

@@ -11,7 +11,7 @@ Returns : Boolean.
 
 Example: 
 ```js
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 const transaction = new Transaction({
      hash: '9b4a34096f2270f70d8e0ba91094eb37535349f80874f8440e74c0567ef82680',
      version: 3,

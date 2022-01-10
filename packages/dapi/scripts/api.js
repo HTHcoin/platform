@@ -6,18 +6,18 @@ const {
   server: {
     createServer,
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   getCoreDefinition,
   getPlatformDefinition,
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const DashPlatformProtocol = require('@dashevo/dpp');
+const HthPlatformProtocol = require('@hthcoin/dpp');
 
 const { client: RpcClient } = require('jayson/promise');
 
-const WsClient = require('../lib/externalApis/tenderdash/WsClient');
+const WsClient = require('../lib/externalApis/tenderhth/WsClient');
 
 // Load config from .env
 dotenv.config();
@@ -27,8 +27,8 @@ const { validateConfig } = require('../lib/config/validator');
 const log = require('../lib/log');
 const rpcServer = require('../lib/rpcServer/server');
 const DriveClient = require('../lib/externalApis/drive/DriveClient');
-const dashCoreRpcClient = require('../lib/externalApis/dashcore/rpc');
-const BlockchainListener = require('../lib/externalApis/tenderdash/BlockchainListener');
+const hthCoreRpcClient = require('../lib/externalApis/hthcore/rpc');
+const BlockchainListener = require('../lib/externalApis/tenderhth/BlockchainListener');
 const DriveStateRepository = require('../lib/dpp/DriveStateRepository');
 
 const coreHandlersFactory = require(
@@ -60,41 +60,41 @@ async function main() {
     port: config.tendermintCore.port,
   });
 
-  const tenderDashWsClient = new WsClient({
+  const tenderHthWsClient = new WsClient({
     host: config.tendermintCore.host,
     port: config.tendermintCore.port,
   });
 
-  const dppForParsingContracts = new DashPlatformProtocol();
+  const dppForParsingContracts = new HthhPlatformProtocol();
   await dppForParsingContracts.initialize();
   const driveStateRepository = new DriveStateRepository(driveClient, dppForParsingContracts);
 
-  log.info(`Connecting to Tenderdash on ${config.tendermintCore.host}:${config.tendermintCore.port}`);
+  log.info(`Connecting to Tenderhth on ${config.tendermintCore.host}:${config.tendermintCore.port}`);
 
-  tenderDashWsClient.on('error', (e) => {
-    log.error('Tenderdash connection error', e);
+  tenderHthWsClient.on('error', (e) => {
+    log.error('Tenderhth connection error', e);
 
     process.exit(1);
   });
 
-  await tenderDashWsClient.connect();
+  await tenderHthWsClient.connect();
 
-  const blockchainListener = new BlockchainListener(tenderDashWsClient);
+  const blockchainListener = new BlockchainListener(tenderHthWsClient);
   blockchainListener.start();
 
-  log.info('Connection to Tenderdash established.');
+  log.info('Connection to Tenderhth established.');
 
   // Start JSON RPC server
   log.info('Starting JSON RPC server');
   rpcServer.start({
     port: config.rpcServer.port,
     networkType: config.network,
-    dashcoreAPI: dashCoreRpcClient,
+    hthcoreAPI: hthCoreRpcClient,
     log,
   });
   log.info(`JSON RPC server is listening on port ${config.rpcServer.port}`);
 
-  const dpp = new DashPlatformProtocol({
+  const dpp = new HthPlatformProtocol({
     stateRepository: driveStateRepository,
   });
   await dpp.initialize();
@@ -103,7 +103,7 @@ async function main() {
   log.info('Starting GRPC server');
 
   const coreHandlers = coreHandlersFactory(
-    dashCoreRpcClient,
+    hthCoreRpcClient,
     isProductionEnvironment,
   );
   const platformHandlers = platformHandlersFactory(

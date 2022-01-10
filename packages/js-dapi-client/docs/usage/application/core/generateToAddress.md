@@ -7,7 +7,7 @@ Parameters:
 | parameters                | type                | required       | Description                                                                                      |
 |---------------------------|---------------------|----------------| ------------------------------------------------------------------------------------------------ |
 | **blocksNumber**          | Number              | yes            | A number of block to see generated on the regtest network                                        |
-| **address**               | String              | yes            | The address that will receive the newly generated Dash                                           |
+| **address**               | String              | yes            | The address that will receive the newly generated HTH                                           |
 | **options**               | DAPIClientOptions   | no             |  |
 
 Returns : {Promise<string[]>} - a set of generated blockhashes.

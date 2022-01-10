@@ -5,13 +5,13 @@ const {
       AlreadyExistsGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
     BroadcastStateTransitionResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 /**
  * @param {jaysonClient} rpcClient

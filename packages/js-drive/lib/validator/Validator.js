@@ -35,7 +35,7 @@ class Validator {
    * @return {number}
    */
   getVotingPower() {
-    return Validator.DEFAULT_DASH_VOTING_POWER;
+    return Validator.DEFAULT_HTH_VOTING_POWER;
   }
 
   /**
@@ -67,6 +67,6 @@ class Validator {
   }
 }
 
-Validator.DEFAULT_DASH_VOTING_POWER = 100;
+Validator.DEFAULT_HTH_VOTING_POWER = 100;
 
 module.exports = Validator;

@@ -11,7 +11,7 @@ if (!from) {
 }
 
 const options = {
-  preset: 'dash',
+  preset: 'hth',
 };
 
 const gitRawCommitsOpts = {

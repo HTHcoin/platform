@@ -1,6 +1,6 @@
-const { default: getRE2Class } = require('@dashevo/re2-wasm');
+const { default: getRE2Class } = require('@hthcoin/re2-wasm');
 
-const DashCoreLib = require('@dashevo/dashcore-lib');
+const HthCoreLib = require('@hthcoin/hthcore-lib');
 
 const createAjv = require('../../../../../../lib/ajv/createAjv');
 
@@ -50,7 +50,7 @@ describe('validateInstantAssetLockProofStructureFactory', () => {
       verify: this.sinonSandbox.stub().resolves(true),
     };
 
-    instantLockFromBufferMock = this.sinonSandbox.stub(DashCoreLib.InstantLock, 'fromBuffer').returns(instantLockMock);
+    instantLockFromBufferMock = this.sinonSandbox.stub(HthCoreLib.InstantLock, 'fromBuffer').returns(instantLockMock);
 
     publicKeyHash = Buffer.from('152073ca2300a86b510fa2f123d3ea7da3af68dc', 'hex');
 

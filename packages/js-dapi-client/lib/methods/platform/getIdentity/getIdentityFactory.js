@@ -3,7 +3,7 @@ const {
     PlatformPromiseClient,
     GetIdentityRequest,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const GetIdentityResponse = require('./GetIdentityResponse');
 const InvalidResponseError = require('../response/errors/InvalidResponseError');

@@ -11,7 +11,7 @@ const {
       wrapInErrorHandlerFactory,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -42,7 +42,7 @@ const {
       GetConsensusParamsResponse: PBJSGetConsensusParamsResponse,
     },
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const log = require('../../../log');
 
@@ -74,17 +74,17 @@ const getConsensusParamsHandlerFactory = require(
 );
 
 const fetchProofForStateTransitionFactory = require('../../../externalApis/drive/fetchProofForStateTransitionFactory');
-const waitForTransactionToBeProvableFactory = require('../../../externalApis/tenderdash/waitForTransactionToBeProvable/waitForTransactionToBeProvableFactory');
-const waitForTransactionResult = require('../../../externalApis/tenderdash/waitForTransactionToBeProvable/waitForTransactionResult');
-const waitForHeightFactory = require('../../../externalApis/tenderdash/waitForHeightFactory');
-const getExistingTransactionResultFactory = require('../../../externalApis/tenderdash/waitForTransactionToBeProvable/getExistingTransactionResult');
-const getConsensusParamsFactory = require('../../../externalApis/tenderdash/getConsensusParamsFactory');
+const waitForTransactionToBeProvableFactory = require('../../../externalApis/tenderhth/waitForTransactionToBeProvable/waitForTransactionToBeProvableFactory');
+const waitForTransactionResult = require('../../../externalApis/tenderhth/waitForTransactionToBeProvable/waitForTransactionResult');
+const waitForHeightFactory = require('../../../externalApis/tenderhth/waitForHeightFactory');
+const getExistingTransactionResultFactory = require('../../../externalApis/tenderhth/waitForTransactionToBeProvable/getExistingTransactionResult');
+const getConsensusParamsFactory = require('../../../externalApis/tenderhth/getConsensusParamsFactory');
 
 /**
  * @param {jaysonClient} rpcClient
  * @param {BlockchainListener} blockchainListener
  * @param {DriveClient} driveClient
- * @param {DashPlatformProtocol} dpp
+ * @param {HthhPlatformProtocol} dpp
  * @param {boolean} isProductionEnvironment
  * @returns {Object<string, function>}
  */

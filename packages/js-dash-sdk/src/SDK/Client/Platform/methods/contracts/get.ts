@@ -1,9 +1,9 @@
 import {Platform} from "../../Platform";
 
 // @ts-ignore
-import Identifier from "@dashevo/dpp/lib/Identifier";
-import Metadata from "@dashevo/dpp/lib/Metadata";
-const NotFoundError = require('@dashevo/dapi-client/lib/transport/GrpcTransport/errors/NotFoundError');
+import Identifier from "@hthcoin/dpp/lib/Identifier";
+import Metadata from "@hthcoin/dpp/lib/Metadata";
+const NotFoundError = require('@hthcoin/dapi-client/lib/transport/GrpcTransport/errors/NotFoundError');
 
 declare type ContractIdentifier = string | Identifier;
 

@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const getUnusedAddress = require('./getUnusedAddress');
 const getAddress = require('./getAddress');
 const generateAddress = require('./generateAddress');
@@ -22,7 +22,7 @@ describe('Account - getUnusedAddress', function suite() {
       emit: (_) => (_),
       keyChain: new KeyChain({
         type: 'HDPrivateKey',
-        HDPrivateKey: Dashcore.HDPrivateKey(HDRootKeyMockedStore),
+        HDPrivateKey: Hthcore.HDPrivateKey(HDRootKeyMockedStore),
       }),
       BIP44PATH: 'm/44\'/1\'/0\'',
       walletId: '5061b8276c',

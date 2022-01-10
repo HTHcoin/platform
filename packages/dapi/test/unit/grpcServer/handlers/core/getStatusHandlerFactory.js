@@ -2,7 +2,7 @@ const {
   v0: {
     GetStatusResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const getStatusHandlerFactory = require('../../../../../lib/grpcServer/handlers/core/getStatusHandlerFactory');
 
@@ -44,7 +44,7 @@ describe('getStatusHandlerFactory', () => {
 
     networkInfo = {
       version: 170000,
-      subversion: '/Dash Core:0.17.0/',
+      subversion: '/HTH Core:0.17.0/',
       protocolversion: 70218,
       localservices: '0000000000000405',
       localrelay: true,

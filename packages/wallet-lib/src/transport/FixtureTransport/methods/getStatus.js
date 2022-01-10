@@ -5,7 +5,7 @@ module.exports = async function getStatus() {
     version: {
       protocol: 70218,
       software: 170000,
-      agent: '/Dash Core:0.17.0/',
+      agent: '/HTH Core:0.17.0/',
     },
     time: {
       now: 1616495891,

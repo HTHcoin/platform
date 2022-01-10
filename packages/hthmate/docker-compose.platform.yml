@@ -1,0 +1,126 @@
+version: '3.7'
+
+services:
+  drive_mongodb:
+    image: ${PLATFORM_DRIVE_MONGODB_DOCKER_IMAGE:?err}
+    restart: unless-stopped
+    volumes:
+      - drive_mongodb_data:/data/db
+      - ./docker/mongodb/initiate_mongodb_replica.js:/docker-entrypoint-initdb.d/initiate_mongodb_replica.js
+    extra_hosts:
+      - "drive_mongodb:127.0.0.1"
+    command: mongod --replSet driveDocumentIndices --bind_ip_all
+
+  drive_abci:
+    image: ${PLATFORM_DRIVE_ABCI_DOCKER_IMAGE:?err}
+    restart: unless-stopped
+    depends_on:
+      - drive_mongodb
+      - core
+    volumes:
+      - drive_abci_data:/platform/packages/js-drive/db
+      - ${PLATFORM_DRIVE_ABCI_LOG_PRETTY_FILE_PATH:?err}:/var/log/drive-pretty.log
+      - ${PLATFORM_DRIVE_ABCI_LOG_JSON_FILE_PATH:?err}:/var/log/drive-json.log
+    environment:
+      - CORE_JSON_RPC_USERNAME=${CORE_RPC_USER:?err}
+      - CORE_JSON_RPC_PASSWORD=${CORE_RPC_PASSWORD:?err}
+      - CORE_JSON_RPC_HOST=core
+      - CORE_JSON_RPC_PORT=${CORE_RPC_PORT:?err}
+      - CORE_ZMQ_HOST=core
+      - CORE_ZMQ_PORT=29998
+      - DOCUMENT_MONGODB_URL=mongodb://drive_mongodb:27017?replicaSet=driveDocumentIndices
+      - DPNS_CONTRACT_ID=${PLATFORM_DPNS_CONTRACT_ID}
+      - DPNS_CONTRACT_BLOCK_HEIGHT=${PLATFORM_DPNS_CONTRACT_BLOCK_HEIGHT}
+      - DPNS_TOP_LEVEL_IDENTITY=${PLATFORM_DPNS_OWNER_ID}
+      - HTHPAY_CONTRACT_ID=${PLATFORM_HTHPAY_CONTRACT_ID}
+      - HTHPAY_CONTRACT_BLOCK_HEIGHT=${PLATFORM_HTHPAY_CONTRACT_BLOCK_HEIGHT}
+      - FEATURE_FLAGS_CONTRACT_ID=${PLATFORM_FEATURE_FLAGS_CONTRACT_ID}
+      - FEATURE_FLAGS_CONTRACT_BLOCK_HEIGHT=${PLATFORM_FEATURE_FLAGS_CONTRACT_BLOCK_HEIGHT}
+      - FEATURE_FLAGS_TOP_LEVEL_IDENTITY=${PLATFORM_FEATURE_FLAGS_OWNER_ID}
+      - NODE_ENV=${ENVIRONMENT:?err}
+      - LOG_STDOUT_LEVEL=${PLATFORM_DRIVE_ABCI_LOG_STDOUT_LEVEL:?err}
+      - LOG_PRETTY_FILE_LEVEL=${PLATFORM_DRIVE_ABCI_LOG_PRETTY_FILE_LEVEL:?err}
+      - LOG_PRETTY_FILE_PATH=/var/log/drive-pretty.log
+      - LOG_JSON_FILE_LEVEL=${PLATFORM_DRIVE_ABCI_LOG_JSON_FILE_LEVEL:?err}
+      - LOG_JSON_FILE_PATH=/var/log/drive-json.log
+      - INITIAL_CORE_CHAINLOCKED_HEIGHT=${PLATFORM_DRIVE_TENDERHTH_GENESIS_INITIAL_CORE_CHAIN_LOCKED_HEIGHT:-1}
+      - VALIDATOR_SET_LLMQ_TYPE=${PLATFORM_DRIVE_ABCI_VALIDATOR_SET_LLMQ_TYPE:?err}
+      - NETWORK=${NETWORK}
+      - TENDERHTH_P2P_PORT=${PLATFORM_DRIVE_TENDERHTH_P2P_PORT}
+      - MASTERNODE_REWARD_SHARES_CONTRACT_ID=${MASTERNODE_REWARD_SHARES_CONTRACT_ID}
+      - MASTERNODE_REWARD_SHARES_CONTRACT_BLOCK_HEIGHT=${MASTERNODE_REWARD_SHARES_CONTRACT_BLOCK_HEIGHT}
+    command: yarn workspace @hthcoin/drive abci
+
+  drive_tenderhth:
+    image: ${PLATFORM_DRIVE_TENDERHTH_DOCKER_IMAGE:?err}
+    restart: unless-stopped
+    depends_on:
+      - drive_abci
+    ports:
+      - ${PLATFORM_DRIVE_TENDERHTH_P2P_PORT:?err}:${PLATFORM_DRIVE_TENDERHTH_P2P_PORT:?err} # P2P
+      - 127.0.0.1:${PLATFORM_DRIVE_TENDERHTH_RPC_PORT:?err}:${PLATFORM_DRIVE_TENDERHTH_RPC_PORT:?err} # RPC
+    volumes:
+      - drive_tenderhth:/tenderhth
+      - ${HTHMATE_HOME_DIR:?err}/${CONFIG_NAME:?err}/platform/drive/tenderhth:/tenderhth/config:ro
+
+  dapi_api:
+    image: ${PLATFORM_DAPI_API_DOCKER_IMAGE:?err}
+    restart: unless-stopped
+    depends_on:
+      - drive_tenderhth
+      - core
+    environment:
+      - API_JSON_RPC_PORT=3004
+      - API_GRPC_PORT=3005
+      - HTHCORE_RPC_HOST=core
+      - HTHCORE_RPC_PORT=${CORE_RPC_PORT:?err}
+      - HTHCORE_RPC_USER=${CORE_RPC_USER:?err}
+      - HTHCORE_RPC_PASS=${CORE_RPC_PASSWORD:?err}
+      - HTHCORE_ZMQ_HOST=core
+      - HTHCORE_ZMQ_PORT=29998
+      - HTHCORE_P2P_HOST=core
+      - HTHCORE_P2P_PORT=${CORE_P2P_PORT:?err}
+      - HTHCORE_P2P_NETWORK=devnet
+      - NETWORK=devnet
+      - TENDERMINT_RPC_HOST=drive_tenderhth
+      - TENDERMINT_RPC_PORT=26657
+      - NODE_ENV=${ENVIRONMENT:?err}
+    command: yarn workspace @hthcoin/dapi api
+
+  dapi_tx_filter_stream:
+    image: ${PLATFORM_DAPI_API_DOCKER_IMAGE:?err}
+    restart: unless-stopped
+    depends_on:
+      - core
+    environment:
+      - TX_FILTER_STREAM_GRPC_PORT=3006
+      - HTHCORE_RPC_HOST=core
+      - HTHCORE_RPC_PORT=${CORE_RPC_PORT:?err}
+      - HTHCORE_RPC_USER=${CORE_RPC_USER:?err}
+      - HTHCORE_RPC_PASS=${CORE_RPC_PASSWORD:?err}
+      - HTHCORE_ZMQ_HOST=core
+      - HTHCORE_ZMQ_PORT=29998
+      - HTHCORE_P2P_HOST=core
+      - HTHCORE_P2P_PORT=${CORE_P2P_PORT:?err}
+      - HTHCORE_P2P_NETWORK=devnet
+      - NETWORK=devnet
+      - TENDERMINT_RPC_HOST=drive_tenderhth
+      - TENDERMINT_RPC_PORT=26657
+    command: yarn workspace @hthcoin/dapi tx-filter-stream
+
+  dapi_envoy:
+    image: ${PLATFORM_DAPI_ENVOY_DOCKER_IMAGE:?err}
+    restart: unless-stopped
+    ports:
+      - ${PLATFORM_DAPI_ENVOY_HTTP_PORT:?err}:10000 # JSON RPC and gRPC Web
+      - ${PLATFORM_DAPI_ENVOY_GRPC_PORT:?err}:50051 # gRPC Native
+    depends_on:
+      - dapi_api
+      - dapi_tx_filter_stream
+    volumes:
+      - ${HTHMATE_HOME_DIR:?err}/${CONFIG_NAME:?err}/platform/dapi/envoy/envoy.yaml:/etc/envoy/envoy.yaml
+
+volumes:
+  drive_abci_data:
+  drive_mongodb_data:
+  drive_tenderhth:

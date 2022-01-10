@@ -1,6 +1,6 @@
 {
   "updateConsensusParams": {
-    "description": "Updates Tenderdash consensus params",
+    "description": "Updates Tenderhth consensus params",
     "type": "object",
     "indices": [
       {

@@ -1,10 +1,10 @@
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
-const GrpcError = require('@dashevo/grpc-common/lib/server/error/GrpcError');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
+const GrpcError = require('@hthcoin/grpc-common/lib/server/error/GrpcError');
 const cbor = require('cbor');
-const InternalGrpcError = require('@dashevo/grpc-common/lib/server/error/InternalGrpcError');
-const InvalidArgumentGrpcError = require('@dashevo/grpc-common/lib/server/error/InvalidArgumentGrpcError');
-const FailedPreconditionGrpcError = require('@dashevo/grpc-common/lib/server/error/FailedPreconditionGrpcError');
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
+const InternalGrpcError = require('@hthcoin/grpc-common/lib/server/error/InternalGrpcError');
+const InvalidArgumentGrpcError = require('@hthcoin/grpc-common/lib/server/error/InvalidArgumentGrpcError');
+const FailedPreconditionGrpcError = require('@hthcoin/grpc-common/lib/server/error/FailedPreconditionGrpcError');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
 const createGrpcErrorFromDriveResponse = require(
   '../../../../lib/grpcServer/handlers/createGrpcErrorFromDriveResponse',
 );

@@ -3,7 +3,7 @@ const {
     GetBlockRequest,
     CorePromiseClient,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 /**
  * @param {GrpcTransport} grpcTransport

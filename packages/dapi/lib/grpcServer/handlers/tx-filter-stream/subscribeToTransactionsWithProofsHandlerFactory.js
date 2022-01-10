@@ -1,4 +1,4 @@
-const { BloomFilter } = require('@dashevo/dashcore-lib');
+const { BloomFilter } = require('@hthcoin/hthcore-lib');
 
 const {
   server: {
@@ -10,7 +10,7 @@ const {
       AcknowledgingWritable,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -18,7 +18,7 @@ const {
     RawTransactions,
     InstantSendLockMessages,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const ProcessMediator = require('../../../transactionsFilter/ProcessMediator');
 

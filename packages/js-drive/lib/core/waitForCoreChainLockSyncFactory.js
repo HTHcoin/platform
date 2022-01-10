@@ -1,6 +1,6 @@
-const { ChainLock } = require('@dashevo/dashcore-lib');
+const { ChainLock } = require('@hthcoin/hthcore-lib');
 
-const ChainLockSigMessage = require('@dashevo/dashcore-lib/lib/zmqMessages/ChainLockSigMessage');
+const ChainLockSigMessage = require('@hthcoin/hthcore-lib/lib/zmqMessages/ChainLockSigMessage');
 const ZMQClient = require('./ZmqClient');
 
 const ensureBlock = require('./ensureBlock');

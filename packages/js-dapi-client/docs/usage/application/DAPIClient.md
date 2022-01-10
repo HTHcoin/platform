@@ -16,7 +16,7 @@ Parameters:
 Returns : DAPIClient instance.
 
 ```js
-const DAPIClient = require('@dashevo/dapi-client');
+const DAPIClient = require('@hthcoin/dapi-client');
 const client = new DAPIClient({
   timeout: 5000,
   retries: 3,

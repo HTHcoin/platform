@@ -1,4 +1,4 @@
-const { Script, Address } = require('@dashevo/dashcore-lib');
+const { Script, Address } = require('@hthcoin/hthcore-lib');
 
 function getBytesOf(elem, type) {
   let BASE_BYTES = 0;

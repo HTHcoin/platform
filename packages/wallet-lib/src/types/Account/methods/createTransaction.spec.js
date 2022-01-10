@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const { expect } = require('chai');
-const { HDPrivateKey, Transaction } = require('@dashevo/dashcore-lib');
+const { HDPrivateKey, Transaction } = require('@hthcoin/hthcore-lib');
 
 const createTransaction = require('./createTransaction');
 const { mnemonic } = require('../../../../fixtures/wallets/mnemonics/during-develop-before');
@@ -35,7 +35,7 @@ describe('Account - createTransaction', function suite() {
       satoshis: 1000,
       recipient: addressesFixtures.testnet.valid.yereyozxENB9jbhqpbg1coE5c39ExqLSaG.addr,
     };
-    const expectedException1 = 'An amount in dash or in satoshis is expected to create a transaction';
+    const expectedException1 = 'An amount in hth or in satoshis is expected to create a transaction';
     const expectedException2 = 'A recipient is expected to create a transaction';
     const expectedException3 = 'Error: utxosList must contain at least 1 utxo';
     expect(() => createTransaction.call(self, mockOpts1)).to.throw(expectedException1);

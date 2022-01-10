@@ -1,4 +1,4 @@
-const BloomFilter = require('@dashevo/dashcore-lib/lib/bloomfilter');
+const BloomFilter = require('@hthcoin/hthcore-lib/lib/bloomfilter');
 
 const {
   v0: {
@@ -6,7 +6,7 @@ const {
     CorePromiseClient,
     TransactionsWithProofsRequest,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const { EventEmitter } = require('events');
 

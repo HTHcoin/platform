@@ -8,7 +8,7 @@ const {
       PublicKey,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 /**
  * @typedef {createValidatorSetUpdate}

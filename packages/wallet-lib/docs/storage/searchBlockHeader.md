@@ -7,4 +7,4 @@ Parameters:
 |------------------------|-------------------|----------------| ----------------------------------------------------------|
 | **identifier**         | String/Number     | yes            | The BlockHeader identifier (hash or height) to search for |
 
-Returns : [BlockHeader](https://github.com/dashevo/dashcore-lib/blob/master/docs/block.md#block-header).
+Returns : [BlockHeader](https://github.com/MichaelHDesigns/hthcore-lib/blob/master/docs/block.md#block-header).

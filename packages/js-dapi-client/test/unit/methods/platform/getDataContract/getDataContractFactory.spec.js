@@ -7,9 +7,9 @@ const {
     Proof,
     StoreTreeProofs,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
 
 const getDataContractFactory = require('../../../../../lib/methods/platform/getDataContract/getDataContractFactory');
 const getMetadataFixture = require('../../../../../lib/test/fixtures/getMetadataFixture');

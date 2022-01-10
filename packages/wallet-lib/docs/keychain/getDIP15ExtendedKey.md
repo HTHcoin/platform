@@ -6,8 +6,8 @@ Parameters:
 
 | parameters          | type        | required                  | Description                                                    |   
 |---------------------|-------------|---------------------------| ---------------------------------------------------------------|
-| **userUniqueId**    | string      | yes                       | Current DashPay unique UserID                                  |
-| **contactUniqueId** | string      | yes                       | Contact DashPay unique UserID                                  |
+| **userUniqueId**    | string      | yes                       | Current HthCoin unique UserID                                  |
+| **contactUniqueId** | string      | yes                       | Contact HthCoin unique UserID                                  |
 | **index**           | number      | no(=0)                    | the key index to derivate to                                   |
 | **accountIndex**    | number      | no(=0)                    | the wallet account index from which to derivate                |
 | **type**            | string      | no (default:HDPrivateKey) | type of returned keys. one of: ['HDPrivateKey','HDPublicKey']. |

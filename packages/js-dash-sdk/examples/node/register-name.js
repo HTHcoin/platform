@@ -1,4 +1,4 @@
-const Dash = require('dash');
+const HTH = require('hth');
 const clientOpts = {
   network: 'testnet',
   wallet: {
@@ -6,7 +6,7 @@ const clientOpts = {
   },
 };
 const identityId = 'your identity id';
-const client = new Dash.Client(clientOpts);
+const client = new HTH.Client(clientOpts);
 
 const registerName = async function () {
   let platform = client.platform;

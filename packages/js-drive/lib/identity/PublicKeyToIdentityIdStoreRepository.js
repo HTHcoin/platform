@@ -1,6 +1,6 @@
 const cbor = require('cbor');
 
-const Identifier = require('@dashevo/dpp/lib/Identifier');
+const Identifier = require('@hthcoin/dpp/lib/Identifier');
 
 class PublicKeyToIdentityIdStoreRepository {
   /**

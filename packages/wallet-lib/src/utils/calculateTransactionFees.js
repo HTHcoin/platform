@@ -1,7 +1,7 @@
 const is = require('./is');
 
 function calculateTransactionFees(transaction) {
-  if (!is.dashcoreTransaction(transaction)) throw new Error('Expected a valid transaction');
+  if (!is.hthcoreTransaction(transaction)) throw new Error('Expected a valid transaction');
   const { inputs, outputs } = transaction;
   const inputAmount = inputs.reduce((acc, input) => {
     if (!input.output) throw new Error('Expected transaction input to have the output specified');

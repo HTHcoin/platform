@@ -12,7 +12,7 @@ function getIdentityHDKeyByIndex(identityIndex, keyIndex) {
 
   const identityFeatureKey = hardenedFeatureRootKey.deriveChild(5, true);
 
-  // as defined in https://github.com/dashpay/dips/blob/master/dip-0013.md#identity-authentication-keys
+  // as defined in https://github.com/hthcoin/dips/blob/master/dip-0013.md#identity-authentication-keys
   const identitySubFeatureKey = identityFeatureKey.deriveChild(0, true);
 
   return identitySubFeatureKey

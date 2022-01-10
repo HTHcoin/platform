@@ -29,7 +29,7 @@ function getPreorderDocumentFixture(options = {}) {
     parentDomainHash: '',
     preorderSalt: generateEntropy(),
     records: {
-      dashIdentity: ownerId,
+      hthIdentity: ownerId,
     },
     ...options,
   };

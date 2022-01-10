@@ -2,12 +2,12 @@ const path = require('path');
 const webpack = require('webpack');
 
 const commonJSConfig = {
-  entry: ['core-js/stable', './lib/DashPlatformProtocol.js'],
+  entry: ['core-js/stable', './lib/HthPlatformProtocol.js'],
   mode: 'production',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'DashPlatformProtocol.min.js',
-    library: 'DashPlatformProtocol',
+    filename: 'HthPlatformProtocol.min.js',
+    library: 'HthPlatformProtocol',
     libraryTarget: 'umd',
   },
   resolve: {

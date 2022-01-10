@@ -3,7 +3,7 @@ const {
     GetTransactionRequest,
     CorePromiseClient,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const GetTransactionResponse = require('./GetTransactionResponse');
 const InvalidResponseError = require('../../platform/response/errors/InvalidResponseError');

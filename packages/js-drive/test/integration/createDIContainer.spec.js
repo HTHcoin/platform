@@ -1,4 +1,4 @@
-const { startMongoDb } = require('@dashevo/dp-services-ctl');
+const { startMongoDb } = require('@hthcoin/dp-services-ctl');
 const { expect } = require('chai');
 
 const { init: initHashFunction } = require('../../lib/rootTree/hashFunction');

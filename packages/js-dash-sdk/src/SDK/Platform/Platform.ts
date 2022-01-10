@@ -1,7 +1,7 @@
 // @ts-ignore
-import { default as _DashPlatformProtocol } from '@dashevo/dpp';
+import { default as _HthPlatformProtocol } from '@hthcoin/dpp';
 
 export namespace Platform {
-    export let DashPlatformProtocol = _DashPlatformProtocol;
+    export let HthPlatformProtocol = _HthPlatformProtocol;
 }
 export { Platform as default };

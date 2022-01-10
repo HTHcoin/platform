@@ -14,7 +14,7 @@ const getPropertyDefinitionByPath = require('./getPropertyDefinitionByPath');
 
 class DataContractFacade {
   /**
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    * @param {RE2} RE2
    */
   constructor(dpp, RE2) {

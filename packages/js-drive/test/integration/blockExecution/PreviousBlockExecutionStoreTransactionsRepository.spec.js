@@ -1,9 +1,9 @@
 const cbor = require('cbor');
 
-const { startMongoDb } = require('@dashevo/dp-services-ctl');
+const { startMongoDb } = require('@hthcoin/dp-services-ctl');
 
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
-const getDocumentsFixture = require('@dashevo/dpp/lib/test/fixtures/getDocumentsFixture');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
+const getDocumentsFixture = require('@hthcoin/dpp/lib/test/fixtures/getDocumentsFixture');
 
 const createTestDIContainer = require('../../../lib/test/createTestDIContainer');
 

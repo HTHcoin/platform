@@ -1,7 +1,7 @@
 const Long = require('long');
 
-const Identifier = require('@dashevo/dpp/lib/Identifier');
-const getDocumentsFixture = require('@dashevo/dpp/lib/test/fixtures/getDocumentsFixture');
+const Identifier = require('@hthcoin/dpp/lib/Identifier');
+const getDocumentsFixture = require('@hthcoin/dpp/lib/test/fixtures/getDocumentsFixture');
 
 const getFeatureFlagForHeightFactory = require('../../../lib/featureFlag/getFeatureFlagForHeightFactory');
 

@@ -5,7 +5,7 @@ class StateTransitionFactory {
   /**
    * @param {validateStateTransitionBasic} validateStateTransitionBasic
    * @param {createStateTransition} createStateTransition
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    * @param {decodeProtocolEntity} decodeProtocolEntity
    */
   constructor(

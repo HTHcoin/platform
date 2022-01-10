@@ -36,7 +36,7 @@ RUN yarn config set enableInlineBuilds true
 # node_modules directory to reuse built binaries
 RUN --mount=type=cache,target=/tmp/unplugged \
     cp -R /tmp/unplugged /platform/.yarn/ && \
-    yarn workspaces focus --production @dashevo/dapi && \
+    yarn workspaces focus --production @hthcoin/dapi && \
     cp -R /platform/.yarn/unplugged /tmp/
 
 
@@ -45,7 +45,7 @@ FROM node:16-alpine
 ARG NODE_ENV=production
 ENV NODE_ENV ${NODE_ENV}
 
-LABEL maintainer="Dash Developers <dev@dash.org>"
+LABEL maintainer="HTH Developers <dev@hth.org>"
 LABEL description="DAPI Node.JS"
 
 # Install ZMQ shared library

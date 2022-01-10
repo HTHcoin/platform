@@ -27,7 +27,7 @@ function getTopDocumentFixture(options = {}) {
     normalizedParentDomainName: '',
     preorderSalt: crypto.randomBytes(32),
     records: {
-      dashUniqueIdentityId: ownerId,
+      hthUniqueIdentityId: ownerId,
     },
     subdomainRules: {
       allowSubdomains: true,
@@ -58,7 +58,7 @@ function getParentDocumentFixture(options = {}) {
     normalizedParentDomainName: 'grandparent',
     preorderSalt: crypto.randomBytes(32),
     records: {
-      dashUniqueIdentityId: ownerId,
+      hthUniqueIdentityId: ownerId,
     },
     subdomainRules: {
       allowSubdomains: false,
@@ -91,7 +91,7 @@ function getChildDocumentFixture(options = {}) {
     normalizedParentDomainName: parentDomainName,
     preorderSalt: crypto.randomBytes(32),
     records: {
-      dashUniqueIdentityId: ownerId,
+      hthUniqueIdentityId: ownerId,
     },
     subdomainRules: {
       allowSubdomains: false,

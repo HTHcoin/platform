@@ -4,7 +4,7 @@ const {
       ResponseCheckTx,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 /**
  * @param {unserializeStateTransition} unserializeStateTransition

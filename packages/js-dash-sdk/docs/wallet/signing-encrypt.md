@@ -1,7 +1,7 @@
 ## Sign a Transaction/Transition a message
 
 ```js
-const tx = new Dash.Transaction({
+const tx = new HTH.Transaction({
 //txOpts
 });
 const signedTx = client.account.sign(tx);

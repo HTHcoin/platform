@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://schema.dash.org/dpp-0-4-0/meta/data-contract",
+  "$id": "https://schema.hth.org/dpp-0-4-0/meta/data-contract",
   "type": "object",
   "$defs": {
     "documentProperties": {
@@ -170,7 +170,7 @@
           "if": {
             "properties": {
               "contentMediaType": {
-                "const": "application/x.dash.dpp.identifier"
+                "const": "application/x.hth.dpp.identifier"
               }
             }
           },
@@ -341,14 +341,14 @@
     },
     "$schema": {
       "type": "string",
-      "const": "https://schema.dash.org/dpp-0-4-0/meta/data-contract"
+      "const": "https://schema.hth.org/dpp-0-4-0/meta/data-contract"
     },
     "$id":{
       "type": "array",
       "byteArray": true,
       "minItems": 32,
       "maxItems": 32,
-      "contentMediaType": "application/x.dash.dpp.identifier"
+      "contentMediaType": "application/x.hth.dpp.identifier"
     },
     "version": {
       "type": "integer",
@@ -359,7 +359,7 @@
       "byteArray": true,
       "minItems": 32,
       "maxItems": 32,
-      "contentMediaType": "application/x.dash.dpp.identifier"
+      "contentMediaType": "application/x.hth.dpp.identifier"
     },
     "documents": {
       "type": "object",

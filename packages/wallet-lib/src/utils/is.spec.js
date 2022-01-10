@@ -1,4 +1,4 @@
-const { Mnemonic, Networks, Address } = require('@dashevo/dashcore-lib');
+const { Mnemonic, Networks, Address } = require('@hthcoin/hthcore-lib');
 const { expect } = require('chai');
 const { is, generateNewMnemonic} = require("./index");
 const figureBridgeFixture = require("../../fixtures/figurebridge");

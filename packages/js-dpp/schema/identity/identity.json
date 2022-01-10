@@ -11,7 +11,7 @@
       "byteArray": true,
       "minItems": 32,
       "maxItems": 32,
-      "contentMediaType": "application/x.dash.dpp.identifier"
+      "contentMediaType": "application/x.hth.dpp.identifier"
     },
     "publicKeys": {
       "type": "array",

@@ -1,30 +1,30 @@
-# [3.21.2](https://github.com/dashevo/DashJS/compare/v3.21.1...v3.21.2) (2021-10-26)
+# [3.21.2](https://github.com/MichaelHDesigns/HthJS/compare/v3.21.1...v3.21.2) (2021-10-26)
 
 
 ### Chores
 
-* update DPNS and DashPay contract ids ([#292](https://github.com/dashevo/DashJS/issues/292))
+* update DPNS and HthCoin contract ids ([#292](https://github.com/MichaelHDesigns/HthJS/issues/292))
 
 
 
-# [3.21.1](https://github.com/dashevo/DashJS/compare/v3.21.0...v3.21.1) (2021-10-26)
+# [3.21.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.21.0...v3.21.1) (2021-10-26)
 
 
 ### Chores
 
-* update DPNS and DashPay contract ids ([#290](https://github.com/dashevo/DashJS/issues/290))
+* update DPNS and HthCoin contract ids ([#290](https://github.com/MichaelHDesigns/HthJS/issues/290))
 
 
 
-# [3.21.0](https://github.com/dashevo/DashJS/compare/v3.20.3...v3.21.0) (2021-10-21)
+# [3.21.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.20.3...v3.21.0) (2021-10-21)
 
 
 ### Features
 
-* **Document:** throw error on null Data Сontract ([#244](https://github.com/dashevo/DashJS/issues/244))
-* support higher protocol version ([#271](https://github.com/dashevo/DashJS/issues/271))
-* add `driveProtocolVersion` option ([#249](https://github.com/dashevo/DashJS/issues/249))
-* convenient broadcast errors ([#262](https://github.com/dashevo/DashJS/issues/262), [#266](https://github.com/dashevo/DashJS/issues/266), [#273](https://github.com/dashevo/DashJS/issues/273))
+* **Document:** throw error on null Data Сontract ([#244](https://github.com/MichaelHDesigns/HthJS/issues/244))
+* support higher protocol version ([#271](https://github.com/MichaelHDesigns/HthJS/issues/271))
+* add `driveProtocolVersion` option ([#249](https://github.com/MichaelHDesigns/HthJS/issues/249))
+* convenient broadcast errors ([#262](https://github.com/MichaelHDesigns/HthJS/issues/262), [#266](https://github.com/MichaelHDesigns/HthJS/issues/266), [#273](https://github.com/MichaelHDesigns/HthJS/issues/273))
 
 ### BREAKING CHANGE
 
@@ -32,39 +32,39 @@
 
 
 
-## [3.20.3](https://github.com/dashevo/DashJS/compare/v3.20.2...v3.20.3) (2021-08-08)
+## [3.20.3](https://github.com/MichaelHDesigns/HthJS/compare/v3.20.2...v3.20.3) (2021-08-08)
 
 ### Chores
 
-* update DashPay and DPNS contracts ([#240](https://github.com/dashevo/DashJS/issues/240))
+* update HthCoin and DPNS contracts ([#240](https://github.com/MichaelHDesigns/HthJS/issues/240))
 
 
 
-## [3.20.2](https://github.com/dashevo/DashJS/compare/v3.20.1...v3.20.2) (2021-07-28)
+## [3.20.2](https://github.com/MichaelHDesigns/HthJS/compare/v3.20.1...v3.20.2) (2021-07-28)
 
 
 ### Bug Fixes
 
-* InvalidResponse error when connecting to older versions of dapi ([#241](https://github.com/dashevo/DashJS/issues/241))
+* InvalidResponse error when connecting to older versions of dapi ([#241](https://github.com/MichaelHDesigns/HthJS/issues/241))
 
 
 
-## [3.20.1](https://github.com/dashevo/DashJS/compare/v3.20.0...v3.20.1) (2021-07-22)
-
-
-### Features
-
-* update DashPay and DPNS contracts ([4a0f0f8](https://github.com/dashevo/DashJS/commit/4a0f0f84a37fd6f41aa75c718ddd8a5ebc43c452))
-
-
-
-# [3.20.0](https://github.com/dashevo/DashJS/compare/v3.19.4...v3.20.0) (2021-07-13)
+## [3.20.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.20.0...v3.20.1) (2021-07-22)
 
 
 ### Features
 
-* provide metadata for documents, identities and data contracts ([#231](https://github.com/dashevo/DashJS/issues/231))
-* update wallet options ([#229](https://github.com/dashevo/DashJS/issues/229))
+* update HthCoin and DPNS contracts ([4a0f0f8](https://github.com/MichaelHDesigns/HthJS/commit/4a0f0f84a37fd6f41aa75c718ddd8a5ebc43c452))
+
+
+
+# [3.20.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.19.4...v3.20.0) (2021-07-13)
+
+
+### Features
+
+* provide metadata for documents, identities and data contracts ([#231](https://github.com/MichaelHDesigns/HthJS/issues/231))
+* update wallet options ([#229](https://github.com/MichaelHDesigns/HthJS/issues/229))
 
 
 ### BREAKING CHANGES
@@ -73,84 +73,84 @@
 
 
 
-## [3.19.4](https://github.com/dashevo/DashJS/compare/v3.19.3...v3.19.4) (2021-05-18)
+## [3.19.4](https://github.com/MichaelHDesigns/HthJS/compare/v3.19.3...v3.19.4) (2021-05-18)
 
 
 ### Bug Fixes
 
-* Binary properties in platform queries not encoded properly ([#223](https://github.com/dashevo/js-dash-sdk/pull/223))
+* Binary properties in platform queries not encoded properly ([#223](https://github.com/MichaelHDesigns/js-hth-sdk/pull/223))
 
-## [3.19.3](https://github.com/dashevo/DashJS/compare/v3.19.2...v3.19.3) (2021-05-18)
-
-
-### Bug Fixes
-
-* CBOR not decoding buffers properly in browsers([#219](https://github.com/dashevo/js-dash-sdk/pull/219))
-
-
-## [3.19.2](https://github.com/dashevo/DashJS/compare/v3.19.1...v3.19.2) (2021-05-18)
+## [3.19.3](https://github.com/MichaelHDesigns/HthJS/compare/v3.19.2...v3.19.3) (2021-05-18)
 
 
 ### Bug Fixes
 
-* add some handler for metadata error ([#216](https://github.com/dashevo/DashJS/issues/216))
+* CBOR not decoding buffers properly in browsers([#219](https://github.com/MichaelHDesigns/js-hth-sdk/pull/219))
 
 
-
-## [3.19.1](https://github.com/dashevo/DashJS/compare/v3.19.0...v3.19.1) (2021-05-10)
+## [3.19.2](https://github.com/MichaelHDesigns/HthJS/compare/v3.19.1...v3.19.2) (2021-05-18)
 
 
 ### Bug Fixes
 
-* invalid testnet DPNS contract id ([#214](https://github.com/dashevo/DashJS/issues/214))
+* add some handler for metadata error ([#216](https://github.com/MichaelHDesigns/HthJS/issues/216))
 
 
 
-# [3.19.0](https://github.com/dashevo/DashJS/compare/v3.18.2...v3.19.0) (2021-05-04)
+## [3.19.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.19.0...v3.19.1) (2021-05-10)
+
+
+### Bug Fixes
+
+* invalid testnet DPNS contract id ([#214](https://github.com/MichaelHDesigns/HthJS/issues/214))
+
+
+
+# [3.19.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.18.2...v3.19.0) (2021-05-04)
 
 ### Features
 
-* add `verifyInstantLock` to state repository ([#193](https://github.com/dashevo/DashJS/issues/193))
-* Chain Asset Lock proof ([#203](https://github.com/dashevo/DashJS/issues/203))
-* update to new getStatus endpoint ([#205](https://github.com/dashevo/DashJS/issues/205))
-* remove fake Instant Asset Locks proofs ([#198](https://github.com/dashevo/DashJS/issues/198))
+* add `verifyInstantLock` to state repository ([#193](https://github.com/MichaelHDesigns/HthJS/issues/193))
+* Chain Asset Lock proof ([#203](https://github.com/MichaelHDesigns/HthJS/issues/203))
+* update to new getStatus endpoint ([#205](https://github.com/MichaelHDesigns/HthJS/issues/205))
+* remove fake Instant Asset Locks proofs ([#198](https://github.com/MichaelHDesigns/HthJS/issues/198))
 
 
 ### BREAKING CHANGES
 
 * Fallbacks for Instant Asset lock proofs are removed. SDK is not compatible with local network created with mn-bootstrap v0.18
-* See [DPP breaking changes](https://github.com/dashevo/js-dpp/releases/tag/v0.19.0)
-* See [Wallet lib breaking changes](https://github.com/dashevo/wallet-lib/releases/tag/v7.19.0)
+* See [DPP breaking changes](https://github.com/MichaelHDesigns/js-dpp/releases/tag/v0.19.0)
+* See [Wallet lib breaking changes](https://github.com/MichaelHDesigns/wallet-lib/releases/tag/v7.19.0)
 
 
 
-## [3.18.2](https://github.com/dashevo/DashJS/compare/v3.18.1...v3.18.2) (2021-04-28)
-
-### Bug Fixes
-
-* `transaction.isCoinbase` is not a function and other fixes from wallet-lib 7.18.1 ([#236](https://github.com/dashevo/wallet-lib/issues/236))
-
-
-
-## [3.18.1](https://github.com/dashevo/DashJS/compare/v3.18.0...v3.18.1) (2021-03-03)
-
-### Features
-
-* handle wallet async errors ([#190](https://github.com/dashevo/DashJS/issues/190))
-
-
-
-# [3.18.0](https://github.com/dashevo/DashJS/compare/v3.18.0...v3.17.0) (2021-03-03)
-
-### Features
-
-* make identity derivation DIP-11 compatible ([#188](https://github.com/dashevo/DashJS/issues/188)
-* more reliable and secure ST ack ([#180](https://github.com/dashevo/DashJS/issues/180))
-
+## [3.18.2](https://github.com/MichaelHDesigns/HthJS/compare/v3.18.1...v3.18.2) (2021-04-28)
 
 ### Bug Fixes
 
-* ensure name search uses lowercase label ([#183](https://github.com/dashevo/DashJS/issues/183))
+* `transaction.isCoinbase` is not a function and other fixes from wallet-lib 7.18.1 ([#236](https://github.com/MichaelHDesigns/wallet-lib/issues/236))
+
+
+
+## [3.18.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.18.0...v3.18.1) (2021-03-03)
+
+### Features
+
+* handle wallet async errors ([#190](https://github.com/MichaelHDesigns/HthJS/issues/190))
+
+
+
+# [3.18.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.18.0...v3.17.0) (2021-03-03)
+
+### Features
+
+* make identity derivation DIP-11 compatible ([#188](https://github.com/MichaelHDesigns/HthJS/issues/188)
+* more reliable and secure ST ack ([#180](https://github.com/MichaelHDesigns/HthJS/issues/180))
+
+
+### Bug Fixes
+
+* ensure name search uses lowercase label ([#183](https://github.com/MichaelHDesigns/HthJS/issues/183))
 
 
 ### BREAKING CHANGES
@@ -159,20 +159,20 @@
 
 
 
-# [3.17.0](https://github.com/dashevo/DashJS/compare/v3.16.2...v3.17.0) (2020-12-30)
+# [3.17.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.16.2...v3.17.0) (2020-12-30)
 
 
 ### Features
 
-* connect to testnet by default ([#176](https://github.com/dashevo/DashJS/issues/176))
-* update `dapi-client`, `dashcore-lib`, `dpp` and `wallet-lib` ([#152](https://github.com/dashevo/DashJS/issues/152), [#172](https://github.com/dashevo/DashJS/issues/172))
-* wait broadcasted data to be available from queries ([#165](https://github.com/dashevo/DashJS/issues/165))
-* asset lock proofs for identity funding ([#169](https://github.com/dashevo/js-dash-sdk/issues/169))
+* connect to testnet by default ([#176](https://github.com/MichaelHDesigns/HthJS/issues/176))
+* update `dapi-client`, `hthcore-lib`, `dpp` and `wallet-lib` ([#152](https://github.com/MichaelHDesigns/HthJS/issues/152), [#172](https://github.com/MichaelHDesigns/HthJS/issues/172))
+* wait broadcasted data to be available from queries ([#165](https://github.com/MichaelHDesigns/HthJS/issues/165))
+* asset lock proofs for identity funding ([#169](https://github.com/MichaelHDesigns/js-hth-sdk/issues/169))
 
 
 ### Bug Fixes
 
-* crypto.randomBytes stub causing tests to fail ([#173](https://github.com/dashevo/DashJS/issues/173))
+* crypto.randomBytes stub causing tests to fail ([#173](https://github.com/MichaelHDesigns/HthJS/issues/173))
 
 
 ### BREAKING CHANGES
@@ -181,31 +181,31 @@
 
 
 
-## [3.16.2](https://github.com/dashevo/DashJS/compare/v3.16.1...v3.16.2) (2020-11-17)
+## [3.16.2](https://github.com/MichaelHDesigns/HthJS/compare/v3.16.1...v3.16.2) (2020-11-17)
 
 
 ### Bug Fixes
 
-* cannot read property 'getBinaryProperties' of undefined ([#158](https://github.com/dashevo/DashJS/issues/158))
+* cannot read property 'getBinaryProperties' of undefined ([#158](https://github.com/MichaelHDesigns/HthJS/issues/158))
 
 
 
-## [3.16.1](https://github.com/dashevo/DashJS/compare/v3.16.0...v3.16.1) (2020-10-30)
+## [3.16.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.16.0...v3.16.1) (2020-10-30)
 
 
 ### Bug Fixes
 
-* `$id` and `$ownerId` are not converted to identifiers ([#148](https://github.com/dashevo/DashJS/issues/148))
+* `$id` and `$ownerId` are not converted to identifiers ([#148](https://github.com/MichaelHDesigns/HthJS/issues/148))
 
 
 
-# [3.16.0](https://github.com/dashevo/DashJS/compare/v3.15.2...v3.16.0) (2020-10-29)
+# [3.16.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.15.2...v3.16.0) (2020-10-29)
 
 ### Features
 
-* convert string identifiers in `where` conditions ([#145](https://github.com/dashevo/DashJS/issues/145))
-* make `broadcast` methods to return a state transition ([#146](https://github.com/dashevo/DashJS/issues/146))
-* introduce Identifier type for data contract, document and identity IDs ([#142](https://github.com/dashevo/DashJS/issues/142))
+* convert string identifiers in `where` conditions ([#145](https://github.com/MichaelHDesigns/HthJS/issues/145))
+* make `broadcast` methods to return a state transition ([#146](https://github.com/MichaelHDesigns/HthJS/issues/146))
+* introduce Identifier type for data contract, document and identity IDs ([#142](https://github.com/MichaelHDesigns/HthJS/issues/142))
 
 
 ### BREAKING CHANGES
@@ -216,123 +216,123 @@
 
 
 
-## [3.15.2](https://github.com/dashevo/DashJS/compare/v3.15.1...v3.15.2) (2020-09-14)
+## [3.15.2](https://github.com/MichaelHDesigns/HthJS/compare/v3.15.1...v3.15.2) (2020-09-14)
 
 
 ### Bug Fixes
 
-* Update wallet-lib to a version with sync process fixes ([#185](https://github.com/dashevo/wallet-lib/pull/185))
+* Update wallet-lib to a version with sync process fixes ([#185](https://github.com/MichaelHDesigns/wallet-lib/pull/185))
 
 
 
-## [3.15.1](https://github.com/dashevo/DashJS/compare/v3.15.0...v3.15.1) (2020-09-07)
+## [3.15.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.15.0...v3.15.1) (2020-09-07)
 
 
 ### Bug Fixes
 
-* invalid argument type: script error from dashcore-lib ([#138](https://github.com/dashevo/DashJS/issues/138))
+* invalid argument type: script error from hthcore-lib ([#138](https://github.com/MichaelHDesigns/HthJS/issues/138))
 
 
 
-# [3.15.0](https://github.com/dashevo/DashJS/compare/v3.14.1...v3.15.0) (2020-09-04)
+# [3.15.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.14.1...v3.15.0) (2020-09-04)
 
 
 ### Features
 
-* update to new Wallet and DPNS contract ([#127](https://github.com/dashevo/js-dash-sdk/pull/127))
+* update to new Wallet and DPNS contract ([#127](https://github.com/MichaelHDesigns/js-hth-sdk/pull/127))
 
 
 ### BREAKING CHANGES
 
 * `client.platform.names.register` now receive records as a second argument
-* See [DPP breaking changes](https://github.com/dashevo/js-dpp/releases/tag/v0.15.0)
+* See [DPP breaking changes](https://github.com/MichaelHDesigns/js-dpp/releases/tag/v0.15.0)
 
 
-## [3.14.1](https://github.com/dashevo/DashJS/compare/v3.14.0...v3.14.1) (2020-07-24)
+## [3.14.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.14.0...v3.14.1) (2020-07-24)
 
 
 ### Bug Fixes
 
-* outdated DPNS contract ID ([#118](https://github.com/dashevo/DashJS/issues/118))
+* outdated DPNS contract ID ([#118](https://github.com/MichaelHDesigns/HthJS/issues/118))
 
 
 
-# [3.14.0](https://github.com/dashevo/DashJS/compare/v3.13.4...v3.14.0) (2020-07-23)
+# [3.14.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.13.4...v3.14.0) (2020-07-23)
 
 
 ### Features
 
-* implement DPNS methods ([#92](https://github.com/dashevo/DashJS/issues/92))
-* TypeScript compilation without webpack ([#97](https://github.com/dashevo/DashJS/issues/97), [#107](https://github.com/dashevo/DashJS/issues/107))
-* integrate with new DAPI Client and Wallet transport ([#105](https://github.com/dashevo/DashJS/issues/105), [#110](https://github.com/dashevo/DashJS/issues/110))
-* update DPP to 0.14.0 ([#112](https://github.com/dashevo/DashJS/issues/112))
-* use test-suite to run platform tests ([#106](https://github.com/dashevo/DashJS/issues/106))
+* implement DPNS methods ([#92](https://github.com/MichaelHDesigns/HthJS/issues/92))
+* TypeScript compilation without webpack ([#97](https://github.com/MichaelHDesigns/HthJS/issues/97), [#107](https://github.com/MichaelHDesigns/HthJS/issues/107))
+* integrate with new DAPI Client and Wallet transport ([#105](https://github.com/MichaelHDesigns/HthJS/issues/105), [#110](https://github.com/MichaelHDesigns/HthJS/issues/110))
+* update DPP to 0.14.0 ([#112](https://github.com/MichaelHDesigns/HthJS/issues/112))
+* use test-suite to run platform tests ([#106](https://github.com/MichaelHDesigns/HthJS/issues/106))
 
 
 ### Documentation
 
-* update documentation and definitions files ([#99]((https://github.com/dashevo/DashJS/issues/99))
+* update documentation and definitions files ([#99]((https://github.com/MichaelHDesigns/HthJS/issues/99))
 
 
 ### BREAKING CHANGES
 
 * `seeds` option now is an array of DAPI addresses, that can be represented as a string, plan JS object (host, httpPort, grpcPort) or DAPIAddress instance
-* see [DPP v0.14 breaking changes](https://github.com/dashevo/js-dpp/releases/tag/v0.14.0)
+* see [DPP v0.14 breaking changes](https://github.com/MichaelHDesigns/js-dpp/releases/tag/v0.14.0)
 * `client.platform.names.get` method has been removed in favor of `client.platform.names.resolve`
 
 
 
-## [3.13.4](https://github.com/dashevo/DashJS/compare/v3.13.3...v3.13.4) (2020-07-01)
+## [3.13.4](https://github.com/MichaelHDesigns/HthJS/compare/v3.13.3...v3.13.4) (2020-07-01)
 
 
 ### Features
 
-* update Wallet and DashCore libs ([#95](https://github.com/dashevo/DashJS/issues/95))
+* update Wallet and HthCore libs ([#95](https://github.com/MichaelHDesigns/HthJS/issues/95))
 
 
 
-## [3.13.3](https://github.com/dashevo/DashJS/compare/v3.13.2...v3.13.3) (2020-06-15)
+## [3.13.3](https://github.com/MichaelHDesigns/HthJS/compare/v3.13.2...v3.13.3) (2020-06-15)
 
 - **Features:**
-    * Updated wallet-lib to [7.13.3](https://github.com/dashevo/wallet-lib/blob/master/CHANGELOG.md#7133-2020-06-16)
-    * Updated js-dpp to [0.13.1](https://github.com/dashevo/js-dpp/blob/master/CHANGELOG.md#0131-2020-06-15)
+    * Updated wallet-lib to [7.13.3](https://github.com/MichaelHDesigns/wallet-lib/blob/master/CHANGELOG.md#7133-2020-06-16)
+    * Updated js-dpp to [0.13.1](https://github.com/MichaelHDesigns/js-dpp/blob/master/CHANGELOG.md#0131-2020-06-15)
 
 - **Bug fixes:**
     * fix: wrong assetlock tx fee estimation (#85)
     * fix: generate one-time private key for the asset lock transaction (#86)
 
-## [3.13.2](https://github.com/dashevo/DashJS/compare/v3.13.1...v3.13.2) (2020-06-12)
+## [3.13.2](https://github.com/MichaelHDesigns/HthJS/compare/v3.13.1...v3.13.2) (2020-06-12)
 
 - **Bug fixes:**
-    * more than one identity registration failed ([#83](https://github.com/dashevo/DashJS/issues/83))
+    * more than one identity registration failed ([#83](https://github.com/MichaelHDesigns/HthJS/issues/83))
 
-## [3.13.1](https://github.com/dashevo/DashJS/compare/v3.13.0...v3.13.1) (2020-05-12)
+## [3.13.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.13.0...v3.13.1) (2020-05-12)
 
 - **Features:**
-    * identity topups ([#71](https://github.com/dashevo/DashJS/pull/71))
+    * identity topups ([#71](https://github.com/MichaelHDesigns/HthJS/pull/71))
 
-# [3.13.0](https://github.com/dashevo/DashJS/compare/v3.0.2...v3.13.0) (2020-05-11)
+# [3.13.0](https://github.com/MichaelHDesigns/HthJS/compare/v3.0.2...v3.13.0) (2020-05-11)
 
 - **feat:**
   - feat: update wallet lib to 7.1.4 (#80)
 
-# [3.0.2](https://github.com/dashevo/DashJS/compare/v3.0.1...v3.0.2) (2020-05-06)
+# [3.0.2](https://github.com/MichaelHDesigns/HthJS/compare/v3.0.1...v3.0.2) (2020-05-06)
 
 - **fix**:
   - typescript support (#46)
 
-# [3.0.1](https://github.com/dashevo/DashJS/compare/v3.0.0...v3.0.1) (2020-04-27)
+# [3.0.1](https://github.com/MichaelHDesigns/HthJS/compare/v3.0.0...v3.0.1) (2020-04-27)
 
 - **fix**:
   - changed dpp.documents (undefined) to dpp.document (#48)
 
-# [3.0.0](https://github.com/dashevo/DashJS/compare/v2.0.0...v3.0.0) (2020-04-24)
+# [3.0.0](https://github.com/MichaelHDesigns/HthJS/compare/v2.0.0...v3.0.0) (2020-04-24)
 
 - **breaking:**
-  - Identity registration will use HDKeys(0) instead 1 (https://github.com/dashevo/DashJS/pull/41/commits/4bbc54d265c679affbd043b03a88f8ed2f1d52fb)
-  - contract.broadcast() now returns dataContract (https://github.com/dashevo/DashJS/pull/41/commits/6f7e9225f317525388fb7701619da74b5d76222b#diff-486b5234782255b516fe9c1868c7d3b0R19)
-  - identities.broadcast() now return identity (https://github.com/dashevo/DashJS/pull/41/commits/4bbc54d265c679affbd043b03a88f8ed2f1d52fb#diff-27f47e1bd838b3993aed5eaa396a00e5R90)
-  - document.broadcast() creation is now performed via passing documents to be created in an array of property create. `{create:[document]}` (https://github.com/dashevo/DashJS/commit/91127d774a339c4204891f5863c91a64d521ddb8#diff-0202b3d53936b94585a8c0cfa0481bccR10)
+  - Identity registration will use HDKeys(0) instead 1 (https://github.com/MichaelHDesigns/HthJS/pull/41/commits/4bbc54d265c679affbd043b03a88f8ed2f1d52fb)
+  - contract.broadcast() now returns dataContract (https://github.com/MichaelHDesigns/HthJS/pull/41/commits/6f7e9225f317525388fb7701619da74b5d76222b#diff-486b5234782255b516fe9c1868c7d3b0R19)
+  - identities.broadcast() now return identity (https://github.com/MichaelHDesigns/HthJS/pull/41/commits/4bbc54d265c679affbd043b03a88f8ed2f1d52fb#diff-27f47e1bd838b3993aed5eaa396a00e5R90)
+  - document.broadcast() creation is now performed via passing documents to be created in an array of property create. `{create:[document]}` (https://github.com/MichaelHDesigns/HthJS/commit/91127d774a339c4204891f5863c91a64d521ddb8#diff-0202b3d53936b94585a8c0cfa0481bccR10)
 
 - **feat**:
   - added replacement of a document. (#41)
@@ -347,20 +347,20 @@
 - **Chore, Docs & Tests:**
   - bumped wallet-lib to 6.1 (#41)
 
-# [2.0.0](https://github.com/dashevo/DashJS/compare/v1.1.2...v2.0.0) (2020-03-27)
+# [2.0.0](https://github.com/MichaelHDesigns/HthJS/compare/v1.1.2...v2.0.0) (2020-03-27)
 
 - **breaking:**
-  - renamed DashJS namespace to SDK namespace.
-  - renamed SDK namespace to Client namespace (DashJS.SDK -> SDK.Client).
+  - renamed HthJS namespace to SDK namespace.
+  - renamed SDK namespace to Client namespace (HthJS.SDK -> SDK.Client).
   - moved L1 primitive namespace from `SDK.*` to `SDK.Core.*`.
   - moved L2 primitive namespace from `SDK.*` to `SDK.Platform.*`.
-  - exported file for web environment is now `Dash` instead of `DashJS`
+  - exported file for web environment is now `HTH` instead of `HthJS`
 - **feat**:
   - Sign and verify message (#24)
 - **impr**:
   - Typings documentation (#30)
   - Code cleanup (#31)
-  - Export all Dashcore Primitives (under `SDK.Core.*`)
+  - Export all hthcore Primitives (under `SDK.Core.*`)
 - **fix**:
   - fix(contracts): pass data contract without array (#32 in #31)
   - fix: remove .serialize() before broadcasting records (#e047d515a12d0d14ff69b4fe3ea5b8b10bd6f890)

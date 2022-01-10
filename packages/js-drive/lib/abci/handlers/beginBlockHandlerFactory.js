@@ -4,7 +4,7 @@ const {
       ResponseBeginBlock,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const NotSupportedNetworkProtocolVersionError = require('./errors/NotSupportedProtocolVersionError');
 const NetworkProtocolVersionIsNotSetError = require('./errors/NetworkProtocolVersionIsNotSetError');
@@ -16,8 +16,8 @@ const NetworkProtocolVersionIsNotSetError = require('./errors/NetworkProtocolVer
  * @param {BlockExecutionContext} blockExecutionContext
  * @param {BlockExecutionContext} previousBlockExecutionContext
  * @param {Long} latestProtocolVersion
- * @param {DashPlatformProtocol} dpp
- * @param {DashPlatformProtocol} transactionalDpp
+ * @param {HthPlatformProtocol} dpp
+ * @param {HthPlatformProtocol} transactionalDpp
  * @param {updateSimplifiedMasternodeList} updateSimplifiedMasternodeList
  * @param {waitForChainLockedHeight} waitForChainLockedHeight
  * @param {BaseLogger} logger

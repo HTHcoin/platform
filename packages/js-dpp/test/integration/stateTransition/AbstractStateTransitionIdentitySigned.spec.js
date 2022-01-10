@@ -1,4 +1,4 @@
-const { PrivateKey, crypto: { Hash } } = require('@dashevo/dashcore-lib');
+const { PrivateKey, crypto: { Hash } } = require('@hthcoin/hthcore-lib');
 
 const calculateStateTransitionFee = require('../../../lib/stateTransition/calculateStateTransitionFee');
 

@@ -22,7 +22,7 @@ Returns : Account instance.
 Examples (assuming a Wallet instance created) : 
 
 ```js
-const { Account, Wallet } = require('@dashevo/wallet-lib');
+const { Account, Wallet } = require('@hthcoin/wallet-lib');
 const wallet = new Wallet();
 const account = new Account(wallet, {index: 42});
 await account.init();

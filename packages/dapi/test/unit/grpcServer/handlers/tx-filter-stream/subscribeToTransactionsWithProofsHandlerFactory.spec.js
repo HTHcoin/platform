@@ -3,7 +3,7 @@ const sinon = require('sinon');
 const sinonChai = require('sinon-chai');
 const dirtyChai = require('dirty-chai');
 const chaiAsPromised = require('chai-as-promised');
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 
 const {
   server: {
@@ -15,7 +15,7 @@ const {
       AcknowledgingWritable,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -24,9 +24,9 @@ const {
     RawTransactions,
     BloomFilter,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const { BloomFilter: CoreBloomFilter } = require('@dashevo/dashcore-lib');
+const { BloomFilter: CoreBloomFilter } = require('@hthcoin/hthcore-lib');
 
 const GrpcCallMock = require('../../../../../lib/test/mock/GrpcCallMock');
 const subscribeToTransactionsWithProofsHandlerFactory = require(

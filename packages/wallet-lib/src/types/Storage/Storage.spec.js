@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 
 const localForage = require('localforage');
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const Storage = require('./Storage');
 const { CONFIGURED } = require('../../EVENTS');
 
@@ -47,7 +47,7 @@ describe('Storage - constructor', function suite() {
   it('should work on usage', async () => {
     const storage = new Storage();
     await storage.configure();
-    await storage.createChain(Dashcore.Networks.testnet);
+    await storage.createChain(Hthcore.Networks.testnet);
 
     const defaultWalletId = 'squawk7700';
     const expectedStore1 = {
@@ -74,7 +74,7 @@ describe('Storage - constructor', function suite() {
       wallets: {
         squawk7700: {
           accounts: {},
-          network: Dashcore.Networks.testnet.toString(),
+          network: Hthcore.Networks.testnet.toString(),
           mnemonic: null,
           type: null,
           identityIds: [],

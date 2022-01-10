@@ -6,7 +6,7 @@ To update your existing data contract you have to follow these steps:
 
 ```js
 const schema = {};// You JSON schema defining the app.
-const client = new Dash.Client({
+const client = new HTH.Client({
   wallet: {
     mnemonic: '', // Your app mnemonic, which holds the identity
   },

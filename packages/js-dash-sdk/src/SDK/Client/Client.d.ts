@@ -1,4 +1,4 @@
-import DAPIClient from "@dashevo/dapi-client"
+import DAPIClient from "@hthcoin/dapi-client"
 
 export declare namespace SDK {
     interface platformOpts {

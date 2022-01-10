@@ -1,13 +1,13 @@
-const getIdentityCreateTransitionFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityCreateTransitionFixture');
+const getIdentityCreateTransitionFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityCreateTransitionFixture');
 
-const InvalidStateTransitionTypeError = require('@dashevo/dpp/lib/errors/consensus/basic/stateTransition/InvalidStateTransitionTypeError');
-const InvalidStateTransitionError = require('@dashevo/dpp/lib/stateTransition/errors/InvalidStateTransitionError');
-const BalanceNotEnoughError = require('@dashevo/dpp/lib/errors/consensus/fee/BalanceIsNotEnoughError');
-const ValidatorResult = require('@dashevo/dpp/lib/validation/ValidationResult');
+const InvalidStateTransitionTypeError = require('@hthcoin/dpp/lib/errors/consensus/basic/stateTransition/InvalidStateTransitionTypeError');
+const InvalidStateTransitionError = require('@hthcoin/dpp/lib/stateTransition/errors/InvalidStateTransitionError');
+const BalanceNotEnoughError = require('@hthcoin/dpp/lib/errors/consensus/fee/BalanceIsNotEnoughError');
+const ValidatorResult = require('@hthcoin/dpp/lib/validation/ValidationResult');
 
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
-const IdentityNotFoundError = require('@dashevo/dpp/lib/errors/consensus/signature/IdentityNotFoundError');
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
+const IdentityNotFoundError = require('@hthcoin/dpp/lib/errors/consensus/signature/IdentityNotFoundError');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
 const unserializeStateTransitionFactory = require('../../../../../lib/abci/handlers/stateTransition/unserializeStateTransitionFactory');
 const LoggerMock = require('../../../../../lib/test/mock/LoggerMock');
 const DPPValidationAbciError = require('../../../../../lib/abci/errors/DPPValidationAbciError');

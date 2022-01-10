@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { ImportMock } from 'ts-mock-imports';
-import generateRandomIdentifier from "@dashevo/dpp/lib/test/utils/generateRandomIdentifier"
+import generateRandomIdentifier from "@hthcoin/dpp/lib/test/utils/generateRandomIdentifier"
 
 import cryptoModule from 'crypto';
 
@@ -50,8 +50,8 @@ describe('Platform', () => {
                 const identityId = generateRandomIdentifier();
                 identityMock.getId.returns(identityId);
 
-                await register.call(platformMock, 'Dash', {
-                    dashUniqueIdentityId: identityId,
+                await register.call(platformMock, 'HTH', {
+                    hthUniqueIdentityId: identityId,
                 }, identityMock);
 
                 expect(platformMock.documents.create.getCall(0).args[0]).to.deep.equal('dpns.preorder');
@@ -64,12 +64,12 @@ describe('Platform', () => {
                     'dpns.domain',
                     identityMock,
                     {
-                        'label': 'Dash',
-                        'normalizedLabel': 'dash',
+                        'label': 'HTH',
+                        'normalizedLabel': 'hth',
                         'normalizedParentDomainName': '',
                         'preorderSalt': Buffer.alloc(32),
                         'records': {
-                            'dashUniqueIdentityId': identityId,
+                            'hthUniqueIdentityId': identityId,
                         },
                         'subdomainRules': {
                             'allowSubdomains': true,
@@ -82,8 +82,8 @@ describe('Platform', () => {
                 const identityId = generateRandomIdentifier();
                 identityMock.getId.returns(identityId);
 
-                await register.call(platformMock, 'User.dash', {
-                    dashAliasIdentityId: identityId,
+                await register.call(platformMock, 'User.hth', {
+                    hthAliasIdentityId: identityId,
                 }, identityMock);
 
                 expect(platformMock.documents.create.getCall(0).args[0]).to.deep.equal('dpns.preorder');
@@ -98,10 +98,10 @@ describe('Platform', () => {
                     {
                         'label': 'User',
                         'normalizedLabel': 'user',
-                        'normalizedParentDomainName': 'dash',
+                        'normalizedParentDomainName': 'hth',
                         'preorderSalt': Buffer.alloc(32),
                         'records': {
-                            'dashAliasIdentityId': identityId,
+                            'hthAliasIdentityId': identityId,
                         },
                         'subdomainRules': {
                             'allowSubdomains': false,
@@ -114,8 +114,8 @@ describe('Platform', () => {
                 delete platformMock.client.getApps().get('dpns').contractId;
 
                 try {
-                    await register.call(platformMock, 'user.dash', {
-                        dashUniqueIdentityId: generateRandomIdentifier(),
+                    await register.call(platformMock, 'user.hth', {
+                        hthUniqueIdentityId: generateRandomIdentifier(),
                     }, identityMock);
                 } catch (e) {
                     expect(e.message).to.equal('DPNS is required to register a new name.');

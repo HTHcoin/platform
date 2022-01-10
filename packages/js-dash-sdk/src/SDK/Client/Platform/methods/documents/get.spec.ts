@@ -1,8 +1,8 @@
-import getDataContractFixture from '@dashevo/dpp/lib/test/fixtures/getDataContractFixture';
-import generateRandomIdentifier from '@dashevo/dpp/lib/test/utils/generateRandomIdentifier';
-import createDPPMock from '@dashevo/dpp/lib/test/mocks/createDPPMock';
+import getDataContractFixture from '@hthcoin/dpp/lib/test/fixtures/getDataContractFixture';
+import generateRandomIdentifier from '@hthcoin/dpp/lib/test/utils/generateRandomIdentifier';
+import createDPPMock from '@hthcoin/dpp/lib/test/mocks/createDPPMock';
 import getResponseMetadataFixture from '../../../../../test/fixtures/getResponseMetadataFixture';
-const GetDocumentsResponse = require("@dashevo/dapi-client/lib/methods/platform/getDocuments/GetDocumentsResponse");
+const GetDocumentsResponse = require("@hthcoin/dapi-client/lib/methods/platform/getDocuments/GetDocumentsResponse");
 
 import get from './get';
 import { expect } from 'chai';
@@ -94,7 +94,7 @@ describe('Client - Platform - Documents - .get()', () => {
         idField: {
           type: "array",
           byteArray: true,
-          contentMediaType: "application/x.dash.dpp.identifier",
+          contentMediaType: "application/x.hth.dpp.identifier",
           minItems: 32,
           maxItems: 32,
         },
@@ -104,7 +104,7 @@ describe('Client - Platform - Documents - .get()', () => {
             anotherIdField: {
               type: "array",
               byteArray: true,
-              contentMediaType: "application/x.dash.dpp.identifier",
+              contentMediaType: "application/x.hth.dpp.identifier",
               minItems: 32,
               maxItems: 32,
             },

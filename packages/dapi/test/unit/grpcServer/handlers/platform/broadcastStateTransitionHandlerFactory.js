@@ -5,19 +5,19 @@ const {
       AlreadyExistsGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
     BroadcastStateTransitionResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const DashPlatformProtocol = require('@dashevo/dpp');
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const HthPlatformProtocol = require('@hthcoin/dpp');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
 
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
-const NotFoundGrpcError = require('@dashevo/grpc-common/lib/server/error/NotFoundGrpcError');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
+const NotFoundGrpcError = require('@hthcoin/grpc-common/lib/server/error/NotFoundGrpcError');
 const cbor = require('cbor');
 const GrpcCallMock = require('../../../../../lib/test/mock/GrpcCallMock');
 
@@ -36,7 +36,7 @@ describe('broadcastStateTransitionHandlerFactory', () => {
   let createGrpcErrorFromDriveResponseMock;
 
   beforeEach(async function beforeEach() {
-    const dpp = new DashPlatformProtocol();
+    const dpp = new HthPlatformProtocol();
     await dpp.initialize();
 
     const dataContractFixture = getDataContractFixture();

@@ -1,4 +1,4 @@
-const BufferReader = require('@dashevo/dashcore-lib/lib/encoding/bufferreader');
+const BufferReader = require('@hthcoin/hthcore-lib/lib/encoding/bufferreader');
 
 module.exports = function parseRootTreeBuffer(rootTreeProofBuffer) {
   /*

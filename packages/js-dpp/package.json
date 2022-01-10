@@ -1,7 +1,7 @@
 {
-  "name": "@dashevo/dpp",
+  "name": "@hthcoin/dpp",
   "version": "0.22.0-dev.5",
-  "description": "The JavaScript implementation of the Dash Platform Protocol",
+  "description": "The JavaScript implementation of the HTH Platform Protocol",
   "scripts": {
     "lint": "eslint .",
     "test": "yarn run test:coverage && yarn run test:browsers",
@@ -16,7 +16,7 @@
       "test"
     ]
   },
-  "main": "lib/DashPlatformProtocol.js",
+  "main": "lib/HthPlatformProtocol.js",
   "contributors": [
     {
       "name": "Ivan Shumkov",
@@ -25,17 +25,17 @@
     },
     {
       "name": "Djavid Gabibiyan",
-      "email": "djavid@dash.org",
+      "email": "djavid@hth.org",
       "url": "https://github.com/jawid-h"
     },
     {
       "name": "Anton Suprunchuk",
-      "email": "anton.suprunchuk@dash.org",
+      "email": "anton.suprunchuk@hth.org",
       "url": "https://github.com/antouhou"
     },
     {
       "name": "Konstantin Shuplenkov",
-      "email": "konstantin.shuplenkov@dash.org",
+      "email": "konstantin.shuplenkov@hth.org",
       "url": "https://github.com/shuplenkov"
     }
   ],
@@ -43,9 +43,9 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
-    "@dashevo/dashpay-contract": "workspace:~",
-    "@dashevo/dpns-contract": "workspace:~",
-    "@dashevo/masternode-reward-shares-contract": "workspace:~",
+    "@hthcoin/hthcoin-contract": "workspace:~",
+    "@hthcoin/dpns-contract": "workspace:~",
+    "@hthcoin/masternode-reward-shares-contract": "workspace:~",
     "acorn": "^8.5.0",
     "assert": "^2.0.0",
     "babel-loader": "^8.2.2",
@@ -86,9 +86,9 @@
   },
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^8.0.0",
-    "@dashevo/dashcore-lib": "~0.19.28",
-    "@dashevo/feature-flags-contract": "workspace:~",
-    "@dashevo/re2-wasm": "~1.0.4",
+    "@hthcoin/hthcore-lib": "~0.19.28",
+    "@hthcoin/feature-flags-contract": "workspace:~",
+    "@hthcoin/re2-wasm": "~1.0.4",
     "ajv": "^8.6.0",
     "ajv-formats": "^2.1.1",
     "bignumber.js": "^9.0.1",

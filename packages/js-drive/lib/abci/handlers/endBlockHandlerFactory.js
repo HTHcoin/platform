@@ -8,9 +8,9 @@ const {
       CoreChainLock,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
-const featureFlagTypes = require('@dashevo/feature-flags-contract/lib/featureFlagTypes');
+const featureFlagTypes = require('@hthcoin/feature-flags-contract/lib/featureFlagTypes');
 
 const NoSystemContractFoundError = require('./errors/NoSystemContractFoundError');
 
@@ -20,8 +20,8 @@ const NoSystemContractFoundError = require('./errors/NoSystemContractFoundError'
  * @param {BlockExecutionContext} blockExecutionContext
  * @param {number} dpnsContractBlockHeight
  * @param {Identifier} dpnsContractId
- * @param {number} dashpayContractBlockHeight
- * @param {Identifier} dashpayContractId
+ * @param {number} hthcoinContractBlockHeight
+ * @param {Identifier} hthcoinContractId
  * @param {LatestCoreChainLock} latestCoreChainLock
  * @param {ValidatorSet} validatorSet
  * @param {createValidatorSetUpdate} createValidatorSetUpdate
@@ -38,8 +38,8 @@ function endBlockHandlerFactory(
   blockExecutionContext,
   dpnsContractBlockHeight,
   dpnsContractId,
-  dashpayContractBlockHeight,
-  dashpayContractId,
+  hthcoinContractBlockHeight,
+  hthcoinContractId,
   latestCoreChainLock,
   validatorSet,
   createValidatorSetUpdate,
@@ -79,12 +79,12 @@ function endBlockHandlerFactory(
       }
     }
 
-    if (dashpayContractId && height.equals(dashpayContractBlockHeight)) {
-      if (!blockExecutionContext.hasDataContract(dashpayContractId)) {
+    if (hthcoinContractId && height.equals(hthcoinContractBlockHeight)) {
+      if (!blockExecutionContext.hasDataContract(hthcoinContractId)) {
         throw new NoSystemContractFoundError(
-          'Dashpay',
-          dashpayContractId,
-          dashpayContractBlockHeight,
+          'HthCoin',
+          hthcoinContractId,
+          hthcoinContractBlockHeight,
         );
       }
     }

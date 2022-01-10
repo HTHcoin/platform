@@ -1,6 +1,6 @@
-const { PrivateKey } = require('@dashevo/dashcore-lib');
+const { PrivateKey } = require('@hthcoin/hthcore-lib');
 
-const DashPlatformProtocol = require('../../../lib/DashPlatformProtocol');
+const HthPlatformProtocol = require('../../../lib/HthPlatformProtocol');
 
 const DataContractCreateTransition = require('../../../lib/dataContract/stateTransition/DataContractCreateTransition/DataContractCreateTransition');
 
@@ -77,7 +77,7 @@ describe('StateTransitionFacade', () => {
       },
     });
 
-    dpp = new DashPlatformProtocol({
+    dpp = new HthPlatformProtocol({
       stateRepository: stateRepositoryMock,
     });
 
@@ -86,7 +86,7 @@ describe('StateTransitionFacade', () => {
 
   describe('createFromObject', () => {
     it('should throw MissingOption if stateRepository is not set', async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       try {
@@ -102,7 +102,7 @@ describe('StateTransitionFacade', () => {
     });
 
     it('should skip checking for state repository if skipValidation is set', async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       await dpp.stateTransition.createFromObject(
@@ -124,7 +124,7 @@ describe('StateTransitionFacade', () => {
 
   describe('createFromBuffer', () => {
     it('should throw MissingOption if stateRepository is not set', async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       try {
@@ -140,7 +140,7 @@ describe('StateTransitionFacade', () => {
     });
 
     it('should skip checking for state repository if skipValidation is set', async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       await dpp.stateTransition.createFromBuffer(
@@ -290,7 +290,7 @@ describe('StateTransitionFacade', () => {
 
   describe('validateBasic', () => {
     it('should throw MissingOption if stateRepository is not set', async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       try {
@@ -317,7 +317,7 @@ describe('StateTransitionFacade', () => {
 
   describe('validateSignature', () => {
     it('should throw MissingOption if stateRepository is not set', async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       try {
@@ -361,7 +361,7 @@ describe('StateTransitionFacade', () => {
 
   describe('validateFee', () => {
     it('should throw MissingOption if stateRepository is not set', async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       try {
@@ -388,7 +388,7 @@ describe('StateTransitionFacade', () => {
 
   describe('validateState', () => {
     it('should throw MissingOption if stateRepository is not set', async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       try {

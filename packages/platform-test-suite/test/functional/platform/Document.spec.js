@@ -1,17 +1,17 @@
 const { expect } = require('chai');
 
 const getDataContractFixture = require(
-  '@dashevo/dpp/lib/test/fixtures/getDataContractFixture',
+  '@hthcoin/dpp/lib/test/fixtures/getDataContractFixture',
 );
 
 const getIdentityFixture = require(
-  '@dashevo/dpp/lib/test/fixtures/getIdentityFixture',
+  '@hthcoin/dpp/lib/test/fixtures/getIdentityFixture',
 );
 
-const { signStateTransition } = require('dash/build/src/SDK/Client/Platform/signStateTransition');
+const { signStateTransition } = require('hth/build/src/SDK/Client/Platform/signStateTransition');
 
-const InvalidDocumentTypeError = require('@dashevo/dpp/lib/errors/consensus/basic/document/InvalidDocumentTypeError');
-const { StateTransitionBroadcastError } = require('dash/build/src/errors/StateTransitionBroadcastError');
+const InvalidDocumentTypeError = require('@hthcoin/dpp/lib/errors/consensus/basic/document/InvalidDocumentTypeError');
+const { StateTransitionBroadcastError } = require('hth/build/src/errors/StateTransitionBroadcastError');
 
 const wait = require('../../../lib/wait');
 

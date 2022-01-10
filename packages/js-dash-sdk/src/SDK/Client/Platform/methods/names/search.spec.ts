@@ -25,7 +25,7 @@ describe('Platform', () => {
                 platformMock.documents.get.resolves([parentDomainDocument]);
 
                 const documentsList = await search.call(
-                    platformMock, 'prefix', 'dash',
+                    platformMock, 'prefix', 'hth',
                 );
 
                 expect(platformMock.documents.get.callCount).to.equal(1);
@@ -33,7 +33,7 @@ describe('Platform', () => {
                     'dpns.domain',
                     {
                         where: [
-                            ["normalizedParentDomainName", "==", "dash"],
+                            ["normalizedParentDomainName", "==", "hth"],
                             ["normalizedLabel", "startsWith", "prefix"]
                         ],
                     },
@@ -46,7 +46,7 @@ describe('Platform', () => {
                 platformMock.documents.get.resolves([]);
 
                 const documentsList = await search.call(
-                    platformMock, 'prefix', 'dash',
+                    platformMock, 'prefix', 'hth',
                 );
 
                 expect(platformMock.documents.get.callCount).to.equal(1);
@@ -54,7 +54,7 @@ describe('Platform', () => {
                     'dpns.domain',
                     {
                         where: [
-                            ["normalizedParentDomainName", "==", "dash"],
+                            ["normalizedParentDomainName", "==", "hth"],
                             ["normalizedLabel", "startsWith", "prefix"]
                         ],
                     },

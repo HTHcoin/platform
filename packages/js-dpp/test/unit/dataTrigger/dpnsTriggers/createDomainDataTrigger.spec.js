@@ -90,13 +90,13 @@ describe('createDomainDataTrigger', () => {
 
     stateRepositoryMock.fetchTransaction
       .withArgs(
-        records.dashUniqueIdentityId,
+        records.hthUniqueIdentityId,
       )
       .resolves({ confirmations: 10 });
 
     context = new DataTriggerExecutionContext(
       stateRepositoryMock,
-      records.dashUniqueIdentityId,
+      records.hthUniqueIdentityId,
       dataContract,
     );
 
@@ -115,7 +115,7 @@ describe('createDomainDataTrigger', () => {
     childDocument = getChildDocumentFixture({ normalizedLabel: childDocument.getData().label });
     stateRepositoryMock.fetchTransaction
       .withArgs(
-        childDocument.getData().records.dashUniqueIdentityId,
+        childDocument.getData().records.hthUniqueIdentityId,
       )
       .resolves({ confirmations: 10 });
 
@@ -145,7 +145,7 @@ describe('createDomainDataTrigger', () => {
 
     stateRepositoryMock.fetchTransaction
       .withArgs(
-        childDocument.getData().records.dashUniqueIdentityId,
+        childDocument.getData().records.hthUniqueIdentityId,
       )
       .resolves({ confirmations: 10 });
 
@@ -177,14 +177,14 @@ describe('createDomainDataTrigger', () => {
     );
   });
 
-  it('should fail with invalid dashUniqueIdentityId', async () => {
-    const dashUniqueIdentityId = Identifier.from(
+  it('should fail with invalid hthUniqueIdentityId', async () => {
+    const hthUniqueIdentityId = Identifier.from(
       Buffer.alloc(32, 5),
     );
 
     childDocument = getChildDocumentFixture({
       records: {
-        dashUniqueIdentityId: dashUniqueIdentityId.toBuffer(),
+        hthUniqueIdentityId: hthUniqueIdentityId.toBuffer(),
       },
     });
 
@@ -202,17 +202,17 @@ describe('createDomainDataTrigger', () => {
     const [error] = result.getErrors();
 
     expect(error).to.be.an.instanceOf(DataTriggerConditionError);
-    expect(error.message).to.equal(`ownerId ${childDocument.getOwnerId()} doesn't match dashUniqueIdentityId ${dashUniqueIdentityId}`);
+    expect(error.message).to.equal(`ownerId ${childDocument.getOwnerId()} doesn't match hthUniqueIdentityId ${hthUniqueIdentityId}`);
   });
 
-  it('should fail with invalid dashAliasIdentityId', async () => {
-    const dashUniqueIdentityId = Identifier.from(
+  it('should fail with invalid hthAliasIdentityId', async () => {
+    const hthUniqueIdentityId = Identifier.from(
       Buffer.alloc(32, 2),
     );
 
     childDocument = getChildDocumentFixture({
       records: {
-        dashAliasIdentityId: dashUniqueIdentityId.toBuffer(),
+        hthAliasIdentityId: hthUniqueIdentityId.toBuffer(),
       },
     });
 
@@ -230,7 +230,7 @@ describe('createDomainDataTrigger', () => {
     const [error] = result.getErrors();
 
     expect(error).to.be.an.instanceOf(DataTriggerConditionError);
-    expect(error.message).to.equal(`ownerId ${childDocument.getOwnerId()} doesn't match dashAliasIdentityId ${dashUniqueIdentityId}`);
+    expect(error.message).to.equal(`ownerId ${childDocument.getOwnerId()} doesn't match hthAliasIdentityId ${hthUniqueIdentityId}`);
   });
 
   it('should fail with preorder document was not found', async () => {

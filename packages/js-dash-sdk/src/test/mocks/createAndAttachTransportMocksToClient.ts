@@ -1,20 +1,20 @@
-import { Transaction } from "@dashevo/dashcore-lib";
-import stateTransitionTypes from "@dashevo/dpp/lib/stateTransition/stateTransitionTypes";
-import Identity from "@dashevo/dpp/lib/identity/Identity";
+import { Transaction } from "@hthcoin/hthcore-lib";
+import stateTransitionTypes from "@hthcoin/dpp/lib/stateTransition/stateTransitionTypes";
+import Identity from "@hthcoin/dpp/lib/identity/Identity";
 
 import { createFakeInstantLock } from "../../utils/createFakeIntantLock";
 import getResponseMetadataFixture from '../fixtures/getResponseMetadataFixture';
 import { createDapiClientMock } from "./createDapiClientMock";
 
 import { wait } from "../../utils/wait";
-const GetIdentityResponse = require("@dashevo/dapi-client/lib/methods/platform/getIdentity/GetIdentityResponse");
+const GetIdentityResponse = require("@hthcoin/dapi-client/lib/methods/platform/getIdentity/GetIdentityResponse");
 
 // @ts-ignore
-const TxStreamMock = require('@dashevo/wallet-lib/src/test/mocks/TxStreamMock');
+const TxStreamMock = require('@hthcoin/wallet-lib/src/test/mocks/TxStreamMock');
 // @ts-ignore
-const TxStreamDataResponseMock = require('@dashevo/wallet-lib/src/test/mocks/TxStreamDataResponseMock');
+const TxStreamDataResponseMock = require('@hthcoin/wallet-lib/src/test/mocks/TxStreamDataResponseMock');
 // @ts-ignore
-const TransportMock = require('@dashevo/wallet-lib/src/test/mocks/TransportMock');
+const TransportMock = require('@hthcoin/wallet-lib/src/test/mocks/TransportMock');
 
 function makeTxStreamEmitISLocksForTransactions(transportMock, txStreamMock) {
   transportMock.sendTransaction.callsFake((txString) => {

@@ -7,9 +7,9 @@ const {
     GetTransactionResponse,
     GetStatusResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const BloomFilter = require('@dashevo/dashcore-lib/lib/bloomfilter');
+const BloomFilter = require('@hthcoin/hthcore-lib/lib/bloomfilter');
 
 const CoreMethodsFacade = require('../../../../lib/methods/core/CoreMethodsFacade');
 

@@ -26,7 +26,7 @@ describe('DPNS', () => {
   });
 
   before(async () => {
-    topLevelDomain = 'dash';
+    topLevelDomain = 'hth';
     secondLevelDomain = getRandomDomain();
     client = await createClientWithFundedWallet();
   });
@@ -66,10 +66,10 @@ describe('DPNS', () => {
     });
 
     // generate a random one which will be used in tests above
-    // skip if DPNS owner private key is not passed and use `dash` in tests above
+    // skip if DPNS owner private key is not passed and use `hth` in tests above
     it('should be able to register a TLD', async () => {
       createdTLD = await ownerClient.platform.names.register(newTopLevelDomain, {
-        dashAliasIdentityId: identity.getId(),
+        hthAliasIdentityId: identity.getId(),
       }, identity);
 
       // Additional wait time to mitigate testnet latency
@@ -132,7 +132,7 @@ describe('DPNS', () => {
 
       try {
         await client.platform.names.register(getRandomDomain(), {
-          dashAliasIdentityId: identity.getId(),
+          hthAliasIdentityId: identity.getId(),
         }, identity);
       } catch (e) {
         broadcastError = e;
@@ -145,7 +145,7 @@ describe('DPNS', () => {
 
     it('should be able to register a second level domain', async () => {
       registeredDomain = await client.platform.names.register(`${secondLevelDomain}.${topLevelDomain}`, {
-        dashUniqueIdentityId: identity.getId(),
+        hthUniqueIdentityId: identity.getId(),
       }, identity);
 
       // Additional wait time to mitigate testnet latency
@@ -165,7 +165,7 @@ describe('DPNS', () => {
         const domain = `${getRandomDomain()}.${getRandomDomain()}.${topLevelDomain}`;
 
         await client.platform.names.register(domain, {
-          dashAliasIdentityId: identity.getId(),
+          hthAliasIdentityId: identity.getId(),
         }, identity);
 
         expect.fail('should throw error');
@@ -196,8 +196,8 @@ describe('DPNS', () => {
 
     it('should be able to resolve domain by it\'s record', async () => {
       const [document] = await client.platform.names.resolveByRecord(
-        'dashUniqueIdentityId',
-        registeredDomain.getData().records.dashUniqueIdentityId,
+        'hthUniqueIdentityId',
+        registeredDomain.getData().records.hthUniqueIdentityId,
       );
 
       expect(document.toJSON()).to.deep.equal(registeredDomain.toJSON());
@@ -239,9 +239,9 @@ describe('DPNS', () => {
       expect(broadcastError.code).to.equal(4001);
     });
 
-    it('should not be able to register two domains with same `dashAliasIdentityId` record');
+    it('should not be able to register two domains with same `hthAliasIdentityId` record');
 
-    it('should be able to register many domains with same `dashAliasIdentityId` record');
+    it('should be able to register many domains with same `hthAliasIdentityId` record');
 
     it('should not be able to update preorder');
 

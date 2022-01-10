@@ -1,6 +1,6 @@
-import IdentityPublicKey from "@dashevo/dpp/lib/identity/IdentityPublicKey";
+import IdentityPublicKey from "@hthcoin/dpp/lib/identity/IdentityPublicKey";
 // @ts-ignore
-const getIdentityFixture = require('@dashevo/dpp/lib/test/fixtures/getIdentityFixture');
+const getIdentityFixture = require('@hthcoin/dpp/lib/test/fixtures/getIdentityFixture');
 
 export function createIdentityFixtureInAccount(account) {
     const identityFixture = getIdentityFixture();

@@ -4,9 +4,9 @@ In order to pay, you need to have an [existing balance](../examples/receive-mone
 The below code will allow you to pay to a single address a specific amount of satoshis.
 
 ```js
-const Dash = require("dash");
+const HTH = require("hth");
 const mnemonic = ''// your mnemonic here.
-const client = new Dash.Client({
+const client = new HTH.Client({
   mnemonic,
 });
 
@@ -22,4 +22,4 @@ async function payToRecipient() {
 }
 ```
 
-See more on create [transaction options here](https://dashevo.github.io/wallet-lib/#/usage/account?id=create-transaction).
+See more on create [transaction options here](https://hthcoin.github.io/wallet-lib/#/usage/account?id=create-transaction).

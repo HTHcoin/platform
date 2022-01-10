@@ -4,7 +4,7 @@ const {
     ConsensusParamsBlock: ConsensusParamsBlockProto,
     ConsensusParamsEvidence: ConsensusParamsEvidenceProto,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 const GetConsensusParamsResponse = require('../../../../../lib/methods/platform/getConsensusParams/getConsensusParamsResponse');
 const InvalidResponseError = require('../../../../../lib/methods/platform/response/errors/InvalidResponseError');
 const ConsensusParamsBlock = require('../../../../../lib/methods/platform/getConsensusParams/ConsensusParamsBlock');

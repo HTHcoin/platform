@@ -1,17 +1,17 @@
-const DashPlatformProtocol = require('@dashevo/dpp');
-const getDataContractFixture = require('@dashevo/dpp/lib/test/fixtures/getDataContractFixture');
+const HthPlatformProtocol = require('@hthcoin/dpp');
+const getDataContractFixture = require('@hthcoin/dpp/lib/test/fixtures/getDataContractFixture');
 
-const { createFakeInstantLock } = require('dash/build/src/utils/createFakeIntantLock');
-const { default: createAssetLockProof } = require('dash/build/src/SDK/Client/Platform/methods/identities/internal/createAssetLockProof');
-const { default: createIdentityCreateTransition } = require('dash/build/src/SDK/Client/Platform/methods/identities/internal/createIdentityCreateTransition');
-const { default: createIdentityTopUpTransition } = require('dash/build/src/SDK/Client/Platform/methods/identities/internal/createIdnetityTopUpTransition');
-const { default: createAssetLockTransaction } = require('dash/build/src/SDK/Client/Platform/createAssetLockTransaction');
+const { createFakeInstantLock } = require('hth/build/src/utils/createFakeIntantLock');
+const { default: createAssetLockProof } = require('hth/build/src/SDK/Client/Platform/methods/identities/internal/createAssetLockProof');
+const { default: createIdentityCreateTransition } = require('hth/build/src/SDK/Client/Platform/methods/identities/internal/createIdentityCreateTransition');
+const { default: createIdentityTopUpTransition } = require('hth/build/src/SDK/Client/Platform/methods/identities/internal/createIdnetityTopUpTransition');
+const { default: createAssetLockTransaction } = require('hth/build/src/SDK/Client/Platform/createAssetLockTransaction');
 
-const { StateTransitionBroadcastError } = require('dash/build/src/errors/StateTransitionBroadcastError');
-const InvalidInstantAssetLockProofSignatureError = require('@dashevo/dpp/lib/errors/consensus/basic/identity/InvalidInstantAssetLockProofSignatureError');
-const IdentityAssetLockTransactionOutPointAlreadyExistsError = require('@dashevo/dpp/lib/errors/consensus/basic/identity/IdentityAssetLockTransactionOutPointAlreadyExistsError');
-const BalanceIsNotEnoughError = require('@dashevo/dpp/lib/errors/consensus/fee/BalanceIsNotEnoughError');
-const IdentityPublicKey = require('@dashevo/dpp/lib/identity/IdentityPublicKey');
+const { StateTransitionBroadcastError } = require('hth/build/src/errors/StateTransitionBroadcastError');
+const InvalidInstantAssetLockProofSignatureError = require('@hthcoin/dpp/lib/errors/consensus/basic/identity/InvalidInstantAssetLockProofSignatureError');
+const IdentityAssetLockTransactionOutPointAlreadyExistsError = require('@hthcoin/dpp/lib/errors/consensus/basic/identity/IdentityAssetLockTransactionOutPointAlreadyExistsError');
+const BalanceIsNotEnoughError = require('@hthcoin/dpp/lib/errors/consensus/fee/BalanceIsNotEnoughError');
+const IdentityPublicKey = require('@hthcoin/dpp/lib/identity/IdentityPublicKey');
 
 const createClientWithFundedWallet = require('../../../lib/test/createClientWithFundedWallet');
 const wait = require('../../../lib/wait');
@@ -25,7 +25,7 @@ describe('Platform', () => {
     let walletPublicKey;
 
     before(async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       client = await createClientWithFundedWallet();

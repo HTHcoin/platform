@@ -17,7 +17,7 @@ By default, the algorithm that is being used is `simpleDescendingAccumulator`.
 
 See [Account.createTransaction()](../account/createTransaction.md) for more information about how to select one during transaction creation.  
 
-Additionally, you can also require the utility function `const coinSelection = require('@dashevo/wallet-lib/src/utils/coinSelection.js')` for your own usage.  
+Additionally, you can also require the utility function `const coinSelection = require('@hthcoin/wallet-lib/src/utils/coinSelection.js')` for your own usage.  
 
 
 ```
@@ -34,11 +34,11 @@ const selectedUTXO = coinSelection(utxosList, outputsList);
 
 By creating a simple function algorithm that you pass to the createTransaction parameter, you can provide your own algorithm that will be used to the coinSelection.   
 
-To implements your own algorithm, you might want to take example on the [already existing one](https://github.com/dashevo/platform/tree/master/packages/wallet-lib/src/utils/coinSelections/strategies).  
+To implements your own algorithm, you might want to take example on the [already existing one](https://github.com/MichaelHDesigns/platform/tree/master/packages/wallet-lib/src/utils/coinSelections/strategies).  
 You will need your algorithm to handle multiples parameter : 
 
-- `utxosList` - An array consisting of multiple [unspent output](https://github.com/dashevo/dashcore-lib/blob/master/docs/unspentoutput.md).
-- `outputsList` - An array consisting of multiple [Output](https://github.com/dashevo/dashcore-lib/blob/master/docs/transaction.md#handling-outputs).
+- `utxosList` - An array consisting of multiple [unspent output](https://github.com/MichaelHDesigns/hthcore-lib/blob/master/docs/unspentoutput.md).
+- `outputsList` - An array consisting of multiple [Output](https://github.com/MichaelHDesigns/hthcore-lib/blob/master/docs/transaction.md#handling-outputs).
 - `deductFee` - A simple boolean that indicates if we want to deduct fee from our outputs. (Can be useful for a control on how much we wish to spend at maximum).
 - `feeCategory` - A simple enum of the fee category (normal, slow, fast,...).
 

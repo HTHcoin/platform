@@ -5,7 +5,7 @@ const {
     PlatformPromiseClient,
     GetDocumentsRequest,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const GetDocumentsResponse = require('./GetDocumentsResponse');
 const InvalidResponseError = require('../response/errors/InvalidResponseError');

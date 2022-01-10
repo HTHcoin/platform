@@ -1,13 +1,13 @@
-const Dash = require('dash');
+const HTH = require('hth');
 
-const fundWallet = require('@dashevo/wallet-lib/src/utils/fundWallet');
+const fundWallet = require('@hthcoin/wallet-lib/src/utils/fundWallet');
 
 const getDAPISeeds = require('./getDAPISeeds');
 
 const createFaucetClient = require('./createFaucetClient');
 
 /**
- * Create and fund DashJS client
+ * Create and fund HthJS client
  * @param {string} [HDPrivateKey]
  *
  * @returns {Promise<Client>}
@@ -43,7 +43,7 @@ async function createClientWithFundedWallet(HDPrivateKey = undefined) {
     walletOptions.mnemonic = null;
   }
 
-  const client = new Dash.Client({
+  const client = new HTH.Client({
     ...clientOpts,
     wallet: walletOptions,
   });

@@ -1,6 +1,6 @@
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 const { Output } = Transaction;
-const { InvalidDashcoreTransaction } = require('../../../errors');
+const { InvalidHthcoreTransaction } = require('../../../errors');
 const { FETCHED_CONFIRMED_TRANSACTION } = require('../../../EVENTS');
 
 const parseStringifiedTransaction = (stringified) => new Transaction(stringified);
@@ -17,10 +17,10 @@ const importTransaction = function importTransaction(transaction, transactionMet
       // eslint-disable-next-line no-param-reassign
       transaction = parseStringifiedTransaction(transaction);
       if (!transaction.hash || !transaction.inputs.length || !transaction.outputs.length) {
-        throw new InvalidDashcoreTransaction(transaction);
+        throw new InvalidHthcoreTransaction(transaction);
       }
     } catch (e) {
-      throw new InvalidDashcoreTransaction(transaction);
+      throw new InvalidHthcoreTransaction(transaction);
     }
   }
   const {

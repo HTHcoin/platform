@@ -1,6 +1,6 @@
 const {
   BloomFilter, Address,
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 const logger = require('../../../logger');
 
 const { BLOOM_FALSE_POSITIVE_RATE } = require('../../../CONSTANTS');

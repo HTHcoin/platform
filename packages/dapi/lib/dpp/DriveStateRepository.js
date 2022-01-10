@@ -2,7 +2,7 @@ const {
   v0: {
     GetDataContractResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 /**
  * @implements StateRepository
@@ -10,7 +10,7 @@ const {
 class DriveStateRepository {
   /**
    * @param {DriveClient} driveClient
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    */
   constructor(driveClient, dpp) {
     this.driveClient = driveClient;

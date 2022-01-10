@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const {
   Address, Script, Transaction,
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 const logger = require('../../logger');
 const {
   FEES,

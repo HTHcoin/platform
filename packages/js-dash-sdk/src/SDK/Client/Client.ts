@@ -1,9 +1,9 @@
 import { EventEmitter } from 'events';
-import { Account, Wallet } from "@dashevo/wallet-lib";
-import DAPIClientTransport from "@dashevo/wallet-lib/src/transport/DAPIClientTransport/DAPIClientTransport"
+import { Account, Wallet } from "@hthcoin/wallet-lib";
+import DAPIClientTransport from "@hthcoin/wallet-lib/src/transport/DAPIClientTransport/DAPIClientTransport"
 import { Platform } from './Platform';
-import { Network } from "@dashevo/dashcore-lib";
-import DAPIClient from "@dashevo/dapi-client";
+import { Network } from "@hthcoin/hthcore-lib";
+import DAPIClient from "@hthcoin/dapi-client";
 import { ClientApps, ClientAppsOptions } from "./ClientApps";
 
 export interface WalletOptions extends Wallet.IWalletOptions {
@@ -37,8 +37,8 @@ export interface ClientOpts {
 }
 
 /**
- * Client class that wraps all components together to allow integrated payments on both the Dash Network (layer 1)
- * and the Dash Platform (layer 2).
+ * Client class that wraps all components together to allow integrated payments on both the HTH Network (layer 1)
+ * and the HTH Platform (layer 2).
  */
 export class Client extends EventEmitter {
     public network: string = 'testnet';
@@ -109,7 +109,7 @@ export class Client extends EventEmitter {
             dpns: {
                 contractId: 'Bw9PUC3aSEGQ4j5qrvpNLrRNFPVMiUHZLr1atgfYJcmf'
             },
-            dashpay: {
+            hthcoin: {
                 contractId: '2Vuou3EfbrtunwCZvQp1XS5PXZ5CgC1pGBz4VPT4ojmy',
             },
             masternodeRewardShares: {

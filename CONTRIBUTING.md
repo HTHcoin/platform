@@ -1,7 +1,7 @@
-Contributing to Dash Platform
+Contributing to HTH Platform
 =============================
 
-The Dash Platform project operates an open contributor model where anyone is
+The HTH Platform project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
@@ -112,7 +112,7 @@ as this makes review difficult.
 "Decision Making" Process
 -------------------------
 
-Whether a pull request is merged into Dash Platform rests with the project merge
+Whether a pull request is merged into HTH Platform rests with the project merge
 maintainers.
 
 Maintainers will take into consideration if a patch is in line with the general

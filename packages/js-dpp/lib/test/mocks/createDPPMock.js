@@ -3,7 +3,7 @@ const protocolVersion = require('../../version/protocolVersion');
 /**
  * @param {Sandbox} [sinonSandbox]
  *
- * @returns {DashPlatformProtocol}
+ * @returns {HthPlatformProtocol}
  */
 module.exports = function createDPPMock(sinonSandbox = undefined) {
   // in simplier cases when you do not have acccess

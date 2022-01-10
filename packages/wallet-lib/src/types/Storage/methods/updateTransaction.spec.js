@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const updateTransaction = require('./updateTransaction');
 const orangeWStore = require('../../../../fixtures/walletStore').valid.orange.store;
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 
 const tx = new Transaction({
   hash: 'ea9c4066394aa09cb7ee8f3997b8dc10b999a8d709c4046f81d8bf9341ae6e5b',

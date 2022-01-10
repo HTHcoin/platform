@@ -1,6 +1,6 @@
-import { PrivateKey } from "@dashevo/dashcore-lib";
+import { PrivateKey } from "@hthcoin/hthcore-lib";
 import { Platform } from "../../../Platform";
-import IdentityPublicKey from "@dashevo/dpp/lib/identity/IdentityPublicKey"
+import IdentityPublicKey from "@hthcoin/dpp/lib/identity/IdentityPublicKey"
 
 /**
  * Creates a funding transaction for the platform identity and returns one-time key to sign the state transition

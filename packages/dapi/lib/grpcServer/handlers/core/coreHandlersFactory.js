@@ -11,7 +11,7 @@ const {
       wrapInErrorHandlerFactory,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -30,7 +30,7 @@ const {
       GetBlockResponse: PBJSGetBlockResponse,
     },
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const log = require('../../../log');
 

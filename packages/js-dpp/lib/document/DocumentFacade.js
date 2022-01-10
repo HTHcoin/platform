@@ -13,7 +13,7 @@ const validateProtocolVersionFactory = require('../version/validateProtocolVersi
 
 class DocumentFacade {
   /**
-   * @param {DashPlatformProtocol} dpp
+   * @param {HthPlatformProtocol} dpp
    */
   constructor(dpp) {
     this.stateRepository = dpp.getStateRepository();
@@ -70,7 +70,7 @@ class DocumentFacade {
       throw new MissingOptionError(
         'stateRepository',
         'Can\'t create Document because State Repository is not set in'
-        + ' DashPlatformProtocol options',
+        + ' HthPlatformProtocol options',
       );
     }
 
@@ -91,7 +91,7 @@ class DocumentFacade {
       throw new MissingOptionError(
         'stateRepository',
         'Can\'t create Document because State Repository is not set in'
-        + ' DashPlatformProtocol options',
+        + ' HthPlatformProtocol options',
       );
     }
 
@@ -123,7 +123,7 @@ class DocumentFacade {
       throw new MissingOptionError(
         'stateRepository',
         'Can\'t validate Document because State Repository is not set in'
-        + ' DashPlatformProtocol options',
+        + ' HthPlatformProtocol options',
       );
     }
 

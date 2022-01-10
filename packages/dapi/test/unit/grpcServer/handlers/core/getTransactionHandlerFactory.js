@@ -5,15 +5,15 @@ const {
       NotFoundGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
     GetTransactionResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 
 const getTransactionHandlerFactory = require('../../../../../lib/grpcServer/handlers/core/getTransactionHandlerFactory');
 

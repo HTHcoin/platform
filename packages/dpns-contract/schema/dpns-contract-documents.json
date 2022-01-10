@@ -15,19 +15,19 @@
         "unique": true
       },
       {
-        "name": "dashIdentityId",
+        "name": "hthIdentityId",
         "properties": [
           {
-            "records.dashUniqueIdentityId": "asc"
+            "records.hthUniqueIdentityId": "asc"
           }
         ],
         "unique": true
       },
       {
-        "name": "dashAlias",
+        "name": "hthAlias",
         "properties": [
           {
-            "records.dashAliasIdentityId": "asc"
+            "records.hthAliasIdentityId": "asc"
           }
         ]
       }
@@ -52,7 +52,7 @@
         "pattern": "^$|^[[a-z0-9][a-z0-9-\\.]{0,188}[a-z0-9]$",
         "minLength": 0,
         "maxLength": 190,
-        "description": "A full parent domain name in lowercase for case-insensitive uniqueness validation. e.g. 'dash'",
+        "description": "A full parent domain name in lowercase for case-insensitive uniqueness validation. e.g. 'hth'",
         "$comment": "Must either be equal to an existing domain or empty to create a top level domain. Only the data contract owner can create top level domains."
       },
       "preorderSalt": {
@@ -65,26 +65,26 @@
       "records": {
         "type": "object",
         "properties": {
-          "dashUniqueIdentityId": {
+          "hthUniqueIdentityId": {
             "type": "array",
             "byteArray": true,
             "minItems": 32,
             "maxItems": 32,
-            "contentMediaType": "application/x.dash.dpp.identifier",
+            "contentMediaType": "application/x.hth.dpp.identifier",
             "description": "Identity ID to be used to create the primary name the Identity",
             "$comment": "Must be equal to the document owner"
           },
-          "dashAliasIdentityId": {
+          "hthAliasIdentityId": {
             "type": "array",
             "byteArray": true,
             "minItems": 32,
             "maxItems": 32,
-            "contentMediaType": "application/x.dash.dpp.identifier",
+            "contentMediaType": "application/x.hth.dpp.identifier",
             "description": "Identity ID to be used to create alias names for the Identity",
             "$comment": "Must be equal to the document owner"
           }
         },
-        "$comment": "Constraint with max and min properties ensure that only one identity record is used - either a `dashUniqueIdentityId` or a `dashAliasIdentityId`",
+        "$comment": "Constraint with max and min properties ensure that only one identity record is used - either a `hthUniqueIdentityId` or a `hthAliasIdentityId`",
         "minProperties": 1,
         "maxProperties": 1,
         "additionalProperties": false

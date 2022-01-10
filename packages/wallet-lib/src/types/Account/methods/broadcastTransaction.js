@@ -1,9 +1,9 @@
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const { is } = require('../../../utils');
 const {
   ValidTransportLayerRequired,
   InvalidRawTransaction,
-  InvalidDashcoreTransaction,
+  InvalidHthcoreTransaction,
 } = require('../../../errors');
 
 function impactAffectedInputs({ transaction, txid }) {
@@ -48,7 +48,7 @@ function impactAffectedInputs({ transaction, txid }) {
      * Skip creation of the unconfirmed UTXOs for such cases.
      */
     if (!address.utxos[utxoKey]) {
-      address.utxos[utxoKey] = new Dashcore.Transaction.UnspentOutput(
+      address.utxos[utxoKey] = new Hthcore.Transaction.UnspentOutput(
         {
           txId: txid,
           vout: changeIndex,
@@ -76,11 +76,11 @@ async function _broadcastTransaction(transaction, options = {}) {
   if (is.string(transaction)) {
     const rawtx = transaction.toString();
     if (!is.rawtx(rawtx)) throw new InvalidRawTransaction(rawtx);
-    return _broadcastTransaction.call(this, new Dashcore.Transaction(rawtx));
+    return _broadcastTransaction.call(this, new Hthcore.Transaction(rawtx));
   }
 
-  if (!is.dashcoreTransaction(transaction)) {
-    throw new InvalidDashcoreTransaction(transaction);
+  if (!is.hthcoreTransaction(transaction)) {
+    throw new InvalidHthcoreTransaction(transaction);
   }
 
   if (!transaction.isFullySigned()) {
@@ -129,7 +129,7 @@ async function broadcastTransaction(transaction, options = {}) {
 
       // TODO: Also subscribe to FETCHED_CONFIRMED_TRANSACTION
       // to use as a fallback to resolve the promise
-      // (blocked by https://github.com/dashevo/wallet-lib/pull/340)
+      // (blocked by https://github.com/MichaelHDesigns/wallet-lib/pull/340)
     });
 
     return txId;

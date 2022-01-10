@@ -1,4 +1,4 @@
-import { PrivateKey } from "@dashevo/dashcore-lib";
+import { PrivateKey } from "@hthcoin/hthcore-lib";
 import { Platform } from "../../../Platform";
 
 /**

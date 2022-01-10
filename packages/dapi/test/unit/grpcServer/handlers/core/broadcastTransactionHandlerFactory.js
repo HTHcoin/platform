@@ -5,15 +5,15 @@ const {
       AlreadyExistsGrpcError,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 
 const {
   v0: {
     BroadcastTransactionResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const broadcastTransactionHandlerFactory = require('../../../../../lib/grpcServer/handlers/core/broadcastTransactionHandlerFactory');
 

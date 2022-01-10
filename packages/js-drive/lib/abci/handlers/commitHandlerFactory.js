@@ -4,11 +4,11 @@ const {
       ResponseCommit,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 const { asValue } = require('awilix');
 
-const featureFlagTypes = require('@dashevo/feature-flags-contract/lib/featureFlagTypes');
+const featureFlagTypes = require('@hthcoin/feature-flags-contract/lib/featureFlagTypes');
 
 const DataCorruptedError = require('./errors/DataCorruptedError');
 const BlockExecutionContextRepository = require('../../blockExecution/BlockExecutionContextRepository');
@@ -22,7 +22,7 @@ const BlockExecutionContextRepository = require('../../blockExecution/BlockExecu
  * @param {BlockExecutionContextRepository} blockExecutionContextRepository
  * @param {DocumentDatabaseManager} documentDatabaseManager
  * @param {DocumentDatabaseManager} previousDocumentDatabaseManager
- * @param {DashPlatformProtocol} transactionalDpp
+ * @param {HthPlatformProtocol} transactionalDpp
  * @param {RootTree} rootTree
  * @param {
  * PreviousBlockExecutionStoreTransactionsRepository

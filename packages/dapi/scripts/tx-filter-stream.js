@@ -15,7 +15,7 @@ const {
       wrapInErrorHandlerFactory,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   v0: {
@@ -26,7 +26,7 @@ const {
     },
   },
   getCoreDefinition,
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 // Load config from .env
 dotenv.config();
@@ -35,8 +35,8 @@ const config = require('../lib/config');
 const { validateConfig } = require('../lib/config/validator');
 const log = require('../lib/log');
 
-const ZmqClient = require('../lib/externalApis/dashcore/ZmqClient');
-const dashCoreRpcClient = require('../lib/externalApis/dashcore/rpc');
+const ZmqClient = require('../lib/externalApis/hthcore/ZmqClient');
+const hthCoreRpcClient = require('../lib/externalApis/hthcore/rpc');
 
 const BloomFilterEmitterCollection = require('../lib/bloomFilter/emitter/BloomFilterEmitterCollection');
 
@@ -61,18 +61,18 @@ async function main() {
 
   const isProductionEnvironment = process.env.NODE_ENV === 'production';
 
-  // Subscribe to events from Dash Core
-  const dashCoreZmqClient = new ZmqClient(config.dashcore.zmq.host, config.dashcore.zmq.port);
+  // Subscribe to events from HTH Core
+  const hthCoreZmqClient = new ZmqClient(config.hthcore.zmq.host, config.hthcore.zmq.port);
 
   // Bind logs on ZMQ connection events
-  dashCoreZmqClient.on(ZmqClient.events.DISCONNECTED, log.warn);
-  dashCoreZmqClient.on(ZmqClient.events.CONNECTION_DELAY, log.warn);
-  dashCoreZmqClient.on(ZmqClient.events.MONITOR_ERROR, log.warn);
+  hthCoreZmqClient.on(ZmqClient.events.DISCONNECTED, log.warn);
+  hthCoreZmqClient.on(ZmqClient.events.CONNECTION_DELAY, log.warn);
+  hthCoreZmqClient.on(ZmqClient.events.MONITOR_ERROR, log.warn);
 
   // Wait until zmq connection is established
-  log.info(`Connecting to dashcore ZMQ on ${dashCoreZmqClient.connectionString}`);
+  log.info(`Connecting to hthcore ZMQ on ${hthCoreZmqClient.connectionString}`);
 
-  await dashCoreZmqClient.start();
+  await hthCoreZmqClient.start();
 
   log.info('Connection to ZMQ established.');
 
@@ -89,14 +89,14 @@ async function main() {
   );
 
   // Send raw transactions via `subscribeToTransactionsWithProofs` stream if matched
-  dashCoreZmqClient.on(
-    dashCoreZmqClient.topics.rawtx,
+  hthCoreZmqClient.on(
+    hthCoreZmqClient.topics.rawtx,
     testRawTransactionAgainstFilterCollection,
   );
 
   // Send merkle blocks via `subscribeToTransactionsWithProofs` stream
-  dashCoreZmqClient.on(
-    dashCoreZmqClient.topics.rawblock,
+  hthCoreZmqClient.on(
+    hthCoreZmqClient.topics.rawblock,
     emitBlockEventToFilterCollection,
   );
 
@@ -104,8 +104,8 @@ async function main() {
   // we need to test tx in this message first before emitng lock to the bloom
   // filter collection
   // Send transaction instant locks via `subscribeToTransactionsWithProofs` stream
-  dashCoreZmqClient.on(
-    dashCoreZmqClient.topics.rawtxlocksig,
+  hthCoreZmqClient.on(
+    hthCoreZmqClient.topics.rawtxlocksig,
     emitInstantLockToFilterCollection,
   );
 
@@ -115,11 +115,11 @@ async function main() {
   const wrapInErrorHandler = wrapInErrorHandlerFactory(log, isProductionEnvironment);
 
   const getHistoricalTransactionsIterator = getHistoricalTransactionsIteratorFactory(
-    dashCoreRpcClient,
+    hthCoreRpcClient,
   );
 
   const getMemPoolTransactions = getMemPoolTransactionsFactory(
-    dashCoreRpcClient,
+    hthCoreRpcClient,
     testTransactionsAgainstFilter,
   );
 
@@ -128,7 +128,7 @@ async function main() {
     subscribeToNewTransactions,
     bloomFilterEmitterCollection,
     testTransactionsAgainstFilter,
-    dashCoreRpcClient,
+    hthCoreRpcClient,
     getMemPoolTransactions,
   );
 

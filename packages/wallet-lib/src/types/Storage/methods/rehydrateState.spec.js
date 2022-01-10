@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 const rehydrateState = require('./rehydrateState');
-const { Transaction, BlockHeader, InstantLock } = require("@dashevo/dashcore-lib");
+const { Transaction, BlockHeader, InstantLock } = require("@hthcoin/hthcore-lib");
 
 const storeMock = {
   "transactions": {

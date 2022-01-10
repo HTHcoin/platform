@@ -4,7 +4,7 @@ const {
       ValidatorSetUpdate,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 const { expect } = require('chai');
 
 const createValidatorSetUpdate = require('../../../../../lib/abci/handlers/validator/createValidatorSetUpdate');

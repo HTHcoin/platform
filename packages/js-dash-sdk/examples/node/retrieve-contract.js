@@ -1,9 +1,9 @@
-const Dash = require('dash');
+const HTH = require('hth');
 
 const clientOpts = {
   network: 'testnet'
 };
-const client = new Dash.Client(clientOpts);
+const client = new HTH.Client(clientOpts);
 
 const getContract = async function () {
   let platform = client.platform;

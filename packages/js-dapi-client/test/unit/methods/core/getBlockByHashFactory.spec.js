@@ -4,7 +4,7 @@ const {
     GetBlockResponse,
     CorePromiseClient,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const getBlockByHashFactory = require('../../../../lib/methods/core/getBlockByHashFactory');
 

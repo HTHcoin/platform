@@ -18,20 +18,20 @@ $root.org = (function() {
      */
     var org = {};
 
-    org.dash = (function() {
+    org.hth = (function() {
 
         /**
-         * Namespace dash.
+         * Namespace hth.
          * @memberof org
          * @namespace
          */
-        var dash = {};
+        var hth = {};
 
-        dash.platform = (function() {
+        hth.platform = (function() {
 
             /**
              * Namespace platform.
-             * @memberof org.dash
+             * @memberof org.hth
              * @namespace
              */
             var platform = {};
@@ -40,7 +40,7 @@ $root.org = (function() {
 
                 /**
                  * Namespace dapi.
-                 * @memberof org.dash.platform
+                 * @memberof org.hth.platform
                  * @namespace
                  */
                 var dapi = {};
@@ -49,7 +49,7 @@ $root.org = (function() {
 
                     /**
                      * Namespace v0.
-                     * @memberof org.dash.platform.dapi
+                     * @memberof org.hth.platform.dapi
                      * @namespace
                      */
                     var v0 = {};
@@ -58,7 +58,7 @@ $root.org = (function() {
 
                         /**
                          * Constructs a new Core service.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a Core
                          * @extends $protobuf.rpc.Service
                          * @constructor
@@ -75,7 +75,7 @@ $root.org = (function() {
                         /**
                          * Creates new Core service using the specified rpc implementation.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @static
                          * @param {$protobuf.RPCImpl} rpcImpl RPC implementation
                          * @param {boolean} [requestDelimited=false] Whether requests are length-delimited
@@ -87,233 +87,233 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Callback as used by {@link org.dash.platform.dapi.v0.Core#getStatus}.
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * Callback as used by {@link org.hth.platform.dapi.v0.Core#getStatus}.
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @typedef getStatusCallback
                          * @type {function}
                          * @param {Error|null} error Error, if any
-                         * @param {org.dash.platform.dapi.v0.GetStatusResponse} [response] GetStatusResponse
+                         * @param {org.hth.platform.dapi.v0.GetStatusResponse} [response] GetStatusResponse
                          */
 
                         /**
                          * Calls getStatus.
                          * @function getStatus
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IGetStatusRequest} request GetStatusRequest message or plain object
-                         * @param {org.dash.platform.dapi.v0.Core.getStatusCallback} callback Node-style callback called with the error, if any, and GetStatusResponse
+                         * @param {org.hth.platform.dapi.v0.IGetStatusRequest} request GetStatusRequest message or plain object
+                         * @param {org.hth.platform.dapi.v0.Core.getStatusCallback} callback Node-style callback called with the error, if any, and GetStatusResponse
                          * @returns {undefined}
                          * @variation 1
                          */
                         Object.defineProperty(Core.prototype.getStatus = function getStatus(request, callback) {
-                            return this.rpcCall(getStatus, $root.org.dash.platform.dapi.v0.GetStatusRequest, $root.org.dash.platform.dapi.v0.GetStatusResponse, request, callback);
+                            return this.rpcCall(getStatus, $root.org.hth.platform.dapi.v0.GetStatusRequest, $root.org.hth.platform.dapi.v0.GetStatusResponse, request, callback);
                         }, "name", { value: "getStatus" });
 
                         /**
                          * Calls getStatus.
                          * @function getStatus
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IGetStatusRequest} request GetStatusRequest message or plain object
-                         * @returns {Promise<org.dash.platform.dapi.v0.GetStatusResponse>} Promise
+                         * @param {org.hth.platform.dapi.v0.IGetStatusRequest} request GetStatusRequest message or plain object
+                         * @returns {Promise<org.hth.platform.dapi.v0.GetStatusResponse>} Promise
                          * @variation 2
                          */
 
                         /**
-                         * Callback as used by {@link org.dash.platform.dapi.v0.Core#getBlock}.
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * Callback as used by {@link org.hth.platform.dapi.v0.Core#getBlock}.
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @typedef getBlockCallback
                          * @type {function}
                          * @param {Error|null} error Error, if any
-                         * @param {org.dash.platform.dapi.v0.GetBlockResponse} [response] GetBlockResponse
+                         * @param {org.hth.platform.dapi.v0.GetBlockResponse} [response] GetBlockResponse
                          */
 
                         /**
                          * Calls getBlock.
                          * @function getBlock
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IGetBlockRequest} request GetBlockRequest message or plain object
-                         * @param {org.dash.platform.dapi.v0.Core.getBlockCallback} callback Node-style callback called with the error, if any, and GetBlockResponse
+                         * @param {org.hth.platform.dapi.v0.IGetBlockRequest} request GetBlockRequest message or plain object
+                         * @param {org.hth.platform.dapi.v0.Core.getBlockCallback} callback Node-style callback called with the error, if any, and GetBlockResponse
                          * @returns {undefined}
                          * @variation 1
                          */
                         Object.defineProperty(Core.prototype.getBlock = function getBlock(request, callback) {
-                            return this.rpcCall(getBlock, $root.org.dash.platform.dapi.v0.GetBlockRequest, $root.org.dash.platform.dapi.v0.GetBlockResponse, request, callback);
+                            return this.rpcCall(getBlock, $root.org.hth.platform.dapi.v0.GetBlockRequest, $root.org.hth.platform.dapi.v0.GetBlockResponse, request, callback);
                         }, "name", { value: "getBlock" });
 
                         /**
                          * Calls getBlock.
                          * @function getBlock
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IGetBlockRequest} request GetBlockRequest message or plain object
-                         * @returns {Promise<org.dash.platform.dapi.v0.GetBlockResponse>} Promise
+                         * @param {org.hth.platform.dapi.v0.IGetBlockRequest} request GetBlockRequest message or plain object
+                         * @returns {Promise<org.hth.platform.dapi.v0.GetBlockResponse>} Promise
                          * @variation 2
                          */
 
                         /**
-                         * Callback as used by {@link org.dash.platform.dapi.v0.Core#broadcastTransaction}.
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * Callback as used by {@link org.hth.platform.dapi.v0.Core#broadcastTransaction}.
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @typedef broadcastTransactionCallback
                          * @type {function}
                          * @param {Error|null} error Error, if any
-                         * @param {org.dash.platform.dapi.v0.BroadcastTransactionResponse} [response] BroadcastTransactionResponse
+                         * @param {org.hth.platform.dapi.v0.BroadcastTransactionResponse} [response] BroadcastTransactionResponse
                          */
 
                         /**
                          * Calls broadcastTransaction.
                          * @function broadcastTransaction
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionRequest} request BroadcastTransactionRequest message or plain object
-                         * @param {org.dash.platform.dapi.v0.Core.broadcastTransactionCallback} callback Node-style callback called with the error, if any, and BroadcastTransactionResponse
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionRequest} request BroadcastTransactionRequest message or plain object
+                         * @param {org.hth.platform.dapi.v0.Core.broadcastTransactionCallback} callback Node-style callback called with the error, if any, and BroadcastTransactionResponse
                          * @returns {undefined}
                          * @variation 1
                          */
                         Object.defineProperty(Core.prototype.broadcastTransaction = function broadcastTransaction(request, callback) {
-                            return this.rpcCall(broadcastTransaction, $root.org.dash.platform.dapi.v0.BroadcastTransactionRequest, $root.org.dash.platform.dapi.v0.BroadcastTransactionResponse, request, callback);
+                            return this.rpcCall(broadcastTransaction, $root.org.hth.platform.dapi.v0.BroadcastTransactionRequest, $root.org.hth.platform.dapi.v0.BroadcastTransactionResponse, request, callback);
                         }, "name", { value: "broadcastTransaction" });
 
                         /**
                          * Calls broadcastTransaction.
                          * @function broadcastTransaction
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionRequest} request BroadcastTransactionRequest message or plain object
-                         * @returns {Promise<org.dash.platform.dapi.v0.BroadcastTransactionResponse>} Promise
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionRequest} request BroadcastTransactionRequest message or plain object
+                         * @returns {Promise<org.hth.platform.dapi.v0.BroadcastTransactionResponse>} Promise
                          * @variation 2
                          */
 
                         /**
-                         * Callback as used by {@link org.dash.platform.dapi.v0.Core#getTransaction}.
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * Callback as used by {@link org.hth.platform.dapi.v0.Core#getTransaction}.
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @typedef getTransactionCallback
                          * @type {function}
                          * @param {Error|null} error Error, if any
-                         * @param {org.dash.platform.dapi.v0.GetTransactionResponse} [response] GetTransactionResponse
+                         * @param {org.hth.platform.dapi.v0.GetTransactionResponse} [response] GetTransactionResponse
                          */
 
                         /**
                          * Calls getTransaction.
                          * @function getTransaction
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionRequest} request GetTransactionRequest message or plain object
-                         * @param {org.dash.platform.dapi.v0.Core.getTransactionCallback} callback Node-style callback called with the error, if any, and GetTransactionResponse
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionRequest} request GetTransactionRequest message or plain object
+                         * @param {org.hth.platform.dapi.v0.Core.getTransactionCallback} callback Node-style callback called with the error, if any, and GetTransactionResponse
                          * @returns {undefined}
                          * @variation 1
                          */
                         Object.defineProperty(Core.prototype.getTransaction = function getTransaction(request, callback) {
-                            return this.rpcCall(getTransaction, $root.org.dash.platform.dapi.v0.GetTransactionRequest, $root.org.dash.platform.dapi.v0.GetTransactionResponse, request, callback);
+                            return this.rpcCall(getTransaction, $root.org.hth.platform.dapi.v0.GetTransactionRequest, $root.org.hth.platform.dapi.v0.GetTransactionResponse, request, callback);
                         }, "name", { value: "getTransaction" });
 
                         /**
                          * Calls getTransaction.
                          * @function getTransaction
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionRequest} request GetTransactionRequest message or plain object
-                         * @returns {Promise<org.dash.platform.dapi.v0.GetTransactionResponse>} Promise
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionRequest} request GetTransactionRequest message or plain object
+                         * @returns {Promise<org.hth.platform.dapi.v0.GetTransactionResponse>} Promise
                          * @variation 2
                          */
 
                         /**
-                         * Callback as used by {@link org.dash.platform.dapi.v0.Core#getEstimatedTransactionFee}.
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * Callback as used by {@link org.hth.platform.dapi.v0.Core#getEstimatedTransactionFee}.
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @typedef getEstimatedTransactionFeeCallback
                          * @type {function}
                          * @param {Error|null} error Error, if any
-                         * @param {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} [response] GetEstimatedTransactionFeeResponse
+                         * @param {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} [response] GetEstimatedTransactionFeeResponse
                          */
 
                         /**
                          * Calls getEstimatedTransactionFee.
                          * @function getEstimatedTransactionFee
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeRequest} request GetEstimatedTransactionFeeRequest message or plain object
-                         * @param {org.dash.platform.dapi.v0.Core.getEstimatedTransactionFeeCallback} callback Node-style callback called with the error, if any, and GetEstimatedTransactionFeeResponse
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeRequest} request GetEstimatedTransactionFeeRequest message or plain object
+                         * @param {org.hth.platform.dapi.v0.Core.getEstimatedTransactionFeeCallback} callback Node-style callback called with the error, if any, and GetEstimatedTransactionFeeResponse
                          * @returns {undefined}
                          * @variation 1
                          */
                         Object.defineProperty(Core.prototype.getEstimatedTransactionFee = function getEstimatedTransactionFee(request, callback) {
-                            return this.rpcCall(getEstimatedTransactionFee, $root.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest, $root.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse, request, callback);
+                            return this.rpcCall(getEstimatedTransactionFee, $root.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest, $root.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse, request, callback);
                         }, "name", { value: "getEstimatedTransactionFee" });
 
                         /**
                          * Calls getEstimatedTransactionFee.
                          * @function getEstimatedTransactionFee
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeRequest} request GetEstimatedTransactionFeeRequest message or plain object
-                         * @returns {Promise<org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse>} Promise
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeRequest} request GetEstimatedTransactionFeeRequest message or plain object
+                         * @returns {Promise<org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse>} Promise
                          * @variation 2
                          */
 
                         /**
-                         * Callback as used by {@link org.dash.platform.dapi.v0.Core#subscribeToBlockHeadersWithChainLocks}.
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * Callback as used by {@link org.hth.platform.dapi.v0.Core#subscribeToBlockHeadersWithChainLocks}.
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @typedef subscribeToBlockHeadersWithChainLocksCallback
                          * @type {function}
                          * @param {Error|null} error Error, if any
-                         * @param {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} [response] BlockHeadersWithChainLocksResponse
+                         * @param {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} [response] BlockHeadersWithChainLocksResponse
                          */
 
                         /**
                          * Calls subscribeToBlockHeadersWithChainLocks.
                          * @function subscribeToBlockHeadersWithChainLocks
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksRequest} request BlockHeadersWithChainLocksRequest message or plain object
-                         * @param {org.dash.platform.dapi.v0.Core.subscribeToBlockHeadersWithChainLocksCallback} callback Node-style callback called with the error, if any, and BlockHeadersWithChainLocksResponse
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksRequest} request BlockHeadersWithChainLocksRequest message or plain object
+                         * @param {org.hth.platform.dapi.v0.Core.subscribeToBlockHeadersWithChainLocksCallback} callback Node-style callback called with the error, if any, and BlockHeadersWithChainLocksResponse
                          * @returns {undefined}
                          * @variation 1
                          */
                         Object.defineProperty(Core.prototype.subscribeToBlockHeadersWithChainLocks = function subscribeToBlockHeadersWithChainLocks(request, callback) {
-                            return this.rpcCall(subscribeToBlockHeadersWithChainLocks, $root.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest, $root.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse, request, callback);
+                            return this.rpcCall(subscribeToBlockHeadersWithChainLocks, $root.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest, $root.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse, request, callback);
                         }, "name", { value: "subscribeToBlockHeadersWithChainLocks" });
 
                         /**
                          * Calls subscribeToBlockHeadersWithChainLocks.
                          * @function subscribeToBlockHeadersWithChainLocks
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksRequest} request BlockHeadersWithChainLocksRequest message or plain object
-                         * @returns {Promise<org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse>} Promise
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksRequest} request BlockHeadersWithChainLocksRequest message or plain object
+                         * @returns {Promise<org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse>} Promise
                          * @variation 2
                          */
 
                         /**
-                         * Callback as used by {@link org.dash.platform.dapi.v0.Core#subscribeToTransactionsWithProofs}.
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * Callback as used by {@link org.hth.platform.dapi.v0.Core#subscribeToTransactionsWithProofs}.
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @typedef subscribeToTransactionsWithProofsCallback
                          * @type {function}
                          * @param {Error|null} error Error, if any
-                         * @param {org.dash.platform.dapi.v0.TransactionsWithProofsResponse} [response] TransactionsWithProofsResponse
+                         * @param {org.hth.platform.dapi.v0.TransactionsWithProofsResponse} [response] TransactionsWithProofsResponse
                          */
 
                         /**
                          * Calls subscribeToTransactionsWithProofs.
                          * @function subscribeToTransactionsWithProofs
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsRequest} request TransactionsWithProofsRequest message or plain object
-                         * @param {org.dash.platform.dapi.v0.Core.subscribeToTransactionsWithProofsCallback} callback Node-style callback called with the error, if any, and TransactionsWithProofsResponse
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsRequest} request TransactionsWithProofsRequest message or plain object
+                         * @param {org.hth.platform.dapi.v0.Core.subscribeToTransactionsWithProofsCallback} callback Node-style callback called with the error, if any, and TransactionsWithProofsResponse
                          * @returns {undefined}
                          * @variation 1
                          */
                         Object.defineProperty(Core.prototype.subscribeToTransactionsWithProofs = function subscribeToTransactionsWithProofs(request, callback) {
-                            return this.rpcCall(subscribeToTransactionsWithProofs, $root.org.dash.platform.dapi.v0.TransactionsWithProofsRequest, $root.org.dash.platform.dapi.v0.TransactionsWithProofsResponse, request, callback);
+                            return this.rpcCall(subscribeToTransactionsWithProofs, $root.org.hth.platform.dapi.v0.TransactionsWithProofsRequest, $root.org.hth.platform.dapi.v0.TransactionsWithProofsResponse, request, callback);
                         }, "name", { value: "subscribeToTransactionsWithProofs" });
 
                         /**
                          * Calls subscribeToTransactionsWithProofs.
                          * @function subscribeToTransactionsWithProofs
-                         * @memberof org.dash.platform.dapi.v0.Core
+                         * @memberof org.hth.platform.dapi.v0.Core
                          * @instance
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsRequest} request TransactionsWithProofsRequest message or plain object
-                         * @returns {Promise<org.dash.platform.dapi.v0.TransactionsWithProofsResponse>} Promise
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsRequest} request TransactionsWithProofsRequest message or plain object
+                         * @returns {Promise<org.hth.platform.dapi.v0.TransactionsWithProofsResponse>} Promise
                          * @variation 2
                          */
 
@@ -324,17 +324,17 @@ $root.org = (function() {
 
                         /**
                          * Properties of a GetStatusRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IGetStatusRequest
                          */
 
                         /**
                          * Constructs a new GetStatusRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a GetStatusRequest.
                          * @implements IGetStatusRequest
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IGetStatusRequest=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IGetStatusRequest=} [properties] Properties to set
                          */
                         function GetStatusRequest(properties) {
                             if (properties)
@@ -346,21 +346,21 @@ $root.org = (function() {
                         /**
                          * Creates a new GetStatusRequest instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetStatusRequest=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.GetStatusRequest} GetStatusRequest instance
+                         * @param {org.hth.platform.dapi.v0.IGetStatusRequest=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.GetStatusRequest} GetStatusRequest instance
                          */
                         GetStatusRequest.create = function create(properties) {
                             return new GetStatusRequest(properties);
                         };
 
                         /**
-                         * Encodes the specified GetStatusRequest message. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusRequest.verify|verify} messages.
+                         * Encodes the specified GetStatusRequest message. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusRequest.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetStatusRequest} message GetStatusRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetStatusRequest} message GetStatusRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -371,11 +371,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified GetStatusRequest message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusRequest.verify|verify} messages.
+                         * Encodes the specified GetStatusRequest message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusRequest.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetStatusRequest} message GetStatusRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetStatusRequest} message GetStatusRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -386,18 +386,18 @@ $root.org = (function() {
                         /**
                          * Decodes a GetStatusRequest message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.GetStatusRequest} GetStatusRequest
+                         * @returns {org.hth.platform.dapi.v0.GetStatusRequest} GetStatusRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         GetStatusRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetStatusRequest();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetStatusRequest();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -412,10 +412,10 @@ $root.org = (function() {
                         /**
                          * Decodes a GetStatusRequest message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.GetStatusRequest} GetStatusRequest
+                         * @returns {org.hth.platform.dapi.v0.GetStatusRequest} GetStatusRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -428,7 +428,7 @@ $root.org = (function() {
                         /**
                          * Verifies a GetStatusRequest message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -442,23 +442,23 @@ $root.org = (function() {
                         /**
                          * Creates a GetStatusRequest message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.GetStatusRequest} GetStatusRequest
+                         * @returns {org.hth.platform.dapi.v0.GetStatusRequest} GetStatusRequest
                          */
                         GetStatusRequest.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.GetStatusRequest)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.GetStatusRequest)
                                 return object;
-                            return new $root.org.dash.platform.dapi.v0.GetStatusRequest();
+                            return new $root.org.hth.platform.dapi.v0.GetStatusRequest();
                         };
 
                         /**
                          * Creates a plain object from a GetStatusRequest message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.GetStatusRequest} message GetStatusRequest
+                         * @param {org.hth.platform.dapi.v0.GetStatusRequest} message GetStatusRequest
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -469,7 +469,7 @@ $root.org = (function() {
                         /**
                          * Converts this GetStatusRequest to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.GetStatusRequest
+                         * @memberof org.hth.platform.dapi.v0.GetStatusRequest
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -484,24 +484,24 @@ $root.org = (function() {
 
                         /**
                          * Properties of a GetStatusResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IGetStatusResponse
-                         * @property {org.dash.platform.dapi.v0.GetStatusResponse.IVersion|null} [version] GetStatusResponse version
-                         * @property {org.dash.platform.dapi.v0.GetStatusResponse.ITime|null} [time] GetStatusResponse time
-                         * @property {org.dash.platform.dapi.v0.GetStatusResponse.Status|null} [status] GetStatusResponse status
+                         * @property {org.hth.platform.dapi.v0.GetStatusResponse.IVersion|null} [version] GetStatusResponse version
+                         * @property {org.hth.platform.dapi.v0.GetStatusResponse.ITime|null} [time] GetStatusResponse time
+                         * @property {org.hth.platform.dapi.v0.GetStatusResponse.Status|null} [status] GetStatusResponse status
                          * @property {number|null} [syncProgress] GetStatusResponse syncProgress
-                         * @property {org.dash.platform.dapi.v0.GetStatusResponse.IChain|null} [chain] GetStatusResponse chain
-                         * @property {org.dash.platform.dapi.v0.GetStatusResponse.IMasternode|null} [masternode] GetStatusResponse masternode
-                         * @property {org.dash.platform.dapi.v0.GetStatusResponse.INetwork|null} [network] GetStatusResponse network
+                         * @property {org.hth.platform.dapi.v0.GetStatusResponse.IChain|null} [chain] GetStatusResponse chain
+                         * @property {org.hth.platform.dapi.v0.GetStatusResponse.IMasternode|null} [masternode] GetStatusResponse masternode
+                         * @property {org.hth.platform.dapi.v0.GetStatusResponse.INetwork|null} [network] GetStatusResponse network
                          */
 
                         /**
                          * Constructs a new GetStatusResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a GetStatusResponse.
                          * @implements IGetStatusResponse
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IGetStatusResponse=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IGetStatusResponse=} [properties] Properties to set
                          */
                         function GetStatusResponse(properties) {
                             if (properties)
@@ -512,24 +512,24 @@ $root.org = (function() {
 
                         /**
                          * GetStatusResponse version.
-                         * @member {org.dash.platform.dapi.v0.GetStatusResponse.IVersion|null|undefined} version
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @member {org.hth.platform.dapi.v0.GetStatusResponse.IVersion|null|undefined} version
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @instance
                          */
                         GetStatusResponse.prototype.version = null;
 
                         /**
                          * GetStatusResponse time.
-                         * @member {org.dash.platform.dapi.v0.GetStatusResponse.ITime|null|undefined} time
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @member {org.hth.platform.dapi.v0.GetStatusResponse.ITime|null|undefined} time
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @instance
                          */
                         GetStatusResponse.prototype.time = null;
 
                         /**
                          * GetStatusResponse status.
-                         * @member {org.dash.platform.dapi.v0.GetStatusResponse.Status} status
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @member {org.hth.platform.dapi.v0.GetStatusResponse.Status} status
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @instance
                          */
                         GetStatusResponse.prototype.status = 0;
@@ -537,31 +537,31 @@ $root.org = (function() {
                         /**
                          * GetStatusResponse syncProgress.
                          * @member {number} syncProgress
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @instance
                          */
                         GetStatusResponse.prototype.syncProgress = 0;
 
                         /**
                          * GetStatusResponse chain.
-                         * @member {org.dash.platform.dapi.v0.GetStatusResponse.IChain|null|undefined} chain
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @member {org.hth.platform.dapi.v0.GetStatusResponse.IChain|null|undefined} chain
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @instance
                          */
                         GetStatusResponse.prototype.chain = null;
 
                         /**
                          * GetStatusResponse masternode.
-                         * @member {org.dash.platform.dapi.v0.GetStatusResponse.IMasternode|null|undefined} masternode
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @member {org.hth.platform.dapi.v0.GetStatusResponse.IMasternode|null|undefined} masternode
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @instance
                          */
                         GetStatusResponse.prototype.masternode = null;
 
                         /**
                          * GetStatusResponse network.
-                         * @member {org.dash.platform.dapi.v0.GetStatusResponse.INetwork|null|undefined} network
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @member {org.hth.platform.dapi.v0.GetStatusResponse.INetwork|null|undefined} network
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @instance
                          */
                         GetStatusResponse.prototype.network = null;
@@ -569,21 +569,21 @@ $root.org = (function() {
                         /**
                          * Creates a new GetStatusResponse instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetStatusResponse=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.GetStatusResponse} GetStatusResponse instance
+                         * @param {org.hth.platform.dapi.v0.IGetStatusResponse=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.GetStatusResponse} GetStatusResponse instance
                          */
                         GetStatusResponse.create = function create(properties) {
                             return new GetStatusResponse(properties);
                         };
 
                         /**
-                         * Encodes the specified GetStatusResponse message. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.verify|verify} messages.
+                         * Encodes the specified GetStatusResponse message. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetStatusResponse} message GetStatusResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetStatusResponse} message GetStatusResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -591,28 +591,28 @@ $root.org = (function() {
                             if (!writer)
                                 writer = $Writer.create();
                             if (message.version != null && Object.hasOwnProperty.call(message, "version"))
-                                $root.org.dash.platform.dapi.v0.GetStatusResponse.Version.encode(message.version, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.GetStatusResponse.Version.encode(message.version, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                             if (message.time != null && Object.hasOwnProperty.call(message, "time"))
-                                $root.org.dash.platform.dapi.v0.GetStatusResponse.Time.encode(message.time, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.GetStatusResponse.Time.encode(message.time, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                             if (message.status != null && Object.hasOwnProperty.call(message, "status"))
                                 writer.uint32(/* id 3, wireType 0 =*/24).int32(message.status);
                             if (message.syncProgress != null && Object.hasOwnProperty.call(message, "syncProgress"))
                                 writer.uint32(/* id 4, wireType 1 =*/33).double(message.syncProgress);
                             if (message.chain != null && Object.hasOwnProperty.call(message, "chain"))
-                                $root.org.dash.platform.dapi.v0.GetStatusResponse.Chain.encode(message.chain, writer.uint32(/* id 5, wireType 2 =*/42).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.GetStatusResponse.Chain.encode(message.chain, writer.uint32(/* id 5, wireType 2 =*/42).fork()).ldelim();
                             if (message.masternode != null && Object.hasOwnProperty.call(message, "masternode"))
-                                $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.encode(message.masternode, writer.uint32(/* id 6, wireType 2 =*/50).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.encode(message.masternode, writer.uint32(/* id 6, wireType 2 =*/50).fork()).ldelim();
                             if (message.network != null && Object.hasOwnProperty.call(message, "network"))
-                                $root.org.dash.platform.dapi.v0.GetStatusResponse.Network.encode(message.network, writer.uint32(/* id 7, wireType 2 =*/58).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.GetStatusResponse.Network.encode(message.network, writer.uint32(/* id 7, wireType 2 =*/58).fork()).ldelim();
                             return writer;
                         };
 
                         /**
-                         * Encodes the specified GetStatusResponse message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.verify|verify} messages.
+                         * Encodes the specified GetStatusResponse message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetStatusResponse} message GetStatusResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetStatusResponse} message GetStatusResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -623,26 +623,26 @@ $root.org = (function() {
                         /**
                          * Decodes a GetStatusResponse message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.GetStatusResponse} GetStatusResponse
+                         * @returns {org.hth.platform.dapi.v0.GetStatusResponse} GetStatusResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         GetStatusResponse.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetStatusResponse();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetStatusResponse();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
                                 case 1:
-                                    message.version = $root.org.dash.platform.dapi.v0.GetStatusResponse.Version.decode(reader, reader.uint32());
+                                    message.version = $root.org.hth.platform.dapi.v0.GetStatusResponse.Version.decode(reader, reader.uint32());
                                     break;
                                 case 2:
-                                    message.time = $root.org.dash.platform.dapi.v0.GetStatusResponse.Time.decode(reader, reader.uint32());
+                                    message.time = $root.org.hth.platform.dapi.v0.GetStatusResponse.Time.decode(reader, reader.uint32());
                                     break;
                                 case 3:
                                     message.status = reader.int32();
@@ -651,13 +651,13 @@ $root.org = (function() {
                                     message.syncProgress = reader.double();
                                     break;
                                 case 5:
-                                    message.chain = $root.org.dash.platform.dapi.v0.GetStatusResponse.Chain.decode(reader, reader.uint32());
+                                    message.chain = $root.org.hth.platform.dapi.v0.GetStatusResponse.Chain.decode(reader, reader.uint32());
                                     break;
                                 case 6:
-                                    message.masternode = $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.decode(reader, reader.uint32());
+                                    message.masternode = $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.decode(reader, reader.uint32());
                                     break;
                                 case 7:
-                                    message.network = $root.org.dash.platform.dapi.v0.GetStatusResponse.Network.decode(reader, reader.uint32());
+                                    message.network = $root.org.hth.platform.dapi.v0.GetStatusResponse.Network.decode(reader, reader.uint32());
                                     break;
                                 default:
                                     reader.skipType(tag & 7);
@@ -670,10 +670,10 @@ $root.org = (function() {
                         /**
                          * Decodes a GetStatusResponse message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.GetStatusResponse} GetStatusResponse
+                         * @returns {org.hth.platform.dapi.v0.GetStatusResponse} GetStatusResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -686,7 +686,7 @@ $root.org = (function() {
                         /**
                          * Verifies a GetStatusResponse message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -695,12 +695,12 @@ $root.org = (function() {
                             if (typeof message !== "object" || message === null)
                                 return "object expected";
                             if (message.version != null && message.hasOwnProperty("version")) {
-                                var error = $root.org.dash.platform.dapi.v0.GetStatusResponse.Version.verify(message.version);
+                                var error = $root.org.hth.platform.dapi.v0.GetStatusResponse.Version.verify(message.version);
                                 if (error)
                                     return "version." + error;
                             }
                             if (message.time != null && message.hasOwnProperty("time")) {
-                                var error = $root.org.dash.platform.dapi.v0.GetStatusResponse.Time.verify(message.time);
+                                var error = $root.org.hth.platform.dapi.v0.GetStatusResponse.Time.verify(message.time);
                                 if (error)
                                     return "time." + error;
                             }
@@ -718,17 +718,17 @@ $root.org = (function() {
                                 if (typeof message.syncProgress !== "number")
                                     return "syncProgress: number expected";
                             if (message.chain != null && message.hasOwnProperty("chain")) {
-                                var error = $root.org.dash.platform.dapi.v0.GetStatusResponse.Chain.verify(message.chain);
+                                var error = $root.org.hth.platform.dapi.v0.GetStatusResponse.Chain.verify(message.chain);
                                 if (error)
                                     return "chain." + error;
                             }
                             if (message.masternode != null && message.hasOwnProperty("masternode")) {
-                                var error = $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.verify(message.masternode);
+                                var error = $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.verify(message.masternode);
                                 if (error)
                                     return "masternode." + error;
                             }
                             if (message.network != null && message.hasOwnProperty("network")) {
-                                var error = $root.org.dash.platform.dapi.v0.GetStatusResponse.Network.verify(message.network);
+                                var error = $root.org.hth.platform.dapi.v0.GetStatusResponse.Network.verify(message.network);
                                 if (error)
                                     return "network." + error;
                             }
@@ -738,24 +738,24 @@ $root.org = (function() {
                         /**
                          * Creates a GetStatusResponse message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.GetStatusResponse} GetStatusResponse
+                         * @returns {org.hth.platform.dapi.v0.GetStatusResponse} GetStatusResponse
                          */
                         GetStatusResponse.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.GetStatusResponse)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.GetStatusResponse)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.GetStatusResponse();
+                            var message = new $root.org.hth.platform.dapi.v0.GetStatusResponse();
                             if (object.version != null) {
                                 if (typeof object.version !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.GetStatusResponse.version: object expected");
-                                message.version = $root.org.dash.platform.dapi.v0.GetStatusResponse.Version.fromObject(object.version);
+                                    throw TypeError(".org.hth.platform.dapi.v0.GetStatusResponse.version: object expected");
+                                message.version = $root.org.hth.platform.dapi.v0.GetStatusResponse.Version.fromObject(object.version);
                             }
                             if (object.time != null) {
                                 if (typeof object.time !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.GetStatusResponse.time: object expected");
-                                message.time = $root.org.dash.platform.dapi.v0.GetStatusResponse.Time.fromObject(object.time);
+                                    throw TypeError(".org.hth.platform.dapi.v0.GetStatusResponse.time: object expected");
+                                message.time = $root.org.hth.platform.dapi.v0.GetStatusResponse.Time.fromObject(object.time);
                             }
                             switch (object.status) {
                             case "NOT_STARTED":
@@ -779,18 +779,18 @@ $root.org = (function() {
                                 message.syncProgress = Number(object.syncProgress);
                             if (object.chain != null) {
                                 if (typeof object.chain !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.GetStatusResponse.chain: object expected");
-                                message.chain = $root.org.dash.platform.dapi.v0.GetStatusResponse.Chain.fromObject(object.chain);
+                                    throw TypeError(".org.hth.platform.dapi.v0.GetStatusResponse.chain: object expected");
+                                message.chain = $root.org.hth.platform.dapi.v0.GetStatusResponse.Chain.fromObject(object.chain);
                             }
                             if (object.masternode != null) {
                                 if (typeof object.masternode !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.GetStatusResponse.masternode: object expected");
-                                message.masternode = $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.fromObject(object.masternode);
+                                    throw TypeError(".org.hth.platform.dapi.v0.GetStatusResponse.masternode: object expected");
+                                message.masternode = $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.fromObject(object.masternode);
                             }
                             if (object.network != null) {
                                 if (typeof object.network !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.GetStatusResponse.network: object expected");
-                                message.network = $root.org.dash.platform.dapi.v0.GetStatusResponse.Network.fromObject(object.network);
+                                    throw TypeError(".org.hth.platform.dapi.v0.GetStatusResponse.network: object expected");
+                                message.network = $root.org.hth.platform.dapi.v0.GetStatusResponse.Network.fromObject(object.network);
                             }
                             return message;
                         };
@@ -798,9 +798,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a GetStatusResponse message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.GetStatusResponse} message GetStatusResponse
+                         * @param {org.hth.platform.dapi.v0.GetStatusResponse} message GetStatusResponse
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -818,26 +818,26 @@ $root.org = (function() {
                                 object.network = null;
                             }
                             if (message.version != null && message.hasOwnProperty("version"))
-                                object.version = $root.org.dash.platform.dapi.v0.GetStatusResponse.Version.toObject(message.version, options);
+                                object.version = $root.org.hth.platform.dapi.v0.GetStatusResponse.Version.toObject(message.version, options);
                             if (message.time != null && message.hasOwnProperty("time"))
-                                object.time = $root.org.dash.platform.dapi.v0.GetStatusResponse.Time.toObject(message.time, options);
+                                object.time = $root.org.hth.platform.dapi.v0.GetStatusResponse.Time.toObject(message.time, options);
                             if (message.status != null && message.hasOwnProperty("status"))
-                                object.status = options.enums === String ? $root.org.dash.platform.dapi.v0.GetStatusResponse.Status[message.status] : message.status;
+                                object.status = options.enums === String ? $root.org.hth.platform.dapi.v0.GetStatusResponse.Status[message.status] : message.status;
                             if (message.syncProgress != null && message.hasOwnProperty("syncProgress"))
                                 object.syncProgress = options.json && !isFinite(message.syncProgress) ? String(message.syncProgress) : message.syncProgress;
                             if (message.chain != null && message.hasOwnProperty("chain"))
-                                object.chain = $root.org.dash.platform.dapi.v0.GetStatusResponse.Chain.toObject(message.chain, options);
+                                object.chain = $root.org.hth.platform.dapi.v0.GetStatusResponse.Chain.toObject(message.chain, options);
                             if (message.masternode != null && message.hasOwnProperty("masternode"))
-                                object.masternode = $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.toObject(message.masternode, options);
+                                object.masternode = $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.toObject(message.masternode, options);
                             if (message.network != null && message.hasOwnProperty("network"))
-                                object.network = $root.org.dash.platform.dapi.v0.GetStatusResponse.Network.toObject(message.network, options);
+                                object.network = $root.org.hth.platform.dapi.v0.GetStatusResponse.Network.toObject(message.network, options);
                             return object;
                         };
 
                         /**
                          * Converts this GetStatusResponse to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                         * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -849,7 +849,7 @@ $root.org = (function() {
 
                             /**
                              * Properties of a Version.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @interface IVersion
                              * @property {number|null} [protocol] Version protocol
                              * @property {number|null} [software] Version software
@@ -858,11 +858,11 @@ $root.org = (function() {
 
                             /**
                              * Constructs a new Version.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @classdesc Represents a Version.
                              * @implements IVersion
                              * @constructor
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IVersion=} [properties] Properties to set
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IVersion=} [properties] Properties to set
                              */
                             function Version(properties) {
                                 if (properties)
@@ -874,7 +874,7 @@ $root.org = (function() {
                             /**
                              * Version protocol.
                              * @member {number} protocol
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @instance
                              */
                             Version.prototype.protocol = 0;
@@ -882,7 +882,7 @@ $root.org = (function() {
                             /**
                              * Version software.
                              * @member {number} software
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @instance
                              */
                             Version.prototype.software = 0;
@@ -890,7 +890,7 @@ $root.org = (function() {
                             /**
                              * Version agent.
                              * @member {string} agent
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @instance
                              */
                             Version.prototype.agent = "";
@@ -898,21 +898,21 @@ $root.org = (function() {
                             /**
                              * Creates a new Version instance using the specified properties.
                              * @function create
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IVersion=} [properties] Properties to set
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Version} Version instance
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IVersion=} [properties] Properties to set
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Version} Version instance
                              */
                             Version.create = function create(properties) {
                                 return new Version(properties);
                             };
 
                             /**
-                             * Encodes the specified Version message. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Version.verify|verify} messages.
+                             * Encodes the specified Version message. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Version.verify|verify} messages.
                              * @function encode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IVersion} message Version message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IVersion} message Version message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -929,11 +929,11 @@ $root.org = (function() {
                             };
 
                             /**
-                             * Encodes the specified Version message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Version.verify|verify} messages.
+                             * Encodes the specified Version message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Version.verify|verify} messages.
                              * @function encodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IVersion} message Version message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IVersion} message Version message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -944,18 +944,18 @@ $root.org = (function() {
                             /**
                              * Decodes a Version message from the specified reader or buffer.
                              * @function decode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                              * @param {number} [length] Message length if known beforehand
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Version} Version
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Version} Version
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
                             Version.decode = function decode(reader, length) {
                                 if (!(reader instanceof $Reader))
                                     reader = $Reader.create(reader);
-                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Version();
+                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Version();
                                 while (reader.pos < end) {
                                     var tag = reader.uint32();
                                     switch (tag >>> 3) {
@@ -979,10 +979,10 @@ $root.org = (function() {
                             /**
                              * Decodes a Version message from the specified reader or buffer, length delimited.
                              * @function decodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Version} Version
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Version} Version
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
@@ -995,7 +995,7 @@ $root.org = (function() {
                             /**
                              * Verifies a Version message.
                              * @function verify
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @static
                              * @param {Object.<string,*>} message Plain object to verify
                              * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1018,15 +1018,15 @@ $root.org = (function() {
                             /**
                              * Creates a Version message from a plain object. Also converts values to their respective internal types.
                              * @function fromObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @static
                              * @param {Object.<string,*>} object Plain object
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Version} Version
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Version} Version
                              */
                             Version.fromObject = function fromObject(object) {
-                                if (object instanceof $root.org.dash.platform.dapi.v0.GetStatusResponse.Version)
+                                if (object instanceof $root.org.hth.platform.dapi.v0.GetStatusResponse.Version)
                                     return object;
-                                var message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Version();
+                                var message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Version();
                                 if (object.protocol != null)
                                     message.protocol = object.protocol >>> 0;
                                 if (object.software != null)
@@ -1039,9 +1039,9 @@ $root.org = (function() {
                             /**
                              * Creates a plain object from a Version message. Also converts values to other types if specified.
                              * @function toObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.Version} message Version
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.Version} message Version
                              * @param {$protobuf.IConversionOptions} [options] Conversion options
                              * @returns {Object.<string,*>} Plain object
                              */
@@ -1066,7 +1066,7 @@ $root.org = (function() {
                             /**
                              * Converts this Version to JSON.
                              * @function toJSON
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Version
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Version
                              * @instance
                              * @returns {Object.<string,*>} JSON object
                              */
@@ -1081,7 +1081,7 @@ $root.org = (function() {
 
                             /**
                              * Properties of a Time.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @interface ITime
                              * @property {number|null} [now] Time now
                              * @property {number|null} [offset] Time offset
@@ -1090,11 +1090,11 @@ $root.org = (function() {
 
                             /**
                              * Constructs a new Time.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @classdesc Represents a Time.
                              * @implements ITime
                              * @constructor
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.ITime=} [properties] Properties to set
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.ITime=} [properties] Properties to set
                              */
                             function Time(properties) {
                                 if (properties)
@@ -1106,7 +1106,7 @@ $root.org = (function() {
                             /**
                              * Time now.
                              * @member {number} now
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @instance
                              */
                             Time.prototype.now = 0;
@@ -1114,7 +1114,7 @@ $root.org = (function() {
                             /**
                              * Time offset.
                              * @member {number} offset
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @instance
                              */
                             Time.prototype.offset = 0;
@@ -1122,7 +1122,7 @@ $root.org = (function() {
                             /**
                              * Time median.
                              * @member {number} median
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @instance
                              */
                             Time.prototype.median = 0;
@@ -1130,21 +1130,21 @@ $root.org = (function() {
                             /**
                              * Creates a new Time instance using the specified properties.
                              * @function create
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.ITime=} [properties] Properties to set
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Time} Time instance
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.ITime=} [properties] Properties to set
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Time} Time instance
                              */
                             Time.create = function create(properties) {
                                 return new Time(properties);
                             };
 
                             /**
-                             * Encodes the specified Time message. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Time.verify|verify} messages.
+                             * Encodes the specified Time message. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Time.verify|verify} messages.
                              * @function encode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.ITime} message Time message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.ITime} message Time message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -1161,11 +1161,11 @@ $root.org = (function() {
                             };
 
                             /**
-                             * Encodes the specified Time message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Time.verify|verify} messages.
+                             * Encodes the specified Time message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Time.verify|verify} messages.
                              * @function encodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.ITime} message Time message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.ITime} message Time message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -1176,18 +1176,18 @@ $root.org = (function() {
                             /**
                              * Decodes a Time message from the specified reader or buffer.
                              * @function decode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                              * @param {number} [length] Message length if known beforehand
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Time} Time
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Time} Time
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
                             Time.decode = function decode(reader, length) {
                                 if (!(reader instanceof $Reader))
                                     reader = $Reader.create(reader);
-                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Time();
+                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Time();
                                 while (reader.pos < end) {
                                     var tag = reader.uint32();
                                     switch (tag >>> 3) {
@@ -1211,10 +1211,10 @@ $root.org = (function() {
                             /**
                              * Decodes a Time message from the specified reader or buffer, length delimited.
                              * @function decodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Time} Time
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Time} Time
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
@@ -1227,7 +1227,7 @@ $root.org = (function() {
                             /**
                              * Verifies a Time message.
                              * @function verify
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @static
                              * @param {Object.<string,*>} message Plain object to verify
                              * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1250,15 +1250,15 @@ $root.org = (function() {
                             /**
                              * Creates a Time message from a plain object. Also converts values to their respective internal types.
                              * @function fromObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @static
                              * @param {Object.<string,*>} object Plain object
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Time} Time
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Time} Time
                              */
                             Time.fromObject = function fromObject(object) {
-                                if (object instanceof $root.org.dash.platform.dapi.v0.GetStatusResponse.Time)
+                                if (object instanceof $root.org.hth.platform.dapi.v0.GetStatusResponse.Time)
                                     return object;
-                                var message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Time();
+                                var message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Time();
                                 if (object.now != null)
                                     message.now = object.now >>> 0;
                                 if (object.offset != null)
@@ -1271,9 +1271,9 @@ $root.org = (function() {
                             /**
                              * Creates a plain object from a Time message. Also converts values to other types if specified.
                              * @function toObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.Time} message Time
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.Time} message Time
                              * @param {$protobuf.IConversionOptions} [options] Conversion options
                              * @returns {Object.<string,*>} Plain object
                              */
@@ -1298,7 +1298,7 @@ $root.org = (function() {
                             /**
                              * Converts this Time to JSON.
                              * @function toJSON
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Time
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Time
                              * @instance
                              * @returns {Object.<string,*>} JSON object
                              */
@@ -1311,7 +1311,7 @@ $root.org = (function() {
 
                         /**
                          * Status enum.
-                         * @name org.dash.platform.dapi.v0.GetStatusResponse.Status
+                         * @name org.hth.platform.dapi.v0.GetStatusResponse.Status
                          * @enum {number}
                          * @property {number} NOT_STARTED=0 NOT_STARTED value
                          * @property {number} SYNCING=1 SYNCING value
@@ -1331,7 +1331,7 @@ $root.org = (function() {
 
                             /**
                              * Properties of a Chain.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @interface IChain
                              * @property {string|null} [name] Chain name
                              * @property {number|null} [headersCount] Chain headersCount
@@ -1345,11 +1345,11 @@ $root.org = (function() {
 
                             /**
                              * Constructs a new Chain.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @classdesc Represents a Chain.
                              * @implements IChain
                              * @constructor
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IChain=} [properties] Properties to set
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IChain=} [properties] Properties to set
                              */
                             function Chain(properties) {
                                 if (properties)
@@ -1361,7 +1361,7 @@ $root.org = (function() {
                             /**
                              * Chain name.
                              * @member {string} name
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              */
                             Chain.prototype.name = "";
@@ -1369,7 +1369,7 @@ $root.org = (function() {
                             /**
                              * Chain headersCount.
                              * @member {number} headersCount
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              */
                             Chain.prototype.headersCount = 0;
@@ -1377,7 +1377,7 @@ $root.org = (function() {
                             /**
                              * Chain blocksCount.
                              * @member {number} blocksCount
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              */
                             Chain.prototype.blocksCount = 0;
@@ -1385,7 +1385,7 @@ $root.org = (function() {
                             /**
                              * Chain bestBlockHash.
                              * @member {Uint8Array} bestBlockHash
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              */
                             Chain.prototype.bestBlockHash = $util.newBuffer([]);
@@ -1393,7 +1393,7 @@ $root.org = (function() {
                             /**
                              * Chain difficulty.
                              * @member {number} difficulty
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              */
                             Chain.prototype.difficulty = 0;
@@ -1401,7 +1401,7 @@ $root.org = (function() {
                             /**
                              * Chain chainWork.
                              * @member {Uint8Array} chainWork
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              */
                             Chain.prototype.chainWork = $util.newBuffer([]);
@@ -1409,7 +1409,7 @@ $root.org = (function() {
                             /**
                              * Chain isSynced.
                              * @member {boolean} isSynced
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              */
                             Chain.prototype.isSynced = false;
@@ -1417,7 +1417,7 @@ $root.org = (function() {
                             /**
                              * Chain syncProgress.
                              * @member {number} syncProgress
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              */
                             Chain.prototype.syncProgress = 0;
@@ -1425,21 +1425,21 @@ $root.org = (function() {
                             /**
                              * Creates a new Chain instance using the specified properties.
                              * @function create
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IChain=} [properties] Properties to set
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Chain} Chain instance
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IChain=} [properties] Properties to set
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Chain} Chain instance
                              */
                             Chain.create = function create(properties) {
                                 return new Chain(properties);
                             };
 
                             /**
-                             * Encodes the specified Chain message. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Chain.verify|verify} messages.
+                             * Encodes the specified Chain message. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Chain.verify|verify} messages.
                              * @function encode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IChain} message Chain message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IChain} message Chain message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -1466,11 +1466,11 @@ $root.org = (function() {
                             };
 
                             /**
-                             * Encodes the specified Chain message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Chain.verify|verify} messages.
+                             * Encodes the specified Chain message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Chain.verify|verify} messages.
                              * @function encodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IChain} message Chain message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IChain} message Chain message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -1481,18 +1481,18 @@ $root.org = (function() {
                             /**
                              * Decodes a Chain message from the specified reader or buffer.
                              * @function decode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                              * @param {number} [length] Message length if known beforehand
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Chain} Chain
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Chain} Chain
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
                             Chain.decode = function decode(reader, length) {
                                 if (!(reader instanceof $Reader))
                                     reader = $Reader.create(reader);
-                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Chain();
+                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Chain();
                                 while (reader.pos < end) {
                                     var tag = reader.uint32();
                                     switch (tag >>> 3) {
@@ -1531,10 +1531,10 @@ $root.org = (function() {
                             /**
                              * Decodes a Chain message from the specified reader or buffer, length delimited.
                              * @function decodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Chain} Chain
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Chain} Chain
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
@@ -1547,7 +1547,7 @@ $root.org = (function() {
                             /**
                              * Verifies a Chain message.
                              * @function verify
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @static
                              * @param {Object.<string,*>} message Plain object to verify
                              * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1585,15 +1585,15 @@ $root.org = (function() {
                             /**
                              * Creates a Chain message from a plain object. Also converts values to their respective internal types.
                              * @function fromObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @static
                              * @param {Object.<string,*>} object Plain object
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Chain} Chain
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Chain} Chain
                              */
                             Chain.fromObject = function fromObject(object) {
-                                if (object instanceof $root.org.dash.platform.dapi.v0.GetStatusResponse.Chain)
+                                if (object instanceof $root.org.hth.platform.dapi.v0.GetStatusResponse.Chain)
                                     return object;
-                                var message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Chain();
+                                var message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Chain();
                                 if (object.name != null)
                                     message.name = String(object.name);
                                 if (object.headersCount != null)
@@ -1622,9 +1622,9 @@ $root.org = (function() {
                             /**
                              * Creates a plain object from a Chain message. Also converts values to other types if specified.
                              * @function toObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.Chain} message Chain
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.Chain} message Chain
                              * @param {$protobuf.IConversionOptions} [options] Conversion options
                              * @returns {Object.<string,*>} Plain object
                              */
@@ -1676,7 +1676,7 @@ $root.org = (function() {
                             /**
                              * Converts this Chain to JSON.
                              * @function toJSON
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Chain
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Chain
                              * @instance
                              * @returns {Object.<string,*>} JSON object
                              */
@@ -1691,9 +1691,9 @@ $root.org = (function() {
 
                             /**
                              * Properties of a Masternode.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @interface IMasternode
-                             * @property {org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status|null} [status] Masternode status
+                             * @property {org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status|null} [status] Masternode status
                              * @property {Uint8Array|null} [proTxHash] Masternode proTxHash
                              * @property {number|null} [posePenalty] Masternode posePenalty
                              * @property {boolean|null} [isSynced] Masternode isSynced
@@ -1702,11 +1702,11 @@ $root.org = (function() {
 
                             /**
                              * Constructs a new Masternode.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @classdesc Represents a Masternode.
                              * @implements IMasternode
                              * @constructor
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IMasternode=} [properties] Properties to set
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IMasternode=} [properties] Properties to set
                              */
                             function Masternode(properties) {
                                 if (properties)
@@ -1717,8 +1717,8 @@ $root.org = (function() {
 
                             /**
                              * Masternode status.
-                             * @member {org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status} status
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @member {org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status} status
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @instance
                              */
                             Masternode.prototype.status = 0;
@@ -1726,7 +1726,7 @@ $root.org = (function() {
                             /**
                              * Masternode proTxHash.
                              * @member {Uint8Array} proTxHash
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @instance
                              */
                             Masternode.prototype.proTxHash = $util.newBuffer([]);
@@ -1734,7 +1734,7 @@ $root.org = (function() {
                             /**
                              * Masternode posePenalty.
                              * @member {number} posePenalty
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @instance
                              */
                             Masternode.prototype.posePenalty = 0;
@@ -1742,7 +1742,7 @@ $root.org = (function() {
                             /**
                              * Masternode isSynced.
                              * @member {boolean} isSynced
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @instance
                              */
                             Masternode.prototype.isSynced = false;
@@ -1750,7 +1750,7 @@ $root.org = (function() {
                             /**
                              * Masternode syncProgress.
                              * @member {number} syncProgress
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @instance
                              */
                             Masternode.prototype.syncProgress = 0;
@@ -1758,21 +1758,21 @@ $root.org = (function() {
                             /**
                              * Creates a new Masternode instance using the specified properties.
                              * @function create
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IMasternode=} [properties] Properties to set
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Masternode} Masternode instance
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IMasternode=} [properties] Properties to set
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Masternode} Masternode instance
                              */
                             Masternode.create = function create(properties) {
                                 return new Masternode(properties);
                             };
 
                             /**
-                             * Encodes the specified Masternode message. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Masternode.verify|verify} messages.
+                             * Encodes the specified Masternode message. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Masternode.verify|verify} messages.
                              * @function encode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IMasternode} message Masternode message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IMasternode} message Masternode message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -1793,11 +1793,11 @@ $root.org = (function() {
                             };
 
                             /**
-                             * Encodes the specified Masternode message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Masternode.verify|verify} messages.
+                             * Encodes the specified Masternode message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Masternode.verify|verify} messages.
                              * @function encodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.IMasternode} message Masternode message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.IMasternode} message Masternode message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -1808,18 +1808,18 @@ $root.org = (function() {
                             /**
                              * Decodes a Masternode message from the specified reader or buffer.
                              * @function decode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                              * @param {number} [length] Message length if known beforehand
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Masternode} Masternode
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Masternode} Masternode
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
                             Masternode.decode = function decode(reader, length) {
                                 if (!(reader instanceof $Reader))
                                     reader = $Reader.create(reader);
-                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode();
+                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode();
                                 while (reader.pos < end) {
                                     var tag = reader.uint32();
                                     switch (tag >>> 3) {
@@ -1849,10 +1849,10 @@ $root.org = (function() {
                             /**
                              * Decodes a Masternode message from the specified reader or buffer, length delimited.
                              * @function decodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Masternode} Masternode
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Masternode} Masternode
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
@@ -1865,7 +1865,7 @@ $root.org = (function() {
                             /**
                              * Verifies a Masternode message.
                              * @function verify
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @static
                              * @param {Object.<string,*>} message Plain object to verify
                              * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -1905,15 +1905,15 @@ $root.org = (function() {
                             /**
                              * Creates a Masternode message from a plain object. Also converts values to their respective internal types.
                              * @function fromObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @static
                              * @param {Object.<string,*>} object Plain object
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Masternode} Masternode
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Masternode} Masternode
                              */
                             Masternode.fromObject = function fromObject(object) {
-                                if (object instanceof $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode)
+                                if (object instanceof $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode)
                                     return object;
-                                var message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode();
+                                var message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode();
                                 switch (object.status) {
                                 case "UNKNOWN":
                                 case 0:
@@ -1965,9 +1965,9 @@ $root.org = (function() {
                             /**
                              * Creates a plain object from a Masternode message. Also converts values to other types if specified.
                              * @function toObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.Masternode} message Masternode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.Masternode} message Masternode
                              * @param {$protobuf.IConversionOptions} [options] Conversion options
                              * @returns {Object.<string,*>} Plain object
                              */
@@ -1989,7 +1989,7 @@ $root.org = (function() {
                                     object.syncProgress = 0;
                                 }
                                 if (message.status != null && message.hasOwnProperty("status"))
-                                    object.status = options.enums === String ? $root.org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status[message.status] : message.status;
+                                    object.status = options.enums === String ? $root.org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status[message.status] : message.status;
                                 if (message.proTxHash != null && message.hasOwnProperty("proTxHash"))
                                     object.proTxHash = options.bytes === String ? $util.base64.encode(message.proTxHash, 0, message.proTxHash.length) : options.bytes === Array ? Array.prototype.slice.call(message.proTxHash) : message.proTxHash;
                                 if (message.posePenalty != null && message.hasOwnProperty("posePenalty"))
@@ -2004,7 +2004,7 @@ $root.org = (function() {
                             /**
                              * Converts this Masternode to JSON.
                              * @function toJSON
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Masternode
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Masternode
                              * @instance
                              * @returns {Object.<string,*>} JSON object
                              */
@@ -2014,7 +2014,7 @@ $root.org = (function() {
 
                             /**
                              * Status enum.
-                             * @name org.dash.platform.dapi.v0.GetStatusResponse.Masternode.Status
+                             * @name org.hth.platform.dapi.v0.GetStatusResponse.Masternode.Status
                              * @enum {number}
                              * @property {number} UNKNOWN=0 UNKNOWN value
                              * @property {number} WAITING_FOR_PROTX=1 WAITING_FOR_PROTX value
@@ -2045,7 +2045,7 @@ $root.org = (function() {
 
                             /**
                              * Properties of a NetworkFee.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @interface INetworkFee
                              * @property {number|null} [relay] NetworkFee relay
                              * @property {number|null} [incremental] NetworkFee incremental
@@ -2053,11 +2053,11 @@ $root.org = (function() {
 
                             /**
                              * Constructs a new NetworkFee.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @classdesc Represents a NetworkFee.
                              * @implements INetworkFee
                              * @constructor
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.INetworkFee=} [properties] Properties to set
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.INetworkFee=} [properties] Properties to set
                              */
                             function NetworkFee(properties) {
                                 if (properties)
@@ -2069,7 +2069,7 @@ $root.org = (function() {
                             /**
                              * NetworkFee relay.
                              * @member {number} relay
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @instance
                              */
                             NetworkFee.prototype.relay = 0;
@@ -2077,7 +2077,7 @@ $root.org = (function() {
                             /**
                              * NetworkFee incremental.
                              * @member {number} incremental
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @instance
                              */
                             NetworkFee.prototype.incremental = 0;
@@ -2085,21 +2085,21 @@ $root.org = (function() {
                             /**
                              * Creates a new NetworkFee instance using the specified properties.
                              * @function create
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.INetworkFee=} [properties] Properties to set
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} NetworkFee instance
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.INetworkFee=} [properties] Properties to set
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} NetworkFee instance
                              */
                             NetworkFee.create = function create(properties) {
                                 return new NetworkFee(properties);
                             };
 
                             /**
-                             * Encodes the specified NetworkFee message. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.verify|verify} messages.
+                             * Encodes the specified NetworkFee message. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.verify|verify} messages.
                              * @function encode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.INetworkFee} message NetworkFee message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.INetworkFee} message NetworkFee message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -2114,11 +2114,11 @@ $root.org = (function() {
                             };
 
                             /**
-                             * Encodes the specified NetworkFee message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.verify|verify} messages.
+                             * Encodes the specified NetworkFee message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.verify|verify} messages.
                              * @function encodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.INetworkFee} message NetworkFee message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.INetworkFee} message NetworkFee message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -2129,18 +2129,18 @@ $root.org = (function() {
                             /**
                              * Decodes a NetworkFee message from the specified reader or buffer.
                              * @function decode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                              * @param {number} [length] Message length if known beforehand
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} NetworkFee
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} NetworkFee
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
                             NetworkFee.decode = function decode(reader, length) {
                                 if (!(reader instanceof $Reader))
                                     reader = $Reader.create(reader);
-                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee();
+                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee();
                                 while (reader.pos < end) {
                                     var tag = reader.uint32();
                                     switch (tag >>> 3) {
@@ -2161,10 +2161,10 @@ $root.org = (function() {
                             /**
                              * Decodes a NetworkFee message from the specified reader or buffer, length delimited.
                              * @function decodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} NetworkFee
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} NetworkFee
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
@@ -2177,7 +2177,7 @@ $root.org = (function() {
                             /**
                              * Verifies a NetworkFee message.
                              * @function verify
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @static
                              * @param {Object.<string,*>} message Plain object to verify
                              * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2197,15 +2197,15 @@ $root.org = (function() {
                             /**
                              * Creates a NetworkFee message from a plain object. Also converts values to their respective internal types.
                              * @function fromObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @static
                              * @param {Object.<string,*>} object Plain object
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} NetworkFee
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} NetworkFee
                              */
                             NetworkFee.fromObject = function fromObject(object) {
-                                if (object instanceof $root.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee)
+                                if (object instanceof $root.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee)
                                     return object;
-                                var message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee();
+                                var message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee();
                                 if (object.relay != null)
                                     message.relay = Number(object.relay);
                                 if (object.incremental != null)
@@ -2216,9 +2216,9 @@ $root.org = (function() {
                             /**
                              * Creates a plain object from a NetworkFee message. Also converts values to other types if specified.
                              * @function toObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee} message NetworkFee
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee} message NetworkFee
                              * @param {$protobuf.IConversionOptions} [options] Conversion options
                              * @returns {Object.<string,*>} Plain object
                              */
@@ -2240,7 +2240,7 @@ $root.org = (function() {
                             /**
                              * Converts this NetworkFee to JSON.
                              * @function toJSON
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee
                              * @instance
                              * @returns {Object.<string,*>} JSON object
                              */
@@ -2255,19 +2255,19 @@ $root.org = (function() {
 
                             /**
                              * Properties of a Network.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @interface INetwork
                              * @property {number|null} [peersCount] Network peersCount
-                             * @property {org.dash.platform.dapi.v0.GetStatusResponse.INetworkFee|null} [fee] Network fee
+                             * @property {org.hth.platform.dapi.v0.GetStatusResponse.INetworkFee|null} [fee] Network fee
                              */
 
                             /**
                              * Constructs a new Network.
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse
                              * @classdesc Represents a Network.
                              * @implements INetwork
                              * @constructor
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.INetwork=} [properties] Properties to set
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.INetwork=} [properties] Properties to set
                              */
                             function Network(properties) {
                                 if (properties)
@@ -2279,15 +2279,15 @@ $root.org = (function() {
                             /**
                              * Network peersCount.
                              * @member {number} peersCount
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @instance
                              */
                             Network.prototype.peersCount = 0;
 
                             /**
                              * Network fee.
-                             * @member {org.dash.platform.dapi.v0.GetStatusResponse.INetworkFee|null|undefined} fee
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @member {org.hth.platform.dapi.v0.GetStatusResponse.INetworkFee|null|undefined} fee
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @instance
                              */
                             Network.prototype.fee = null;
@@ -2295,21 +2295,21 @@ $root.org = (function() {
                             /**
                              * Creates a new Network instance using the specified properties.
                              * @function create
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.INetwork=} [properties] Properties to set
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Network} Network instance
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.INetwork=} [properties] Properties to set
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Network} Network instance
                              */
                             Network.create = function create(properties) {
                                 return new Network(properties);
                             };
 
                             /**
-                             * Encodes the specified Network message. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Network.verify|verify} messages.
+                             * Encodes the specified Network message. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Network.verify|verify} messages.
                              * @function encode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.INetwork} message Network message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.INetwork} message Network message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -2319,16 +2319,16 @@ $root.org = (function() {
                                 if (message.peersCount != null && Object.hasOwnProperty.call(message, "peersCount"))
                                     writer.uint32(/* id 1, wireType 0 =*/8).uint32(message.peersCount);
                                 if (message.fee != null && Object.hasOwnProperty.call(message, "fee"))
-                                    $root.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.encode(message.fee, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                    $root.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.encode(message.fee, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                                 return writer;
                             };
 
                             /**
-                             * Encodes the specified Network message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetStatusResponse.Network.verify|verify} messages.
+                             * Encodes the specified Network message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetStatusResponse.Network.verify|verify} messages.
                              * @function encodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.INetwork} message Network message or plain object to encode
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.INetwork} message Network message or plain object to encode
                              * @param {$protobuf.Writer} [writer] Writer to encode to
                              * @returns {$protobuf.Writer} Writer
                              */
@@ -2339,18 +2339,18 @@ $root.org = (function() {
                             /**
                              * Decodes a Network message from the specified reader or buffer.
                              * @function decode
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                              * @param {number} [length] Message length if known beforehand
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Network} Network
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Network} Network
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
                             Network.decode = function decode(reader, length) {
                                 if (!(reader instanceof $Reader))
                                     reader = $Reader.create(reader);
-                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Network();
+                                var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Network();
                                 while (reader.pos < end) {
                                     var tag = reader.uint32();
                                     switch (tag >>> 3) {
@@ -2358,7 +2358,7 @@ $root.org = (function() {
                                         message.peersCount = reader.uint32();
                                         break;
                                     case 2:
-                                        message.fee = $root.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.decode(reader, reader.uint32());
+                                        message.fee = $root.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.decode(reader, reader.uint32());
                                         break;
                                     default:
                                         reader.skipType(tag & 7);
@@ -2371,10 +2371,10 @@ $root.org = (function() {
                             /**
                              * Decodes a Network message from the specified reader or buffer, length delimited.
                              * @function decodeDelimited
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @static
                              * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Network} Network
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Network} Network
                              * @throws {Error} If the payload is not a reader or valid buffer
                              * @throws {$protobuf.util.ProtocolError} If required fields are missing
                              */
@@ -2387,7 +2387,7 @@ $root.org = (function() {
                             /**
                              * Verifies a Network message.
                              * @function verify
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @static
                              * @param {Object.<string,*>} message Plain object to verify
                              * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2399,7 +2399,7 @@ $root.org = (function() {
                                     if (!$util.isInteger(message.peersCount))
                                         return "peersCount: integer expected";
                                 if (message.fee != null && message.hasOwnProperty("fee")) {
-                                    var error = $root.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.verify(message.fee);
+                                    var error = $root.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.verify(message.fee);
                                     if (error)
                                         return "fee." + error;
                                 }
@@ -2409,21 +2409,21 @@ $root.org = (function() {
                             /**
                              * Creates a Network message from a plain object. Also converts values to their respective internal types.
                              * @function fromObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @static
                              * @param {Object.<string,*>} object Plain object
-                             * @returns {org.dash.platform.dapi.v0.GetStatusResponse.Network} Network
+                             * @returns {org.hth.platform.dapi.v0.GetStatusResponse.Network} Network
                              */
                             Network.fromObject = function fromObject(object) {
-                                if (object instanceof $root.org.dash.platform.dapi.v0.GetStatusResponse.Network)
+                                if (object instanceof $root.org.hth.platform.dapi.v0.GetStatusResponse.Network)
                                     return object;
-                                var message = new $root.org.dash.platform.dapi.v0.GetStatusResponse.Network();
+                                var message = new $root.org.hth.platform.dapi.v0.GetStatusResponse.Network();
                                 if (object.peersCount != null)
                                     message.peersCount = object.peersCount >>> 0;
                                 if (object.fee != null) {
                                     if (typeof object.fee !== "object")
-                                        throw TypeError(".org.dash.platform.dapi.v0.GetStatusResponse.Network.fee: object expected");
-                                    message.fee = $root.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.fromObject(object.fee);
+                                        throw TypeError(".org.hth.platform.dapi.v0.GetStatusResponse.Network.fee: object expected");
+                                    message.fee = $root.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.fromObject(object.fee);
                                 }
                                 return message;
                             };
@@ -2431,9 +2431,9 @@ $root.org = (function() {
                             /**
                              * Creates a plain object from a Network message. Also converts values to other types if specified.
                              * @function toObject
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @static
-                             * @param {org.dash.platform.dapi.v0.GetStatusResponse.Network} message Network
+                             * @param {org.hth.platform.dapi.v0.GetStatusResponse.Network} message Network
                              * @param {$protobuf.IConversionOptions} [options] Conversion options
                              * @returns {Object.<string,*>} Plain object
                              */
@@ -2448,14 +2448,14 @@ $root.org = (function() {
                                 if (message.peersCount != null && message.hasOwnProperty("peersCount"))
                                     object.peersCount = message.peersCount;
                                 if (message.fee != null && message.hasOwnProperty("fee"))
-                                    object.fee = $root.org.dash.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject(message.fee, options);
+                                    object.fee = $root.org.hth.platform.dapi.v0.GetStatusResponse.NetworkFee.toObject(message.fee, options);
                                 return object;
                             };
 
                             /**
                              * Converts this Network to JSON.
                              * @function toJSON
-                             * @memberof org.dash.platform.dapi.v0.GetStatusResponse.Network
+                             * @memberof org.hth.platform.dapi.v0.GetStatusResponse.Network
                              * @instance
                              * @returns {Object.<string,*>} JSON object
                              */
@@ -2473,7 +2473,7 @@ $root.org = (function() {
 
                         /**
                          * Properties of a GetBlockRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IGetBlockRequest
                          * @property {number|null} [height] GetBlockRequest height
                          * @property {string|null} [hash] GetBlockRequest hash
@@ -2481,11 +2481,11 @@ $root.org = (function() {
 
                         /**
                          * Constructs a new GetBlockRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a GetBlockRequest.
                          * @implements IGetBlockRequest
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IGetBlockRequest=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IGetBlockRequest=} [properties] Properties to set
                          */
                         function GetBlockRequest(properties) {
                             if (properties)
@@ -2497,7 +2497,7 @@ $root.org = (function() {
                         /**
                          * GetBlockRequest height.
                          * @member {number} height
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @instance
                          */
                         GetBlockRequest.prototype.height = 0;
@@ -2505,7 +2505,7 @@ $root.org = (function() {
                         /**
                          * GetBlockRequest hash.
                          * @member {string} hash
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @instance
                          */
                         GetBlockRequest.prototype.hash = "";
@@ -2516,7 +2516,7 @@ $root.org = (function() {
                         /**
                          * GetBlockRequest block.
                          * @member {"height"|"hash"|undefined} block
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @instance
                          */
                         Object.defineProperty(GetBlockRequest.prototype, "block", {
@@ -2527,21 +2527,21 @@ $root.org = (function() {
                         /**
                          * Creates a new GetBlockRequest instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetBlockRequest=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.GetBlockRequest} GetBlockRequest instance
+                         * @param {org.hth.platform.dapi.v0.IGetBlockRequest=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.GetBlockRequest} GetBlockRequest instance
                          */
                         GetBlockRequest.create = function create(properties) {
                             return new GetBlockRequest(properties);
                         };
 
                         /**
-                         * Encodes the specified GetBlockRequest message. Does not implicitly {@link org.dash.platform.dapi.v0.GetBlockRequest.verify|verify} messages.
+                         * Encodes the specified GetBlockRequest message. Does not implicitly {@link org.hth.platform.dapi.v0.GetBlockRequest.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetBlockRequest} message GetBlockRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetBlockRequest} message GetBlockRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -2556,11 +2556,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified GetBlockRequest message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetBlockRequest.verify|verify} messages.
+                         * Encodes the specified GetBlockRequest message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetBlockRequest.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetBlockRequest} message GetBlockRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetBlockRequest} message GetBlockRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -2571,18 +2571,18 @@ $root.org = (function() {
                         /**
                          * Decodes a GetBlockRequest message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.GetBlockRequest} GetBlockRequest
+                         * @returns {org.hth.platform.dapi.v0.GetBlockRequest} GetBlockRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         GetBlockRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetBlockRequest();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetBlockRequest();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -2603,10 +2603,10 @@ $root.org = (function() {
                         /**
                          * Decodes a GetBlockRequest message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.GetBlockRequest} GetBlockRequest
+                         * @returns {org.hth.platform.dapi.v0.GetBlockRequest} GetBlockRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -2619,7 +2619,7 @@ $root.org = (function() {
                         /**
                          * Verifies a GetBlockRequest message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2646,15 +2646,15 @@ $root.org = (function() {
                         /**
                          * Creates a GetBlockRequest message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.GetBlockRequest} GetBlockRequest
+                         * @returns {org.hth.platform.dapi.v0.GetBlockRequest} GetBlockRequest
                          */
                         GetBlockRequest.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.GetBlockRequest)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.GetBlockRequest)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.GetBlockRequest();
+                            var message = new $root.org.hth.platform.dapi.v0.GetBlockRequest();
                             if (object.height != null)
                                 message.height = object.height >>> 0;
                             if (object.hash != null)
@@ -2665,9 +2665,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a GetBlockRequest message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.GetBlockRequest} message GetBlockRequest
+                         * @param {org.hth.platform.dapi.v0.GetBlockRequest} message GetBlockRequest
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -2691,7 +2691,7 @@ $root.org = (function() {
                         /**
                          * Converts this GetBlockRequest to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.GetBlockRequest
+                         * @memberof org.hth.platform.dapi.v0.GetBlockRequest
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -2706,18 +2706,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of a GetBlockResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IGetBlockResponse
                          * @property {Uint8Array|null} [block] GetBlockResponse block
                          */
 
                         /**
                          * Constructs a new GetBlockResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a GetBlockResponse.
                          * @implements IGetBlockResponse
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IGetBlockResponse=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IGetBlockResponse=} [properties] Properties to set
                          */
                         function GetBlockResponse(properties) {
                             if (properties)
@@ -2729,7 +2729,7 @@ $root.org = (function() {
                         /**
                          * GetBlockResponse block.
                          * @member {Uint8Array} block
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @instance
                          */
                         GetBlockResponse.prototype.block = $util.newBuffer([]);
@@ -2737,21 +2737,21 @@ $root.org = (function() {
                         /**
                          * Creates a new GetBlockResponse instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetBlockResponse=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.GetBlockResponse} GetBlockResponse instance
+                         * @param {org.hth.platform.dapi.v0.IGetBlockResponse=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.GetBlockResponse} GetBlockResponse instance
                          */
                         GetBlockResponse.create = function create(properties) {
                             return new GetBlockResponse(properties);
                         };
 
                         /**
-                         * Encodes the specified GetBlockResponse message. Does not implicitly {@link org.dash.platform.dapi.v0.GetBlockResponse.verify|verify} messages.
+                         * Encodes the specified GetBlockResponse message. Does not implicitly {@link org.hth.platform.dapi.v0.GetBlockResponse.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetBlockResponse} message GetBlockResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetBlockResponse} message GetBlockResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -2764,11 +2764,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified GetBlockResponse message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetBlockResponse.verify|verify} messages.
+                         * Encodes the specified GetBlockResponse message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetBlockResponse.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetBlockResponse} message GetBlockResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetBlockResponse} message GetBlockResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -2779,18 +2779,18 @@ $root.org = (function() {
                         /**
                          * Decodes a GetBlockResponse message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.GetBlockResponse} GetBlockResponse
+                         * @returns {org.hth.platform.dapi.v0.GetBlockResponse} GetBlockResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         GetBlockResponse.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetBlockResponse();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetBlockResponse();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -2808,10 +2808,10 @@ $root.org = (function() {
                         /**
                          * Decodes a GetBlockResponse message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.GetBlockResponse} GetBlockResponse
+                         * @returns {org.hth.platform.dapi.v0.GetBlockResponse} GetBlockResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -2824,7 +2824,7 @@ $root.org = (function() {
                         /**
                          * Verifies a GetBlockResponse message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -2841,15 +2841,15 @@ $root.org = (function() {
                         /**
                          * Creates a GetBlockResponse message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.GetBlockResponse} GetBlockResponse
+                         * @returns {org.hth.platform.dapi.v0.GetBlockResponse} GetBlockResponse
                          */
                         GetBlockResponse.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.GetBlockResponse)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.GetBlockResponse)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.GetBlockResponse();
+                            var message = new $root.org.hth.platform.dapi.v0.GetBlockResponse();
                             if (object.block != null)
                                 if (typeof object.block === "string")
                                     $util.base64.decode(object.block, message.block = $util.newBuffer($util.base64.length(object.block)), 0);
@@ -2861,9 +2861,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a GetBlockResponse message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.GetBlockResponse} message GetBlockResponse
+                         * @param {org.hth.platform.dapi.v0.GetBlockResponse} message GetBlockResponse
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -2887,7 +2887,7 @@ $root.org = (function() {
                         /**
                          * Converts this GetBlockResponse to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.GetBlockResponse
+                         * @memberof org.hth.platform.dapi.v0.GetBlockResponse
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -2902,7 +2902,7 @@ $root.org = (function() {
 
                         /**
                          * Properties of a BroadcastTransactionRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IBroadcastTransactionRequest
                          * @property {Uint8Array|null} [transaction] BroadcastTransactionRequest transaction
                          * @property {boolean|null} [allowHighFees] BroadcastTransactionRequest allowHighFees
@@ -2911,11 +2911,11 @@ $root.org = (function() {
 
                         /**
                          * Constructs a new BroadcastTransactionRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a BroadcastTransactionRequest.
                          * @implements IBroadcastTransactionRequest
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionRequest=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionRequest=} [properties] Properties to set
                          */
                         function BroadcastTransactionRequest(properties) {
                             if (properties)
@@ -2927,7 +2927,7 @@ $root.org = (function() {
                         /**
                          * BroadcastTransactionRequest transaction.
                          * @member {Uint8Array} transaction
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @instance
                          */
                         BroadcastTransactionRequest.prototype.transaction = $util.newBuffer([]);
@@ -2935,7 +2935,7 @@ $root.org = (function() {
                         /**
                          * BroadcastTransactionRequest allowHighFees.
                          * @member {boolean} allowHighFees
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @instance
                          */
                         BroadcastTransactionRequest.prototype.allowHighFees = false;
@@ -2943,7 +2943,7 @@ $root.org = (function() {
                         /**
                          * BroadcastTransactionRequest bypassLimits.
                          * @member {boolean} bypassLimits
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @instance
                          */
                         BroadcastTransactionRequest.prototype.bypassLimits = false;
@@ -2951,21 +2951,21 @@ $root.org = (function() {
                         /**
                          * Creates a new BroadcastTransactionRequest instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionRequest=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.BroadcastTransactionRequest} BroadcastTransactionRequest instance
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionRequest=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.BroadcastTransactionRequest} BroadcastTransactionRequest instance
                          */
                         BroadcastTransactionRequest.create = function create(properties) {
                             return new BroadcastTransactionRequest(properties);
                         };
 
                         /**
-                         * Encodes the specified BroadcastTransactionRequest message. Does not implicitly {@link org.dash.platform.dapi.v0.BroadcastTransactionRequest.verify|verify} messages.
+                         * Encodes the specified BroadcastTransactionRequest message. Does not implicitly {@link org.hth.platform.dapi.v0.BroadcastTransactionRequest.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionRequest} message BroadcastTransactionRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionRequest} message BroadcastTransactionRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -2982,11 +2982,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified BroadcastTransactionRequest message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.BroadcastTransactionRequest.verify|verify} messages.
+                         * Encodes the specified BroadcastTransactionRequest message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.BroadcastTransactionRequest.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionRequest} message BroadcastTransactionRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionRequest} message BroadcastTransactionRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -2997,18 +2997,18 @@ $root.org = (function() {
                         /**
                          * Decodes a BroadcastTransactionRequest message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.BroadcastTransactionRequest} BroadcastTransactionRequest
+                         * @returns {org.hth.platform.dapi.v0.BroadcastTransactionRequest} BroadcastTransactionRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         BroadcastTransactionRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.BroadcastTransactionRequest();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.BroadcastTransactionRequest();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -3032,10 +3032,10 @@ $root.org = (function() {
                         /**
                          * Decodes a BroadcastTransactionRequest message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.BroadcastTransactionRequest} BroadcastTransactionRequest
+                         * @returns {org.hth.platform.dapi.v0.BroadcastTransactionRequest} BroadcastTransactionRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -3048,7 +3048,7 @@ $root.org = (function() {
                         /**
                          * Verifies a BroadcastTransactionRequest message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3071,15 +3071,15 @@ $root.org = (function() {
                         /**
                          * Creates a BroadcastTransactionRequest message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.BroadcastTransactionRequest} BroadcastTransactionRequest
+                         * @returns {org.hth.platform.dapi.v0.BroadcastTransactionRequest} BroadcastTransactionRequest
                          */
                         BroadcastTransactionRequest.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.BroadcastTransactionRequest)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.BroadcastTransactionRequest)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.BroadcastTransactionRequest();
+                            var message = new $root.org.hth.platform.dapi.v0.BroadcastTransactionRequest();
                             if (object.transaction != null)
                                 if (typeof object.transaction === "string")
                                     $util.base64.decode(object.transaction, message.transaction = $util.newBuffer($util.base64.length(object.transaction)), 0);
@@ -3095,9 +3095,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a BroadcastTransactionRequest message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.BroadcastTransactionRequest} message BroadcastTransactionRequest
+                         * @param {org.hth.platform.dapi.v0.BroadcastTransactionRequest} message BroadcastTransactionRequest
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -3128,7 +3128,7 @@ $root.org = (function() {
                         /**
                          * Converts this BroadcastTransactionRequest to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionRequest
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -3143,18 +3143,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of a BroadcastTransactionResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IBroadcastTransactionResponse
                          * @property {string|null} [transactionId] BroadcastTransactionResponse transactionId
                          */
 
                         /**
                          * Constructs a new BroadcastTransactionResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a BroadcastTransactionResponse.
                          * @implements IBroadcastTransactionResponse
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionResponse=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionResponse=} [properties] Properties to set
                          */
                         function BroadcastTransactionResponse(properties) {
                             if (properties)
@@ -3166,7 +3166,7 @@ $root.org = (function() {
                         /**
                          * BroadcastTransactionResponse transactionId.
                          * @member {string} transactionId
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @instance
                          */
                         BroadcastTransactionResponse.prototype.transactionId = "";
@@ -3174,21 +3174,21 @@ $root.org = (function() {
                         /**
                          * Creates a new BroadcastTransactionResponse instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionResponse=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.BroadcastTransactionResponse} BroadcastTransactionResponse instance
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionResponse=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.BroadcastTransactionResponse} BroadcastTransactionResponse instance
                          */
                         BroadcastTransactionResponse.create = function create(properties) {
                             return new BroadcastTransactionResponse(properties);
                         };
 
                         /**
-                         * Encodes the specified BroadcastTransactionResponse message. Does not implicitly {@link org.dash.platform.dapi.v0.BroadcastTransactionResponse.verify|verify} messages.
+                         * Encodes the specified BroadcastTransactionResponse message. Does not implicitly {@link org.hth.platform.dapi.v0.BroadcastTransactionResponse.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionResponse} message BroadcastTransactionResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionResponse} message BroadcastTransactionResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -3201,11 +3201,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified BroadcastTransactionResponse message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.BroadcastTransactionResponse.verify|verify} messages.
+                         * Encodes the specified BroadcastTransactionResponse message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.BroadcastTransactionResponse.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBroadcastTransactionResponse} message BroadcastTransactionResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBroadcastTransactionResponse} message BroadcastTransactionResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -3216,18 +3216,18 @@ $root.org = (function() {
                         /**
                          * Decodes a BroadcastTransactionResponse message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.BroadcastTransactionResponse} BroadcastTransactionResponse
+                         * @returns {org.hth.platform.dapi.v0.BroadcastTransactionResponse} BroadcastTransactionResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         BroadcastTransactionResponse.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.BroadcastTransactionResponse();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.BroadcastTransactionResponse();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -3245,10 +3245,10 @@ $root.org = (function() {
                         /**
                          * Decodes a BroadcastTransactionResponse message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.BroadcastTransactionResponse} BroadcastTransactionResponse
+                         * @returns {org.hth.platform.dapi.v0.BroadcastTransactionResponse} BroadcastTransactionResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -3261,7 +3261,7 @@ $root.org = (function() {
                         /**
                          * Verifies a BroadcastTransactionResponse message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3278,15 +3278,15 @@ $root.org = (function() {
                         /**
                          * Creates a BroadcastTransactionResponse message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.BroadcastTransactionResponse} BroadcastTransactionResponse
+                         * @returns {org.hth.platform.dapi.v0.BroadcastTransactionResponse} BroadcastTransactionResponse
                          */
                         BroadcastTransactionResponse.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.BroadcastTransactionResponse)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.BroadcastTransactionResponse)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.BroadcastTransactionResponse();
+                            var message = new $root.org.hth.platform.dapi.v0.BroadcastTransactionResponse();
                             if (object.transactionId != null)
                                 message.transactionId = String(object.transactionId);
                             return message;
@@ -3295,9 +3295,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a BroadcastTransactionResponse message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.BroadcastTransactionResponse} message BroadcastTransactionResponse
+                         * @param {org.hth.platform.dapi.v0.BroadcastTransactionResponse} message BroadcastTransactionResponse
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -3315,7 +3315,7 @@ $root.org = (function() {
                         /**
                          * Converts this BroadcastTransactionResponse to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.BroadcastTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.BroadcastTransactionResponse
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -3330,18 +3330,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of a GetTransactionRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IGetTransactionRequest
                          * @property {string|null} [id] GetTransactionRequest id
                          */
 
                         /**
                          * Constructs a new GetTransactionRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a GetTransactionRequest.
                          * @implements IGetTransactionRequest
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionRequest=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionRequest=} [properties] Properties to set
                          */
                         function GetTransactionRequest(properties) {
                             if (properties)
@@ -3353,7 +3353,7 @@ $root.org = (function() {
                         /**
                          * GetTransactionRequest id.
                          * @member {string} id
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @instance
                          */
                         GetTransactionRequest.prototype.id = "";
@@ -3361,21 +3361,21 @@ $root.org = (function() {
                         /**
                          * Creates a new GetTransactionRequest instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionRequest=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.GetTransactionRequest} GetTransactionRequest instance
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionRequest=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.GetTransactionRequest} GetTransactionRequest instance
                          */
                         GetTransactionRequest.create = function create(properties) {
                             return new GetTransactionRequest(properties);
                         };
 
                         /**
-                         * Encodes the specified GetTransactionRequest message. Does not implicitly {@link org.dash.platform.dapi.v0.GetTransactionRequest.verify|verify} messages.
+                         * Encodes the specified GetTransactionRequest message. Does not implicitly {@link org.hth.platform.dapi.v0.GetTransactionRequest.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionRequest} message GetTransactionRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionRequest} message GetTransactionRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -3388,11 +3388,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified GetTransactionRequest message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetTransactionRequest.verify|verify} messages.
+                         * Encodes the specified GetTransactionRequest message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetTransactionRequest.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionRequest} message GetTransactionRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionRequest} message GetTransactionRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -3403,18 +3403,18 @@ $root.org = (function() {
                         /**
                          * Decodes a GetTransactionRequest message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.GetTransactionRequest} GetTransactionRequest
+                         * @returns {org.hth.platform.dapi.v0.GetTransactionRequest} GetTransactionRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         GetTransactionRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetTransactionRequest();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetTransactionRequest();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -3432,10 +3432,10 @@ $root.org = (function() {
                         /**
                          * Decodes a GetTransactionRequest message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.GetTransactionRequest} GetTransactionRequest
+                         * @returns {org.hth.platform.dapi.v0.GetTransactionRequest} GetTransactionRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -3448,7 +3448,7 @@ $root.org = (function() {
                         /**
                          * Verifies a GetTransactionRequest message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3465,15 +3465,15 @@ $root.org = (function() {
                         /**
                          * Creates a GetTransactionRequest message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.GetTransactionRequest} GetTransactionRequest
+                         * @returns {org.hth.platform.dapi.v0.GetTransactionRequest} GetTransactionRequest
                          */
                         GetTransactionRequest.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.GetTransactionRequest)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.GetTransactionRequest)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.GetTransactionRequest();
+                            var message = new $root.org.hth.platform.dapi.v0.GetTransactionRequest();
                             if (object.id != null)
                                 message.id = String(object.id);
                             return message;
@@ -3482,9 +3482,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a GetTransactionRequest message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.GetTransactionRequest} message GetTransactionRequest
+                         * @param {org.hth.platform.dapi.v0.GetTransactionRequest} message GetTransactionRequest
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -3502,7 +3502,7 @@ $root.org = (function() {
                         /**
                          * Converts this GetTransactionRequest to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionRequest
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionRequest
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -3517,7 +3517,7 @@ $root.org = (function() {
 
                         /**
                          * Properties of a GetTransactionResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IGetTransactionResponse
                          * @property {Uint8Array|null} [transaction] GetTransactionResponse transaction
                          * @property {Uint8Array|null} [blockHash] GetTransactionResponse blockHash
@@ -3529,11 +3529,11 @@ $root.org = (function() {
 
                         /**
                          * Constructs a new GetTransactionResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a GetTransactionResponse.
                          * @implements IGetTransactionResponse
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionResponse=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionResponse=} [properties] Properties to set
                          */
                         function GetTransactionResponse(properties) {
                             if (properties)
@@ -3545,7 +3545,7 @@ $root.org = (function() {
                         /**
                          * GetTransactionResponse transaction.
                          * @member {Uint8Array} transaction
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @instance
                          */
                         GetTransactionResponse.prototype.transaction = $util.newBuffer([]);
@@ -3553,7 +3553,7 @@ $root.org = (function() {
                         /**
                          * GetTransactionResponse blockHash.
                          * @member {Uint8Array} blockHash
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @instance
                          */
                         GetTransactionResponse.prototype.blockHash = $util.newBuffer([]);
@@ -3561,7 +3561,7 @@ $root.org = (function() {
                         /**
                          * GetTransactionResponse height.
                          * @member {number} height
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @instance
                          */
                         GetTransactionResponse.prototype.height = 0;
@@ -3569,7 +3569,7 @@ $root.org = (function() {
                         /**
                          * GetTransactionResponse confirmations.
                          * @member {number} confirmations
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @instance
                          */
                         GetTransactionResponse.prototype.confirmations = 0;
@@ -3577,7 +3577,7 @@ $root.org = (function() {
                         /**
                          * GetTransactionResponse isInstantLocked.
                          * @member {boolean} isInstantLocked
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @instance
                          */
                         GetTransactionResponse.prototype.isInstantLocked = false;
@@ -3585,7 +3585,7 @@ $root.org = (function() {
                         /**
                          * GetTransactionResponse isChainLocked.
                          * @member {boolean} isChainLocked
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @instance
                          */
                         GetTransactionResponse.prototype.isChainLocked = false;
@@ -3593,21 +3593,21 @@ $root.org = (function() {
                         /**
                          * Creates a new GetTransactionResponse instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionResponse=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.GetTransactionResponse} GetTransactionResponse instance
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionResponse=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.GetTransactionResponse} GetTransactionResponse instance
                          */
                         GetTransactionResponse.create = function create(properties) {
                             return new GetTransactionResponse(properties);
                         };
 
                         /**
-                         * Encodes the specified GetTransactionResponse message. Does not implicitly {@link org.dash.platform.dapi.v0.GetTransactionResponse.verify|verify} messages.
+                         * Encodes the specified GetTransactionResponse message. Does not implicitly {@link org.hth.platform.dapi.v0.GetTransactionResponse.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionResponse} message GetTransactionResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionResponse} message GetTransactionResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -3630,11 +3630,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified GetTransactionResponse message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetTransactionResponse.verify|verify} messages.
+                         * Encodes the specified GetTransactionResponse message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetTransactionResponse.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetTransactionResponse} message GetTransactionResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetTransactionResponse} message GetTransactionResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -3645,18 +3645,18 @@ $root.org = (function() {
                         /**
                          * Decodes a GetTransactionResponse message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.GetTransactionResponse} GetTransactionResponse
+                         * @returns {org.hth.platform.dapi.v0.GetTransactionResponse} GetTransactionResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         GetTransactionResponse.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetTransactionResponse();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetTransactionResponse();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -3689,10 +3689,10 @@ $root.org = (function() {
                         /**
                          * Decodes a GetTransactionResponse message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.GetTransactionResponse} GetTransactionResponse
+                         * @returns {org.hth.platform.dapi.v0.GetTransactionResponse} GetTransactionResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -3705,7 +3705,7 @@ $root.org = (function() {
                         /**
                          * Verifies a GetTransactionResponse message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -3737,15 +3737,15 @@ $root.org = (function() {
                         /**
                          * Creates a GetTransactionResponse message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.GetTransactionResponse} GetTransactionResponse
+                         * @returns {org.hth.platform.dapi.v0.GetTransactionResponse} GetTransactionResponse
                          */
                         GetTransactionResponse.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.GetTransactionResponse)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.GetTransactionResponse)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.GetTransactionResponse();
+                            var message = new $root.org.hth.platform.dapi.v0.GetTransactionResponse();
                             if (object.transaction != null)
                                 if (typeof object.transaction === "string")
                                     $util.base64.decode(object.transaction, message.transaction = $util.newBuffer($util.base64.length(object.transaction)), 0);
@@ -3770,9 +3770,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a GetTransactionResponse message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.GetTransactionResponse} message GetTransactionResponse
+                         * @param {org.hth.platform.dapi.v0.GetTransactionResponse} message GetTransactionResponse
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -3818,7 +3818,7 @@ $root.org = (function() {
                         /**
                          * Converts this GetTransactionResponse to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.GetTransactionResponse
+                         * @memberof org.hth.platform.dapi.v0.GetTransactionResponse
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -3833,7 +3833,7 @@ $root.org = (function() {
 
                         /**
                          * Properties of a BlockHeadersWithChainLocksRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IBlockHeadersWithChainLocksRequest
                          * @property {Uint8Array|null} [fromBlockHash] BlockHeadersWithChainLocksRequest fromBlockHash
                          * @property {number|null} [fromBlockHeight] BlockHeadersWithChainLocksRequest fromBlockHeight
@@ -3842,11 +3842,11 @@ $root.org = (function() {
 
                         /**
                          * Constructs a new BlockHeadersWithChainLocksRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a BlockHeadersWithChainLocksRequest.
                          * @implements IBlockHeadersWithChainLocksRequest
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksRequest=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksRequest=} [properties] Properties to set
                          */
                         function BlockHeadersWithChainLocksRequest(properties) {
                             if (properties)
@@ -3858,7 +3858,7 @@ $root.org = (function() {
                         /**
                          * BlockHeadersWithChainLocksRequest fromBlockHash.
                          * @member {Uint8Array} fromBlockHash
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @instance
                          */
                         BlockHeadersWithChainLocksRequest.prototype.fromBlockHash = $util.newBuffer([]);
@@ -3866,7 +3866,7 @@ $root.org = (function() {
                         /**
                          * BlockHeadersWithChainLocksRequest fromBlockHeight.
                          * @member {number} fromBlockHeight
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @instance
                          */
                         BlockHeadersWithChainLocksRequest.prototype.fromBlockHeight = 0;
@@ -3874,7 +3874,7 @@ $root.org = (function() {
                         /**
                          * BlockHeadersWithChainLocksRequest count.
                          * @member {number} count
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @instance
                          */
                         BlockHeadersWithChainLocksRequest.prototype.count = 0;
@@ -3885,7 +3885,7 @@ $root.org = (function() {
                         /**
                          * BlockHeadersWithChainLocksRequest fromBlock.
                          * @member {"fromBlockHash"|"fromBlockHeight"|undefined} fromBlock
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @instance
                          */
                         Object.defineProperty(BlockHeadersWithChainLocksRequest.prototype, "fromBlock", {
@@ -3896,21 +3896,21 @@ $root.org = (function() {
                         /**
                          * Creates a new BlockHeadersWithChainLocksRequest instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksRequest=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} BlockHeadersWithChainLocksRequest instance
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksRequest=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} BlockHeadersWithChainLocksRequest instance
                          */
                         BlockHeadersWithChainLocksRequest.create = function create(properties) {
                             return new BlockHeadersWithChainLocksRequest(properties);
                         };
 
                         /**
-                         * Encodes the specified BlockHeadersWithChainLocksRequest message. Does not implicitly {@link org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.verify|verify} messages.
+                         * Encodes the specified BlockHeadersWithChainLocksRequest message. Does not implicitly {@link org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksRequest} message BlockHeadersWithChainLocksRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksRequest} message BlockHeadersWithChainLocksRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -3927,11 +3927,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified BlockHeadersWithChainLocksRequest message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest.verify|verify} messages.
+                         * Encodes the specified BlockHeadersWithChainLocksRequest message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksRequest} message BlockHeadersWithChainLocksRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksRequest} message BlockHeadersWithChainLocksRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -3942,18 +3942,18 @@ $root.org = (function() {
                         /**
                          * Decodes a BlockHeadersWithChainLocksRequest message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} BlockHeadersWithChainLocksRequest
+                         * @returns {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} BlockHeadersWithChainLocksRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         BlockHeadersWithChainLocksRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -3977,10 +3977,10 @@ $root.org = (function() {
                         /**
                          * Decodes a BlockHeadersWithChainLocksRequest message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} BlockHeadersWithChainLocksRequest
+                         * @returns {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} BlockHeadersWithChainLocksRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -3993,7 +3993,7 @@ $root.org = (function() {
                         /**
                          * Verifies a BlockHeadersWithChainLocksRequest message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4023,15 +4023,15 @@ $root.org = (function() {
                         /**
                          * Creates a BlockHeadersWithChainLocksRequest message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} BlockHeadersWithChainLocksRequest
+                         * @returns {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} BlockHeadersWithChainLocksRequest
                          */
                         BlockHeadersWithChainLocksRequest.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest();
+                            var message = new $root.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest();
                             if (object.fromBlockHash != null)
                                 if (typeof object.fromBlockHash === "string")
                                     $util.base64.decode(object.fromBlockHash, message.fromBlockHash = $util.newBuffer($util.base64.length(object.fromBlockHash)), 0);
@@ -4047,9 +4047,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a BlockHeadersWithChainLocksRequest message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest} message BlockHeadersWithChainLocksRequest
+                         * @param {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest} message BlockHeadersWithChainLocksRequest
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -4077,7 +4077,7 @@ $root.org = (function() {
                         /**
                          * Converts this BlockHeadersWithChainLocksRequest to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksRequest
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksRequest
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -4092,19 +4092,19 @@ $root.org = (function() {
 
                         /**
                          * Properties of a BlockHeadersWithChainLocksResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IBlockHeadersWithChainLocksResponse
-                         * @property {org.dash.platform.dapi.v0.IBlockHeaders|null} [blockHeaders] BlockHeadersWithChainLocksResponse blockHeaders
-                         * @property {org.dash.platform.dapi.v0.IChainLockSignatureMessages|null} [chainLockSignatureMessages] BlockHeadersWithChainLocksResponse chainLockSignatureMessages
+                         * @property {org.hth.platform.dapi.v0.IBlockHeaders|null} [blockHeaders] BlockHeadersWithChainLocksResponse blockHeaders
+                         * @property {org.hth.platform.dapi.v0.IChainLockSignatureMessages|null} [chainLockSignatureMessages] BlockHeadersWithChainLocksResponse chainLockSignatureMessages
                          */
 
                         /**
                          * Constructs a new BlockHeadersWithChainLocksResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a BlockHeadersWithChainLocksResponse.
                          * @implements IBlockHeadersWithChainLocksResponse
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksResponse=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksResponse=} [properties] Properties to set
                          */
                         function BlockHeadersWithChainLocksResponse(properties) {
                             if (properties)
@@ -4115,16 +4115,16 @@ $root.org = (function() {
 
                         /**
                          * BlockHeadersWithChainLocksResponse blockHeaders.
-                         * @member {org.dash.platform.dapi.v0.IBlockHeaders|null|undefined} blockHeaders
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @member {org.hth.platform.dapi.v0.IBlockHeaders|null|undefined} blockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @instance
                          */
                         BlockHeadersWithChainLocksResponse.prototype.blockHeaders = null;
 
                         /**
                          * BlockHeadersWithChainLocksResponse chainLockSignatureMessages.
-                         * @member {org.dash.platform.dapi.v0.IChainLockSignatureMessages|null|undefined} chainLockSignatureMessages
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @member {org.hth.platform.dapi.v0.IChainLockSignatureMessages|null|undefined} chainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @instance
                          */
                         BlockHeadersWithChainLocksResponse.prototype.chainLockSignatureMessages = null;
@@ -4135,7 +4135,7 @@ $root.org = (function() {
                         /**
                          * BlockHeadersWithChainLocksResponse responses.
                          * @member {"blockHeaders"|"chainLockSignatureMessages"|undefined} responses
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @instance
                          */
                         Object.defineProperty(BlockHeadersWithChainLocksResponse.prototype, "responses", {
@@ -4146,21 +4146,21 @@ $root.org = (function() {
                         /**
                          * Creates a new BlockHeadersWithChainLocksResponse instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksResponse=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} BlockHeadersWithChainLocksResponse instance
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksResponse=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} BlockHeadersWithChainLocksResponse instance
                          */
                         BlockHeadersWithChainLocksResponse.create = function create(properties) {
                             return new BlockHeadersWithChainLocksResponse(properties);
                         };
 
                         /**
-                         * Encodes the specified BlockHeadersWithChainLocksResponse message. Does not implicitly {@link org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.verify|verify} messages.
+                         * Encodes the specified BlockHeadersWithChainLocksResponse message. Does not implicitly {@link org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksResponse} message BlockHeadersWithChainLocksResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksResponse} message BlockHeadersWithChainLocksResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4168,18 +4168,18 @@ $root.org = (function() {
                             if (!writer)
                                 writer = $Writer.create();
                             if (message.blockHeaders != null && Object.hasOwnProperty.call(message, "blockHeaders"))
-                                $root.org.dash.platform.dapi.v0.BlockHeaders.encode(message.blockHeaders, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.BlockHeaders.encode(message.blockHeaders, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                             if (message.chainLockSignatureMessages != null && Object.hasOwnProperty.call(message, "chainLockSignatureMessages"))
-                                $root.org.dash.platform.dapi.v0.ChainLockSignatureMessages.encode(message.chainLockSignatureMessages, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.ChainLockSignatureMessages.encode(message.chainLockSignatureMessages, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                             return writer;
                         };
 
                         /**
-                         * Encodes the specified BlockHeadersWithChainLocksResponse message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.verify|verify} messages.
+                         * Encodes the specified BlockHeadersWithChainLocksResponse message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeadersWithChainLocksResponse} message BlockHeadersWithChainLocksResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBlockHeadersWithChainLocksResponse} message BlockHeadersWithChainLocksResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4190,26 +4190,26 @@ $root.org = (function() {
                         /**
                          * Decodes a BlockHeadersWithChainLocksResponse message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} BlockHeadersWithChainLocksResponse
+                         * @returns {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} BlockHeadersWithChainLocksResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         BlockHeadersWithChainLocksResponse.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
                                 case 1:
-                                    message.blockHeaders = $root.org.dash.platform.dapi.v0.BlockHeaders.decode(reader, reader.uint32());
+                                    message.blockHeaders = $root.org.hth.platform.dapi.v0.BlockHeaders.decode(reader, reader.uint32());
                                     break;
                                 case 2:
-                                    message.chainLockSignatureMessages = $root.org.dash.platform.dapi.v0.ChainLockSignatureMessages.decode(reader, reader.uint32());
+                                    message.chainLockSignatureMessages = $root.org.hth.platform.dapi.v0.ChainLockSignatureMessages.decode(reader, reader.uint32());
                                     break;
                                 default:
                                     reader.skipType(tag & 7);
@@ -4222,10 +4222,10 @@ $root.org = (function() {
                         /**
                          * Decodes a BlockHeadersWithChainLocksResponse message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} BlockHeadersWithChainLocksResponse
+                         * @returns {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} BlockHeadersWithChainLocksResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -4238,7 +4238,7 @@ $root.org = (function() {
                         /**
                          * Verifies a BlockHeadersWithChainLocksResponse message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4250,7 +4250,7 @@ $root.org = (function() {
                             if (message.blockHeaders != null && message.hasOwnProperty("blockHeaders")) {
                                 properties.responses = 1;
                                 {
-                                    var error = $root.org.dash.platform.dapi.v0.BlockHeaders.verify(message.blockHeaders);
+                                    var error = $root.org.hth.platform.dapi.v0.BlockHeaders.verify(message.blockHeaders);
                                     if (error)
                                         return "blockHeaders." + error;
                                 }
@@ -4260,7 +4260,7 @@ $root.org = (function() {
                                     return "responses: multiple values";
                                 properties.responses = 1;
                                 {
-                                    var error = $root.org.dash.platform.dapi.v0.ChainLockSignatureMessages.verify(message.chainLockSignatureMessages);
+                                    var error = $root.org.hth.platform.dapi.v0.ChainLockSignatureMessages.verify(message.chainLockSignatureMessages);
                                     if (error)
                                         return "chainLockSignatureMessages." + error;
                                 }
@@ -4271,24 +4271,24 @@ $root.org = (function() {
                         /**
                          * Creates a BlockHeadersWithChainLocksResponse message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} BlockHeadersWithChainLocksResponse
+                         * @returns {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} BlockHeadersWithChainLocksResponse
                          */
                         BlockHeadersWithChainLocksResponse.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse();
+                            var message = new $root.org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse();
                             if (object.blockHeaders != null) {
                                 if (typeof object.blockHeaders !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.blockHeaders: object expected");
-                                message.blockHeaders = $root.org.dash.platform.dapi.v0.BlockHeaders.fromObject(object.blockHeaders);
+                                    throw TypeError(".org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.blockHeaders: object expected");
+                                message.blockHeaders = $root.org.hth.platform.dapi.v0.BlockHeaders.fromObject(object.blockHeaders);
                             }
                             if (object.chainLockSignatureMessages != null) {
                                 if (typeof object.chainLockSignatureMessages !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse.chainLockSignatureMessages: object expected");
-                                message.chainLockSignatureMessages = $root.org.dash.platform.dapi.v0.ChainLockSignatureMessages.fromObject(object.chainLockSignatureMessages);
+                                    throw TypeError(".org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse.chainLockSignatureMessages: object expected");
+                                message.chainLockSignatureMessages = $root.org.hth.platform.dapi.v0.ChainLockSignatureMessages.fromObject(object.chainLockSignatureMessages);
                             }
                             return message;
                         };
@@ -4296,9 +4296,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a BlockHeadersWithChainLocksResponse message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse} message BlockHeadersWithChainLocksResponse
+                         * @param {org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse} message BlockHeadersWithChainLocksResponse
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -4307,12 +4307,12 @@ $root.org = (function() {
                                 options = {};
                             var object = {};
                             if (message.blockHeaders != null && message.hasOwnProperty("blockHeaders")) {
-                                object.blockHeaders = $root.org.dash.platform.dapi.v0.BlockHeaders.toObject(message.blockHeaders, options);
+                                object.blockHeaders = $root.org.hth.platform.dapi.v0.BlockHeaders.toObject(message.blockHeaders, options);
                                 if (options.oneofs)
                                     object.responses = "blockHeaders";
                             }
                             if (message.chainLockSignatureMessages != null && message.hasOwnProperty("chainLockSignatureMessages")) {
-                                object.chainLockSignatureMessages = $root.org.dash.platform.dapi.v0.ChainLockSignatureMessages.toObject(message.chainLockSignatureMessages, options);
+                                object.chainLockSignatureMessages = $root.org.hth.platform.dapi.v0.ChainLockSignatureMessages.toObject(message.chainLockSignatureMessages, options);
                                 if (options.oneofs)
                                     object.responses = "chainLockSignatureMessages";
                             }
@@ -4322,7 +4322,7 @@ $root.org = (function() {
                         /**
                          * Converts this BlockHeadersWithChainLocksResponse to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.BlockHeadersWithChainLocksResponse
+                         * @memberof org.hth.platform.dapi.v0.BlockHeadersWithChainLocksResponse
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -4337,18 +4337,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of a BlockHeaders.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IBlockHeaders
                          * @property {Array.<Uint8Array>|null} [headers] BlockHeaders headers
                          */
 
                         /**
                          * Constructs a new BlockHeaders.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a BlockHeaders.
                          * @implements IBlockHeaders
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IBlockHeaders=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IBlockHeaders=} [properties] Properties to set
                          */
                         function BlockHeaders(properties) {
                             this.headers = [];
@@ -4361,7 +4361,7 @@ $root.org = (function() {
                         /**
                          * BlockHeaders headers.
                          * @member {Array.<Uint8Array>} headers
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @instance
                          */
                         BlockHeaders.prototype.headers = $util.emptyArray;
@@ -4369,21 +4369,21 @@ $root.org = (function() {
                         /**
                          * Creates a new BlockHeaders instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeaders=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.BlockHeaders} BlockHeaders instance
+                         * @param {org.hth.platform.dapi.v0.IBlockHeaders=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.BlockHeaders} BlockHeaders instance
                          */
                         BlockHeaders.create = function create(properties) {
                             return new BlockHeaders(properties);
                         };
 
                         /**
-                         * Encodes the specified BlockHeaders message. Does not implicitly {@link org.dash.platform.dapi.v0.BlockHeaders.verify|verify} messages.
+                         * Encodes the specified BlockHeaders message. Does not implicitly {@link org.hth.platform.dapi.v0.BlockHeaders.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeaders} message BlockHeaders message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBlockHeaders} message BlockHeaders message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4397,11 +4397,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified BlockHeaders message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.BlockHeaders.verify|verify} messages.
+                         * Encodes the specified BlockHeaders message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.BlockHeaders.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBlockHeaders} message BlockHeaders message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBlockHeaders} message BlockHeaders message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4412,18 +4412,18 @@ $root.org = (function() {
                         /**
                          * Decodes a BlockHeaders message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.BlockHeaders} BlockHeaders
+                         * @returns {org.hth.platform.dapi.v0.BlockHeaders} BlockHeaders
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         BlockHeaders.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.BlockHeaders();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.BlockHeaders();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -4443,10 +4443,10 @@ $root.org = (function() {
                         /**
                          * Decodes a BlockHeaders message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.BlockHeaders} BlockHeaders
+                         * @returns {org.hth.platform.dapi.v0.BlockHeaders} BlockHeaders
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -4459,7 +4459,7 @@ $root.org = (function() {
                         /**
                          * Verifies a BlockHeaders message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4480,18 +4480,18 @@ $root.org = (function() {
                         /**
                          * Creates a BlockHeaders message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.BlockHeaders} BlockHeaders
+                         * @returns {org.hth.platform.dapi.v0.BlockHeaders} BlockHeaders
                          */
                         BlockHeaders.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.BlockHeaders)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.BlockHeaders)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.BlockHeaders();
+                            var message = new $root.org.hth.platform.dapi.v0.BlockHeaders();
                             if (object.headers) {
                                 if (!Array.isArray(object.headers))
-                                    throw TypeError(".org.dash.platform.dapi.v0.BlockHeaders.headers: array expected");
+                                    throw TypeError(".org.hth.platform.dapi.v0.BlockHeaders.headers: array expected");
                                 message.headers = [];
                                 for (var i = 0; i < object.headers.length; ++i)
                                     if (typeof object.headers[i] === "string")
@@ -4505,9 +4505,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a BlockHeaders message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @static
-                         * @param {org.dash.platform.dapi.v0.BlockHeaders} message BlockHeaders
+                         * @param {org.hth.platform.dapi.v0.BlockHeaders} message BlockHeaders
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -4528,7 +4528,7 @@ $root.org = (function() {
                         /**
                          * Converts this BlockHeaders to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.BlockHeaders
+                         * @memberof org.hth.platform.dapi.v0.BlockHeaders
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -4543,18 +4543,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of a ChainLockSignatureMessages.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IChainLockSignatureMessages
                          * @property {Array.<Uint8Array>|null} [messages] ChainLockSignatureMessages messages
                          */
 
                         /**
                          * Constructs a new ChainLockSignatureMessages.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a ChainLockSignatureMessages.
                          * @implements IChainLockSignatureMessages
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IChainLockSignatureMessages=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IChainLockSignatureMessages=} [properties] Properties to set
                          */
                         function ChainLockSignatureMessages(properties) {
                             this.messages = [];
@@ -4567,7 +4567,7 @@ $root.org = (function() {
                         /**
                          * ChainLockSignatureMessages messages.
                          * @member {Array.<Uint8Array>} messages
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @instance
                          */
                         ChainLockSignatureMessages.prototype.messages = $util.emptyArray;
@@ -4575,21 +4575,21 @@ $root.org = (function() {
                         /**
                          * Creates a new ChainLockSignatureMessages instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IChainLockSignatureMessages=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.ChainLockSignatureMessages} ChainLockSignatureMessages instance
+                         * @param {org.hth.platform.dapi.v0.IChainLockSignatureMessages=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.ChainLockSignatureMessages} ChainLockSignatureMessages instance
                          */
                         ChainLockSignatureMessages.create = function create(properties) {
                             return new ChainLockSignatureMessages(properties);
                         };
 
                         /**
-                         * Encodes the specified ChainLockSignatureMessages message. Does not implicitly {@link org.dash.platform.dapi.v0.ChainLockSignatureMessages.verify|verify} messages.
+                         * Encodes the specified ChainLockSignatureMessages message. Does not implicitly {@link org.hth.platform.dapi.v0.ChainLockSignatureMessages.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IChainLockSignatureMessages} message ChainLockSignatureMessages message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IChainLockSignatureMessages} message ChainLockSignatureMessages message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4603,11 +4603,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified ChainLockSignatureMessages message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.ChainLockSignatureMessages.verify|verify} messages.
+                         * Encodes the specified ChainLockSignatureMessages message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.ChainLockSignatureMessages.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IChainLockSignatureMessages} message ChainLockSignatureMessages message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IChainLockSignatureMessages} message ChainLockSignatureMessages message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4618,18 +4618,18 @@ $root.org = (function() {
                         /**
                          * Decodes a ChainLockSignatureMessages message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.ChainLockSignatureMessages} ChainLockSignatureMessages
+                         * @returns {org.hth.platform.dapi.v0.ChainLockSignatureMessages} ChainLockSignatureMessages
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         ChainLockSignatureMessages.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.ChainLockSignatureMessages();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.ChainLockSignatureMessages();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -4649,10 +4649,10 @@ $root.org = (function() {
                         /**
                          * Decodes a ChainLockSignatureMessages message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.ChainLockSignatureMessages} ChainLockSignatureMessages
+                         * @returns {org.hth.platform.dapi.v0.ChainLockSignatureMessages} ChainLockSignatureMessages
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -4665,7 +4665,7 @@ $root.org = (function() {
                         /**
                          * Verifies a ChainLockSignatureMessages message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4686,18 +4686,18 @@ $root.org = (function() {
                         /**
                          * Creates a ChainLockSignatureMessages message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.ChainLockSignatureMessages} ChainLockSignatureMessages
+                         * @returns {org.hth.platform.dapi.v0.ChainLockSignatureMessages} ChainLockSignatureMessages
                          */
                         ChainLockSignatureMessages.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.ChainLockSignatureMessages)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.ChainLockSignatureMessages)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.ChainLockSignatureMessages();
+                            var message = new $root.org.hth.platform.dapi.v0.ChainLockSignatureMessages();
                             if (object.messages) {
                                 if (!Array.isArray(object.messages))
-                                    throw TypeError(".org.dash.platform.dapi.v0.ChainLockSignatureMessages.messages: array expected");
+                                    throw TypeError(".org.hth.platform.dapi.v0.ChainLockSignatureMessages.messages: array expected");
                                 message.messages = [];
                                 for (var i = 0; i < object.messages.length; ++i)
                                     if (typeof object.messages[i] === "string")
@@ -4711,9 +4711,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a ChainLockSignatureMessages message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @static
-                         * @param {org.dash.platform.dapi.v0.ChainLockSignatureMessages} message ChainLockSignatureMessages
+                         * @param {org.hth.platform.dapi.v0.ChainLockSignatureMessages} message ChainLockSignatureMessages
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -4734,7 +4734,7 @@ $root.org = (function() {
                         /**
                          * Converts this ChainLockSignatureMessages to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.ChainLockSignatureMessages
+                         * @memberof org.hth.platform.dapi.v0.ChainLockSignatureMessages
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -4749,18 +4749,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of a GetEstimatedTransactionFeeRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IGetEstimatedTransactionFeeRequest
                          * @property {number|null} [blocks] GetEstimatedTransactionFeeRequest blocks
                          */
 
                         /**
                          * Constructs a new GetEstimatedTransactionFeeRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a GetEstimatedTransactionFeeRequest.
                          * @implements IGetEstimatedTransactionFeeRequest
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeRequest=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeRequest=} [properties] Properties to set
                          */
                         function GetEstimatedTransactionFeeRequest(properties) {
                             if (properties)
@@ -4772,7 +4772,7 @@ $root.org = (function() {
                         /**
                          * GetEstimatedTransactionFeeRequest blocks.
                          * @member {number} blocks
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @instance
                          */
                         GetEstimatedTransactionFeeRequest.prototype.blocks = 0;
@@ -4780,21 +4780,21 @@ $root.org = (function() {
                         /**
                          * Creates a new GetEstimatedTransactionFeeRequest instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeRequest=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} GetEstimatedTransactionFeeRequest instance
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeRequest=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} GetEstimatedTransactionFeeRequest instance
                          */
                         GetEstimatedTransactionFeeRequest.create = function create(properties) {
                             return new GetEstimatedTransactionFeeRequest(properties);
                         };
 
                         /**
-                         * Encodes the specified GetEstimatedTransactionFeeRequest message. Does not implicitly {@link org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.verify|verify} messages.
+                         * Encodes the specified GetEstimatedTransactionFeeRequest message. Does not implicitly {@link org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeRequest} message GetEstimatedTransactionFeeRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeRequest} message GetEstimatedTransactionFeeRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4807,11 +4807,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified GetEstimatedTransactionFeeRequest message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest.verify|verify} messages.
+                         * Encodes the specified GetEstimatedTransactionFeeRequest message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeRequest} message GetEstimatedTransactionFeeRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeRequest} message GetEstimatedTransactionFeeRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4822,18 +4822,18 @@ $root.org = (function() {
                         /**
                          * Decodes a GetEstimatedTransactionFeeRequest message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} GetEstimatedTransactionFeeRequest
+                         * @returns {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} GetEstimatedTransactionFeeRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         GetEstimatedTransactionFeeRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -4851,10 +4851,10 @@ $root.org = (function() {
                         /**
                          * Decodes a GetEstimatedTransactionFeeRequest message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} GetEstimatedTransactionFeeRequest
+                         * @returns {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} GetEstimatedTransactionFeeRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -4867,7 +4867,7 @@ $root.org = (function() {
                         /**
                          * Verifies a GetEstimatedTransactionFeeRequest message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -4884,15 +4884,15 @@ $root.org = (function() {
                         /**
                          * Creates a GetEstimatedTransactionFeeRequest message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} GetEstimatedTransactionFeeRequest
+                         * @returns {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} GetEstimatedTransactionFeeRequest
                          */
                         GetEstimatedTransactionFeeRequest.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest();
+                            var message = new $root.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest();
                             if (object.blocks != null)
                                 message.blocks = object.blocks >>> 0;
                             return message;
@@ -4901,9 +4901,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a GetEstimatedTransactionFeeRequest message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest} message GetEstimatedTransactionFeeRequest
+                         * @param {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest} message GetEstimatedTransactionFeeRequest
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -4921,7 +4921,7 @@ $root.org = (function() {
                         /**
                          * Converts this GetEstimatedTransactionFeeRequest to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeRequest
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeRequest
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -4936,18 +4936,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of a GetEstimatedTransactionFeeResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IGetEstimatedTransactionFeeResponse
                          * @property {number|null} [fee] GetEstimatedTransactionFeeResponse fee
                          */
 
                         /**
                          * Constructs a new GetEstimatedTransactionFeeResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a GetEstimatedTransactionFeeResponse.
                          * @implements IGetEstimatedTransactionFeeResponse
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeResponse=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeResponse=} [properties] Properties to set
                          */
                         function GetEstimatedTransactionFeeResponse(properties) {
                             if (properties)
@@ -4959,7 +4959,7 @@ $root.org = (function() {
                         /**
                          * GetEstimatedTransactionFeeResponse fee.
                          * @member {number} fee
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @instance
                          */
                         GetEstimatedTransactionFeeResponse.prototype.fee = 0;
@@ -4967,21 +4967,21 @@ $root.org = (function() {
                         /**
                          * Creates a new GetEstimatedTransactionFeeResponse instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeResponse=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} GetEstimatedTransactionFeeResponse instance
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeResponse=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} GetEstimatedTransactionFeeResponse instance
                          */
                         GetEstimatedTransactionFeeResponse.create = function create(properties) {
                             return new GetEstimatedTransactionFeeResponse(properties);
                         };
 
                         /**
-                         * Encodes the specified GetEstimatedTransactionFeeResponse message. Does not implicitly {@link org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.verify|verify} messages.
+                         * Encodes the specified GetEstimatedTransactionFeeResponse message. Does not implicitly {@link org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeResponse} message GetEstimatedTransactionFeeResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeResponse} message GetEstimatedTransactionFeeResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -4994,11 +4994,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified GetEstimatedTransactionFeeResponse message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse.verify|verify} messages.
+                         * Encodes the specified GetEstimatedTransactionFeeResponse message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IGetEstimatedTransactionFeeResponse} message GetEstimatedTransactionFeeResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IGetEstimatedTransactionFeeResponse} message GetEstimatedTransactionFeeResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -5009,18 +5009,18 @@ $root.org = (function() {
                         /**
                          * Decodes a GetEstimatedTransactionFeeResponse message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} GetEstimatedTransactionFeeResponse
+                         * @returns {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} GetEstimatedTransactionFeeResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         GetEstimatedTransactionFeeResponse.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -5038,10 +5038,10 @@ $root.org = (function() {
                         /**
                          * Decodes a GetEstimatedTransactionFeeResponse message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} GetEstimatedTransactionFeeResponse
+                         * @returns {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} GetEstimatedTransactionFeeResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -5054,7 +5054,7 @@ $root.org = (function() {
                         /**
                          * Verifies a GetEstimatedTransactionFeeResponse message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5071,15 +5071,15 @@ $root.org = (function() {
                         /**
                          * Creates a GetEstimatedTransactionFeeResponse message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} GetEstimatedTransactionFeeResponse
+                         * @returns {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} GetEstimatedTransactionFeeResponse
                          */
                         GetEstimatedTransactionFeeResponse.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse();
+                            var message = new $root.org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse();
                             if (object.fee != null)
                                 message.fee = Number(object.fee);
                             return message;
@@ -5088,9 +5088,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a GetEstimatedTransactionFeeResponse message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse} message GetEstimatedTransactionFeeResponse
+                         * @param {org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse} message GetEstimatedTransactionFeeResponse
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -5108,7 +5108,7 @@ $root.org = (function() {
                         /**
                          * Converts this GetEstimatedTransactionFeeResponse to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.GetEstimatedTransactionFeeResponse
+                         * @memberof org.hth.platform.dapi.v0.GetEstimatedTransactionFeeResponse
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -5123,9 +5123,9 @@ $root.org = (function() {
 
                         /**
                          * Properties of a TransactionsWithProofsRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface ITransactionsWithProofsRequest
-                         * @property {org.dash.platform.dapi.v0.IBloomFilter|null} [bloomFilter] TransactionsWithProofsRequest bloomFilter
+                         * @property {org.hth.platform.dapi.v0.IBloomFilter|null} [bloomFilter] TransactionsWithProofsRequest bloomFilter
                          * @property {Uint8Array|null} [fromBlockHash] TransactionsWithProofsRequest fromBlockHash
                          * @property {number|null} [fromBlockHeight] TransactionsWithProofsRequest fromBlockHeight
                          * @property {number|null} [count] TransactionsWithProofsRequest count
@@ -5134,11 +5134,11 @@ $root.org = (function() {
 
                         /**
                          * Constructs a new TransactionsWithProofsRequest.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a TransactionsWithProofsRequest.
                          * @implements ITransactionsWithProofsRequest
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsRequest=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsRequest=} [properties] Properties to set
                          */
                         function TransactionsWithProofsRequest(properties) {
                             if (properties)
@@ -5149,8 +5149,8 @@ $root.org = (function() {
 
                         /**
                          * TransactionsWithProofsRequest bloomFilter.
-                         * @member {org.dash.platform.dapi.v0.IBloomFilter|null|undefined} bloomFilter
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @member {org.hth.platform.dapi.v0.IBloomFilter|null|undefined} bloomFilter
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @instance
                          */
                         TransactionsWithProofsRequest.prototype.bloomFilter = null;
@@ -5158,7 +5158,7 @@ $root.org = (function() {
                         /**
                          * TransactionsWithProofsRequest fromBlockHash.
                          * @member {Uint8Array} fromBlockHash
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @instance
                          */
                         TransactionsWithProofsRequest.prototype.fromBlockHash = $util.newBuffer([]);
@@ -5166,7 +5166,7 @@ $root.org = (function() {
                         /**
                          * TransactionsWithProofsRequest fromBlockHeight.
                          * @member {number} fromBlockHeight
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @instance
                          */
                         TransactionsWithProofsRequest.prototype.fromBlockHeight = 0;
@@ -5174,7 +5174,7 @@ $root.org = (function() {
                         /**
                          * TransactionsWithProofsRequest count.
                          * @member {number} count
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @instance
                          */
                         TransactionsWithProofsRequest.prototype.count = 0;
@@ -5182,7 +5182,7 @@ $root.org = (function() {
                         /**
                          * TransactionsWithProofsRequest sendTransactionHashes.
                          * @member {boolean} sendTransactionHashes
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @instance
                          */
                         TransactionsWithProofsRequest.prototype.sendTransactionHashes = false;
@@ -5193,7 +5193,7 @@ $root.org = (function() {
                         /**
                          * TransactionsWithProofsRequest fromBlock.
                          * @member {"fromBlockHash"|"fromBlockHeight"|undefined} fromBlock
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @instance
                          */
                         Object.defineProperty(TransactionsWithProofsRequest.prototype, "fromBlock", {
@@ -5204,21 +5204,21 @@ $root.org = (function() {
                         /**
                          * Creates a new TransactionsWithProofsRequest instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsRequest=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.TransactionsWithProofsRequest} TransactionsWithProofsRequest instance
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsRequest=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.TransactionsWithProofsRequest} TransactionsWithProofsRequest instance
                          */
                         TransactionsWithProofsRequest.create = function create(properties) {
                             return new TransactionsWithProofsRequest(properties);
                         };
 
                         /**
-                         * Encodes the specified TransactionsWithProofsRequest message. Does not implicitly {@link org.dash.platform.dapi.v0.TransactionsWithProofsRequest.verify|verify} messages.
+                         * Encodes the specified TransactionsWithProofsRequest message. Does not implicitly {@link org.hth.platform.dapi.v0.TransactionsWithProofsRequest.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsRequest} message TransactionsWithProofsRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsRequest} message TransactionsWithProofsRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -5226,7 +5226,7 @@ $root.org = (function() {
                             if (!writer)
                                 writer = $Writer.create();
                             if (message.bloomFilter != null && Object.hasOwnProperty.call(message, "bloomFilter"))
-                                $root.org.dash.platform.dapi.v0.BloomFilter.encode(message.bloomFilter, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.BloomFilter.encode(message.bloomFilter, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                             if (message.fromBlockHash != null && Object.hasOwnProperty.call(message, "fromBlockHash"))
                                 writer.uint32(/* id 2, wireType 2 =*/18).bytes(message.fromBlockHash);
                             if (message.fromBlockHeight != null && Object.hasOwnProperty.call(message, "fromBlockHeight"))
@@ -5239,11 +5239,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified TransactionsWithProofsRequest message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.TransactionsWithProofsRequest.verify|verify} messages.
+                         * Encodes the specified TransactionsWithProofsRequest message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.TransactionsWithProofsRequest.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsRequest} message TransactionsWithProofsRequest message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsRequest} message TransactionsWithProofsRequest message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -5254,23 +5254,23 @@ $root.org = (function() {
                         /**
                          * Decodes a TransactionsWithProofsRequest message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.TransactionsWithProofsRequest} TransactionsWithProofsRequest
+                         * @returns {org.hth.platform.dapi.v0.TransactionsWithProofsRequest} TransactionsWithProofsRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         TransactionsWithProofsRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.TransactionsWithProofsRequest();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.TransactionsWithProofsRequest();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
                                 case 1:
-                                    message.bloomFilter = $root.org.dash.platform.dapi.v0.BloomFilter.decode(reader, reader.uint32());
+                                    message.bloomFilter = $root.org.hth.platform.dapi.v0.BloomFilter.decode(reader, reader.uint32());
                                     break;
                                 case 2:
                                     message.fromBlockHash = reader.bytes();
@@ -5295,10 +5295,10 @@ $root.org = (function() {
                         /**
                          * Decodes a TransactionsWithProofsRequest message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.TransactionsWithProofsRequest} TransactionsWithProofsRequest
+                         * @returns {org.hth.platform.dapi.v0.TransactionsWithProofsRequest} TransactionsWithProofsRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -5311,7 +5311,7 @@ $root.org = (function() {
                         /**
                          * Verifies a TransactionsWithProofsRequest message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5321,7 +5321,7 @@ $root.org = (function() {
                                 return "object expected";
                             var properties = {};
                             if (message.bloomFilter != null && message.hasOwnProperty("bloomFilter")) {
-                                var error = $root.org.dash.platform.dapi.v0.BloomFilter.verify(message.bloomFilter);
+                                var error = $root.org.hth.platform.dapi.v0.BloomFilter.verify(message.bloomFilter);
                                 if (error)
                                     return "bloomFilter." + error;
                             }
@@ -5349,19 +5349,19 @@ $root.org = (function() {
                         /**
                          * Creates a TransactionsWithProofsRequest message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.TransactionsWithProofsRequest} TransactionsWithProofsRequest
+                         * @returns {org.hth.platform.dapi.v0.TransactionsWithProofsRequest} TransactionsWithProofsRequest
                          */
                         TransactionsWithProofsRequest.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.TransactionsWithProofsRequest)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.TransactionsWithProofsRequest)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.TransactionsWithProofsRequest();
+                            var message = new $root.org.hth.platform.dapi.v0.TransactionsWithProofsRequest();
                             if (object.bloomFilter != null) {
                                 if (typeof object.bloomFilter !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.TransactionsWithProofsRequest.bloomFilter: object expected");
-                                message.bloomFilter = $root.org.dash.platform.dapi.v0.BloomFilter.fromObject(object.bloomFilter);
+                                    throw TypeError(".org.hth.platform.dapi.v0.TransactionsWithProofsRequest.bloomFilter: object expected");
+                                message.bloomFilter = $root.org.hth.platform.dapi.v0.BloomFilter.fromObject(object.bloomFilter);
                             }
                             if (object.fromBlockHash != null)
                                 if (typeof object.fromBlockHash === "string")
@@ -5380,9 +5380,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a TransactionsWithProofsRequest message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @static
-                         * @param {org.dash.platform.dapi.v0.TransactionsWithProofsRequest} message TransactionsWithProofsRequest
+                         * @param {org.hth.platform.dapi.v0.TransactionsWithProofsRequest} message TransactionsWithProofsRequest
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -5396,7 +5396,7 @@ $root.org = (function() {
                                 object.sendTransactionHashes = false;
                             }
                             if (message.bloomFilter != null && message.hasOwnProperty("bloomFilter"))
-                                object.bloomFilter = $root.org.dash.platform.dapi.v0.BloomFilter.toObject(message.bloomFilter, options);
+                                object.bloomFilter = $root.org.hth.platform.dapi.v0.BloomFilter.toObject(message.bloomFilter, options);
                             if (message.fromBlockHash != null && message.hasOwnProperty("fromBlockHash")) {
                                 object.fromBlockHash = options.bytes === String ? $util.base64.encode(message.fromBlockHash, 0, message.fromBlockHash.length) : options.bytes === Array ? Array.prototype.slice.call(message.fromBlockHash) : message.fromBlockHash;
                                 if (options.oneofs)
@@ -5417,7 +5417,7 @@ $root.org = (function() {
                         /**
                          * Converts this TransactionsWithProofsRequest to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsRequest
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsRequest
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -5432,7 +5432,7 @@ $root.org = (function() {
 
                         /**
                          * Properties of a BloomFilter.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IBloomFilter
                          * @property {Uint8Array|null} [vData] BloomFilter vData
                          * @property {number|null} [nHashFuncs] BloomFilter nHashFuncs
@@ -5442,11 +5442,11 @@ $root.org = (function() {
 
                         /**
                          * Constructs a new BloomFilter.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a BloomFilter.
                          * @implements IBloomFilter
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IBloomFilter=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IBloomFilter=} [properties] Properties to set
                          */
                         function BloomFilter(properties) {
                             if (properties)
@@ -5458,7 +5458,7 @@ $root.org = (function() {
                         /**
                          * BloomFilter vData.
                          * @member {Uint8Array} vData
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @instance
                          */
                         BloomFilter.prototype.vData = $util.newBuffer([]);
@@ -5466,7 +5466,7 @@ $root.org = (function() {
                         /**
                          * BloomFilter nHashFuncs.
                          * @member {number} nHashFuncs
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @instance
                          */
                         BloomFilter.prototype.nHashFuncs = 0;
@@ -5474,7 +5474,7 @@ $root.org = (function() {
                         /**
                          * BloomFilter nTweak.
                          * @member {number} nTweak
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @instance
                          */
                         BloomFilter.prototype.nTweak = 0;
@@ -5482,7 +5482,7 @@ $root.org = (function() {
                         /**
                          * BloomFilter nFlags.
                          * @member {number} nFlags
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @instance
                          */
                         BloomFilter.prototype.nFlags = 0;
@@ -5490,21 +5490,21 @@ $root.org = (function() {
                         /**
                          * Creates a new BloomFilter instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBloomFilter=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.BloomFilter} BloomFilter instance
+                         * @param {org.hth.platform.dapi.v0.IBloomFilter=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.BloomFilter} BloomFilter instance
                          */
                         BloomFilter.create = function create(properties) {
                             return new BloomFilter(properties);
                         };
 
                         /**
-                         * Encodes the specified BloomFilter message. Does not implicitly {@link org.dash.platform.dapi.v0.BloomFilter.verify|verify} messages.
+                         * Encodes the specified BloomFilter message. Does not implicitly {@link org.hth.platform.dapi.v0.BloomFilter.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBloomFilter} message BloomFilter message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBloomFilter} message BloomFilter message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -5523,11 +5523,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified BloomFilter message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.BloomFilter.verify|verify} messages.
+                         * Encodes the specified BloomFilter message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.BloomFilter.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IBloomFilter} message BloomFilter message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IBloomFilter} message BloomFilter message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -5538,18 +5538,18 @@ $root.org = (function() {
                         /**
                          * Decodes a BloomFilter message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.BloomFilter} BloomFilter
+                         * @returns {org.hth.platform.dapi.v0.BloomFilter} BloomFilter
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         BloomFilter.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.BloomFilter();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.BloomFilter();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -5576,10 +5576,10 @@ $root.org = (function() {
                         /**
                          * Decodes a BloomFilter message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.BloomFilter} BloomFilter
+                         * @returns {org.hth.platform.dapi.v0.BloomFilter} BloomFilter
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -5592,7 +5592,7 @@ $root.org = (function() {
                         /**
                          * Verifies a BloomFilter message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5618,15 +5618,15 @@ $root.org = (function() {
                         /**
                          * Creates a BloomFilter message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.BloomFilter} BloomFilter
+                         * @returns {org.hth.platform.dapi.v0.BloomFilter} BloomFilter
                          */
                         BloomFilter.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.BloomFilter)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.BloomFilter)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.BloomFilter();
+                            var message = new $root.org.hth.platform.dapi.v0.BloomFilter();
                             if (object.vData != null)
                                 if (typeof object.vData === "string")
                                     $util.base64.decode(object.vData, message.vData = $util.newBuffer($util.base64.length(object.vData)), 0);
@@ -5644,9 +5644,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a BloomFilter message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @static
-                         * @param {org.dash.platform.dapi.v0.BloomFilter} message BloomFilter
+                         * @param {org.hth.platform.dapi.v0.BloomFilter} message BloomFilter
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -5680,7 +5680,7 @@ $root.org = (function() {
                         /**
                          * Converts this BloomFilter to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.BloomFilter
+                         * @memberof org.hth.platform.dapi.v0.BloomFilter
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -5695,20 +5695,20 @@ $root.org = (function() {
 
                         /**
                          * Properties of a TransactionsWithProofsResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface ITransactionsWithProofsResponse
-                         * @property {org.dash.platform.dapi.v0.IRawTransactions|null} [rawTransactions] TransactionsWithProofsResponse rawTransactions
-                         * @property {org.dash.platform.dapi.v0.IInstantSendLockMessages|null} [instantSendLockMessages] TransactionsWithProofsResponse instantSendLockMessages
+                         * @property {org.hth.platform.dapi.v0.IRawTransactions|null} [rawTransactions] TransactionsWithProofsResponse rawTransactions
+                         * @property {org.hth.platform.dapi.v0.IInstantSendLockMessages|null} [instantSendLockMessages] TransactionsWithProofsResponse instantSendLockMessages
                          * @property {Uint8Array|null} [rawMerkleBlock] TransactionsWithProofsResponse rawMerkleBlock
                          */
 
                         /**
                          * Constructs a new TransactionsWithProofsResponse.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a TransactionsWithProofsResponse.
                          * @implements ITransactionsWithProofsResponse
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsResponse=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsResponse=} [properties] Properties to set
                          */
                         function TransactionsWithProofsResponse(properties) {
                             if (properties)
@@ -5719,16 +5719,16 @@ $root.org = (function() {
 
                         /**
                          * TransactionsWithProofsResponse rawTransactions.
-                         * @member {org.dash.platform.dapi.v0.IRawTransactions|null|undefined} rawTransactions
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @member {org.hth.platform.dapi.v0.IRawTransactions|null|undefined} rawTransactions
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @instance
                          */
                         TransactionsWithProofsResponse.prototype.rawTransactions = null;
 
                         /**
                          * TransactionsWithProofsResponse instantSendLockMessages.
-                         * @member {org.dash.platform.dapi.v0.IInstantSendLockMessages|null|undefined} instantSendLockMessages
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @member {org.hth.platform.dapi.v0.IInstantSendLockMessages|null|undefined} instantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @instance
                          */
                         TransactionsWithProofsResponse.prototype.instantSendLockMessages = null;
@@ -5736,7 +5736,7 @@ $root.org = (function() {
                         /**
                          * TransactionsWithProofsResponse rawMerkleBlock.
                          * @member {Uint8Array} rawMerkleBlock
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @instance
                          */
                         TransactionsWithProofsResponse.prototype.rawMerkleBlock = $util.newBuffer([]);
@@ -5747,7 +5747,7 @@ $root.org = (function() {
                         /**
                          * TransactionsWithProofsResponse responses.
                          * @member {"rawTransactions"|"instantSendLockMessages"|"rawMerkleBlock"|undefined} responses
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @instance
                          */
                         Object.defineProperty(TransactionsWithProofsResponse.prototype, "responses", {
@@ -5758,21 +5758,21 @@ $root.org = (function() {
                         /**
                          * Creates a new TransactionsWithProofsResponse instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsResponse=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.TransactionsWithProofsResponse} TransactionsWithProofsResponse instance
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsResponse=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.TransactionsWithProofsResponse} TransactionsWithProofsResponse instance
                          */
                         TransactionsWithProofsResponse.create = function create(properties) {
                             return new TransactionsWithProofsResponse(properties);
                         };
 
                         /**
-                         * Encodes the specified TransactionsWithProofsResponse message. Does not implicitly {@link org.dash.platform.dapi.v0.TransactionsWithProofsResponse.verify|verify} messages.
+                         * Encodes the specified TransactionsWithProofsResponse message. Does not implicitly {@link org.hth.platform.dapi.v0.TransactionsWithProofsResponse.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsResponse} message TransactionsWithProofsResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsResponse} message TransactionsWithProofsResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -5780,20 +5780,20 @@ $root.org = (function() {
                             if (!writer)
                                 writer = $Writer.create();
                             if (message.rawTransactions != null && Object.hasOwnProperty.call(message, "rawTransactions"))
-                                $root.org.dash.platform.dapi.v0.RawTransactions.encode(message.rawTransactions, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.RawTransactions.encode(message.rawTransactions, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
                             if (message.instantSendLockMessages != null && Object.hasOwnProperty.call(message, "instantSendLockMessages"))
-                                $root.org.dash.platform.dapi.v0.InstantSendLockMessages.encode(message.instantSendLockMessages, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
+                                $root.org.hth.platform.dapi.v0.InstantSendLockMessages.encode(message.instantSendLockMessages, writer.uint32(/* id 2, wireType 2 =*/18).fork()).ldelim();
                             if (message.rawMerkleBlock != null && Object.hasOwnProperty.call(message, "rawMerkleBlock"))
                                 writer.uint32(/* id 3, wireType 2 =*/26).bytes(message.rawMerkleBlock);
                             return writer;
                         };
 
                         /**
-                         * Encodes the specified TransactionsWithProofsResponse message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.TransactionsWithProofsResponse.verify|verify} messages.
+                         * Encodes the specified TransactionsWithProofsResponse message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.TransactionsWithProofsResponse.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.ITransactionsWithProofsResponse} message TransactionsWithProofsResponse message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.ITransactionsWithProofsResponse} message TransactionsWithProofsResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -5804,26 +5804,26 @@ $root.org = (function() {
                         /**
                          * Decodes a TransactionsWithProofsResponse message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.TransactionsWithProofsResponse} TransactionsWithProofsResponse
+                         * @returns {org.hth.platform.dapi.v0.TransactionsWithProofsResponse} TransactionsWithProofsResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         TransactionsWithProofsResponse.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.TransactionsWithProofsResponse();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.TransactionsWithProofsResponse();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
                                 case 1:
-                                    message.rawTransactions = $root.org.dash.platform.dapi.v0.RawTransactions.decode(reader, reader.uint32());
+                                    message.rawTransactions = $root.org.hth.platform.dapi.v0.RawTransactions.decode(reader, reader.uint32());
                                     break;
                                 case 2:
-                                    message.instantSendLockMessages = $root.org.dash.platform.dapi.v0.InstantSendLockMessages.decode(reader, reader.uint32());
+                                    message.instantSendLockMessages = $root.org.hth.platform.dapi.v0.InstantSendLockMessages.decode(reader, reader.uint32());
                                     break;
                                 case 3:
                                     message.rawMerkleBlock = reader.bytes();
@@ -5839,10 +5839,10 @@ $root.org = (function() {
                         /**
                          * Decodes a TransactionsWithProofsResponse message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.TransactionsWithProofsResponse} TransactionsWithProofsResponse
+                         * @returns {org.hth.platform.dapi.v0.TransactionsWithProofsResponse} TransactionsWithProofsResponse
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -5855,7 +5855,7 @@ $root.org = (function() {
                         /**
                          * Verifies a TransactionsWithProofsResponse message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -5867,7 +5867,7 @@ $root.org = (function() {
                             if (message.rawTransactions != null && message.hasOwnProperty("rawTransactions")) {
                                 properties.responses = 1;
                                 {
-                                    var error = $root.org.dash.platform.dapi.v0.RawTransactions.verify(message.rawTransactions);
+                                    var error = $root.org.hth.platform.dapi.v0.RawTransactions.verify(message.rawTransactions);
                                     if (error)
                                         return "rawTransactions." + error;
                                 }
@@ -5877,7 +5877,7 @@ $root.org = (function() {
                                     return "responses: multiple values";
                                 properties.responses = 1;
                                 {
-                                    var error = $root.org.dash.platform.dapi.v0.InstantSendLockMessages.verify(message.instantSendLockMessages);
+                                    var error = $root.org.hth.platform.dapi.v0.InstantSendLockMessages.verify(message.instantSendLockMessages);
                                     if (error)
                                         return "instantSendLockMessages." + error;
                                 }
@@ -5895,24 +5895,24 @@ $root.org = (function() {
                         /**
                          * Creates a TransactionsWithProofsResponse message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.TransactionsWithProofsResponse} TransactionsWithProofsResponse
+                         * @returns {org.hth.platform.dapi.v0.TransactionsWithProofsResponse} TransactionsWithProofsResponse
                          */
                         TransactionsWithProofsResponse.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.TransactionsWithProofsResponse)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.TransactionsWithProofsResponse)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.TransactionsWithProofsResponse();
+                            var message = new $root.org.hth.platform.dapi.v0.TransactionsWithProofsResponse();
                             if (object.rawTransactions != null) {
                                 if (typeof object.rawTransactions !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.TransactionsWithProofsResponse.rawTransactions: object expected");
-                                message.rawTransactions = $root.org.dash.platform.dapi.v0.RawTransactions.fromObject(object.rawTransactions);
+                                    throw TypeError(".org.hth.platform.dapi.v0.TransactionsWithProofsResponse.rawTransactions: object expected");
+                                message.rawTransactions = $root.org.hth.platform.dapi.v0.RawTransactions.fromObject(object.rawTransactions);
                             }
                             if (object.instantSendLockMessages != null) {
                                 if (typeof object.instantSendLockMessages !== "object")
-                                    throw TypeError(".org.dash.platform.dapi.v0.TransactionsWithProofsResponse.instantSendLockMessages: object expected");
-                                message.instantSendLockMessages = $root.org.dash.platform.dapi.v0.InstantSendLockMessages.fromObject(object.instantSendLockMessages);
+                                    throw TypeError(".org.hth.platform.dapi.v0.TransactionsWithProofsResponse.instantSendLockMessages: object expected");
+                                message.instantSendLockMessages = $root.org.hth.platform.dapi.v0.InstantSendLockMessages.fromObject(object.instantSendLockMessages);
                             }
                             if (object.rawMerkleBlock != null)
                                 if (typeof object.rawMerkleBlock === "string")
@@ -5925,9 +5925,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a TransactionsWithProofsResponse message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @static
-                         * @param {org.dash.platform.dapi.v0.TransactionsWithProofsResponse} message TransactionsWithProofsResponse
+                         * @param {org.hth.platform.dapi.v0.TransactionsWithProofsResponse} message TransactionsWithProofsResponse
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -5936,12 +5936,12 @@ $root.org = (function() {
                                 options = {};
                             var object = {};
                             if (message.rawTransactions != null && message.hasOwnProperty("rawTransactions")) {
-                                object.rawTransactions = $root.org.dash.platform.dapi.v0.RawTransactions.toObject(message.rawTransactions, options);
+                                object.rawTransactions = $root.org.hth.platform.dapi.v0.RawTransactions.toObject(message.rawTransactions, options);
                                 if (options.oneofs)
                                     object.responses = "rawTransactions";
                             }
                             if (message.instantSendLockMessages != null && message.hasOwnProperty("instantSendLockMessages")) {
-                                object.instantSendLockMessages = $root.org.dash.platform.dapi.v0.InstantSendLockMessages.toObject(message.instantSendLockMessages, options);
+                                object.instantSendLockMessages = $root.org.hth.platform.dapi.v0.InstantSendLockMessages.toObject(message.instantSendLockMessages, options);
                                 if (options.oneofs)
                                     object.responses = "instantSendLockMessages";
                             }
@@ -5956,7 +5956,7 @@ $root.org = (function() {
                         /**
                          * Converts this TransactionsWithProofsResponse to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.TransactionsWithProofsResponse
+                         * @memberof org.hth.platform.dapi.v0.TransactionsWithProofsResponse
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -5971,18 +5971,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of a RawTransactions.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IRawTransactions
                          * @property {Array.<Uint8Array>|null} [transactions] RawTransactions transactions
                          */
 
                         /**
                          * Constructs a new RawTransactions.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents a RawTransactions.
                          * @implements IRawTransactions
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IRawTransactions=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IRawTransactions=} [properties] Properties to set
                          */
                         function RawTransactions(properties) {
                             this.transactions = [];
@@ -5995,7 +5995,7 @@ $root.org = (function() {
                         /**
                          * RawTransactions transactions.
                          * @member {Array.<Uint8Array>} transactions
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @instance
                          */
                         RawTransactions.prototype.transactions = $util.emptyArray;
@@ -6003,21 +6003,21 @@ $root.org = (function() {
                         /**
                          * Creates a new RawTransactions instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IRawTransactions=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.RawTransactions} RawTransactions instance
+                         * @param {org.hth.platform.dapi.v0.IRawTransactions=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.RawTransactions} RawTransactions instance
                          */
                         RawTransactions.create = function create(properties) {
                             return new RawTransactions(properties);
                         };
 
                         /**
-                         * Encodes the specified RawTransactions message. Does not implicitly {@link org.dash.platform.dapi.v0.RawTransactions.verify|verify} messages.
+                         * Encodes the specified RawTransactions message. Does not implicitly {@link org.hth.platform.dapi.v0.RawTransactions.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IRawTransactions} message RawTransactions message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IRawTransactions} message RawTransactions message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -6031,11 +6031,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified RawTransactions message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.RawTransactions.verify|verify} messages.
+                         * Encodes the specified RawTransactions message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.RawTransactions.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IRawTransactions} message RawTransactions message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IRawTransactions} message RawTransactions message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -6046,18 +6046,18 @@ $root.org = (function() {
                         /**
                          * Decodes a RawTransactions message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.RawTransactions} RawTransactions
+                         * @returns {org.hth.platform.dapi.v0.RawTransactions} RawTransactions
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         RawTransactions.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.RawTransactions();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.RawTransactions();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -6077,10 +6077,10 @@ $root.org = (function() {
                         /**
                          * Decodes a RawTransactions message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.RawTransactions} RawTransactions
+                         * @returns {org.hth.platform.dapi.v0.RawTransactions} RawTransactions
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -6093,7 +6093,7 @@ $root.org = (function() {
                         /**
                          * Verifies a RawTransactions message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -6114,18 +6114,18 @@ $root.org = (function() {
                         /**
                          * Creates a RawTransactions message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.RawTransactions} RawTransactions
+                         * @returns {org.hth.platform.dapi.v0.RawTransactions} RawTransactions
                          */
                         RawTransactions.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.RawTransactions)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.RawTransactions)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.RawTransactions();
+                            var message = new $root.org.hth.platform.dapi.v0.RawTransactions();
                             if (object.transactions) {
                                 if (!Array.isArray(object.transactions))
-                                    throw TypeError(".org.dash.platform.dapi.v0.RawTransactions.transactions: array expected");
+                                    throw TypeError(".org.hth.platform.dapi.v0.RawTransactions.transactions: array expected");
                                 message.transactions = [];
                                 for (var i = 0; i < object.transactions.length; ++i)
                                     if (typeof object.transactions[i] === "string")
@@ -6139,9 +6139,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from a RawTransactions message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @static
-                         * @param {org.dash.platform.dapi.v0.RawTransactions} message RawTransactions
+                         * @param {org.hth.platform.dapi.v0.RawTransactions} message RawTransactions
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -6162,7 +6162,7 @@ $root.org = (function() {
                         /**
                          * Converts this RawTransactions to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.RawTransactions
+                         * @memberof org.hth.platform.dapi.v0.RawTransactions
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -6177,18 +6177,18 @@ $root.org = (function() {
 
                         /**
                          * Properties of an InstantSendLockMessages.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @interface IInstantSendLockMessages
                          * @property {Array.<Uint8Array>|null} [messages] InstantSendLockMessages messages
                          */
 
                         /**
                          * Constructs a new InstantSendLockMessages.
-                         * @memberof org.dash.platform.dapi.v0
+                         * @memberof org.hth.platform.dapi.v0
                          * @classdesc Represents an InstantSendLockMessages.
                          * @implements IInstantSendLockMessages
                          * @constructor
-                         * @param {org.dash.platform.dapi.v0.IInstantSendLockMessages=} [properties] Properties to set
+                         * @param {org.hth.platform.dapi.v0.IInstantSendLockMessages=} [properties] Properties to set
                          */
                         function InstantSendLockMessages(properties) {
                             this.messages = [];
@@ -6201,7 +6201,7 @@ $root.org = (function() {
                         /**
                          * InstantSendLockMessages messages.
                          * @member {Array.<Uint8Array>} messages
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @instance
                          */
                         InstantSendLockMessages.prototype.messages = $util.emptyArray;
@@ -6209,21 +6209,21 @@ $root.org = (function() {
                         /**
                          * Creates a new InstantSendLockMessages instance using the specified properties.
                          * @function create
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IInstantSendLockMessages=} [properties] Properties to set
-                         * @returns {org.dash.platform.dapi.v0.InstantSendLockMessages} InstantSendLockMessages instance
+                         * @param {org.hth.platform.dapi.v0.IInstantSendLockMessages=} [properties] Properties to set
+                         * @returns {org.hth.platform.dapi.v0.InstantSendLockMessages} InstantSendLockMessages instance
                          */
                         InstantSendLockMessages.create = function create(properties) {
                             return new InstantSendLockMessages(properties);
                         };
 
                         /**
-                         * Encodes the specified InstantSendLockMessages message. Does not implicitly {@link org.dash.platform.dapi.v0.InstantSendLockMessages.verify|verify} messages.
+                         * Encodes the specified InstantSendLockMessages message. Does not implicitly {@link org.hth.platform.dapi.v0.InstantSendLockMessages.verify|verify} messages.
                          * @function encode
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IInstantSendLockMessages} message InstantSendLockMessages message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IInstantSendLockMessages} message InstantSendLockMessages message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -6237,11 +6237,11 @@ $root.org = (function() {
                         };
 
                         /**
-                         * Encodes the specified InstantSendLockMessages message, length delimited. Does not implicitly {@link org.dash.platform.dapi.v0.InstantSendLockMessages.verify|verify} messages.
+                         * Encodes the specified InstantSendLockMessages message, length delimited. Does not implicitly {@link org.hth.platform.dapi.v0.InstantSendLockMessages.verify|verify} messages.
                          * @function encodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @static
-                         * @param {org.dash.platform.dapi.v0.IInstantSendLockMessages} message InstantSendLockMessages message or plain object to encode
+                         * @param {org.hth.platform.dapi.v0.IInstantSendLockMessages} message InstantSendLockMessages message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
                          */
@@ -6252,18 +6252,18 @@ $root.org = (function() {
                         /**
                          * Decodes an InstantSendLockMessages message from the specified reader or buffer.
                          * @function decode
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
                          * @param {number} [length] Message length if known beforehand
-                         * @returns {org.dash.platform.dapi.v0.InstantSendLockMessages} InstantSendLockMessages
+                         * @returns {org.hth.platform.dapi.v0.InstantSendLockMessages} InstantSendLockMessages
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
                         InstantSendLockMessages.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
                                 reader = $Reader.create(reader);
-                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.dash.platform.dapi.v0.InstantSendLockMessages();
+                            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.org.hth.platform.dapi.v0.InstantSendLockMessages();
                             while (reader.pos < end) {
                                 var tag = reader.uint32();
                                 switch (tag >>> 3) {
@@ -6283,10 +6283,10 @@ $root.org = (function() {
                         /**
                          * Decodes an InstantSendLockMessages message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @static
                          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-                         * @returns {org.dash.platform.dapi.v0.InstantSendLockMessages} InstantSendLockMessages
+                         * @returns {org.hth.platform.dapi.v0.InstantSendLockMessages} InstantSendLockMessages
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
                          */
@@ -6299,7 +6299,7 @@ $root.org = (function() {
                         /**
                          * Verifies an InstantSendLockMessages message.
                          * @function verify
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @static
                          * @param {Object.<string,*>} message Plain object to verify
                          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -6320,18 +6320,18 @@ $root.org = (function() {
                         /**
                          * Creates an InstantSendLockMessages message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @static
                          * @param {Object.<string,*>} object Plain object
-                         * @returns {org.dash.platform.dapi.v0.InstantSendLockMessages} InstantSendLockMessages
+                         * @returns {org.hth.platform.dapi.v0.InstantSendLockMessages} InstantSendLockMessages
                          */
                         InstantSendLockMessages.fromObject = function fromObject(object) {
-                            if (object instanceof $root.org.dash.platform.dapi.v0.InstantSendLockMessages)
+                            if (object instanceof $root.org.hth.platform.dapi.v0.InstantSendLockMessages)
                                 return object;
-                            var message = new $root.org.dash.platform.dapi.v0.InstantSendLockMessages();
+                            var message = new $root.org.hth.platform.dapi.v0.InstantSendLockMessages();
                             if (object.messages) {
                                 if (!Array.isArray(object.messages))
-                                    throw TypeError(".org.dash.platform.dapi.v0.InstantSendLockMessages.messages: array expected");
+                                    throw TypeError(".org.hth.platform.dapi.v0.InstantSendLockMessages.messages: array expected");
                                 message.messages = [];
                                 for (var i = 0; i < object.messages.length; ++i)
                                     if (typeof object.messages[i] === "string")
@@ -6345,9 +6345,9 @@ $root.org = (function() {
                         /**
                          * Creates a plain object from an InstantSendLockMessages message. Also converts values to other types if specified.
                          * @function toObject
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @static
-                         * @param {org.dash.platform.dapi.v0.InstantSendLockMessages} message InstantSendLockMessages
+                         * @param {org.hth.platform.dapi.v0.InstantSendLockMessages} message InstantSendLockMessages
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
                          */
@@ -6368,7 +6368,7 @@ $root.org = (function() {
                         /**
                          * Converts this InstantSendLockMessages to JSON.
                          * @function toJSON
-                         * @memberof org.dash.platform.dapi.v0.InstantSendLockMessages
+                         * @memberof org.hth.platform.dapi.v0.InstantSendLockMessages
                          * @instance
                          * @returns {Object.<string,*>} JSON object
                          */
@@ -6388,7 +6388,7 @@ $root.org = (function() {
             return platform;
         })();
 
-        return dash;
+        return hth;
     })();
 
     return org;

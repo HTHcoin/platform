@@ -1,4 +1,4 @@
-const { Message } = require('@dashevo/dashcore-lib');
+const { Message } = require('@hthcoin/hthcore-lib');
 const { Wallet } = require('../src/index');
 
 const mnemonic = 'never citizen worry shrimp used wild color snack undo armed scout chief';

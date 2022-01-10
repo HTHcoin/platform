@@ -1,5 +1,5 @@
 /* eslint-disable no-continue, no-restricted-syntax */
-const { Address, Transaction } = require('@dashevo/dashcore-lib');
+const { Address, Transaction } = require('@hthcoin/hthcore-lib');
 const { WALLET_TYPES, COINBASE_MATURITY } = require('../../../CONSTANTS');
 
 /**

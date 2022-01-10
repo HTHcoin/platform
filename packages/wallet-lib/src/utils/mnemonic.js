@@ -1,5 +1,5 @@
 const { pbkdf2Sync } = require('pbkdf2');
-const { Mnemonic, HDPrivateKey } = require('@dashevo/dashcore-lib');
+const { Mnemonic, HDPrivateKey } = require('@hthcoin/hthcore-lib');
 const { doubleSha256 } = require('./crypto');
 
 function generateNewMnemonic() {

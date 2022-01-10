@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package org.dash.platform.example.v0;
+package org.hth.platform.example.v0;
 
 service Example {
   rpc callExample (ExampleRequest) returns (ExampleResponse);

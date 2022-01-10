@@ -1,4 +1,4 @@
-const { PublicKey } = require('@dashevo/dashcore-lib');
+const { PublicKey } = require('@hthcoin/hthcore-lib');
 
 const EmptyPublicKeyDataError = require('./errors/EmptyPublicKeyDataError');
 

@@ -7,7 +7,7 @@ In order to use this library in Node, you will need to add it to your project as
 Having [NodeJS](https://nodejs.org/) installed, just type in your terminal : 
 
 ```sh
-npm install @dashevo/wallet-lib
+npm install @hthcoin/wallet-lib
 ```
 
 ## CDN Standalone
@@ -15,11 +15,11 @@ npm install @dashevo/wallet-lib
 For browser usage, you can also directly rely on unpkg for wallet-lib, and [localForage](https://github.com/localForage/localForage) as adapter for persistence.  
 
 ```
-<script src="https://unpkg.com/@dashevo/wallet-lib"></script>
+<script src="https://unpkg.com/@hthcoin/wallet-lib"></script>
 <script src="https://unpkg.com/localforage"></script>
 
 <script>
-const { Wallet } = require('@dashevo/wallet-lib');
+const { Wallet } = require('@hthcoin/wallet-lib');
 const wallet = new Wallet({adapter: localforage});
 </script>
 ```
@@ -29,7 +29,7 @@ const wallet = new Wallet({adapter: localforage});
 Let's load our Wallet by creating a new Wallet instance specifying our mnemonic.  
 
 ```js
-const { Wallet } = require('@dashevo/wallet-lib');
+const { Wallet } = require('@hthcoin/wallet-lib');
 
 const opts = {
   network: 'testnet',

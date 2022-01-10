@@ -1,6 +1,6 @@
-import DataContract from "@dashevo/dpp/lib/dataContract/DataContract";
-import Identity from "@dashevo/dpp/lib/identity/Identity";
-import Identifier from "@dashevo/dpp/lib/Identifier";
+import DataContract from "@hthcoin/dpp/lib/dataContract/DataContract";
+import Identity from "@hthcoin/dpp/lib/identity/Identity";
+import Identifier from "@hthcoin/dpp/lib/Identifier";
 import Client from '../Client';
 
 class StateRepository {

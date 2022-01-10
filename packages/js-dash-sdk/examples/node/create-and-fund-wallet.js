@@ -1,11 +1,11 @@
-const Dash = require('dash');
+const HTH = require('hth');
 const clientOpts = {
   network: 'testnet',
   wallet: {
     mnemonic: null, // Will generate a new address, you should keep it.
   },
 };
-const client = new Dash.Client(clientOpts);
+const client = new HTH.Client(clientOpts);
 
 const displayFundingAddress = async function () {
   const {account, wallet} = client;

@@ -7,7 +7,7 @@
 
 // Designated initializer
 - (instancetype)initWithHost:(NSString *)host {
-  return (self = [super initWithHost:host packageName:@"org.dash.platform.dapi.v0" serviceName:@"Platform"]);
+  return (self = [super initWithHost:host packageName:@"org.hth.platform.dapi.v0" serviceName:@"Platform"]);
 }
 
 // Override superclass initializer to disallow different package and service names.

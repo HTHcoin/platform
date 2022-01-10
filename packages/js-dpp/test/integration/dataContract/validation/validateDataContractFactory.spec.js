@@ -1,4 +1,4 @@
-const { default: getRE2Class } = require('@dashevo/re2-wasm');
+const { default: getRE2Class } = require('@hthcoin/re2-wasm');
 
 const $RefParser = require('@apidevtools/json-schema-ref-parser');
 
@@ -1153,7 +1153,7 @@ describe('validateDataContractFactory', function main() {
       });
 
       describe('contentMediaType', () => {
-        describe('application/x.dash.dpp.identifier', () => {
+        describe('application/x.hth.dpp.identifier', () => {
           it('should be used with byte array only', async () => {
             delete rawDataContract.documents.withByteArrays.properties.identifierField.byteArray;
 

@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 const Wallet = require('../Wallet');
-const { PrivateKey, Networks } = require('@dashevo/dashcore-lib');
+const { PrivateKey, Networks } = require('@hthcoin/hthcore-lib');
 const exportWallet = require('./exportWallet');
 const { WALLET_TYPES } = require('../../../CONSTANTS');
 const cR4t6ePrivateKey = require('../../../../fixtures/cR4t6e_pk');

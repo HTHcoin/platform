@@ -1,4 +1,4 @@
-const getRE2Class = require('@dashevo/re2-wasm').default;
+const getRE2Class = require('@hthcoin/re2-wasm').default;
 
 const validateDataContractPatternsFactory = require('../../../../lib/dataContract/validation/validateDataContractPatternsFactory');
 const { expectValidationError } = require(

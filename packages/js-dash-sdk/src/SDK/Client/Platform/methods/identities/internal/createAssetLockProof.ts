@@ -1,4 +1,4 @@
-import { Transaction } from "@dashevo/dashcore-lib";
+import { Transaction } from "@hthcoin/hthcore-lib";
 import { Platform } from "../../../Platform";
 
 /**

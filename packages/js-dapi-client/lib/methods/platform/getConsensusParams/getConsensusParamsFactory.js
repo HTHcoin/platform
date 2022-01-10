@@ -3,7 +3,7 @@ const {
     PlatformPromiseClient,
     GetConsensusParamsRequest,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 const InvalidResponseError = require('../response/errors/InvalidResponseError');
 const GetConsensusParamsResponse = require('./getConsensusParamsResponse');
 

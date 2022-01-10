@@ -1,4 +1,4 @@
-const { Block } = require('@dashevo/dashcore-lib');
+const { Block } = require('@hthcoin/hthcore-lib');
 
 const createClientWithoutWallet = require('../../../lib/test/createClientWithoutWallet');
 

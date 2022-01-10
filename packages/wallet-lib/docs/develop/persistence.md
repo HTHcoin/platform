@@ -14,7 +14,7 @@ A message will warn you about this on starting up, and won't be displayed with a
 
 By just providing a class or instance of a class containing a certain minimal set of methods, one can provide an adapter for various databases, remote services or file storage.  
 
-- `config(props)` - async / optional - When provided, before any execution, this method would be called passing with the following property `name: 'dashevo-wallet-lib'`.
+- `config(props)` - async / optional - When provided, before any execution, this method would be called passing with the following property `name: 'hthcoin-wallet-lib'`.
 
 This method intends to allow the preparation of your persistence layer to be ready for further uses (for instance, in a case where your adapter is a database, this would allow to set indexes, and prepare the connection pool).
 

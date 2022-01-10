@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
-const GrpcError = require('@dashevo/grpc-common/lib/server/error/GrpcError');
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
+const GrpcError = require('@hthcoin/grpc-common/lib/server/error/GrpcError');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
 const logger = require('../../../../logger');
 const isBrowser = require('../../../../utils/isBrowser');
 

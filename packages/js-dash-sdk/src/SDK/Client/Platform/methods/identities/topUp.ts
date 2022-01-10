@@ -1,5 +1,5 @@
 // @ts-ignore
-import Identifier from "@dashevo/dpp/lib/Identifier";
+import Identifier from "@hthcoin/dpp/lib/Identifier";
 import {Platform} from "../../Platform";
 
 import createAssetLockTransaction from "../../createAssetLockTransaction";

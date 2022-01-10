@@ -1,4 +1,4 @@
-const { MerkleBlock } = require('@dashevo/dashcore-lib');
+const { MerkleBlock } = require('@hthcoin/hthcore-lib');
 
 const sinon = require('sinon');
 const { expect } = require('chai');

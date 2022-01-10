@@ -1,4 +1,4 @@
-import Identifier from "@dashevo/dpp/lib/Identifier";
+import Identifier from "@hthcoin/dpp/lib/Identifier";
 import {expect} from 'chai';
 import {ClientApps} from "./ClientApps";
 import 'mocha';

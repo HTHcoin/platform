@@ -1,4 +1,4 @@
-const SomeConsensusError = require('@dashevo/dpp/lib/test/mocks/SomeConsensusError');
+const SomeConsensusError = require('@hthcoin/dpp/lib/test/mocks/SomeConsensusError');
 const wrapInErrorHandlerFactory = require('../../../../lib/abci/errors/wrapInErrorHandlerFactory');
 const LoggerMock = require('../../../../lib/test/mock/LoggerMock');
 const InternalAbciError = require('../../../../lib/abci/errors/InternalAbciError');

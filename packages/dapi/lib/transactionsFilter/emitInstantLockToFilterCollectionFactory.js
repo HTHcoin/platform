@@ -1,4 +1,4 @@
-const { Transaction, InstantLock } = require('@dashevo/dashcore-lib');
+const { Transaction, InstantLock } = require('@hthcoin/hthcore-lib');
 
 /**
  * @param {BloomFilterEmitterCollection} bloomFilterEmitterCollection

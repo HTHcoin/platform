@@ -1,7 +1,7 @@
 const cbor = require('cbor');
 
-const createConsensusError = require('@dashevo/dpp/lib/errors/consensus/createConsensusError');
-const GrpcErrorCodes = require('@dashevo/grpc-common/lib/server/error/GrpcErrorCodes');
+const createConsensusError = require('@hthcoin/dpp/lib/errors/consensus/createConsensusError');
+const GrpcErrorCodes = require('@hthcoin/grpc-common/lib/server/error/GrpcErrorCodes');
 const { Metadata } = require('@grpc/grpc-js/build/src/metadata');
 
 const NotFoundError = require('./errors/NotFoundError');

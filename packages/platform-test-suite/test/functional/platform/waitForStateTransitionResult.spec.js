@@ -1,12 +1,12 @@
-const DashPlatformProtocol = require('@dashevo/dpp');
+const HthPlatformProtocol = require('@hthcoin/dpp');
 const crypto = require('crypto');
 
-const { default: createAssetLockProof } = require('dash/build/src/SDK/Client/Platform/methods/identities/internal/createAssetLockProof');
-const { default: createIdentityCreateTransition } = require('dash/build/src/SDK/Client/Platform/methods/identities/internal/createIdentityCreateTransition');
-const { default: createAssetLockTransaction } = require('dash/build/src/SDK/Client/Platform/createAssetLockTransaction');
+const { default: createAssetLockProof } = require('hth/build/src/SDK/Client/Platform/methods/identities/internal/createAssetLockProof');
+const { default: createIdentityCreateTransition } = require('hth/build/src/SDK/Client/Platform/methods/identities/internal/createIdentityCreateTransition');
+const { default: createAssetLockTransaction } = require('hth/build/src/SDK/Client/Platform/createAssetLockTransaction');
 
 const { MerkleProof } = require('js-merkle');
-const { executeProof } = require('@dashevo/merk');
+const { executeProof } = require('@hthcoin/merk');
 
 const createClientWithFundedWallet = require('../../../lib/test/createClientWithFundedWallet');
 
@@ -20,7 +20,7 @@ describe('Platform', () => {
     let blake3;
 
     before(async () => {
-      dpp = new DashPlatformProtocol();
+      dpp = new HthPlatformProtocol();
       await dpp.initialize();
 
       await hashFunction.init();

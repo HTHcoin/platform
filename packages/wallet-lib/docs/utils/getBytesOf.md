@@ -6,7 +6,7 @@ Parameters:
 
 | parameters        | type          | required       | Description                                      |  
 |-------------------|---------------|----------------| -------------------------------------------------|
-| **value**         | Output/UTXO   | yes            | Value input in dash                              |
-| **type**          | Output/UTXO   | yes            | Value input in dash                              |
+| **value**         | Output/UTXO   | yes            | Value input in hth                              |
+| **type**          | Output/UTXO   | yes            | Value input in hth                              |
 
 Returns : {Number} - Bytes value

@@ -1,7 +1,7 @@
 module.exports = {
   getConfigFixture() {
     return {
-      dashcore: {
+      hthcore: {
         p2p: {
           host: '123',
           port: '123',

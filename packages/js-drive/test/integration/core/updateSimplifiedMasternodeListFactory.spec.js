@@ -1,5 +1,5 @@
-const { startMongoDb, startDashCore } = require('@dashevo/dp-services-ctl');
-const SimplifiedMNListStore = require('@dashevo/dashcore-lib/lib/deterministicmnlist/SimplifiedMNListStore');
+const { startMongoDb, startHthCore } = require('@hthcoin/dp-services-ctl');
+const SimplifiedMNListStore = require('@hthcoin/hthcore-lib/lib/deterministicmnlist/SimplifiedMNListStore');
 
 const createTestDIContainer = require('../../../lib/test/createTestDIContainer');
 
@@ -8,7 +8,7 @@ describe('updateSimplifiedMasternodeListFactory', function main() {
 
   let mongoDB;
   let container;
-  let dashCore;
+  let hthCore;
 
   before(async () => {
     mongoDB = await startMongoDb();
@@ -16,8 +16,8 @@ describe('updateSimplifiedMasternodeListFactory', function main() {
 
   after(async () => {
     await mongoDB.remove();
-    if (dashCore) {
-      await dashCore.remove();
+    if (hthCore) {
+      await hthCore.remove();
     }
   });
 
@@ -28,17 +28,17 @@ describe('updateSimplifiedMasternodeListFactory', function main() {
   });
 
   it('should wait until SML will be retrieved', async () => {
-    dashCore = await startDashCore();
+    hthCore = await startHthCore();
 
-    container = await createTestDIContainer(mongoDB, dashCore);
+    container = await createTestDIContainer(mongoDB, hthCore);
 
     const simplifiedMasternodeList = container.resolve('simplifiedMasternodeList');
 
     expect(simplifiedMasternodeList.getStore()).to.equal(undefined);
 
-    const { result: randomAddress } = await dashCore.getApi().getNewAddress();
+    const { result: randomAddress } = await hthCore.getApi().getNewAddress();
 
-    await dashCore.getApi().generateToAddress(1000, randomAddress);
+    await hthCore.getApi().generateToAddress(1000, randomAddress);
 
     const updateSimplifiedMasternodeList = container.resolve('updateSimplifiedMasternodeList');
 

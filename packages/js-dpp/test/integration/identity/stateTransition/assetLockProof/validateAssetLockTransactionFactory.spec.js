@@ -1,6 +1,6 @@
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 
-const DashCoreLib = require('@dashevo/dashcore-lib');
+const HthCoreLib = require('@hthcoin/hthcore-lib');
 const validateAssetLockTransactionFactory = require('../../../../../lib/identity/stateTransition/assetLockProof/validateAssetLockTransactionFactory');
 const createStateRepositoryMock = require('../../../../../lib/test/mocks/createStateRepositoryMock');
 
@@ -84,7 +84,7 @@ describe('validateAssetLockTransactionFactory', () => {
     }];
     stubInstance.getOutPointBuffer.returns(transactionInstance.getOutPointBuffer(outputIndex));
 
-    transactionMock = this.sinonSandbox.stub(DashCoreLib, 'Transaction').returns(
+    transactionMock = this.sinonSandbox.stub(HthCoreLib, 'Transaction').returns(
       stubInstance,
     );
 
@@ -111,7 +111,7 @@ describe('validateAssetLockTransactionFactory', () => {
     }];
     stubInstance.getOutPointBuffer.returns(transactionInstance.getOutPointBuffer(outputIndex));
 
-    transactionMock = this.sinonSandbox.stub(DashCoreLib, 'Transaction').returns(
+    transactionMock = this.sinonSandbox.stub(HthCoreLib, 'Transaction').returns(
       stubInstance,
     );
 

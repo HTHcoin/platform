@@ -1,7 +1,7 @@
 const { expect } = require('chai');
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 const getUTXOS = require('./getUTXOS');
-const { Transaction } = Dashcore;
+const { Transaction } = Hthcore;
 
 const mockedStoreEmpty = {
   wallets: {
@@ -155,12 +155,12 @@ describe('Account - getUTXOS', function suite() {
       BIP44PATH: "m/44'/1'/0'"
     });
 
-    expect(utxos2).to.be.deep.equal([new Dashcore.Transaction.UnspentOutput(
+    expect(utxos2).to.be.deep.equal([new Hthcore.Transaction.UnspentOutput(
       {
-        address: new Dashcore.Address('yizmJb63ygipuJaRgYtpWCV2erQodmaZt8'),
+        address: new Hthcore.Address('yizmJb63ygipuJaRgYtpWCV2erQodmaZt8'),
         txId: 'dd7afaadedb5f022cec6e33f1c8520aac897df152bd9f876842f3723ab9614bc',
         outputIndex: 0,
-        script: new Dashcore.Script('76a914f8c2652847720ab6d401291e5a48e2c8fe5d3c9f88ac'),
+        script: new Hthcore.Script('76a914f8c2652847720ab6d401291e5a48e2c8fe5d3c9f88ac'),
         satoshis: 100000000,
       },
     )]);

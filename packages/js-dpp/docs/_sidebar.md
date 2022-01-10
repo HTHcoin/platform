@@ -1,5 +1,5 @@
 - Usage
-    - [new DashPlatformProtocol()](usage/DashPlatformProtocol.md)
+    - [new HthPlatformProtocol()](usage/HthPlatformProtocol.md)
     - [dpp.dataContract](usage/dataContract.md)
     - [dpp.document](usage/document.md)
     - [dpp.identity](usage/identity.md)
@@ -11,4 +11,4 @@
     - [Document](primitives/Document.md)
     - [Identifier](primitives/Identifier.md)
     - [Identity](primitives/Identity.md)
-- [License](https://github.com/dashevo/js-dpp/blob/master/LICENSE)
+- [License](https://github.com/MichaelHDesigns/js-dpp/blob/master/LICENSE)

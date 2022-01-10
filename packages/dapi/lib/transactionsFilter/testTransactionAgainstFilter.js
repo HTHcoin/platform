@@ -1,4 +1,4 @@
-const { BloomFilter } = require('@dashevo/dashcore-lib');
+const { BloomFilter } = require('@hthcoin/hthcore-lib');
 
 /**
  * @param {string} transactionHash

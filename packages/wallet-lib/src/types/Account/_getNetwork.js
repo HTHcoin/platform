@@ -1,5 +1,5 @@
-const Dashcore = require('@dashevo/dashcore-lib');
+const Hthcore = require('@hthcoin/hthcore-lib');
 
 module.exports = function getNetwork(network) {
-  return Dashcore.Networks[network].toString() || Dashcore.Networks.testnet.toString();
+  return Hthcore.Networks[network].toString() || Hthcore.Networks.testnet.toString();
 };

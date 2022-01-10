@@ -21,4 +21,4 @@
                 - [.getIdentityByFirstPublicKey()](usage/application/platform/getIdentityByFirstPublicKey.md)
                 - [.getIdentity()](usage/application/platform/getIdentity.md)
                 - [.getIdentityIdByFirstPublicKey()](usage/application/platform/getIdentityIdByFirstPublicKey.md)
-- [License](https://github.com/dashevo/dapi-client/blob/master/LICENSE)
+- [License](https://github.com/MichaelHDesigns/dapi-client/blob/master/LICENSE)

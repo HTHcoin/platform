@@ -1,4 +1,4 @@
-const { Transaction } = require('@dashevo/dashcore-lib');
+const { Transaction } = require('@hthcoin/hthcore-lib');
 const STRATEGIES = require('./strategies');
 const InvalidUTXO = require('../../errors/InvalidUTXO');
 const InvalidOutput = require('../../errors/InvalidOutput');

@@ -1,4 +1,4 @@
-import Identifier from "@dashevo/dpp/lib/Identifier";
+import Identifier from "@hthcoin/dpp/lib/Identifier";
 
 /**
  * Interface for ClientApps

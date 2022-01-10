@@ -1,6 +1,6 @@
-const DashPlatformProtocol = require('@dashevo/dpp');
+const HthPlatformProtocol = require('@hthcoin/dpp');
 
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
 
 const featureFlagsContractDocumentsSchema = require('../../schema/feature-flags-documents.json');
 
@@ -12,7 +12,7 @@ describe('Feature Flags contract', () => {
   beforeEach(async function beforeEach() {
     const fetchContractStub = this.sinon.stub();
 
-    dpp = new DashPlatformProtocol({
+    dpp = new HthPlatformProtocol({
       stateRepository: {
         fetchDataContract: fetchContractStub,
       },

@@ -1,16 +1,16 @@
 const createDIContainer = require('../createDIContainer');
 
-async function createTestDIContainer(mongoDB, dashCore = undefined) {
+async function createTestDIContainer(mongoDB, hthCore = undefined) {
   const documentMongoDBUrl = `mongodb://127.0.0.1:${mongoDB.options.getMongoPort()}`
     + `/?replicaSet=${mongoDB.options.options.replicaSetName}`;
 
   let coreOptions = {};
-  if (dashCore) {
+  if (hthCore) {
     coreOptions = {
       CORE_JSON_RPC_HOST: '127.0.0.1',
-      CORE_JSON_RPC_PORT: dashCore.options.getRpcPort(),
-      CORE_JSON_RPC_USERNAME: dashCore.options.getRpcUser(),
-      CORE_JSON_RPC_PASSWORD: dashCore.options.getRpcPassword(),
+      CORE_JSON_RPC_PORT: hthCore.options.getRpcPort(),
+      CORE_JSON_RPC_USERNAME: hthCore.options.getRpcUser(),
+      CORE_JSON_RPC_PASSWORD: hthCore.options.getRpcPassword(),
     };
   }
 

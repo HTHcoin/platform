@@ -1,4 +1,4 @@
-const { PrivateKey, Networks } = require('@dashevo/dashcore-lib');
+const { PrivateKey, Networks } = require('@hthcoin/hthcore-lib');
 
 const EventEmitter = require('events');
 const _ = require('lodash');

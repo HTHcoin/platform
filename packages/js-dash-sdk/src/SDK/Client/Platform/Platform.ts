@@ -1,5 +1,5 @@
 // @ts-ignore
-import DashPlatformProtocol from "@dashevo/dpp";
+import HthPlatformProtocol from "@hthcoin/dpp";
 
 import Client from "../Client";
 
@@ -23,7 +23,7 @@ import searchName from "./methods/names/search";
 import broadcastStateTransition from "./broadcastStateTransition";
 import { IPlatformStateProof } from "./IPlatformStateProof";
 import StateRepository from './StateRepository';
-import { latestVersion as latestProtocolVersion } from "@dashevo/dpp/lib/version/protocolVersion";
+import { latestVersion as latestProtocolVersion } from "@hthcoin/dpp/lib/version/protocolVersion";
 
 /**
  * Interface for PlatformOpts
@@ -75,7 +75,7 @@ interface DataContracts {
 }
 
 /**
- * Class for Dash Platform
+ * Class for HTH Platform
  *
  * @param documents - documents
  * @param identities - identites
@@ -83,7 +83,7 @@ interface DataContracts {
  * @param contracts - contracts
  */
 export class Platform {
-    dpp: DashPlatformProtocol;
+    dpp: HthPlatformProtocol;
 
     public documents: Records;
     /**
@@ -161,7 +161,7 @@ export class Platform {
 
         const stateRepository = new StateRepository(this.client);
 
-        this.dpp = new DashPlatformProtocol({
+        this.dpp = new HthPlatformProtocol({
             stateRepository,
             protocolVersion: driveProtocolVersion,
             ...options,

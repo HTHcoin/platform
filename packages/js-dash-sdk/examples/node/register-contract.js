@@ -1,4 +1,4 @@
-const DashJS = require('dash');
+const HthJS = require('hth');
 
 const sdkOpts = {
   network: 'testnet',
@@ -6,7 +6,7 @@ const sdkOpts = {
     mnemonic: 'your mnemonic here',
   },
 };
-const sdk = new DashJS.Client(sdkOpts);
+const sdk = new HthJS.Client(sdkOpts);
 
 const registerContract = async function () {
   await sdk.isReady();

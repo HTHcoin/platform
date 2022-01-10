@@ -57,13 +57,13 @@ async function createDomainDataTrigger(documentTransition, context, topLevelIden
     result.addError(error);
   }
 
-  if (records.dashUniqueIdentityId
-    && !context.getOwnerId().equals(records.dashUniqueIdentityId)
+  if (records.hthUniqueIdentityId
+    && !context.getOwnerId().equals(records.hthUniqueIdentityId)
   ) {
     const error = new DataTriggerConditionError(
       context.getDataContract().getId().toBuffer(),
       documentTransition.getId().toBuffer(),
-      `ownerId ${context.getOwnerId()} doesn't match dashUniqueIdentityId ${records.dashUniqueIdentityId}`,
+      `ownerId ${context.getOwnerId()} doesn't match hthUniqueIdentityId ${records.hthUniqueIdentityId}`,
     );
 
     error.setOwnerId(context.getOwnerId());
@@ -72,12 +72,12 @@ async function createDomainDataTrigger(documentTransition, context, topLevelIden
     result.addError(error);
   }
 
-  if (records.dashAliasIdentityId
-    && !context.getOwnerId().equals(records.dashAliasIdentityId)) {
+  if (records.hthAliasIdentityId
+    && !context.getOwnerId().equals(records.hthAliasIdentityId)) {
     const error = new DataTriggerConditionError(
       context.getDataContract().getId().toBuffer(),
       documentTransition.getId().toBuffer(),
-      `ownerId ${context.getOwnerId()} doesn't match dashAliasIdentityId ${records.dashAliasIdentityId}`,
+      `ownerId ${context.getOwnerId()} doesn't match hthAliasIdentityId ${records.hthAliasIdentityId}`,
     );
 
     error.setOwnerId(context.getOwnerId());

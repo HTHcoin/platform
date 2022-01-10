@@ -1,4 +1,4 @@
-import {Block, BlockHeader, Transaction} from "@dashevo/dashcore-lib";
+import {Block, BlockHeader, Transaction} from "@hthcoin/hthcore-lib";
 
 export declare interface Transport {
     announce(eventName, args)

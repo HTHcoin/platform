@@ -1,4 +1,4 @@
-import { InstantLock } from "@dashevo/dashcore-lib";
+import { InstantLock } from "@hthcoin/hthcore-lib";
 
 export function createFakeInstantLock(transactionHash: string): InstantLock {
     return new InstantLock({

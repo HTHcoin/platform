@@ -1,17 +1,17 @@
 ## Publishing a new contract
 
-Right now, Evonet does not support publishing a public contract. You will have to run a local instance or wait for updates to the [Dash Platform documentation](https://dashplatform.readme.io/docs) regarding how to run a devnet locally and publish a contract.
+Right now, Evonet does not support publishing a public contract. You will have to run a local instance or wait for updates to the [HTH Platform documentation](https://hthplatform.readme.io/docs) regarding how to run a devnet locally and publish a contract.
 
-For now you can try your luck using the [Dash Network Deploy tool](https://github.com/dashevo/dash-network-deploy) and refer to [how to use a local evonet](../examples/use-local-evonet.md).
+For now you can try your luck using the [HTH Network Deploy tool](https://github.com/MichaelHDesigns/hth-network-deploy) and refer to [how to use a local evonet](../examples/use-local-evonet.md).
 
 ## Create your contract
 
-After having [registered an identity](https://dashplatform.readme.io/docs/tutorial-register-an-identity)
-and [attached to a name](https://dashplatform.readme.io/docs/tutorial-register-a-name-for-an-identity) crafted your schema (you can see how on [about schemas](getting-started/about-schemas.md) and read the [DPNS schema](https://github.com/dashevo/dpns-contract/blob/v0.2-dev/src/schema/dpns-documents.json) as an example), you then can perform the below actions :
+After having [registered an identity](https://hthplatform.readme.io/docs/tutorial-register-an-identity)
+and [attached to a name](https://hthplatform.readme.io/docs/tutorial-register-a-name-for-an-identity) crafted your schema (you can see how on [about schemas](getting-started/about-schemas.md) and read the [DPNS schema](https://github.com/MichaelHDesigns/dpns-contract/blob/v0.2-dev/src/schema/dpns-documents.json) as an example), you then can perform the below actions :
 
 ```js
 const schema = {};// You JSON schema defining the app.
-const client = new Dash.Client({
+const client = new HTH.Client({
   wallet: {
     mnemonic: '', // Your app mnemonic, which holds the identity
   },
@@ -23,7 +23,7 @@ client.isReady().then(registerContract);
 
 async function getIdentity(idName) {
     const {identities, names} = client.platform;
-    const identityId = (await names.get(idName)).data.records.dashIdentity;
+    const identityId = (await names.get(idName)).data.records.hthIdentity;
     const identity = await identities.get(identityId);
     return identity
 }
@@ -41,7 +41,7 @@ async function registerContract() {
 const schema = {};// You JSON schema defining the app.
 
 // This is the name previously registered in DPNS.
-const client = new Dash.Client({
+const client = new HTH.Client({
   wallet: {
     mnemonic: "", // Your app mnemonic, which holds the identity
   },

@@ -1,9 +1,9 @@
 # DAPI GRPC
 
-[![Build Status](https://github.com/dashevo/dapi-grpc/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/dashevo/dapi-grpc/actions/workflows/test_and_release.yml)
-[![NPM version](https://img.shields.io/npm/v/@dashevo/dapi-grpc.svg)](https://npmjs.org/package/@dashevo/dapi-grpc)
-[![Release Date](https://img.shields.io/github/release-date/dashevo/dapi-grpc)](https://github.com/dashevo/dapi-grpc/releases/latest)
-[![license](https://img.shields.io/github/license/dashevo/dapi-grpc.svg)](LICENSE)
+[![Build Status](https://github.com/MichaelHDesigns/dapi-grpc/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/MichaelHDesigns/dapi-grpc/actions/workflows/test_and_release.yml)
+[![NPM version](https://img.shields.io/npm/v/@hthcoin/dapi-grpc.svg)](https://npmjs.org/package/@hthcoin/dapi-grpc)
+[![Release Date](https://img.shields.io/github/release-date/hthcoin/dapi-grpc)](https://github.com/MichaelHDesigns/dapi-grpc/releases/latest)
+[![license](https://img.shields.io/github/license/hthcoin/dapi-grpc.svg)](LICENSE)
 
 Decentralized API GRPC definition files and generated clients
 
@@ -23,7 +23,7 @@ Ensure you have the latest [NodeJS](https://nodejs.org/en/download/) installed.
 Clone the repo:
 
 ```shell
-git clone https://github.com/dashevo/dapi-grpc
+git clone https://github.com/MichaelHDesigns/dapi-grpc
 ```
 
 Install npm packages:
@@ -35,7 +35,7 @@ npm install
 #### From NPM
 
 ```sh
-npm install @dashevo/dapi-grpc
+npm install @hthcoin/dapi-grpc
 ```
 
 ## Usage
@@ -51,7 +51,7 @@ const {
   v0: {
     CorePromiseClient,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const client = new CorePromiseClient(url);
 ```
@@ -71,7 +71,7 @@ const {
     GetBlockRequest,
     GetBlockResponse,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const client = new CorePromiseClient(url);
 
@@ -113,7 +113,7 @@ const {
   v0: {
     PlatformPromiseClient,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const client = new PlatformPromiseClient(url);
 ```
@@ -136,9 +136,9 @@ Available methods :
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/dashevo/platform/issues/new/choose) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/MichaelHDesigns/platform/issues/new/choose) or submit PRs.
 
 ## License
 
-[MIT](LICENSE) &copy; Dash Core Group, Inc.
+[MIT](LICENSE) &copy; HTH Core Group, Inc.
 

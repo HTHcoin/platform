@@ -15,7 +15,7 @@ Parameters:
 | **txOpts.change**             | string                        | no                           | Defaults: `account.getUnusedAddress(internal)`. When set, will use that address as a change address on remaining fund               |
 
 
-Returns : [Transaction](https://dashevo.github.io/platform/SDK/usage/dashcorelib-primitives/#transaction)   
+Returns : [Transaction](https://hthcoin.github.io/platform/SDK/usage/hthcorelib-primitives/#transaction)   
 Notes: This transaction will be need to be signed [`account.sign(transaction)`](../account/sign.md) and then, if wanted, broadcasted to the network for execution `account.broadcastTransaction()`.
 
 Example : 
@@ -60,7 +60,7 @@ See more information about [coinSelection](../usage/coinSelection.md).
 
 In order to broadcast a transaction, a minimal relay fee is required for a node to accept to broadcast the transaction.  
 
-Such fee are used as a spam mechanism protection as a standard transaction would require slightly more than 0.0000012 Dash (varies per transaction and per node) as relay fee.  
+Such fee are used as a spam mechanism protection as a standard transaction would require slightly more than 0.0000012 HTH (varies per transaction and per node) as relay fee.  
 
 The deduct fee property, when set at true allows to automatically estimate the size and deduct from outputs the corresponding amount.  
 

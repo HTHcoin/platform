@@ -2,7 +2,7 @@ const {expect} = require('chai');
 const importTransaction = require('./importTransaction');
 const transactionFixtures = require('../../../../fixtures/transactions');
 const {fd7c727155ef67fd5c1d54b73dea869e9690c439570063d6e96fec1d3bba450e} = transactionFixtures.valid.mainnet
-const { Transaction, Script } = require('@dashevo/dashcore-lib');
+const { Transaction, Script } = require('@hthcoin/hthcore-lib');
 
 const faltyTx = '03000500010000000000000000000000000000000000000000000000000000000000000000ffffffff0602cc0c028800ffffffff0200902f50090000001976a91446e502918c04a65a3830ce89cc364b0cd301793388ac00e40b54020000001976a914ecfd5aaebcbb8f4791e716e188b20d4f0183265c88ac00000000460200cc0c0000be0c7d02ff51a9d30e39873ebb953d763595565fcbe0512a04bfa25ed0455e380000000000000000000000000000000000000000000000000000000000000000';
 
@@ -55,7 +55,7 @@ describe('Storage - importTransaction', function suite() {
     const mockOpts4 = {txid: '688dd18dea2b6f3c2d3892d13b41922fde7be01cd6040be9f3568dafbf9b1a23'};
     const mockOpts5 = {txid: '688dd18dea2b6f3c2d3892d13b41922fde7be01cd6040be9f3568dafbf9b1a23', vin: []};
 
-    const exceptedException1 = 'A Dashcore Transaction object or valid rawTransaction is required';
+    const exceptedException1 = 'A Hthcore Transaction object or valid rawTransaction is required';
 
     expect(() => importTransaction.call(mockStorage, mockOpts1)).to.throw(exceptedException1);
     expect(() => importTransaction.call(mockStorage, mockOpts2)).to.throw(exceptedException1);

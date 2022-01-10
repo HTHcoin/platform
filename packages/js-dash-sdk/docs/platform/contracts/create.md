@@ -5,7 +5,7 @@ Parameters:
 
 | parameters               | type              | required           | Description                                                       |  
 |--------------------------|-------------------|------------------	| -----------------------------------------------------------------	|
-| **contractDefinitions**  | JSONDataContract  | yes                | The defined [JSON Application Schema](https://dashplatform.readme.io/docs/explanation-platform-protocol-data-contract) |
+| **contractDefinitions**  | JSONDataContract  | yes                | The defined [JSON Application Schema](https://hthplatform.readme.io/docs/explanation-platform-protocol-data-contract) |
 | **identity**             | Identity          | yes                | A valid [registered `application` identity](../identities/register.md) |
 
 **Example**:

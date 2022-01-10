@@ -49,7 +49,7 @@ console.log(wallet.exportWallet());
 In the case where you will want to have stronger entropy (have 24 words generated instead of 12), this snippet will allow to do that : 
 
 ```js 
-const { Mnemonic } = require('@dashevo/dashcore-lib');
+const { Mnemonic } = require('@hthcoin/hthcore-lib');
 const mnemonic = new Mnemonic(256).toString();
 ```
 

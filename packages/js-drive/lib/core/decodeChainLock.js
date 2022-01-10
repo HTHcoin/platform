@@ -1,11 +1,11 @@
-const { ChainLock } = require('@dashevo/dashcore-lib');
+const { ChainLock } = require('@hthcoin/hthcore-lib');
 const {
   tendermint: {
     types: {
       CoreChainLock,
     },
   },
-} = require('@dashevo/abci/types');
+} = require('@hthcoin/abci/types');
 
 /**
  * @typedef decodeChainLock

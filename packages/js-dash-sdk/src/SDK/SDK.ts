@@ -1,7 +1,7 @@
 import { Client as _Client } from './Client';
 import { Core as _Core } from './Core';
 import { Platform as _Platform } from './Platform';
-import { default as _DAPIClient } from '@dashevo/dapi-client';
+import { default as _DAPIClient } from '@hthcoin/dapi-client';
 
 import {
     Wallet as _Wallet,
@@ -11,7 +11,7 @@ import {
     EVENTS as _WalletLibEVENTS,
     utils as _WalletLibUtils,
     plugins as _WalletLibPlugins
-} from '@dashevo/wallet-lib';
+} from '@hthcoin/wallet-lib';
 
 export namespace SDK {
     export let DAPIClient = _DAPIClient;

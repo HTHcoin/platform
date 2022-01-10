@@ -2,7 +2,7 @@ const {
   PublicKey,
   PrivateKey,
   Signer: { sign, verifySignature, verifyHashSignature },
-} = require('@dashevo/dashcore-lib');
+} = require('@hthcoin/hthcore-lib');
 
 const StateTransitionIsNotSignedError = require(
   './errors/StateTransitionIsNotSignedError',

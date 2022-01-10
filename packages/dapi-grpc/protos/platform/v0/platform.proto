@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package org.dash.platform.dapi.v0;
+package org.hth.platform.dapi.v0;
 
 service Platform {
   rpc broadcastStateTransition (BroadcastStateTransitionRequest) returns (BroadcastStateTransitionResponse);

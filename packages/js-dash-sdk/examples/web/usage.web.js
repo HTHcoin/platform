@@ -5,12 +5,12 @@ const opts = {
     mnemonic: "arena light cheap control apple buffalo indicate rare motor valid accident isolate",
   },
   apps: {
-    dashpay: {
-    contractId: ''// Provide the dashpay contract id here
+    hthcoin: {
+    contractId: ''// Provide the hthcoin contract id here
     }
   }
 };
-const clientInstance = new Dash.Client(opts);
+const clientInstance = new HTH.Client(opts);
 
 (async ()=>{
   const { platform } = clientInstance;
@@ -22,7 +22,7 @@ const clientInstance = new Dash.Client(opts);
   }
 
   async function readDocument() {
-    const profile = await platform.documents.fetch('dashpay.profile', {});
+    const profile = await platform.documents.fetch('hthcoin.profile', {});
     console.log(profile);
   }
 })()

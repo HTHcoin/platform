@@ -10,11 +10,11 @@ DIR_PATH=$(dirname $FULL_PATH)
 ROOT_PATH=$(dirname $DIR_PATH)
 PACKAGES_PATH="$ROOT_PATH/packages"
 
-DASHMATE_BIN="${PACKAGES_PATH}/dashmate/bin/dashmate"
+HTHMATE_BIN="${PACKAGES_PATH}/hthmate/bin/hthmate"
 
-yarn dashmate update -v
+yarn hthmate update -v
 
-yarn dashmate setup local --verbose \
+yarn hthmate setup local --verbose \
                           --debug-logs \
                           --miner-interval="${MINING_INTERVAL_IN_SECONDS}s" \
                           --node-count=${MASTERNODES_COUNT} | tee "${ROOT_PATH}"/logs/setup.log

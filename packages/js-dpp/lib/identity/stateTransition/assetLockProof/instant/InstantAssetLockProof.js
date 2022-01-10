@@ -1,4 +1,4 @@
-const { InstantLock, Transaction } = require('@dashevo/dashcore-lib');
+const { InstantLock, Transaction } = require('@hthcoin/hthcore-lib');
 const hashModule = require('../../../../util/hash');
 const Identifier = require('../../../../identifier/Identifier');
 

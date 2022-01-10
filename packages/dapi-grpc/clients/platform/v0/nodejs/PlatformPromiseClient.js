@@ -15,11 +15,11 @@ const {
       protobufToJsonFactory,
     },
   },
-} = require('@dashevo/grpc-common');
+} = require('@hthcoin/grpc-common');
 
 const {
   org: {
-    dash: {
+    hth: {
       platform: {
         dapi: {
           v0: {

@@ -1,8 +1,8 @@
 const crypto = require('crypto');
 
-const DashPlatformProtocol = require('@dashevo/dpp');
+const HthPlatformProtocol = require('@hthcoin/dpp');
 
-const generateRandomIdentifier = require('@dashevo/dpp/lib/test/utils/generateRandomIdentifier');
+const generateRandomIdentifier = require('@hthcoin/dpp/lib/test/utils/generateRandomIdentifier');
 
 const dpnsContractDocumentsSchema = require('../../schema/dpns-contract-documents.json');
 
@@ -14,7 +14,7 @@ describe('DPNS Contract', () => {
   beforeEach(async function beforeEach() {
     const fetchContractStub = this.sinon.stub();
 
-    dpp = new DashPlatformProtocol({
+    dpp = new HthPlatformProtocol({
       stateRepository: {
         fetchDataContract: fetchContractStub,
       },
@@ -160,10 +160,10 @@ describe('DPNS Contract', () => {
         rawDomainDocument = {
           label: 'Wallet',
           normalizedLabel: 'wallet',
-          normalizedParentDomainName: 'dash',
+          normalizedParentDomainName: 'hth',
           preorderSalt: crypto.randomBytes(32),
           records: {
-            dashUniqueIdentityId: generateRandomIdentifier(),
+            hthUniqueIdentityId: generateRandomIdentifier(),
           },
           subdomainRules: {
             allowSubdomains: false,
@@ -533,11 +533,11 @@ describe('DPNS Contract', () => {
           }
         });
 
-        describe('Dash Identity', () => {
-          it('should have either `dashUniqueIdentityId` or `dashAliasIdentityId`', async () => {
+        describe('HTH Identity', () => {
+          it('should have either `hthUniqueIdentityId` or `hthAliasIdentityId`', async () => {
             rawDomainDocument.records = {
-              dashUniqueIdentityId: identityId,
-              dashAliasIdentityId: identityId,
+              hthUniqueIdentityId: identityId,
+              hthAliasIdentityId: identityId,
             };
 
             try {
@@ -556,10 +556,10 @@ describe('DPNS Contract', () => {
             }
           });
 
-          describe('dashUniqueIdentityId', () => {
+          describe('hthUniqueIdentityId', () => {
             it('should no less than 32 bytes', async () => {
               rawDomainDocument.records = {
-                dashUniqueIdentityId: crypto.randomBytes(30),
+                hthUniqueIdentityId: crypto.randomBytes(30),
               };
 
               try {
@@ -574,13 +574,13 @@ describe('DPNS Contract', () => {
 
                 expect(error.name).to.equal('JsonSchemaError');
                 expect(error.keyword).to.equal('minItems');
-                expect(error.instancePath).to.equal('/records/dashUniqueIdentityId');
+                expect(error.instancePath).to.equal('/records/hthUniqueIdentityId');
               }
             });
 
             it('should no more than 32 bytes', async () => {
               rawDomainDocument.records = {
-                dashUniqueIdentityId: crypto.randomBytes(64),
+                hthUniqueIdentityId: crypto.randomBytes(64),
               };
 
               try {
@@ -595,15 +595,15 @@ describe('DPNS Contract', () => {
 
                 expect(error.name).to.equal('JsonSchemaError');
                 expect(error.keyword).to.equal('maxItems');
-                expect(error.instancePath).to.equal('/records/dashUniqueIdentityId');
+                expect(error.instancePath).to.equal('/records/hthUniqueIdentityId');
               }
             });
           });
 
-          describe('dashAliasIdentityId', () => {
+          describe('hthAliasIdentityId', () => {
             it('should no less than 32 bytes', async () => {
               rawDomainDocument.records = {
-                dashAliasIdentityId: crypto.randomBytes(30),
+                hthAliasIdentityId: crypto.randomBytes(30),
               };
 
               try {
@@ -618,13 +618,13 @@ describe('DPNS Contract', () => {
 
                 expect(error.name).to.equal('JsonSchemaError');
                 expect(error.keyword).to.equal('minItems');
-                expect(error.instancePath).to.equal('/records/dashAliasIdentityId');
+                expect(error.instancePath).to.equal('/records/hthAliasIdentityId');
               }
             });
 
             it('should no more than 32 bytes', async () => {
               rawDomainDocument.records = {
-                dashAliasIdentityId: crypto.randomBytes(64),
+                hthAliasIdentityId: crypto.randomBytes(64),
               };
 
               try {
@@ -639,7 +639,7 @@ describe('DPNS Contract', () => {
 
                 expect(error.name).to.equal('JsonSchemaError');
                 expect(error.keyword).to.equal('maxItems');
-                expect(error.instancePath).to.equal('/records/dashAliasIdentityId');
+                expect(error.instancePath).to.equal('/records/hthAliasIdentityId');
               }
             });
           });

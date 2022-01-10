@@ -3,7 +3,7 @@ const {
     PlatformPromiseClient,
     GetIdentityIdsByPublicKeyHashesRequest,
   },
-} = require('@dashevo/dapi-grpc');
+} = require('@hthcoin/dapi-grpc');
 
 const GetIdentityIdsByPublicKeyHashesResponse = require('./GetIdentityIdsByPublicKeyHashesResponse');
 const InvalidResponseError = require('../response/errors/InvalidResponseError');

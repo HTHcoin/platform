@@ -1,4 +1,4 @@
-const Identifier = require('@dashevo/dpp/lib/Identifier');
+const Identifier = require('@hthcoin/dpp/lib/Identifier');
 
 const lodashSet = require('lodash.set');
 const lodashGet = require('lodash.get');

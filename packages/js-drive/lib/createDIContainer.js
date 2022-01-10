@@ -13,23 +13,23 @@ const Long = require('long');
 // eslint-disable-next-line import/no-unresolved
 const level = require('level-rocksdb');
 
-const { Merk } = require('@dashevo/merk');
+const { Merk } = require('@hthcoin/merk');
 
 const LRUCache = require('lru-cache');
-const RpcClient = require('@dashevo/dashd-rpc/promise');
+const RpcClient = require('@hthcoin/helpthehomelessd-rpc/promise');
 
-const DashPlatformProtocol = require('@dashevo/dpp');
+const HthPlatformProtocol = require('@hthcoin/dpp');
 
-const Identifier = require('@dashevo/dpp/lib/identifier/Identifier');
+const Identifier = require('@hthcoin/dpp/lib/identifier/Identifier');
 
 const findMyWay = require('find-my-way');
 
 const pino = require('pino');
 const pinoMultistream = require('pino-multi-stream');
 
-const createABCIServer = require('@dashevo/abci');
+const createABCIServer = require('@hthcoin/abci');
 
-const protocolVersion = require('@dashevo/dpp/lib/version/protocolVersion');
+const protocolVersion = require('@hthcoin/dpp/lib/version/protocolVersion');
 
 const packageJSON = require('../package.json');
 
@@ -160,8 +160,8 @@ const BlockExecutionContextRepository = require('./blockExecution/BlockExecution
  * @param {string} options.NETWORK
  * @param {string} options.DPNS_CONTRACT_BLOCK_HEIGHT
  * @param {string} options.DPNS_CONTRACT_ID
- * @param {string} options.DASHPAY_CONTRACT_ID
- * @param {string} options.DASHPAY_CONTRACT_BLOCK_HEIGHT
+ * @param {string} options.HTHPAY_CONTRACT_ID
+ * @param {string} options.HTHPAY_CONTRACT_BLOCK_HEIGHT
  * @param {string} options.FEATURE_FLAGS_CONTRACT_ID
  * @param {string} options.FEATURE_FLAGS_CONTRACT_BLOCK_HEIGHT
  * @param {string} options.MASTERNODE_REWARD_SHARES_CONTRACT_ID
@@ -184,8 +184,8 @@ function createDIContainer(options) {
     throw new Error('DPNS_CONTRACT_BLOCK_HEIGHT must be set');
   }
 
-  if (options.DASHPAY_CONTRACT_ID && !options.DASHPAY_CONTRACT_BLOCK_HEIGHT) {
-    throw new Error('DASHPAY_CONTRACT_BLOCK_HEIGHT must be set');
+  if (options.HTHPAY_CONTRACT_ID && !options.HTHPAY_CONTRACT_BLOCK_HEIGHT) {
+    throw new Error('HTHPAY_CONTRACT_BLOCK_HEIGHT must be set');
   }
 
   if (options.FEATURE_FLAGS_CONTRACT_ID && !options.FEATURE_FLAGS_CONTRACT_BLOCK_HEIGHT) {
@@ -263,12 +263,12 @@ function createDIContainer(options) {
         ? Identifier.from(options.DPNS_CONTRACT_ID)
         : undefined,
     ),
-    dashpayContractId: asValue(
-      options.DASHPAY_CONTRACT_ID
-        ? Identifier.from(options.DASHPAY_CONTRACT_ID)
+    hthcoinContractId: asValue(
+      options.HTHPAY_CONTRACT_ID
+        ? Identifier.from(options.HTHPAY_CONTRACT_ID)
         : undefined,
     ),
-    dashpayContractBlockHeight: asValue(parseInt(options.DASHPAY_CONTRACT_BLOCK_HEIGHT, 10)),
+    hthcoinContractBlockHeight: asValue(parseInt(options.HTHPAY_CONTRACT_BLOCK_HEIGHT, 10)),
     network: asValue(options.NETWORK),
     logStdoutLevel: asValue(options.LOG_STDOUT_LEVEL),
     logPrettyFileLevel: asValue(options.LOG_PRETTY_FILE_LEVEL),
@@ -310,7 +310,7 @@ function createDIContainer(options) {
 
       return Long.fromString(options.FEATURE_FLAGS_CONTRACT_BLOCK_HEIGHT);
     }),
-    tenderdashP2pPort: asValue(options.TENDERDASH_P2P_PORT),
+    tenderhthP2pPort: asValue(options.TENDERHTH_P2P_PORT),
   });
 
   /**
@@ -1008,14 +1008,14 @@ function createDIContainer(options) {
     ) => unserializeStateTransitionFactory(transactionalDpp, noopLogger)).singleton(),
 
     dpp: asFunction((stateRepository, dppOptions) => (
-      new DashPlatformProtocol({
+      new HthPlatformProtocol({
         ...dppOptions,
         stateRepository,
       })
     )).singleton(),
 
     transactionalDpp: asFunction((transactionalStateRepository, dppOptions) => (
-      new DashPlatformProtocol({
+      new HthPlatformProtocol({
         ...dppOptions,
         stateRepository: transactionalStateRepository,
       })
